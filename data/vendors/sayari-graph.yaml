@@ -1,0 +1,298 @@
+identity:
+  name: Sayari Graph
+  legal_name: Sayari Labs, Inc.
+  trade_names:
+  - Sayari Graph
+  official_website: https://sayari.com/
+  hq_country: USA
+  category: People / corporate intelligence
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2015
+    source: https://sayari.com/
+    confidence: Medium
+  hq_country:
+    value: USA
+    source: https://sayari.com/
+    confidence: Medium
+  ownership_type:
+    value: Private
+    source: https://sayari.com/
+    confidence: Medium
+  parent:
+    value: none identified
+    source: https://sayari.com/
+    confidence: Medium
+  headcount_band:
+    value: unknown
+    source: https://sayari.com/
+    confidence: Low
+  customer_segments:
+  - due diligence
+  - gov
+  - investigations
+  primary_products:
+  - Sayari Graph
+  deployment_model:
+    value: SaaS graph
+    source: https://sayari.com/
+    confidence: Medium
+  notable_status: DC; corporate ownership/trade network graphs
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources.
+    sources:
+    - https://sayari.com/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: US corporate intelligence graph company.
+    source: https://sayari.com/
+    confidence: Medium
+  what:
+    text: Ownership, trade, supply-network graph intelligence.
+    source: https://sayari.com/
+    confidence: Medium
+  where:
+    text: Washington DC USA.
+    source: https://sayari.com/
+    confidence: Medium
+  when:
+    text: Mid-2010s founding era.
+    source: https://sayari.com/
+    confidence: Medium
+  why:
+    text: Map opaque corporate networks for diligence/investigations.
+    source: https://sayari.com/
+    confidence: Medium
+  how:
+    text: Graph platform over corporate/trade datasets.
+    source: https://sayari.com/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public.
+    sources:
+    - https://sayari.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Corporate opacity use case
+    source: https://sayari.com/
+    confidence: Medium
+  weaknesses:
+  - text: Not SOCMINT
+    source: https://sayari.com/
+    confidence: Medium
+  best_fit:
+  - KYC/due diligence
+  poor_fit:
+  - Social listening
+  alternatives:
+  - Pipl
+  - Maltego
+  - OpenCorporates+manual
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed.
+    sources:
+    - https://sayari.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Quote
+    source: https://sayari.com/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://sayari.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://sayari.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://sayari.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Private
+    source: https://sayari.com/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://sayari.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited.
+    sources:
+    - https://sayari.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Gov/diligence niche
+    source: https://sayari.com/
+    confidence: Medium
+  negative:
+  - text: None
+    source: https://sayari.com/
+    confidence: Medium
+  social_themes: Diligence analysts
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://sayari.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Investigation queries logged
+    source: https://sayari.com/
+    confidence: Low
+  attribution:
+    text: Confirm DPA
+    source: https://sayari.com/
+    confidence: Low
+  jurisdiction:
+    text: USA
+    source: https://sayari.com/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contract OPSEC
+  jurisdiction_sanctions_exposure:
+    note: See extras
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Validate.
+    sources:
+    - https://sayari.com/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Corporate registry data aggregation
+    source: https://sayari.com/
+    confidence: Medium
+  gdpr_residency:
+    text: UBO data sensitivity—review
+    source: https://sayari.com/
+    confidence: Low
+  ownership_state_ties:
+    text: US private; no sanctioned-state owner
+    source: https://sayari.com/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://sayari.com/
+    confidence: Low
+  api_integrations:
+    text: 'Yes'
+    source: https://sayari.com/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 5
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: Washington DC USA. No RU/BY/CN/IR/DPRK/SY/CU offices identified (datasets may cover those countries
+        as targets, not offices).
+      source: https://sayari.com/
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Private US. No sanctioned owners identified.
+      source: https://sayari.com/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: unknown
+      source: https://sayari.com/
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - Sayari
+      - Sayari Labs Inc
+      - Sayari Graph
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags: []
+gaps:
+- DPA
+- Certs
+- References
+meta:
+  schema_version: '1.2'
+  slug: sayari-graph
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Checked sayari.com; no named customer case studies captured this pass.
+  last_checked: '2026-10-06'

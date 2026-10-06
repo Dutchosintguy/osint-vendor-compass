@@ -1,0 +1,309 @@
+identity:
+  name: Pipl
+  legal_name: Pipl Inc. (verify current legal)
+  trade_names:
+  - Pipl
+  official_website: https://pipl.com/
+  hq_country: USA
+  category: People / identity search
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2005
+    source: https://pipl.com/
+    confidence: Medium
+  hq_country:
+    value: USA
+    source: https://pipl.com/
+    confidence: Medium
+  ownership_type:
+    value: Private enterprise (sales-led)
+    source: https://pipl.com/
+    confidence: Medium
+  parent:
+    value: unknown
+    source: https://pipl.com/
+    confidence: Medium
+  headcount_band:
+    value: unknown
+    source: https://pipl.com/
+    confidence: Low
+  customer_segments:
+  - fraud
+  - trust & safety
+  - financial crime
+  - LE
+  primary_products:
+  - Pipl Search
+  - Pipl Trust
+  - Pipl Elements
+  deployment_model:
+    value: API + analyst Search Insights
+    source: https://pipl.com/
+    confidence: Medium
+  notable_status: Shifted from consumer search box to enterprise fraud/identity suite
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Compiled from cited public sources; some fields low-confidence.
+    sources:
+    - https://pipl.com/
+    - https://pipl.com/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: Enterprise identity/fraud vendor.
+    source: https://pipl.com/
+    confidence: Medium
+  what:
+    text: Identity graph resolution and risk signals for fraud/investigations.
+    source: https://pipl.com/
+    confidence: Medium
+  where:
+    text: Global identity data; processing locations unknown in this pass.
+    source: https://pipl.com/
+    confidence: Medium
+  when:
+    text: ~20 years identity data claimed.
+    source: https://pipl.com/
+    confidence: Medium
+  why:
+    text: Reduce fraud false declines / resolve identities.
+    source: https://pipl.com/
+    confidence: Medium
+  how:
+    text: Identity graph + ML risk model Elephant.
+    source: https://pipl.com/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public marketing + cited pages.
+    sources:
+    - https://pipl.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Deep identity graph heritage
+    source: https://pipl.com/
+    confidence: Medium
+  - text: Fraud workflow fit
+    source: https://pipl.com/
+    confidence: Medium
+  weaknesses:
+  - text: Sales-led pricing
+    source: https://pipl.com/
+    confidence: Medium
+  - text: No DIY search box
+    source: https://pipl.com/
+    confidence: Medium
+  best_fit:
+  - Enterprise fraud/identity
+  poor_fit:
+  - Casual people search
+  alternatives:
+  - OSINT Industries
+  - Spokeo
+  - Sayari
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed vendor/secondary evidence.
+    sources:
+    - https://pipl.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Quote-only
+    source: https://pipl.com/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Privacy policy likely exists; full DPA not deep-reviewed in this pass
+    source: https://pipl.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://pipl.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Many enterprise vendors are quote-only.
+    sources:
+    - https://pipl.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Private; detailed funding unknown this pass
+    source: https://pipl.com/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: See ownership/funding notes; private financials often opaque
+    source: https://pipl.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited public financials.
+    sources:
+    - https://pipl.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Long market presence
+    source: https://pipl.com/
+    confidence: Medium
+  negative:
+  - text: None material identified
+    source: https://pipl.com/
+    confidence: Medium
+  social_themes: Enterprise sales brand
+  score:
+    value: 3
+    confidence: Low
+    rationale: Not a systematic sentiment study.
+    sources:
+    - https://pipl.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: API queries logged by nature of fraud APIs—assume vendor logging unless contract says otherwise
+    source: https://pipl.com/
+    confidence: Low
+  attribution:
+    text: Confirm in vendor DPA/OPSEC guide
+    source: https://pipl.com/
+    confidence: Low
+  jurisdiction:
+    text: USA
+    source: https://pipl.com/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated investigator accounts
+  - MFA/SSO
+  - Contractual non-logging where required
+  - Review subprocessors
+  jurisdiction_sanctions_exposure:
+    note: Full section at extras.jurisdiction_sanctions_exposure (company-level only).
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: OPSEC claims need contractual validation.
+    sources:
+    - https://pipl.com/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Identity data from public/commercial sources—GDPR basis diligence required
+    source: https://pipl.com/
+    confidence: Medium
+  gdpr_residency:
+    text: Critical — request DPA/SCCs/residency
+    source: https://pipl.com/
+    confidence: Low
+  ownership_state_ties:
+    text: No state ownership identified
+    source: https://pipl.com/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://pipl.com/
+    confidence: Low
+  api_integrations:
+    text: Core product is API/enterprise
+    source: https://pipl.com/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: Enterprise US-facing brand; historical Israel ties often cited in industry—confirm current HQ entities.
+        No RU/BY/CN/IR/DPRK/SY/CU offices verified this pass (mark partial unknown).
+      source: https://pipl.com/
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Private; controlling owners unknown in this pass.
+      source: https://pipl.com/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: 'Workforce geography: unknown.'
+      source: https://pipl.com/
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - Pipl
+      - Pipl Inc
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags:
+- HQ/ownership details incompletely verified — elevate KYC
+gaps:
+- Confirm current HQ country/legal entities
+- Ownership cap table
+- Certifications
+meta:
+  schema_version: '1.2'
+  slug: pipl
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Checked pipl.com; enterprise marketing without named public case studies located this pass.
+  last_checked: '2026-10-06'

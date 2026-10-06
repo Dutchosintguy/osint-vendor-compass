@@ -1,0 +1,391 @@
+identity:
+  name: Maltego
+  legal_name: Maltego Technologies GmbH
+  trade_names:
+  - Maltego
+  official_website: https://www.maltego.com/
+  hq_country: Germany
+  category: Investigation / link analysis
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2008
+    source: https://www.kirkland.com/news/press-release/2023/04/kirkland-advises-charlesbank-capital-partners-on-acquisition-of-munich-based-maltego
+    confidence: High
+  hq_country:
+    value: Germany
+    detail: Munich HQ; international remote team
+    source: https://www.maltego.com/maltego-faq/
+    confidence: High
+  offices:
+    value: Munich, Germany; presence Americas/Europe
+    source: https://www.maltego.com/maltego-faq/
+    confidence: High
+  ownership_type:
+    value: PE-backed private
+    detail: Acquired April 2023 by Charlesbank Technology Opportunities Funds from Maxburg
+    source: https://www.maltego.com/maltego-faq/
+    confidence: High
+  parent:
+    value: Charlesbank Capital Partners (via Technology Opportunities Funds)
+    source: https://www.globenewswire.com/news-release/2023/04/18/2648656/0/en/maltego-secures-100m-to-accelerate-growth-of-its-intelligence-platform-to-combat-cybercrime-and-misinformation.html
+    confidence: High
+  headcount_band:
+    value: 51-200
+    detail: Over 100 employees cited at acquisition (2023)
+    source: https://www.kirkland.com/news/press-release/2023/04/kirkland-advises-charlesbank-capital-partners-on-acquisition-of-munich-based-maltego
+    confidence: Medium
+  customer_segments:
+  - LE/gov
+  - enterprise CTI
+  - financial institutions
+  - journalists
+  primary_products:
+  - Maltego Graph
+  - Maltego Search
+  - Maltego Monitor
+  - Maltego Evidence
+  - Community Edition
+  deployment_model:
+    value: Desktop + browser/SaaS Organization plan; legacy on-prem retired for new purchase May 2024
+    source: https://www.maltego.com/maltego-faq/
+    confidence: High
+  notable_status: Charlesbank acquisition Apr 2023 with >$100M growth capital; ISO 27001:2022 certified Apr 2024
+  score:
+    value: 4
+    confidence: High
+    rationale: Clear legal identity, HQ, ownership, products, and certifications from primary sources.
+    sources:
+    - https://www.maltego.com/maltego-faq/
+    - https://www.maltego.com/blog/maltego-is-now-iso-27001-2022-certified/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: Built by Maltego Technologies GmbH (CEO Philip Mayrhofer at 2023 deal); buyers include FBI, INTERPOL,
+      DOW 30 firms, journalists, pentesters.
+    source: https://www.globenewswire.com/news-release/2023/04/18/2648656/0/en/maltego-secures-100m-to-accelerate-growth-of-its-intelligence-platform-to-combat-cybercrime-and-misinformation.html
+    confidence: High
+  what:
+    text: Link analysis, SOCMINT collection/preservation, real-time monitoring, identity/OSINT search via partner
+      transforms.
+    source: https://www.maltego.com/maltego-faq/
+    confidence: High
+  where:
+    text: 'Data from third-party providers (Maltego does not own/store investigation data per FAQ); company GDPR-focused
+      EU HQ. Exact data-residency options for Organization cloud: unknown from public FAQ.'
+    source: https://www.maltego.com/maltego-faq/
+    confidence: Medium
+  when:
+    text: Developed 2008; Charlesbank acquisition Apr 2023; plan rename May 2024; ISO cert Apr 2024.
+    source: https://www.maltego.com/maltego-faq/
+    confidence: High
+  why:
+    text: Accelerate complex investigations by integrating dispersed OSINT/CTI into visual graphs.
+    source: https://www.maltego.com/
+    confidence: High
+  how:
+    text: Transforms/connectors to 100+ data partners; Graph UI; Search/Monitor/Evidence modules; does not monetize
+      customer data.
+    source: https://www.maltego.com/maltego-faq/
+    confidence: High
+  score:
+    value: 4
+    confidence: High
+    rationale: FAQ answers most 5W1H clearly; residency detail for cloud Organization plan incomplete publicly.
+    sources:
+    - https://www.maltego.com/maltego-faq/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Mature link-analysis UX and large transform ecosystem
+    source: https://www.maltego.com/
+    confidence: High
+  - text: Free CE available for exploration
+    source: https://www.maltego.com/maltego-faq/
+    confidence: High
+  - text: ISO 27001:2022 + GDPR compliance claims
+    source: https://www.maltego.com/blog/maltego-is-now-iso-27001-2022-certified/
+    confidence: High
+  - text: Export-control / embargo vetting for enterprise sales
+    source: https://www.maltego.com/maltego-faq/
+    confidence: High
+  weaknesses:
+  - text: Many powerful transforms require paid third-party data packs (TCO opacity)
+    source: https://osintbench.com/comparisons/maltego-vs-osint-industries/
+    confidence: Medium
+  - text: Learning curve for graph methodology
+    source: https://osintbench.com/comparisons/maltego-vs-osint-industries/
+    confidence: Medium
+  - text: Organization plan sales-led; public pricing incomplete for enterprise
+    source: https://www.maltego.com/maltego-faq/
+    confidence: Medium
+  best_fit:
+  - Complex multi-entity investigations
+  - CTI pivoting
+  - LE link analysis
+  poor_fit:
+  - One-shot email lookup without graphing
+  - Teams needing only alert monitoring
+  alternatives:
+  - ShadowDragon Horizon
+  - Social Links
+  - Blackdot Videris
+  - OSINT Industries
+  score:
+    value: 4
+    confidence: Medium
+    rationale: Strengths well evidenced; weaknesses partly from secondary comparisons.
+    sources:
+    - https://www.maltego.com/
+    - https://osintbench.com/comparisons/maltego-vs-osint-industries/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Professional via webshop; Organization quote-only; CE free
+    source: https://www.maltego.com/maltego-faq/
+    confidence: High
+  contract_norms:
+    text: Seat/plan based; third-party data costs separate
+    source: https://www.maltego.com/maltego-faq/
+    confidence: Medium
+  privacy_dpa:
+    text: 'Privacy policy referenced; GDPR compliance claimed; DPA availability: unknown publicly'
+    source: https://www.maltego.com/maltego-faq/
+    confidence: Medium
+  audits:
+    text: ISO 27001:2022 certified
+    source: https://www.maltego.com/blog/maltego-is-now-iso-27001-2022-certified/
+    confidence: High
+  score:
+    value: 3
+    confidence: High
+    rationale: Good cert transparency; enterprise pricing and DPA not fully public.
+    sources:
+    - https://www.maltego.com/maltego-faq/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: PE-owned by Charlesbank; >$100M growth capital announced Apr 2023; prior Maxburg ownership ~5 years with
+      4x profitable ARR growth claimed
+    source: https://www.globenewswire.com/news-release/2023/04/18/2648656/0/en/maltego-secures-100m-to-accelerate-growth-of-its-intelligence-platform-to-combat-cybercrime-and-misinformation.html
+    confidence: High
+  public_financials: unknown (private)
+  revenue_band: unknown
+  risk_notes:
+    text: PE ownership implies exit horizon; no public distress signals found in this review
+    source: https://www.kirkland.com/news/press-release/2023/04/kirkland-advises-charlesbank-capital-partners-on-acquisition-of-munich-based-maltego
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Strong capital injection but private financials opaque.
+    sources:
+    - https://www.globenewswire.com/news-release/2023/04/18/2648656/0/en/maltego-secures-100m-to-accelerate-growth-of-its-intelligence-platform-to-combat-cybercrime-and-misinformation.html
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Growth funding / Charlesbank acquisition coverage
+    source: https://www.globenewswire.com/news-release/2023/04/18/2648656/0/en/maltego-secures-100m-to-accelerate-growth-of-its-intelligence-platform-to-combat-cybercrime-and-misinformation.html
+    confidence: High
+  negative:
+  - text: No major scandal found in this pass; community debates on transform cost/ToS of sources are recurring
+      themes (secondary)
+    source: https://osintbench.com/comparisons/maltego-vs-osint-industries/
+    confidence: Low
+  social_themes: Strong practitioner following; CE widely recommended for learning OSINT graphs
+  score:
+    value: 4
+    confidence: Medium
+    rationale: Generally positive institutional coverage; limited systematic sentiment sampling.
+    sources:
+    - https://www.globenewswire.com/news-release/2023/04/18/2648656/0/en/maltego-secures-100m-to-accelerate-growth-of-its-intelligence-platform-to-combat-cybercrime-and-misinformation.html
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: 'Maltego states it does not own/store investigation data from transforms; customer/user data processed
+      under GDPR. Exact query telemetry for cloud modules: verify in DPA.'
+    source: https://www.maltego.com/maltego-faq/
+    confidence: Medium
+  attribution:
+    text: Desktop transforms may use customer/partner API keys; OPSEC depends on transform provider—unknown uniform
+      policy
+    source: https://www.maltego.com/maltego-faq/
+    confidence: Low
+  retention_of_subjects: unknown (claims not storing investigation data)
+  jurisdiction:
+    text: German HQ; German embargo/AML sales restrictions
+    source: https://www.maltego.com/maltego-faq/
+    confidence: High
+  incident_history: unknown (none identified in this review)
+  recommended_controls:
+  - Review transform provider ToS
+  - Use dedicated investigator accounts
+  - Prefer Organization controls/audit logs for LE
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Positive no-data-ownership claim but transform OPSEC varies by partner.
+    sources:
+    - https://www.maltego.com/maltego-faq/
+    last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    note: Full structured section at extras.jurisdiction_sanctions_exposure (company-level only; no employee nationalities).
+    result_summary: clear (no public hit identified; re-screen before procurement)
+    screening_date: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Publicly emphasizes ethical sales vetting and embargo compliance
+    source: https://www.maltego.com/maltego-faq/
+    confidence: High
+  gdpr_residency:
+    text: 'GDPR compliance claimed; EU HQ; cloud residency options: unknown'
+    source: https://www.maltego.com/blog/maltego-is-now-iso-27001-2022-certified/
+    confidence: Medium
+  ownership_state_ties:
+    text: US PE (Charlesbank); no state ownership identified
+    source: https://www.maltego.com/maltego-faq/
+    confidence: High
+  certifications:
+    text: ISO 27001:2022
+    source: https://www.maltego.com/blog/maltego-is-now-iso-27001-2022-certified/
+    confidence: High
+  legal_regulatory_actions: unknown (none identified)
+  api_integrations:
+    text: 100+ connectors/transforms; partner data marketplace
+    source: https://www.maltego.com/maltego-faq/
+    confidence: High
+  use_case_fit:
+    le_investigator:
+      value: 5
+      confidence: High
+      rationale: Core LE/graph use case with named agency customers.
+      sources:
+      - https://www.maltego.com/maltego-faq/
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 4
+      confidence: High
+      rationale: Strong CTI pivoting.
+      sources:
+      - https://www.maltego.com/
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: Not primarily a listening/DRP tool.
+      sources:
+      - https://www.maltego.com/
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 3
+      confidence: Medium
+      rationale: Useful for entity mapping if data packs available.
+      sources:
+      - https://www.maltego.com/
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: High
+      rationale: Not a GEOINT product.
+      sources:
+      - https://www.maltego.com/
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: No offices, R&D centers, or subsidiaries in Russia, Belarus, China, Iran, North Korea, Syria, or Cuba
+        identified in public FAQ/press reviewed. HQ Munich, Germany; team described as Germany/Europe/Americas.
+        Maltego states compliance with German embargo and AML laws and blocks sales to high-risk embargoed countries.
+      source: https://www.maltego.com/maltego-faq/
+      confidence: High
+    ownership_investor_leadership_ties:
+      text: Owned by US PE Charlesbank Capital Partners (Boston). Prior owner Maxburg (Germany). No ownership ties
+        to sanctioned jurisdictions identified in acquisition coverage.
+      source: https://www.maltego.com/maltego-faq/
+      confidence: High
+    workforce_location_signals_aggregate:
+      text: Vendor states majority of team onsite/remote from Germany, rest of Europe, and across the Americas;
+        27+ nationalities mentioned without country-of-employment breakdown for sanctioned states.
+      source: https://www.maltego.com/maltego-faq/
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in this review (company name Maltego Technologies GmbH)
+      un: no match found in this review
+      ofac_sdn: no match found in this review
+      uk: no match found in this review
+      screened_entities:
+      - Maltego Technologies GmbH
+      - Maltego
+      screening_date: '2026-10-06'
+      method: Web search of official list portals / secondary checkers for exact company name; not a formal counsel
+        opinion.
+      sources:
+      - https://www.maltego.com/maltego-faq/
+      - https://sanctionssearch.ofac.treas.gov/
+      confidence: Medium
+      result: clear (no public hit identified; re-screen before procurement)
+red_flags: []
+gaps:
+- Exact SaaS data residency regions
+- Published SOC 2 status
+- Systematic review-site n-size sentiment
+meta:
+  slug: maltego
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+  schema_version: '1.2'
+known_customers:
+  status: documented
+  customers:
+  - customer_name: Federal Bureau of Investigation (FBI)
+    sector: law_enforcement
+    country: USA
+    evidence_type: press_release
+    date: '2023'
+    source_url: https://www.maltego.com/maltego-faq/
+    notes: Named by Maltego as customer/user institution.
+  - customer_name: INTERPOL
+    sector: law_enforcement
+    country: international
+    evidence_type: press_release
+    date: '2023'
+    source_url: https://www.maltego.com/maltego-faq/
+    notes: Named by Maltego FAQ/press.
+  - customer_name: BASF
+    sector: corporate
+    country: Germany
+    evidence_type: case_study
+    date: unknown
+    source_url: https://www.maltego.com/
+    notes: Named testimonial on Maltego homepage.
+  - customer_name: Ukrainian Cyber Police
+    sector: law_enforcement
+    country: Ukraine
+    evidence_type: case_study
+    date: unknown
+    source_url: https://www.maltego.com/
+    notes: Named testimonial on Maltego homepage.
+  - customer_name: Trend Micro
+    sector: corporate
+    country: Japan
+    evidence_type: case_study
+    date: unknown
+    source_url: https://www.maltego.com/
+    notes: Named practitioner testimonial (Robert McArdle) on homepage.
+  - customer_name: 4theONE Foundation
+    sector: ngo
+    country: unknown
+    evidence_type: case_study
+    date: unknown
+    source_url: https://www.maltego.com/
+    notes: Named testimonial on homepage.
+  - customer_name: UK Department for Energy Security and Net Zero (DESNZ)
+    sector: government
+    country: United Kingdom
+    evidence_type: procurement_record
+    date: '2023-12-15'
+    source_url: https://www.contractsfinder.service.gov.uk/notice/98fe515b-6346-4506-8e13-0072aeec8acb
+    notes: G-Cloud call-off Maltego licenses awarded to Brookcourt Solutions Ltd; buyer contact @energysecurity.gov.uk;
+      value £44,357.
+  research_notes: Also UK Contracts Finder award for Maltego licenses via Brookcourt Solutions (buyer agency name
+    in notice—verify on Contracts Finder). Dow 30 claim is aggregate, not named list.
+  last_checked: '2026-10-06'

@@ -1,0 +1,636 @@
+# yaml-language-server: $schema=../schema/vendor.schema.json
+# FICTIONAL EXAMPLE. Do not treat this file as a review of a real company.
+schema_version: 1
+slug: example-vendor-a
+name: Example Vendor A
+example: true
+owner_approved: false
+status: example
+last_reviewed: 2026-10-06
+reviewed_by: Template only. No human review has been done.
+tagline: Fictional EU people-search vendor, used to show a lower-exposure profile.
+summary: >-
+  Example Vendor A is not a real company. This profile shows how the site
+  records an EU people-search product: a Dutch legal entity, public price
+  bands, a short query-retention window, and clear fictional sanctions screening.
+
+website:
+  text: https://example.com/vendor-a
+  source: https://example.com/vendor-a
+  source_label: Fictional company page
+  accessed: 2026-10-06
+  confidence: unverified
+
+headquarters:
+  city: Amsterdam
+  country: Netherlands
+  country_code: NL
+  source: https://example.com/vendor-a/about
+  source_label: Fictional about page
+  accessed: 2026-10-06
+  confidence: unverified
+
+founded_year: 2016
+
+categories:
+  - people-search
+primary_category: people-search
+
+use_cases:
+  - people-identity
+  - investigations-due-diligence
+  - journalism
+
+company:
+  legal_name:
+    text: Example Vendor A B.V. (fictional)
+    source: https://example.com/vendor-a/registry
+    source_label: Fictional registry extract
+    accessed: 2026-10-06
+    confidence: unverified
+  ownership:
+    text: >-
+      Privately held by its founders through a fictional Dutch holding company.
+      The example records no outside control and no state owner.
+    source: https://example.com/vendor-a/ownership
+    source_label: Fictional ownership note
+    accessed: 2026-10-06
+    confidence: unverified
+  founded:
+    text: "2016"
+    source: https://example.com/vendor-a/about
+    source_label: Fictional about page
+    accessed: 2026-10-06
+    confidence: unverified
+  employees:
+    text: 40–60 people in the example, all employed by the Dutch entity.
+    source: https://example.com/vendor-a/careers
+    source_label: Fictional careers page
+    accessed: 2026-10-06
+    confidence: unverified
+  customers:
+    text: >-
+      Two fictional organizations are recorded as public customers: Example
+      Holdings Group and Example Metro Desk. This is not a full client list.
+    source: https://example.com/vendor-a/customers
+    source_label: Fictional customer page
+    accessed: 2026-10-06
+    confidence: unverified
+  pricing_model:
+    text: >-
+      Annual subscription, sold in public per-seat bands. The fictional price
+      page lists a team tier and a newsroom tier. API overage fees are not listed.
+    source: https://example.com/vendor-a/pricing
+    source_label: Fictional pricing page
+    accessed: 2026-10-06
+    confidence: unverified
+  products:
+    - name: Harbor
+      summary:
+        text: Fictional people-search application for public-record and professional-profile lookups.
+        source: https://example.com/vendor-a/harbor
+        source_label: Fictional product page
+        accessed: 2026-10-06
+        confidence: unverified
+    - name: Harbor API
+      summary:
+        text: Fictional read API for the same records, with a per-key query log.
+        source: https://example.com/vendor-a/api
+        source_label: Fictional API page
+        accessed: 2026-10-06
+        confidence: unverified
+
+five_w:
+  who:
+    text: >-
+      Operated by the fictional Dutch company Example Vendor A B.V. Sold to
+      investigation teams and newsrooms. It is not a government service in this example.
+    source: https://example.com/vendor-a/about
+    source_label: Fictional about page
+    accessed: 2026-10-06
+    confidence: unverified
+  what:
+    text: A people-search application and API that returns fictional public-record style results.
+    source: https://example.com/vendor-a/harbor
+    source_label: Fictional product page
+    accessed: 2026-10-06
+    confidence: unverified
+  where:
+    text: >-
+      Headquartered in Amsterdam. The example says customer data is hosted in
+      the EU, and that customers are in the EEA and the United Kingdom.
+    source: https://example.com/vendor-a/privacy
+    source_label: Fictional privacy notice
+    accessed: 2026-10-06
+    confidence: unverified
+  when:
+    text: >-
+      Founded in 2016 in this example. This profile was assembled on 6 October
+      2026 as a template, not as a review of a live service.
+    source: https://example.com/vendor-a/about
+    source_label: Fictional about page
+    accessed: 2026-10-06
+    confidence: unverified
+  why:
+    text: >-
+      The fictional company says investigators should be able to resolve
+      identities without sending queries to a non-EU processor.
+    source: https://example.com/vendor-a/about
+    source_label: Fictional about page
+    accessed: 2026-10-06
+    confidence: unverified
+  how:
+    text: >-
+      Customers sign in to a browser app or call a REST API, run a search, and
+      export a result. The example describes the delivery model only. It does
+      not document how each record was collected.
+    source: https://example.com/vendor-a/api
+    source_label: Fictional API page
+    accessed: 2026-10-06
+    confidence: unverified
+
+strengths:
+  - text: The example publishes a legal entity, EU hosting, price bands, and a 30-day retention window.
+    source: https://example.com/vendor-a/trust
+    source_label: Fictional trust page
+    accessed: 2026-10-06
+    confidence: unverified
+  - text: Raw query text is not kept beyond the fictional retention window.
+    source: https://example.com/vendor-a/privacy
+    source_label: Fictional privacy notice
+    accessed: 2026-10-06
+    confidence: unverified
+  - text: >-
+      Fictional sanctions screening of the legal entity is clear, and no
+      review-list office or subsidiary is recorded.
+    source: https://example.com/vendor-a/sanctions
+    source_label: Fictional sanctions note
+    accessed: 2026-10-06
+    confidence: unverified
+
+weaknesses:
+  - text: The fictional product does not say where each people-record comes from.
+    source: https://example.com/vendor-a/harbor
+    source_label: Fictional product page
+    accessed: 2026-10-06
+    confidence: unverified
+  - text: ISO 27001 is only claimed in the example and is not checked with a registrar.
+    source: https://example.com/vendor-a/trust
+    source_label: Fictional trust page
+    accessed: 2026-10-06
+    confidence: unverified
+  - text: Seat prices are public, but API overage fees are not.
+    source: https://example.com/vendor-a/pricing
+    source_label: Fictional pricing page
+    accessed: 2026-10-06
+    confidence: unverified
+
+scores:
+  business_transparency:
+    score: 4
+    summary:
+      text: >-
+        Legal entity, ownership, hosting region, price bands, and retention are
+        all written down on fictional public pages. Provenance of the people
+        data is the remaining gap.
+      source: https://example.com/vendor-a/trust
+      source_label: Fictional trust page
+      accessed: 2026-10-06
+      confidence: unverified
+    evidence:
+      - text: A fictional registry extract names Example Vendor A B.V. and the Dutch holding company.
+        source: https://example.com/vendor-a/registry
+        source_label: Fictional registry extract
+        accessed: 2026-10-06
+        confidence: unverified
+      - text: The fictional price page lists team and newsroom bands.
+        source: https://example.com/vendor-a/pricing
+        source_label: Fictional pricing page
+        accessed: 2026-10-06
+        confidence: unverified
+      - text: The fictional privacy notice states a 30-day deletion period for search content.
+        source: https://example.com/vendor-a/privacy
+        source_label: Fictional privacy notice
+        accessed: 2026-10-06
+        confidence: unverified
+  financial_health:
+    score: 3
+    summary:
+      text: >-
+        The example describes an operating company with a small seed round and
+        a self-reported break-even comment. There are no audited accounts.
+      source: https://example.com/vendor-a/funding
+      source_label: Fictional funding note
+      accessed: 2026-10-06
+      confidence: unverified
+    evidence:
+      - text: A fictional seed round of €4 million is dated 2018. No later round is recorded.
+        source: https://example.com/vendor-a/funding
+        source_label: Fictional funding note
+        accessed: 2026-10-06
+        confidence: unverified
+      - text: No insolvency notice or layoff announcement appears in the fictional press list.
+        source: https://example.com/vendor-a/stability
+        source_label: Fictional stability note
+        accessed: 2026-10-06
+        confidence: unverified
+  customer_opsec:
+    score: 4
+    summary:
+      text: >-
+        Short retention, an EU controller, and a published subprocessor list.
+        The residual risk is a bounded abuse-prevention log, not an indefinite copy of queries.
+      source: https://example.com/vendor-a/privacy
+      source_label: Fictional privacy notice
+      accessed: 2026-10-06
+      confidence: unverified
+    evidence:
+      - text: Raw query text is deleted after 7 days in the example. Metadata is kept for 90 days.
+        source: https://example.com/vendor-a/privacy
+        source_label: Fictional privacy notice
+        accessed: 2026-10-06
+        confidence: unverified
+      - text: The fictional subprocessor page names one EU host and one EU email provider.
+        source: https://example.com/vendor-a/subprocessors
+        source_label: Fictional subprocessor list
+        accessed: 2026-10-06
+        confidence: unverified
+
+financial:
+  funding:
+    text: Fictional seed round of €4 million in 2018. No later round is recorded.
+    source: https://example.com/vendor-a/funding
+    source_label: Fictional funding note
+    accessed: 2026-10-06
+    confidence: unverified
+  investors:
+    - name: Example Capital I
+      detail:
+        text: >-
+          Fictional Amsterdam seed fund. The example treats it as a minority
+          investor with no board control.
+        source: https://example.com/vendor-a/investors
+        source_label: Fictional investor note
+        accessed: 2026-10-06
+        confidence: unverified
+  revenue_signals:
+    text: >-
+      A fictional 2025 interview says the company is roughly break-even and
+      does not publish a figure.
+    source: https://example.com/vendor-a/interview
+    source_label: Fictional interview
+    accessed: 2026-10-06
+    confidence: unverified
+  stability:
+    text: >-
+      Operating since 2016 in the example, with no layoff notice and no
+      insolvency filing in the fictional record. Accounts are not audited here.
+    source: https://example.com/vendor-a/stability
+    source_label: Fictional stability note
+    accessed: 2026-10-06
+    confidence: unverified
+
+press:
+  positive:
+    - title: Fictional newsrooms test a Dutch people-search tool
+      outlet: The Example Record
+      date: 2025-06-12
+      summary: >-
+        A fictional trade piece praises EU hosting and public pricing. It is
+        not real coverage of a real company.
+      source: https://example.com/vendor-a/press/record
+      source_label: Fictional article
+      accessed: 2026-10-06
+      confidence: unverified
+  negative:
+    - title: Where do the people records come from?
+      outlet: Fictional Industry Weekly
+      date: 2025-11-03
+      summary: >-
+        A fictional column says provenance of the people data is too vague for
+        a newsroom standard.
+      source: https://example.com/vendor-a/press/weekly
+      source_label: Fictional column
+      accessed: 2026-10-06
+      confidence: unverified
+
+social_sentiment:
+  tone: mixed
+  summary:
+    text: >-
+      Fictional practitioner comments praise the retention window and question
+      data provenance. This is not a live collection of social media.
+    source: https://example.com/vendor-a/sentiment
+    source_label: Fictional sentiment note
+    accessed: 2026-10-06
+    confidence: unverified
+  signals:
+    - platform: Fictional practitioner forum
+      observation:
+        text: >-
+          Threads in the example compliment the 30-day deletion claim and ask
+          for a field-level provenance file.
+        source: https://example.com/vendor-a/sentiment/forum
+        source_label: Fictional forum excerpt
+        accessed: 2026-10-06
+        confidence: unverified
+    - platform: Fictional professional network
+      observation:
+        text: >-
+          Buyers in the example describe procurement as straightforward because
+          the DPA and price bands are public.
+        source: https://example.com/vendor-a/sentiment/network
+        source_label: Fictional network excerpt
+        accessed: 2026-10-06
+        confidence: unverified
+
+opsec:
+  summary:
+    text: >-
+      The main residual risk in the example is a short abuse-prevention log.
+      Queries are not retained for the life of the contract, and the controller
+      is in the EU.
+    source: https://example.com/vendor-a/privacy
+    source_label: Fictional privacy notice
+    accessed: 2026-10-06
+    confidence: unverified
+  data_retention:
+    text: >-
+      Search queries and result snapshots are deleted after 30 days, according
+      to the fictional privacy notice.
+    risk: low
+    source: https://example.com/vendor-a/privacy
+    source_label: Fictional privacy notice
+    accessed: 2026-10-06
+    confidence: unverified
+  query_logging:
+    text: >-
+      The API keeps query metadata (key id, timestamp, and result count) for
+      90 days. Raw query text is deleted after 7 days.
+    risk: medium
+    source: https://example.com/vendor-a/logging
+    source_label: Fictional logging policy
+    accessed: 2026-10-06
+    confidence: unverified
+  jurisdiction:
+    text: >-
+      The controller is a fictional Dutch B.V. and hosting is in the EU.
+      Customers still need their own legal basis to run a search. This is not legal advice.
+    risk: low
+    source: https://example.com/vendor-a/privacy
+    source_label: Fictional privacy notice
+    accessed: 2026-10-06
+    confidence: unverified
+  ownership_state_links:
+    text: No state shareholder is recorded. The seed investor is a fictional private fund.
+    risk: low
+    source: https://example.com/vendor-a/ownership
+    source_label: Fictional ownership note
+    accessed: 2026-10-06
+    confidence: unverified
+  third_party_sharing:
+    text: >-
+      A fictional subprocessor page lists one EU hosting provider and one EU
+      email provider. Profile data is not sold onward in the example.
+    risk: low
+    source: https://example.com/vendor-a/subprocessors
+    source_label: Fictional subprocessor list
+    accessed: 2026-10-06
+    confidence: unverified
+
+data_residency:
+  summary:
+    text: Hosted in the EU, in a fictional Frankfurt region. No non-EU processing region is offered.
+    source: https://example.com/vendor-a/residency
+    source_label: Fictional residency page
+    accessed: 2026-10-06
+    confidence: unverified
+  regions:
+    - EU
+  gdpr:
+    text: >-
+      The fictional company acts as a processor for customer queries and as a
+      controller for its own account data. The privacy notice names both roles.
+    source: https://example.com/vendor-a/privacy
+    source_label: Fictional privacy notice
+    accessed: 2026-10-06
+    confidence: unverified
+  dpa:
+    text: >-
+      A data processing agreement is linked from the fictional legal page and
+      includes EU standard contractual clauses for a UK customer.
+    source: https://example.com/vendor-a/dpa
+    source_label: Fictional DPA page
+    accessed: 2026-10-06
+    confidence: unverified
+
+certifications:
+  - name: ISO/IEC 27001
+    status: claimed
+    detail:
+      text: >-
+        The fictional trust page says a certificate was issued in 2024. This
+        template does not check a registrar.
+      source: https://example.com/vendor-a/trust
+      source_label: Fictional trust page
+      accessed: 2026-10-06
+      confidence: unverified
+  - name: SOC 2
+    status: not-held
+    detail:
+      text: The fictional trust page says SOC 2 is out of scope.
+      source: https://example.com/vendor-a/trust
+      source_label: Fictional trust page
+      accessed: 2026-10-06
+      confidence: unverified
+
+integrations:
+  summary:
+    text: REST API, CSV export, and a fictional case-management webhook.
+    source: https://example.com/vendor-a/integrations
+    source_label: Fictional integrations page
+    accessed: 2026-10-06
+    confidence: unverified
+  api:
+    text: >-
+      Documented HTTPS API with per-key quotas. The fictional docs describe
+      API-key authentication.
+    source: https://example.com/vendor-a/api
+    source_label: Fictional API page
+    accessed: 2026-10-06
+    confidence: unverified
+  items:
+    - name: CSV export
+      detail:
+        text: Available in the fictional app for a single result set.
+        source: https://example.com/vendor-a/integrations
+        source_label: Fictional integrations page
+        accessed: 2026-10-06
+        confidence: unverified
+    - name: Case webhook
+      detail:
+        text: The example describes a webhook into a case tool. No marketplace listing is real.
+        source: https://example.com/vendor-a/integrations
+        source_label: Fictional integrations page
+        accessed: 2026-10-06
+        confidence: unverified
+
+legal:
+  - title: No enforcement action recorded
+    date: 2026-10-06
+    status: none-found
+    summary: >-
+      The fictional profile records no fine, judgment, or open regulatory case.
+      This is not a legal opinion.
+    source: https://example.com/vendor-a/legal
+    source_label: Fictional legal note
+    accessed: 2026-10-06
+    confidence: unverified
+
+jurisdiction_sanctions:
+  risk: low
+  summary:
+    text: >-
+      No office, R&D site, or legal entity in Russia, Belarus, China, or
+      another review-list country. Fictional EU, UN, OFAC, and UK screening of
+      the legal entity on 6 October 2026 was clear.
+    source: https://example.com/vendor-a/sanctions
+    source_label: Fictional sanctions note
+    accessed: 2026-10-06
+    confidence: unverified
+  offices_and_entities:
+    text: >-
+      The only legal entity in the example is Example Vendor A B.V. in
+      Amsterdam. No branch, R&D site, or subsidiary is recorded in Russia,
+      Belarus, China, or another sanctioned country.
+    countries: []
+    risk: low
+    source: https://example.com/vendor-a/entities
+    source_label: Fictional entity list
+    accessed: 2026-10-06
+    confidence: unverified
+  ownership_ties:
+    text: >-
+      The fictional owner is a Dutch holding company. The minority investor,
+      Example Capital I, is a fictional Dutch fund. No owner, investor, or
+      leadership entity is tied in this example to Russia, Belarus, China, or
+      another sanctioned country. No private individual is named.
+    risk: low
+    source: https://example.com/vendor-a/ownership
+    source_label: Fictional ownership note
+    accessed: 2026-10-06
+    confidence: unverified
+  workforce_signals:
+    text: >-
+      The fictional careers page says the whole workforce is employed by the
+      Dutch entity and based in the Netherlands. This is an aggregate signal
+      only. No individual employee is identified.
+    risk: low
+    source: https://example.com/vendor-a/careers
+    source_label: Fictional careers page
+    accessed: 2026-10-06
+    confidence: unverified
+  screening:
+    - regime: EU
+      result: clear
+      screened_on: 2026-10-06
+      text: >-
+        Fictional name check of Example Vendor A B.V. against the EU
+        consolidated list on 6 October 2026 returned no match.
+      source: https://example.com/vendor-a/sanctions/eu
+      source_label: Fictional EU screening note
+      accessed: 2026-10-06
+      confidence: unverified
+    - regime: UN
+      result: clear
+      screened_on: 2026-10-06
+      text: >-
+        Fictional name check of Example Vendor A B.V. against the UN sanctions
+        list on 6 October 2026 returned no match.
+      source: https://example.com/vendor-a/sanctions/un
+      source_label: Fictional UN screening note
+      accessed: 2026-10-06
+      confidence: unverified
+    - regime: OFAC
+      result: clear
+      screened_on: 2026-10-06
+      text: >-
+        Fictional name check of Example Vendor A B.V. against the OFAC
+        sanctions lists on 6 October 2026 returned no match.
+      source: https://example.com/vendor-a/sanctions/ofac
+      source_label: Fictional OFAC screening note
+      accessed: 2026-10-06
+      confidence: unverified
+    - regime: UK
+      result: clear
+      screened_on: 2026-10-06
+      text: >-
+        Fictional name check of Example Vendor A B.V. against the UK sanctions
+        list on 6 October 2026 returned no match.
+      source: https://example.com/vendor-a/sanctions/uk
+      source_label: Fictional UK screening note
+      accessed: 2026-10-06
+      confidence: unverified
+
+known_customers:
+  - name: Example Holdings Group
+    sector: corporate
+    country: Netherlands
+    country_code: NL
+    evidence_type: case-study
+    date: 2024-04-16
+    note: Fictional case study about a corporate investigations team. Not a real client.
+    source: https://example.com/vendor-a/customers/holdings
+    source_label: Fictional case study
+    accessed: 2026-10-06
+    confidence: unverified
+  - name: Example Metro Desk
+    sector: journalism
+    country: Netherlands
+    country_code: NL
+    evidence_type: press-report
+    date: 2025-06-12
+    note: Fictional newsroom named as a user in a trade piece. Not a real client.
+    source: https://example.com/vendor-a/press/record
+    source_label: Fictional article
+    accessed: 2026-10-06
+    confidence: unverified
+
+use_case_fit:
+  - id: people-identity
+    fit: strong
+    note:
+      text: The fictional product is built for identity lookups, with an API and a browser app.
+      source: https://example.com/vendor-a/harbor
+      source_label: Fictional product page
+      accessed: 2026-10-06
+      confidence: unverified
+  - id: investigations-due-diligence
+    fit: strong
+    note:
+      text: >-
+        Public price bands, a DPA, and EU hosting match a corporate
+        investigation buyer in the example. Provenance is still thin.
+      source: https://example.com/vendor-a/trust
+      source_label: Fictional trust page
+      accessed: 2026-10-06
+      confidence: unverified
+  - id: journalism
+    fit: moderate
+    note:
+      text: >-
+        A newsroom could use the fictional tool, but the missing provenance
+        file is a material gap for publication.
+      source: https://example.com/vendor-a/press/weekly
+      source_label: Fictional column
+      accessed: 2026-10-06
+      confidence: unverified
+
+reviewer_notes:
+  text: >-
+    This file is synthetic. It exists so the site can show a complete profile
+    before any real vendor is approved. Do not cite it as intelligence.
+  source: https://example.com/vendor-a
+  source_label: Fictional company page
+  accessed: 2026-10-06
+  confidence: unverified

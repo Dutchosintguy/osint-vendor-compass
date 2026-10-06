@@ -1,0 +1,315 @@
+identity:
+  name: Social Links
+  legal_name: Social Links, Inc. / Social Links, llc.
+  trade_names:
+  - Social Links
+  - SL Crimewall
+  official_website: https://sociallinks.io/
+  hq_country: USA
+  category: Social media / web intelligence
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: unknown (pre-2022 EU entities; company statement references multi-year EU infra)
+    source: https://sociallinks.io/company-statement
+    confidence: Low
+  hq_country:
+    value: USA
+    detail: Delaware C-corp; NY address; Miami LLC; NL BV Amstelveen; Latvia SIA Riga R&D
+    source: https://sociallinks.io/company-statement
+    confidence: High
+  ownership_type:
+    value: Private
+    source: https://sociallinks.io/company-statement
+    confidence: High
+  parent:
+    value: none identified
+    source: https://sociallinks.io/company-statement
+    confidence: Medium
+  headcount_band:
+    value: unknown
+    source: https://sociallinks.io/
+    confidence: Low
+  customer_segments:
+  - LE/gov
+  - S&P500 corporates
+  - private investigations
+  primary_products:
+  - SL Crimewall
+  - SL OSINT API
+  - Professional services
+  deployment_model:
+    value: SaaS / API
+    source: https://sociallinks.io/
+    confidence: High
+  notable_status: Entities in US, NL, LV; company statement condemns Russian aggression in Ukraine; lists staff
+    countries including Kyrgyzstan/Turkey/Israel/Ukraine
+  score:
+    value: 4
+    confidence: High
+    rationale: Strong legal entity disclosure on site.
+    sources:
+    - https://sociallinks.io/company-statement
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: US corp with EU branch/R&D; CEO named Andrey Kulikov on company statement; buyers LE and enterprise.
+    source: https://sociallinks.io/company-statement
+    confidence: High
+  what:
+    text: SOCMINT/OSINT from 500+ social, messenger, blockchain, dark-web sources; link analysis.
+    source: https://sociallinks.io/
+    confidence: High
+  where:
+    text: Claims infrastructure in EU; legal entities US/NL/LV. Collection global public web.
+    source: https://sociallinks.io/company-statement
+    confidence: High
+  when:
+    text: Latvia SIA founded 2022-04-20 per registry; broader founding year unknown.
+    source: https://datreal.com/lv/lv/company/40203394319
+    confidence: Medium
+  why:
+    text: Restore trust in data for investigations / safer world per statement.
+    source: https://sociallinks.io/company-statement
+    confidence: High
+  how:
+    text: Extraction methods + visualization + API; anonymity assurance marketing.
+    source: https://sociallinks.io/
+    confidence: High
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Partial.
+    sources:
+    - https://sociallinks.io/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Broad social/messenger coverage
+    source: https://sociallinks.io/
+    confidence: High
+  - text: Explicit multi-entity legal disclosure
+    source: https://sociallinks.io/company-statement
+    confidence: High
+  - text: NL entity useful for EU buyers
+    source: https://sociallinks.io/company-statement
+    confidence: High
+  weaknesses:
+  - text: Quote-only pricing
+    source: https://sociallinks.io/
+    confidence: Medium
+  - text: Workforce includes non-EU locations (e.g. Kyrgyzstan per statement)—procurement diligence needed
+    source: https://sociallinks.io/company-statement
+    confidence: High
+  - text: Meta previously alleged abusive use by Cobwebs-class WEBINT vendors; Social Links not that case but sector
+      risk
+    source: https://en.globes.co.il/en/article-spire-capital-buys-israeli-web-intelligence-co-cobwebs-1001452029
+    confidence: Low
+  best_fit:
+  - SOCMINT-heavy investigations
+  - LE needing messenger pivots
+  poor_fit:
+  - Pure GEOINT
+  - Budget solo lookups
+  alternatives:
+  - Maltego
+  - ShadowDragon
+  - Babel Street
+  - Skopenow
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Partial.
+    sources:
+    - https://sociallinks.io/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Quote-only
+    source: https://sociallinks.io/
+    confidence: High
+  contract_norms: unknown
+  privacy_dpa: unknown
+  audits: unknown
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Partial.
+    sources:
+    - https://sociallinks.io/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Private; UBO signals for Latvia entity include Social Links Inc.
+    source: https://datreal.com/lv/lv/company/40203394319
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes: unknown
+  score:
+    value: 2
+    confidence: Low
+    rationale: Private/opaque financials common.
+    sources:
+    - https://sociallinks.io/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Frost & Sullivan OSINT leader mentions on site
+    source: https://sociallinks.io/
+    confidence: Medium
+  negative:
+  - text: None material specific to Social Links identified in this pass
+    source: https://sociallinks.io/company-statement
+    confidence: Low
+  social_themes: Active LE marketing
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Limited sampling.
+    sources:
+    - https://sociallinks.io/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Anonymity assurance claimed; retention details unknown—request DPA
+    source: https://sociallinks.io/
+    confidence: Medium
+  attribution:
+    text: Claims untraceable extraction
+    source: https://sociallinks.io/
+    confidence: Medium
+  jurisdiction:
+    text: US parent + EU entities/infra claim
+    source: https://sociallinks.io/company-statement
+    confidence: High
+  incident_history: unknown
+  recommended_controls:
+  - Contractual OPSEC clauses
+  - Confirm EU processing
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Based on public claims.
+    sources:
+    - https://sociallinks.io/
+    last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    note: Full section at extras.jurisdiction_sanctions_exposure (company-level only).
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Positions as OSINT for LE/enterprise; buyer must validate ToS compliance per source
+    source: https://sociallinks.io/
+    confidence: Medium
+  gdpr_residency:
+    text: Claims EU infrastructure
+    source: https://sociallinks.io/company-statement
+    confidence: Medium
+  ownership_state_ties:
+    text: Company states no relations/ties with Russian governmental bodies
+    source: https://sociallinks.io/company-statement
+    confidence: High
+  certifications: unknown
+  legal_regulatory_actions: unknown
+  api_integrations:
+    text: SL OSINT API
+    source: https://sociallinks.io/
+    confidence: High
+  use_case_fit:
+    le_investigator:
+      value: 5
+      confidence: High
+      rationale: Core LE SOCMINT.
+      sources:
+      - https://sociallinks.io/
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 4
+      confidence: Medium
+      rationale: From product positioning in cited sources.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: From product positioning in cited sources.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 3
+      confidence: Medium
+      rationale: From product positioning in cited sources.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: From product positioning in cited sources.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: 'Declared legal entities/offices: US (NY/Miami), Netherlands (Amstelveen), Latvia (Riga R&D). Company
+        statement: no Russian governmental ties; does not list offices in Russia, Belarus, China, Iran, DPRK, Syria,
+        or Cuba. Kyrgyzstan listed as a staff location country (not an office/subsidiary claim).'
+      source: https://sociallinks.io/company-statement
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: US privately held Delaware C-corp. No ownership by sanctioned-jurisdiction state entities identified.
+        Company explicitly denies Russian government ties.
+      source: https://sociallinks.io/company-statement
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: 'Aggregate staff countries cited by company: US, Netherlands, Latvia, UK, Israel, Finland, Ukraine,
+        Turkey, and Kyrgyzstan. No Russia/Belarus/China/Iran/DPRK/Syria/Cuba employment countries listed in that
+        statement.'
+      source: https://sociallinks.io/company-statement
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - Social Links
+      - Social Links Inc
+      - Social Links LLC
+      - Social Links Latvia SIA
+      - Social Links NL BV
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: Note Kyrgyzstan workforce presence for enhanced due diligence even though not on the core sanctioned-country
+        office list.
+      raw_hits: {}
+red_flags:
+- Workforce geography includes Kyrgyzstan (aggregate)—elevate jurisdiction diligence
+gaps:
+- Founded year primary source
+- Certifications
+- Pricing
+meta:
+  schema_version: '1.2'
+  slug: social-links
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Checked sociallinks.io; claims S&P500 and LE in 80+ countries without named logos/case studies
+    located in this pass.
+  last_checked: '2026-10-06'

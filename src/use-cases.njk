@@ -1,0 +1,49 @@
+---
+layout: layouts/base.njk
+pageTitle: Use-case fit
+pageScript: use-cases
+description: Use-case fit scores recorded on each approved OSINT vendor profile.
+---
+{% import "macros.njk" as ui %}
+{% set personas = ["le_investigator", "corporate_soc", "brand_pr", "due_diligence", "geoint_analyst"] %}
+<div class="wrap page">
+  <header class="page-head">
+    <h1>Use-case fit</h1>
+    <p class="lede">Each score, confidence, and rationale is copied from the approved profile. A high score for one job does not make a vendor a better fit for another.</p>
+  </header>
+
+  <label class="use-filter">Show a use case
+    <select data-use-filter>
+      <option value="">All use cases</option>
+      {% for persona in personas %}
+        <option value="{{ persona }}">{{ persona | personaLabel }}</option>
+      {% endfor %}
+    </select>
+  </label>
+
+  {% for persona in personas %}
+    <section id="use-{{ persona }}" class="block" data-use-section="{{ persona }}">
+      <h2>{{ persona | personaLabel }}</h2>
+      <div class="card-grid">
+        {% for vendor in vendors %}
+          {% set fit = vendor.extras.use_case_fit[persona] %}
+          <article class="vendor-card">
+            <p class="card-kicker">
+              {% if fit %}<span class="pill">{{ fit.value }}/5</span> <span class="pill">{{ fit.confidence }} confidence</span>{% endif %}
+            </p>
+            <h3><a href="{{ ('/vendors/' + vendor.slug + '/') | url }}">{{ vendor.name }}</a></h3>
+            {% if fit %}
+              {% if fit.rationale %}<p>{{ fit.rationale }}</p>{% endif %}
+              <p class="claim-meta">
+                {% if fit.last_verified %}<span>Last verified {{ fit.last_verified | longDate }}</span>{% endif %}
+                {% for item in fit.sources %}{{ ui.sourceLink(item) }}{% endfor %}
+              </p>
+            {% else %}
+              <p class="empty">No fit score recorded for this use case.</p>
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+</div>

@@ -1,0 +1,331 @@
+identity:
+  name: Epieos
+  legal_name: Epieos (SAS)
+  trade_names:
+  - Epieos
+  official_website: https://epieos.com/
+  hq_country: France
+  category: People / identity search
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2020
+    detail: Product launch 2020-08-20 by Sylvain Hajri; SAS registered 2022-02-16 Paris
+    source: https://www.linkedin.com/posts/epieos_osint-investigators-activity-7496184452839145472-FID1
+    confidence: High
+  hq_country:
+    value: France
+    detail: 10 Rue De La Paix, 75002 Paris
+    source: https://entreprises.vie-economique.com/epieos-91059079300014/
+    confidence: High
+  offices:
+    value: Paris, France
+    source: https://entreprises.vie-economique.com/epieos-91059079300014/
+    confidence: High
+  ownership_type:
+    value: Private SAS
+    detail: Président Sylvain Hajri
+    source: https://entreprises.vie-economique.com/epieos-91059079300014/
+    confidence: High
+  parent:
+    value: none identified
+    source: https://entreprises.vie-economique.com/epieos-91059079300014/
+    confidence: Medium
+  headcount_band:
+    value: 1-10
+    detail: SIRENE tranche 1-2 salariés (2024); LinkedIn ~4
+    source: https://entreprises.vie-economique.com/epieos-91059079300014/
+    confidence: Medium
+  customer_segments:
+  - LE/gov
+  - professional investigators
+  - CTI
+  - journalists
+  - individuals (free tier)
+  primary_products:
+  - Epieos free search
+  - Epieos private/premium OSINT (580+ platforms claimed)
+  deployment_model:
+    value: SaaS web
+    source: https://epieos.com/
+    confidence: High
+  notable_status: Claims 7M+ historical users; EU-hosted; no-query-logging marketing
+  score:
+    value: 4
+    confidence: High
+    rationale: French registry + official About provide solid identity.
+    sources:
+    - https://entreprises.vie-economique.com/epieos-91059079300014/
+    - https://epieos.com/aboutus
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: Founder/CEO Sylvain Hajri (navlys__); small EU team; buyers LE, investigators, journalists, individuals.
+    source: https://epieos.com/aboutus
+    confidence: High
+  what:
+    text: Email and phone reverse lookup to social profiles; Google reviews and related OSINT pivots; private tier
+      claims 580+ platforms.
+    source: https://epieos.com/
+    confidence: High
+  where:
+    text: 'Hosted in Europe per About; collection from public social/web sources; exact cloud region: unknown'
+    source: https://epieos.com/aboutus
+    confidence: Medium
+  when:
+    text: First version 2020-08-20; SAS 2022; private LE-focused solutions since 2020 per LinkedIn company.
+    source: https://www.linkedin.com/posts/epieos_osint-investigators-activity-7496184452839145472-FID1
+    confidence: High
+  why:
+    text: Help OSINT community investigate faster with free + pro tools; transparency and knowledge sharing.
+    source: https://epieos.com/aboutus
+    confidence: High
+  how:
+    text: Real-time OSINT techniques that claim not to notify targets; web UI; training/investigation services also
+      offered.
+    source: https://epieos.com/
+    confidence: High
+  score:
+    value: 4
+    confidence: High
+    rationale: Clear product 5W1H from primary pages; hosting region specificity limited.
+    sources:
+    - https://epieos.com/
+    - https://epieos.com/aboutus
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: 'Strong OPSEC marketing: no query logging, no target notification'
+    source: https://epieos.com/
+    confidence: High
+  - text: EU hosting stated
+    source: https://epieos.com/aboutus
+    confidence: High
+  - text: Free tier lowers barrier for analysts
+    source: https://epieos.com/
+    confidence: High
+  - text: Focused email/phone pivot UX
+    source: https://epieos.com/
+    confidence: High
+  weaknesses:
+  - text: Very small company (1-2 employees band) — support/continuity risk
+    source: https://entreprises.vie-economique.com/epieos-91059079300014/
+    confidence: High
+  - text: Enterprise certifications (SOC2/ISO) not evidenced on public site in this review
+    source: https://epieos.com/
+    confidence: Medium
+  - text: 'Public pricing for private tier: unknown'
+    source: https://epieos.com/
+    confidence: Medium
+  - text: Coverage claims (580+) not independently audited here
+    source: https://www.linkedin.com/posts/epieos_osint-investigators-activity-7496184452839145472-FID1
+    confidence: Low
+  best_fit:
+  - Fast email/phone SOCMINT pivots
+  - Solo investigators
+  - EU-conscious buyers wanting no-log claims
+  poor_fit:
+  - Enterprise needing SOC2/ISO evidence packs
+  - Full case-management/link-analysis platforms
+  alternatives:
+  - OSINT Industries
+  - Maltego Search
+  - Pipl
+  - Spokeo
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Clear niche strengths; scale/cert gaps.
+    sources:
+    - https://epieos.com/
+    - https://entreprises.vie-economique.com/epieos-91059079300014/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Free tier public; private/premium pricing unknown/quote
+    source: https://epieos.com/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: No-log claim on site; formal privacy policy/DPA details not fully reviewed in this pass — mark as needs
+      follow-up
+    source: https://epieos.com/aboutus
+    confidence: Low
+  audits: unknown
+  score:
+    value: 2
+    confidence: Medium
+    rationale: Product claims clear; commercial/legal docs thin publicly.
+    sources:
+    - https://epieos.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Independent SAS; capital 1,000 EUR per registry extract; no VC round identified
+    source: https://entreprises.vie-economique.com/epieos-91059079300014/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: Micro-entreprise scale; key-person risk on founder
+    source: https://entreprises.vie-economique.com/epieos-91059079300014/
+    confidence: Medium
+  score:
+    value: 2
+    confidence: Medium
+    rationale: Solvent appearance but minimal public financial depth.
+    sources:
+    - https://entreprises.vie-economique.com/epieos-91059079300014/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Strong community goodwill as free OSINT tool; LinkedIn anniversary post cites 7M users
+    source: https://www.linkedin.com/posts/epieos_osint-investigators-activity-7496184452839145472-FID1
+    confidence: Medium
+  negative:
+  - text: No major negative press identified in this review
+    source: https://epieos.com/
+    confidence: Low
+  social_themes: Popular among OSINT practitioners for email pivots; trust placed in no-log/no-notify claims
+  score:
+    value: 4
+    confidence: Medium
+    rationale: Community-positive; limited mainstream press.
+    sources:
+    - https://www.linkedin.com/posts/epieos_osint-investigators-activity-7496184452839145472-FID1
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Vendor states it does not log/save requests or results
+    source: https://epieos.com/
+    confidence: High
+  attribution:
+    text: Claims techniques that do not notify the target
+    source: https://epieos.com/
+    confidence: High
+  retention_of_subjects:
+    text: Claims not saving results
+    source: https://epieos.com/
+    confidence: Medium
+  jurisdiction:
+    text: France/EU hosting
+    source: https://epieos.com/aboutus
+    confidence: High
+  incident_history: unknown (none identified)
+  recommended_controls:
+  - Still use dedicated investigator emails
+  - Verify privacy policy/DPA before LE evidence use
+  - Confirm private-tier contract OPSEC clauses
+  score:
+    value: 4
+    confidence: Medium
+    rationale: Strong public OPSEC claims; independent audit of no-log not found.
+    sources:
+    - https://epieos.com/
+    - https://epieos.com/aboutus
+    last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    note: Full structured section at extras.jurisdiction_sanctions_exposure (company-level only; no employee nationalities).
+    result_summary: clear (no public hit identified; re-screen before procurement)
+    screening_date: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Positions as OSINT-only without target notification; legality of specific source methods still buyer-responsibility
+    source: https://epieos.com/
+    confidence: Medium
+  gdpr_residency:
+    text: 'Europe-hosted claim; French controller likely; SCC details: unknown'
+    source: https://epieos.com/aboutus
+    confidence: Medium
+  ownership_state_ties:
+    text: Private French SAS; no state ties identified
+    source: https://entreprises.vie-conomique.com/epieos-91059079300014/
+    confidence: High
+  certifications: unknown
+  legal_regulatory_actions: unknown (none identified)
+  api_integrations: unknown
+  use_case_fit:
+    le_investigator:
+      value: 4
+      confidence: Medium
+      rationale: Marketed to LE private tier; good for quick pivots.
+      sources:
+      - https://linkedin.com/company/epieos
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 3
+      confidence: Medium
+      rationale: Useful for identity enrichment, not full TIP.
+      sources:
+      - https://epieos.com/
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 1
+      confidence: High
+      rationale: Not a brand tool.
+      sources:
+      - https://epieos.com/
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 3
+      confidence: Medium
+      rationale: Email/phone footprint checks.
+      sources:
+      - https://epieos.com/
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: High
+      rationale: Not GEOINT.
+      sources:
+      - https://epieos.com/
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: French SAS registered at 10 Rue De La Paix, Paris. About page states Europe hosting. No offices/subsidiaries
+        in Russia, Belarus, China, Iran, DPRK, Syria, or Cuba identified.
+      source: https://entreprises.vie-economique.com/epieos-91059079300014/
+      confidence: High
+    ownership_investor_leadership_ties:
+      text: Private French SAS; Président Sylvain Hajri. No investor ties to sanctioned jurisdictions identified
+        in public registry extracts reviewed.
+      source: https://entreprises.vie-economique.com/epieos-91059079300014/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: LinkedIn company signals workforce across Belgium, France, and Netherlands (small headcount). No sanctioned-country
+        employment locations identified in aggregate public signals.
+      source: https://linkedin.com/company/epieos
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in this review (Epieos SAS / SIREN 910590793)
+      un: no match found in this review
+      ofac_sdn: no match found in this review
+      uk: no match found in this review
+      screened_entities:
+      - Epieos
+      - Epieos SAS
+      screening_date: '2026-10-06'
+      method: Name search against public sanctions list interfaces; not formal legal screening.
+      sources:
+      - https://epieos.com/aboutus
+      - https://sanctionssearch.ofac.treas.gov/
+      confidence: Medium
+      result: clear (no public hit identified; re-screen before procurement)
+red_flags:
+- Very small headcount / key-person dependency
+gaps:
+- Privacy policy full text review
+- Private-tier pricing
+- Certifications
+- API docs
+meta:
+  slug: epieos
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+  schema_version: '1.2'
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Checked epieos.com, aboutus, LinkedIn claims of LE use without named agencies; no case studies/procurement
+    hits found naming customers.
+  last_checked: '2026-10-06'

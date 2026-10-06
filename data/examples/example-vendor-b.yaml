@@ -1,0 +1,665 @@
+# yaml-language-server: $schema=../schema/vendor.schema.json
+# FICTIONAL EXAMPLE. Do not treat this file as a review of a real company.
+schema_version: 1
+slug: example-vendor-b
+name: Example Vendor B
+example: true
+owner_approved: false
+status: example
+last_reviewed: 2026-10-06
+reviewed_by: Template only. No human review has been done.
+tagline: Fictional US social-intelligence vendor, used to show a higher-exposure profile.
+summary: >-
+  Example Vendor B is not a real company. This profile shows a venture-backed
+  US social-intelligence product with unpublished pricing, long query retention,
+  a fictional Shanghai R&D subsidiary, and clear fictional sanctions screening.
+  The China entity is a review-list presence, not a sanctions-list match.
+
+website:
+  text: https://example.com/vendor-b
+  source: https://example.com/vendor-b
+  source_label: Fictional company page
+  accessed: 2026-10-06
+  confidence: unverified
+
+headquarters:
+  city: Austin
+  country: United States
+  country_code: US
+  source: https://example.com/vendor-b/about
+  source_label: Fictional about page
+  accessed: 2026-10-06
+  confidence: unverified
+
+founded_year: 2019
+
+categories:
+  - social-intelligence
+primary_category: social-intelligence
+
+use_cases:
+  - social-media
+  - threat-intelligence
+  - fraud-brand
+  - journalism
+
+company:
+  legal_name:
+    text: Example Vendor B, Inc. (fictional)
+    source: https://example.com/vendor-b/registry
+    source_label: Fictional registry extract
+    accessed: 2026-10-06
+    confidence: unverified
+  ownership:
+    text: >-
+      Venture-backed. The fictional Series B lead, Example Capital II, is the
+      largest outside holder. No state owner is recorded. Control stays with
+      the US parent in this example.
+    source: https://example.com/vendor-b/ownership
+    source_label: Fictional ownership note
+    accessed: 2026-10-06
+    confidence: unverified
+  founded:
+    text: "2019"
+    source: https://example.com/vendor-b/about
+    source_label: Fictional about page
+    accessed: 2026-10-06
+    confidence: unverified
+  employees:
+    text: >-
+      120–180 people in the example. About a quarter of engineering headcount
+      is employed by a fictional Shanghai subsidiary. No individual is named.
+    source: https://example.com/vendor-b/careers
+    source_label: Fictional careers page
+    accessed: 2026-10-06
+    confidence: unverified
+  customers:
+    text: >-
+      Three fictional organizations are recorded as public customers: a
+      retailer, a county public-safety office, and a state commerce department.
+      This is not a full client list.
+    source: https://example.com/vendor-b/customers
+    source_label: Fictional customer page
+    accessed: 2026-10-06
+    confidence: unverified
+  pricing_model:
+    text: >-
+      Enterprise contract only. The fictional site has no public price, seat
+      count, or minimum term.
+    source: https://example.com/vendor-b/pricing
+    source_label: Fictional pricing page
+    accessed: 2026-10-06
+    confidence: unverified
+  products:
+    - name: Pylon
+      summary:
+        text: >-
+          Fictional social-listening console over licensed public social and web posts.
+        source: https://example.com/vendor-b/pylon
+        source_label: Fictional product page
+        accessed: 2026-10-06
+        confidence: unverified
+    - name: Pylon Graph
+      summary:
+        text: Fictional link-analysis view of the same licensed posts.
+        source: https://example.com/vendor-b/graph
+        source_label: Fictional product page
+        accessed: 2026-10-06
+        confidence: unverified
+
+five_w:
+  who:
+    text: >-
+      Operated by the fictional US company Example Vendor B, Inc., with a
+      fictional R&D subsidiary in Shanghai. Sold to brand and threat-intel teams.
+    source: https://example.com/vendor-b/about
+    source_label: Fictional about page
+    accessed: 2026-10-06
+    confidence: unverified
+  what:
+    text: >-
+      A social-intelligence SaaS console and graph. The example says results
+      come from licensed public posts, not from private accounts.
+    source: https://example.com/vendor-b/pylon
+    source_label: Fictional product page
+    accessed: 2026-10-06
+    confidence: unverified
+  where:
+    text: >-
+      Headquarters in Austin, Texas. The fictional group also has Example
+      Vendor B Technology (Shanghai) Co., Ltd. Customer data is hosted in the
+      United States by default.
+    source: https://example.com/vendor-b/entities
+    source_label: Fictional entity list
+    accessed: 2026-10-06
+    confidence: unverified
+  when:
+    text: >-
+      Founded in 2019 in this example. A fictional Series B was announced in
+      2024. This profile was assembled on 6 October 2026 as a template.
+    source: https://example.com/vendor-b/funding
+    source_label: Fictional funding note
+    accessed: 2026-10-06
+    confidence: unverified
+  why:
+    text: >-
+      The fictional company says brand and threat teams need one console for
+      public social posts. It does not publish a data-ethics statement.
+    source: https://example.com/vendor-b/about
+    source_label: Fictional about page
+    accessed: 2026-10-06
+    confidence: unverified
+  how:
+    text: >-
+      Customers use a browser console, an API, or a fictional SIEM export.
+      Queries are stored for the contract term plus 12 months in the example.
+      Collection technique is described only as licensed public posts.
+    source: https://example.com/vendor-b/privacy
+    source_label: Fictional privacy notice
+    accessed: 2026-10-06
+    confidence: unverified
+
+strengths:
+  - text: The fictional Series B and named fund give a clearer funding trail than an early-stage vendor.
+    source: https://example.com/vendor-b/funding
+    source_label: Fictional funding note
+    accessed: 2026-10-06
+    confidence: unverified
+  - text: The example publishes a group entity list, including the Shanghai subsidiary, instead of hiding it.
+    source: https://example.com/vendor-b/entities
+    source_label: Fictional entity list
+    accessed: 2026-10-06
+    confidence: unverified
+  - text: SOC 2 Type II is claimed, which gives a buyer a report to request.
+    source: https://example.com/vendor-b/trust
+    source_label: Fictional trust page
+    accessed: 2026-10-06
+    confidence: unverified
+
+weaknesses:
+  - text: Pricing, subprocessors, and the logging fields are not public in the example.
+    source: https://example.com/vendor-b/pricing
+    source_label: Fictional pricing page
+    accessed: 2026-10-06
+    confidence: unverified
+  - text: Full query text is retained for the contract term plus 12 months.
+    source: https://example.com/vendor-b/privacy
+    source_label: Fictional privacy notice
+    accessed: 2026-10-06
+    confidence: unverified
+  - text: >-
+      A fictional R&D subsidiary in China is a review-list presence. Screening
+      of the legal names is clear in the example, but the presence still raises
+      the exposure indicator.
+    source: https://example.com/vendor-b/sanctions
+    source_label: Fictional sanctions note
+    accessed: 2026-10-06
+    confidence: unverified
+
+scores:
+  business_transparency:
+    score: 2
+    summary:
+      text: >-
+        The US parent and a funding round are public in the example. Pricing,
+        subprocessors, and query-log contents are not.
+      source: https://example.com/vendor-b/trust
+      source_label: Fictional trust page
+      accessed: 2026-10-06
+      confidence: unverified
+    evidence:
+      - text: The fictional site has a contact form where a price page would be.
+        source: https://example.com/vendor-b/pricing
+        source_label: Fictional pricing page
+        accessed: 2026-10-06
+        confidence: unverified
+      - text: No subprocessor list is linked from the fictional privacy notice.
+        source: https://example.com/vendor-b/privacy
+        source_label: Fictional privacy notice
+        accessed: 2026-10-06
+        confidence: unverified
+  financial_health:
+    score: 4
+    summary:
+      text: >-
+        A fictional Series B of $48 million and no distress notice support a
+        stronger stability signal than Vendor A. Revenue is still undisclosed.
+      source: https://example.com/vendor-b/funding
+      source_label: Fictional funding note
+      accessed: 2026-10-06
+      confidence: unverified
+    evidence:
+      - text: Example Capital II led a fictional $48 million Series B in March 2024.
+        source: https://example.com/vendor-b/funding
+        source_label: Fictional funding note
+        accessed: 2026-10-06
+        confidence: unverified
+      - text: No layoff or insolvency item appears in the fictional press list.
+        source: https://example.com/vendor-b/stability
+        source_label: Fictional stability note
+        accessed: 2026-10-06
+        confidence: unverified
+  customer_opsec:
+    score: 2
+    summary:
+      text: >-
+        Long retention of full query text, US hosting by default, and sharing
+        with a fictional enrichment partner. Customer controls in the example
+        are limited to "ask sales".
+      source: https://example.com/vendor-b/privacy
+      source_label: Fictional privacy notice
+      accessed: 2026-10-06
+      confidence: unverified
+    evidence:
+      - text: The fictional privacy notice keeps query text for the contract plus 12 months.
+        source: https://example.com/vendor-b/privacy
+        source_label: Fictional privacy notice
+        accessed: 2026-10-06
+        confidence: unverified
+      - text: Enriched profiles are shared with the fictional partner Example Graph LLC.
+        source: https://example.com/vendor-b/sharing
+        source_label: Fictional sharing note
+        accessed: 2026-10-06
+        confidence: unverified
+
+financial:
+  funding:
+    text: Fictional Series B of $48 million in March 2024, following an undisclosed seed.
+    source: https://example.com/vendor-b/funding
+    source_label: Fictional funding note
+    accessed: 2026-10-06
+    confidence: unverified
+  investors:
+    - name: Example Capital II
+      detail:
+        text: >-
+          Fictional US venture fund and Series B lead. The example does not
+          give it a board majority. It is not described as a state fund.
+        source: https://example.com/vendor-b/investors
+        source_label: Fictional investor note
+        accessed: 2026-10-06
+        confidence: unverified
+  revenue_signals:
+    text: No revenue figure is published. The fictional funding announcement calls the business "enterprise SaaS".
+    source: https://example.com/vendor-b/funding
+    source_label: Fictional funding note
+    accessed: 2026-10-06
+    confidence: unverified
+  stability:
+    text: >-
+      Funded in 2024 in the example, with headcount still growing on the
+      fictional careers page. No audited accounts are provided.
+    source: https://example.com/vendor-b/stability
+    source_label: Fictional stability note
+    accessed: 2026-10-06
+    confidence: unverified
+
+press:
+  positive:
+    - title: Fictional Austin firm raises a Series B
+      outlet: Sample City Monitor
+      date: 2024-03-18
+      summary: >-
+        A fictional local business note repeats the $48 million round and names
+        Example Capital II. It is not real coverage.
+      source: https://example.com/vendor-b/press/monitor
+      source_label: Fictional article
+      accessed: 2026-10-06
+      confidence: unverified
+  negative:
+    - title: Your search history, kept for the contract and a year after
+      outlet: The Example Record
+      date: 2025-09-02
+      summary: >-
+        A fictional article quotes the retention clause and questions whether
+        brand teams understand it.
+      source: https://example.com/vendor-b/press/record
+      source_label: Fictional article
+      accessed: 2026-10-06
+      confidence: unverified
+
+social_sentiment:
+  tone: mixed
+  summary:
+    text: >-
+      Fictional brand-protection buyers are positive about coverage. Fictional
+      privacy-conscious analysts focus on retention and the Shanghai subsidiary.
+      This is not a live social-media collection.
+    source: https://example.com/vendor-b/sentiment
+    source_label: Fictional sentiment note
+    accessed: 2026-10-06
+    confidence: unverified
+  signals:
+    - platform: Fictional practitioner forum
+      observation:
+        text: >-
+          Analysts in the example tell peers not to paste sensitive case facts
+          into Pylon because query text is retained.
+        source: https://example.com/vendor-b/sentiment/forum
+        source_label: Fictional forum excerpt
+        accessed: 2026-10-06
+        confidence: unverified
+    - platform: Fictional professional network
+      observation:
+        text: Brand-protection managers in the example praise the graph view and do not discuss logging.
+        source: https://example.com/vendor-b/sentiment/network
+        source_label: Fictional network excerpt
+        accessed: 2026-10-06
+        confidence: unverified
+
+opsec:
+  summary:
+    text: >-
+      A customer who runs sensitive queries leaves a long-lived copy with a US
+      company, and the example allows onward sharing with an enrichment partner.
+    source: https://example.com/vendor-b/privacy
+    source_label: Fictional privacy notice
+    accessed: 2026-10-06
+    confidence: unverified
+  data_retention:
+    text: Customer queries are retained for the life of the contract plus 12 months in the fictional privacy notice.
+    risk: high
+    source: https://example.com/vendor-b/privacy
+    source_label: Fictional privacy notice
+    accessed: 2026-10-06
+    confidence: unverified
+  query_logging:
+    text: The example logs full query text, not only metadata, and does not offer a no-log mode.
+    risk: high
+    source: https://example.com/vendor-b/logging
+    source_label: Fictional logging policy
+    accessed: 2026-10-06
+    confidence: unverified
+  jurisdiction:
+    text: >-
+      The controller is a fictional US company and hosting is in the United
+      States by default. EU customers should ask their own counsel what that
+      means for disclosure orders. This profile is not legal advice.
+    risk: medium
+    source: https://example.com/vendor-b/privacy
+    source_label: Fictional privacy notice
+    accessed: 2026-10-06
+    confidence: unverified
+  ownership_state_links:
+    text: No state shareholder is recorded. Example Capital II is a fictional private US fund.
+    risk: low
+    source: https://example.com/vendor-b/ownership
+    source_label: Fictional ownership note
+    accessed: 2026-10-06
+    confidence: unverified
+  third_party_sharing:
+    text: >-
+      The fictional sharing note says enriched profiles are passed to Example
+      Graph LLC, a made-up US data partner. Customers cannot see a subprocessor list.
+    risk: medium
+    source: https://example.com/vendor-b/sharing
+    source_label: Fictional sharing note
+    accessed: 2026-10-06
+    confidence: unverified
+
+data_residency:
+  summary:
+    text: >-
+      United States by default. An EU region is described as available on
+      request, with no public region list and no signed configuration in the example.
+    source: https://example.com/vendor-b/residency
+    source_label: Fictional residency page
+    accessed: 2026-10-06
+    confidence: unverified
+  regions:
+    - US
+  gdpr:
+    text: >-
+      The fictional privacy notice says a DPA is available on request and that
+      EU standard contractual clauses can be added. Neither document is public here.
+    source: https://example.com/vendor-b/privacy
+    source_label: Fictional privacy notice
+    accessed: 2026-10-06
+    confidence: unverified
+  dpa:
+    text: Not published. The example says sales will send a DPA after a call.
+    source: https://example.com/vendor-b/dpa
+    source_label: Fictional DPA page
+    accessed: 2026-10-06
+    confidence: unverified
+
+certifications:
+  - name: SOC 2 Type II
+    status: claimed
+    detail:
+      text: >-
+        The fictional trust page says a Type II report covering 2025 can be
+        shared under NDA. This template does not read a report.
+      source: https://example.com/vendor-b/trust
+      source_label: Fictional trust page
+      accessed: 2026-10-06
+      confidence: unverified
+  - name: ISO/IEC 27001
+    status: not-held
+    detail:
+      text: The fictional trust page does not claim ISO 27001.
+      source: https://example.com/vendor-b/trust
+      source_label: Fictional trust page
+      accessed: 2026-10-06
+      confidence: unverified
+
+integrations:
+  summary:
+    text: HTTPS API, a fictional Slack export, and a fictional SIEM export.
+    source: https://example.com/vendor-b/integrations
+    source_label: Fictional integrations page
+    accessed: 2026-10-06
+    confidence: unverified
+  api:
+    text: >-
+      The fictional docs describe an HTTPS API with token auth. Rate limits are
+      "by contract" and are not published.
+    source: https://example.com/vendor-b/api
+    source_label: Fictional API page
+    accessed: 2026-10-06
+    confidence: unverified
+  items:
+    - name: Slack export
+      detail:
+        text: A fictional alert can be pushed to a Slack channel. This integration is not real.
+        source: https://example.com/vendor-b/integrations
+        source_label: Fictional integrations page
+        accessed: 2026-10-06
+        confidence: unverified
+    - name: SIEM export
+      detail:
+        text: The example describes a JSON export for a SIEM. No specific SIEM vendor is certified.
+        source: https://example.com/vendor-b/integrations
+        source_label: Fictional integrations page
+        accessed: 2026-10-06
+        confidence: unverified
+
+legal:
+  - title: Fictional state inquiry closed with no action
+    date: 2024-11-20
+    status: closed
+    summary: >-
+      In this example only, a fictional state attorney general asked about the
+      retention clause in 2024 and closed the inquiry with no action. This did
+      not happen in the real world and is not a legal opinion.
+    source: https://example.com/vendor-b/legal
+    source_label: Fictional legal note
+    accessed: 2026-10-06
+    confidence: unverified
+
+jurisdiction_sanctions:
+  risk: medium
+  summary:
+    text: >-
+      Fictional screening of the parent and the Shanghai subsidiary against the
+      EU, UN, OFAC, and UK lists on 6 October 2026 was clear. The exposure
+      indicator is still medium because the group has an R&D legal entity in
+      China, which is on this site's review list. A clear list check is not the
+      same thing as the absence of a review-list entity. No Russia or Belarus
+      entity is recorded. No private individual is named.
+    source: https://example.com/vendor-b/sanctions
+    source_label: Fictional sanctions note
+    accessed: 2026-10-06
+    confidence: unverified
+  offices_and_entities:
+    text: >-
+      The fictional group lists two entities: Example Vendor B, Inc. in Austin,
+      and Example Vendor B Technology (Shanghai) Co., Ltd., described as an R&D
+      subsidiary. No office or entity in Russia, Belarus, or another sanctioned
+      country is recorded.
+    countries:
+      - China
+    risk: medium
+    source: https://example.com/vendor-b/entities
+    source_label: Fictional entity list
+    accessed: 2026-10-06
+    confidence: unverified
+  ownership_ties:
+    text: >-
+      The owner of the group in this example is the US parent. The outside
+      investor is Example Capital II, a fictional US fund. No owner, investor,
+      or leadership entity is recorded in Russia, Belarus, China, or another
+      sanctioned country. The Shanghai company is an operating subsidiary, so
+      it is recorded under offices and entities rather than as a personal
+      leadership tie. No private individual is named.
+    risk: low
+    source: https://example.com/vendor-b/ownership
+    source_label: Fictional ownership note
+    accessed: 2026-10-06
+    confidence: unverified
+  workforce_signals:
+    text: >-
+      The fictional careers page says about a quarter of engineering headcount
+      is employed by the Shanghai subsidiary, and the rest by the US parent.
+      This is an aggregate signal only. No employee is named and no individual
+      location is recorded.
+    risk: medium
+    source: https://example.com/vendor-b/careers
+    source_label: Fictional careers page
+    accessed: 2026-10-06
+    confidence: unverified
+  screening:
+    - regime: EU
+      result: clear
+      screened_on: 2026-10-06
+      text: >-
+        Fictional name check on 6 October 2026 of Example Vendor B, Inc. and
+        Example Vendor B Technology (Shanghai) Co., Ltd. against the EU
+        consolidated list returned no match.
+      source: https://example.com/vendor-b/sanctions/eu
+      source_label: Fictional EU screening note
+      accessed: 2026-10-06
+      confidence: unverified
+    - regime: UN
+      result: clear
+      screened_on: 2026-10-06
+      text: >-
+        Fictional name check on 6 October 2026 of both group entities against
+        the UN sanctions list returned no match.
+      source: https://example.com/vendor-b/sanctions/un
+      source_label: Fictional UN screening note
+      accessed: 2026-10-06
+      confidence: unverified
+    - regime: OFAC
+      result: clear
+      screened_on: 2026-10-06
+      text: >-
+        Fictional name check on 6 October 2026 of both group entities against
+        the OFAC sanctions lists returned no match.
+      source: https://example.com/vendor-b/sanctions/ofac
+      source_label: Fictional OFAC screening note
+      accessed: 2026-10-06
+      confidence: unverified
+    - regime: UK
+      result: clear
+      screened_on: 2026-10-06
+      text: >-
+        Fictional name check on 6 October 2026 of both group entities against
+        the UK sanctions list returned no match.
+      source: https://example.com/vendor-b/sanctions/uk
+      source_label: Fictional UK screening note
+      accessed: 2026-10-06
+      confidence: unverified
+
+known_customers:
+  - name: Example Retail Group
+    sector: corporate
+    country: United States
+    country_code: US
+    evidence_type: press-release
+    date: 2024-08-09
+    note: Fictional joint announcement about brand-abuse monitoring. Not a real client.
+    source: https://example.com/vendor-b/customers/retail
+    source_label: Fictional press release
+    accessed: 2026-10-06
+    confidence: unverified
+  - name: Example County Public Safety Office
+    sector: law-enforcement
+    country: United States
+    country_code: US
+    evidence_type: government-contract
+    date: 2025-01-15
+    note: Fictional contract notice. Not a real agency and not a real award.
+    source: https://example.com/vendor-b/customers/county
+    source_label: Fictional contract notice
+    accessed: 2026-10-06
+    confidence: unverified
+  - name: Example State Commerce Department
+    sector: government
+    country: United States
+    country_code: US
+    evidence_type: press-report
+    date: 2025-03-03
+    note: Fictional press report names the department as a buyer. Not a real body.
+    source: https://example.com/vendor-b/customers/commerce
+    source_label: Fictional press report
+    accessed: 2026-10-06
+    confidence: unverified
+
+use_case_fit:
+  - id: social-media
+    fit: strong
+    note:
+      text: The fictional console is aimed at public social-media monitoring.
+      source: https://example.com/vendor-b/pylon
+      source_label: Fictional product page
+      accessed: 2026-10-06
+      confidence: unverified
+  - id: fraud-brand
+    fit: strong
+    note:
+      text: Brand-abuse alerting is the buyer's story in the example. Retention still needs a contractual answer.
+      source: https://example.com/vendor-b/customers
+      source_label: Fictional customer page
+      accessed: 2026-10-06
+      confidence: unverified
+  - id: threat-intelligence
+    fit: moderate
+    note:
+      text: >-
+        Useful in the example for public social reporting. Weak fit where the
+        team cannot accept long-lived query logs or US-only hosting.
+      source: https://example.com/vendor-b/privacy
+      source_label: Fictional privacy notice
+      accessed: 2026-10-06
+      confidence: unverified
+  - id: journalism
+    fit: limited
+    note:
+      text: >-
+        A newsroom that cannot retain source-related queries for a year, or
+        that needs a published provenance file, would struggle with this example.
+      source: https://example.com/vendor-b/press/record
+      source_label: Fictional article
+      accessed: 2026-10-06
+      confidence: unverified
+
+reviewer_notes:
+  text: >-
+    This file is synthetic. The Shanghai subsidiary, the funding round, the
+    inquiry, and the screening results were invented to show a medium exposure
+    indicator next to a clear list check. Do not cite it as intelligence.
+  source: https://example.com/vendor-b
+  source_label: Fictional company page
+  accessed: 2026-10-06
+  confidence: unverified

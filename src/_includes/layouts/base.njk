@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if pageTitle %}{{ pageTitle }} · {% endif %}{{ site.name }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="{{ '/assets/favicon.svg' | url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | url }}">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("theme");
+        var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (error) {}
+    })();
+  </script>
+</head>
+<body>
+  {% include "partials/header.njk" %}
+  {% if vendor and vendor.example %}
+    <aside class="banner" role="note">
+      <div class="wrap">
+        <p><strong>Example data.</strong> {{ vendor.name }} is fictional. Nothing on this page describes a real company. Do not use it for a buying decision.</p>
+      </div>
+    </aside>
+  {% elif site.exampleOnly %}
+    <aside class="banner" role="note">
+      <div class="wrap">
+        <p><strong>Example data only.</strong> Every vendor on this site is fictional and exists to show the format. Real vendors are added only after {{ site.owner }} approves them.</p>
+      </div>
+    </aside>
+  {% elif site.hasExample %}
+    <aside class="banner" role="note">
+      <div class="wrap">
+        <p><strong>Some profiles are examples.</strong> Fictional profiles are marked Example. Do not treat them as assessments of real companies.</p>
+      </div>
+    </aside>
+  {% endif %}
+  <main id="content">
+    {{ content | safe }}
+  </main>
+  {% include "partials/footer.njk" %}
+  <script src="{{ '/assets/js/site.js' | url }}" defer></script>
+  {% if pageScript == "compare" %}
+    <script src="{{ '/assets/js/compare.js' | url }}" defer></script>
+  {% elif pageScript == "use-cases" %}
+    <script src="{{ '/assets/js/use-cases.js' | url }}" defer></script>
+  {% endif %}
+</body>
+</html>

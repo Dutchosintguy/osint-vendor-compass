@@ -1,0 +1,19 @@
+{
+  "name": "osint-vendor-compass",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Independent, evidence-led comparison of OSINT SaaS vendors.",
+  "scripts": {
+    "validate": "node scripts/validate-vendors.js",
+    "build": "rm -rf _site && eleventy",
+    "dev": "eleventy --serve",
+    "check": "npm run validate && npm run build"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "js-yaml": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,301 @@
+identity:
+  name: Netcraft
+  legal_name: Netcraft Ltd
+  trade_names:
+  - Netcraft
+  official_website: https://www.netcraft.com/
+  hq_country: United Kingdom
+  category: Brand / digital risk
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 1995
+    source: https://www.netcraft.com/
+    confidence: Medium
+  hq_country:
+    value: United Kingdom
+    source: https://www.netcraft.com/
+    confidence: Medium
+  ownership_type:
+    value: Private
+    source: https://www.netcraft.com/
+    confidence: Medium
+  parent:
+    value: none identified
+    source: https://www.netcraft.com/
+    confidence: Medium
+  headcount_band:
+    value: unknown
+    source: https://www.netcraft.com/
+    confidence: Low
+  customer_segments:
+  - banks
+  - enterprises
+  primary_products:
+  - Phishing detection
+  - takedown
+  - internet research
+  deployment_model:
+    value: SaaS/services
+    source: https://www.netcraft.com/
+    confidence: Medium
+  notable_status: Bath/UK cybersecurity research brand; long phishing takedown history
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources.
+    sources:
+    - https://www.netcraft.com/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: UK internet security company.
+    source: https://www.netcraft.com/
+    confidence: Medium
+  what:
+    text: Phishing/scam detection and disruption.
+    source: https://www.netcraft.com/
+    confidence: Medium
+  where:
+    text: UK.
+    source: https://www.netcraft.com/
+    confidence: Medium
+  when:
+    text: Long-running UK firm.
+    source: https://www.netcraft.com/
+    confidence: Medium
+  why:
+    text: Disrupt cybercrime infrastructure.
+    source: https://www.netcraft.com/
+    confidence: Medium
+  how:
+    text: Detection sensors + takedown workflows.
+    source: https://www.netcraft.com/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public.
+    sources:
+    - https://www.netcraft.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Phishing specialization
+    source: https://www.netcraft.com/
+    confidence: Medium
+  - text: UK vendor
+    source: https://www.netcraft.com/
+    confidence: Medium
+  weaknesses:
+  - text: Narrower than full OSINT suites
+    source: https://www.netcraft.com/
+    confidence: Medium
+  best_fit:
+  - Brand phishing defense
+  poor_fit:
+  - SOCMINT investigations
+  alternatives:
+  - ZeroFox
+  - Group-IB
+  - SOCRadar
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed.
+    sources:
+    - https://www.netcraft.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Quote
+    source: https://www.netcraft.com/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://www.netcraft.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://www.netcraft.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://www.netcraft.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Private
+    source: https://www.netcraft.com/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://www.netcraft.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited.
+    sources:
+    - https://www.netcraft.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Industry longevity
+    source: https://www.netcraft.com/
+    confidence: Medium
+  negative:
+  - text: None
+    source: https://www.netcraft.com/
+    confidence: Medium
+  social_themes: Banking security
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://www.netcraft.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Service provider access to brand assets
+    source: https://www.netcraft.com/
+    confidence: Low
+  attribution:
+    text: Confirm DPA
+    source: https://www.netcraft.com/
+    confidence: Low
+  jurisdiction:
+    text: United Kingdom
+    source: https://www.netcraft.com/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contract OPSEC
+  jurisdiction_sanctions_exposure:
+    note: See extras
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Validate.
+    sources:
+    - https://www.netcraft.com/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Takedown legal process
+    source: https://www.netcraft.com/
+    confidence: Medium
+  gdpr_residency:
+    text: UK/EU favorable
+    source: https://www.netcraft.com/
+    confidence: Low
+  ownership_state_ties:
+    text: UK private; no sanctioned-state owner
+    source: https://www.netcraft.com/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://www.netcraft.com/
+    confidence: Low
+  api_integrations:
+    text: unknown
+    source: https://www.netcraft.com/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 5
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: UK. No RU/BY/CN/IR/DPRK/SY/CU offices identified.
+      source: https://www.netcraft.com/
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Private UK. No sanctioned owners identified.
+      source: https://www.netcraft.com/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: UK-centric unknown detail.
+      source: https://www.netcraft.com/
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - Netcraft
+      - Netcraft Ltd
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags: []
+gaps:
+- DPA
+- Certs
+- References
+meta:
+  schema_version: '1.2'
+  slug: netcraft
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Checked netcraft.com; banking sector known historically but named current case studies not verified
+    this pass.
+  last_checked: '2026-10-06'

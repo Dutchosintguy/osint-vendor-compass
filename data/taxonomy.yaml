@@ -1,0 +1,218 @@
+# Controlled vocabulary for vendor files.
+# Adding a category or use case here makes it available to filters and profiles.
+
+categories:
+  - id: people-search
+    name: People search
+    summary: Platforms for resolving identities and finding public records about people.
+  - id: social-intelligence
+    name: Social media intelligence
+    summary: Collection and analysis of publicly available social media.
+  - id: data-aggregation
+    name: Data aggregation
+    summary: Products that combine many public or licensed datasets.
+  - id: geospatial
+    name: Geospatial
+    summary: Imagery, maps, and location intelligence.
+  - id: breach-intelligence
+    name: Breach intelligence
+    summary: Exposure and breach-data monitoring.
+  - id: dark-web
+    name: Dark-web monitoring
+    summary: Monitoring of dark-web sources.
+
+use_cases:
+  - id: investigations-due-diligence
+    name: Investigations and due diligence
+    summary: Corporate, legal, and fraud investigations that start from public information.
+  - id: threat-intelligence
+    name: Threat intelligence
+    summary: Tracking actors, infrastructure, and campaigns from public reporting.
+  - id: fraud-brand
+    name: Fraud and brand protection
+    summary: Finding impersonation, scams, and brand abuse.
+  - id: journalism
+    name: Journalistic research
+    summary: Newsroom research and verification.
+  - id: people-identity
+    name: People and identity resolution
+    summary: Connecting a person to public records and an online presence.
+  - id: geospatial
+    name: Geospatial and imagery
+    summary: Place, movement, and imagery questions.
+  - id: social-media
+    name: Social media analysis
+    summary: Understanding public social media activity.
+  - id: breach-exposure
+    name: Breach and exposure monitoring
+    summary: Seeing whether credentials or data appear in known exposures.
+
+scores:
+  - id: business_transparency
+    name: Business transparency
+    short: Transparency
+    direction: higher-is-stronger
+  - id: financial_health
+    name: Financial health
+    short: Financial
+    direction: higher-is-stronger
+  - id: customer_opsec
+    name: Customer OPSEC posture
+    short: OPSEC posture
+    direction: higher-is-stronger
+
+# Jurisdiction & sanctions exposure is a risk label, not a 0–5 score.
+# Low means a smaller recorded exposure. It is not a 0–5 quality score.
+sanctions_risks:
+  - id: low
+    name: Low exposure
+    short: Low
+  - id: medium
+    name: Medium exposure
+    short: Medium
+  - id: high
+    name: High exposure
+    short: High
+  - id: unknown
+    name: Not assessed
+    short: Unknown
+
+# Countries a reviewer must explicitly check. This is a review scope, not a
+# claim that every listed country is under a comprehensive embargo.
+# China is in scope because buyers asked for it. A commercial presence is
+# recorded separately from a sanctions-list match.
+sanctions_review:
+  named_countries:
+    - Russia
+    - Belarus
+    - China
+  note: >-
+    Reviewers also check any other country relevant under EU, UN, OFAC, or UK
+    sanctions at the time of review. China is on this review list because
+    buyers asked for it. A commercial presence is not the same thing as a
+    sanctions listing.
+
+screening_regimes:
+  - id: EU
+    name: European Union
+  - id: UN
+    name: United Nations
+  - id: OFAC
+    name: US OFAC
+  - id: UK
+    name: United Kingdom
+
+fit_levels:
+  - id: strong
+    name: Strong fit
+  - id: moderate
+    name: Moderate fit
+  - id: limited
+    name: Limited fit
+  - id: poor
+    name: Poor fit
+  - id: unknown
+    name: Not assessed
+
+risk_levels:
+  - id: low
+    name: Low risk
+  - id: medium
+    name: Medium risk
+  - id: high
+    name: High risk
+  - id: unknown
+    name: Unknown risk
+
+confidence_levels:
+  - id: high
+    name: High confidence
+  - id: medium
+    name: Medium confidence
+  - id: low
+    name: Low confidence
+  - id: unverified
+    name: Unverified
+
+statuses:
+  - id: example
+    name: Fictional example
+  - id: draft
+    name: Draft
+  - id: published
+    name: Owner approved
+  - id: vendor-signed-off
+    name: Vendor signed off
+
+certification_statuses:
+  - id: claimed
+    name: Claimed
+  - id: verified
+    name: Verified
+  - id: in-progress
+    name: In progress
+  - id: not-held
+    name: Not held
+  - id: unknown
+    name: Unknown
+
+legal_statuses:
+  - id: none-found
+    name: None found
+  - id: open
+    name: Open
+  - id: closed
+    name: Closed
+  - id: judgment
+    name: Judgment
+  - id: settlement
+    name: Settlement
+  - id: unknown
+    name: Unknown
+
+screening_results:
+  - id: clear
+    name: Clear
+  - id: potential-match
+    name: Potential match
+  - id: listed
+    name: Listed
+  - id: not-screened
+    name: Not screened
+  - id: unknown
+    name: Unknown
+
+sentiment_tones:
+  - id: positive
+    name: Positive
+  - id: mixed
+    name: Mixed
+  - id: negative
+    name: Negative
+  - id: unknown
+    name: Unknown
+
+# Organization-level buyers only. Do not add private individuals.
+customer_sectors:
+  - id: law-enforcement
+    name: Law enforcement
+  - id: government
+    name: Government
+  - id: corporate
+    name: Corporate
+  - id: financial-services
+    name: Financial services
+  - id: journalism
+    name: Journalism
+  - id: other
+    name: Other
+
+customer_evidence_types:
+  - id: case-study
+    name: Case study
+  - id: government-contract
+    name: Government contract
+  - id: press-release
+    name: Press release
+  - id: press-report
+    name: Press report

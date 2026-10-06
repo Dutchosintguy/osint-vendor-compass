@@ -1,0 +1,326 @@
+identity:
+  name: Palantir Gotham/Foundry
+  legal_name: Palantir Technologies Inc.
+  trade_names:
+  - Palantir Gotham/Foundry
+  official_website: https://www.palantir.com/offerings/intelligence/
+  hq_country: USA
+  category: Investigation / analytics platform
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2003
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  hq_country:
+    value: USA
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  ownership_type:
+    value: Public (NYSE:PLTR)
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  parent:
+    value: none (public)
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  headcount_band:
+    value: 1000+
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Low
+  customer_segments:
+  - intel agencies
+  - defense
+  - large enterprises
+  primary_products:
+  - Gotham
+  - Foundry
+  - AIP
+  deployment_model:
+    value: Enterprise platforms (cloud/on-prem options vary by contract)
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  notable_status: High-profile gov intel platform; persistent privacy/civil-liberties controversy in press
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Compiled from cited public sources; some fields low-confidence.
+    sources:
+    - https://www.palantir.com/offerings/intelligence/
+    - https://www.palantir.com/offerings/intelligence/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: Public US company serving governments and enterprises.
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  what:
+    text: Data integration/analysis for intelligence—not a turnkey OSINT crawler.
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  where:
+    text: US HQ; global deployments; customer-controlled data often.
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  when:
+    text: Founded 2003; ongoing AIP expansion.
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  why:
+    text: Unify sensitive data for operational decisions.
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  how:
+    text: Ontology/platforms ingest customer + external feeds.
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public marketing + cited pages.
+    sources:
+    - https://www.palantir.com/offerings/intelligence/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Scale for complex orgs
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  - text: Gov references
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  weaknesses:
+  - text: Cost/complexity
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  - text: Requires data to ingest
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  - text: Public controversy
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  best_fit:
+  - National-scale intel fusion
+  poor_fit:
+  - SMB OSINT search
+  alternatives:
+  - i2
+  - Maltego
+  - Recorded Future
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed vendor/secondary evidence.
+    sources:
+    - https://www.palantir.com/offerings/intelligence/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Enterprise quote-only
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Privacy policy likely exists; full DPA not deep-reviewed in this pass
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Low
+  audits:
+    text: unknown (likely FedRAMP etc.—verify)
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Many enterprise vendors are quote-only.
+    sources:
+    - https://www.palantir.com/offerings/intelligence/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Public company
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: See ownership/funding notes; private financials often opaque
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited public financials.
+    sources:
+    - https://www.palantir.com/offerings/intelligence/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Widespread gov adoption coverage
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  negative:
+  - text: Ongoing privacy activist criticism (general)
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  social_themes: Polarizing brand
+  score:
+    value: 3
+    confidence: Low
+    rationale: Not a systematic sentiment study.
+    sources:
+    - https://www.palantir.com/offerings/intelligence/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Customer data governance is contractual; platform OPSEC is deployment-specific
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Low
+  attribution:
+    text: Confirm in vendor DPA/OPSEC guide
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Low
+  jurisdiction:
+    text: USA
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated investigator accounts
+  - MFA/SSO
+  - Contractual non-logging where required
+  - Review subprocessors
+  jurisdiction_sanctions_exposure:
+    note: Full section at extras.jurisdiction_sanctions_exposure (company-level only).
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: OPSEC claims need contractual validation.
+    sources:
+    - https://www.palantir.com/offerings/intelligence/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: High scrutiny for LE/intel use cases; ethics program claims on site—verify
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  gdpr_residency:
+    text: Request EU residency/contractual clauses
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Low
+  ownership_state_ties:
+    text: US public company; significant US gov customer base; no RU/CN ownership
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  certifications: unknown (likely FedRAMP etc.—verify)
+  legal_regulatory_actions:
+    text: Historical litigation/press controversies—case-by-case diligence
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Low
+  api_integrations:
+    text: Extensive platform APIs
+    source: https://www.palantir.com/offerings/intelligence/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: US HQ (Denver area historically / public filings). Global offices. No RU/BY/IR/DPRK/SY/CU offices identified
+        in this pass. China presence historically constrained—verify current.
+      source: https://www.palantir.com/offerings/intelligence/
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Public shareholders; no sanctioned-state controlling owner identified.
+      source: https://www.palantir.com/offerings/intelligence/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: 'Global workforce; aggregate presence in sanctioned countries: unknown—check latest 10-K footprint.'
+      source: https://www.palantir.com/offerings/intelligence/
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - Palantir Technologies Inc
+      - Palantir
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags:
+- High public controversy / civil liberties debate
+gaps:
+- Current country office list from 10-K
+- Cert package
+meta:
+  schema_version: '1.2'
+  slug: palantir-gotham-foundry
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: documented
+  customers:
+  - customer_name: US Army
+    sector: defense
+    country: USA
+    evidence_type: credible_press
+    date: unknown
+    source_url: https://fed-spend.com/blog/palantir-government-contracts-deep-dive
+    notes: Secondary summary of USAspending-linked Army awards (Vantage etc.). Prefer primary USAspending verification
+      in diligence.
+  - customer_name: US Department of Defense (aggregate)
+    sector: defense
+    country: USA
+    evidence_type: credible_press
+    date: unknown
+    source_url: https://fed-spend.com/blog/palantir-government-contracts-deep-dive
+    notes: Aggregate DoD obligations reported via USAspending analysis.
+  research_notes: Many Palantir customers are widely reported; listed entries are those with clear public contract
+    reporting trails. Re-verify on USAspending.gov for award IDs.
+  last_checked: '2026-10-06'

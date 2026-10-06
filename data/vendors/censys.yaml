@@ -1,0 +1,300 @@
+identity:
+  name: Censys
+  legal_name: Censys, Inc.
+  trade_names:
+  - Censys
+  official_website: https://censys.com/
+  hq_country: USA
+  category: Threat intel / attack surface
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2015
+    source: https://censys.com/
+    confidence: Medium
+  hq_country:
+    value: USA
+    source: https://censys.com/
+    confidence: Medium
+  ownership_type:
+    value: Private
+    source: https://censys.com/
+    confidence: Medium
+  parent:
+    value: none identified
+    source: https://censys.com/
+    confidence: Medium
+  headcount_band:
+    value: unknown
+    source: https://censys.com/
+    confidence: Low
+  customer_segments:
+  - security teams
+  - researchers
+  primary_products:
+  - Censys Platform / Internet intelligence
+  deployment_model:
+    value: SaaS
+    source: https://censys.com/
+    confidence: Medium
+  notable_status: Internet-wide scan dataset; Ann Arbor roots often cited
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources.
+    sources:
+    - https://censys.com/
+    - https://censys.com/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: US internet intelligence company.
+    source: https://censys.com/
+    confidence: Medium
+  what:
+    text: Discover exposed hosts/services/certs/attack surface.
+    source: https://censys.com/
+    confidence: Medium
+  where:
+    text: USA.
+    source: https://censys.com/
+    confidence: Medium
+  when:
+    text: Founded mid-2010s.
+    source: https://censys.com/
+    confidence: Medium
+  why:
+    text: Authoritative view of the internet for defenders.
+    source: https://censys.com/
+    confidence: Medium
+  how:
+    text: Continuous internet scanning + platform.
+    source: https://censys.com/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public pages.
+    sources:
+    - https://censys.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Scan data quality
+    source: https://censys.com/
+    confidence: Medium
+  - text: EASM/threat hunt fit
+    source: https://censys.com/
+    confidence: Medium
+  weaknesses:
+  - text: Not SOCMINT
+    source: https://censys.com/
+    confidence: Medium
+  best_fit:
+  - EASM/recon
+  poor_fit:
+  - People OSINT
+  alternatives:
+  - Shodan
+  - DomainTools
+  - Recorded Future
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed.
+    sources:
+    - https://censys.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Free tier + paid
+    source: https://censys.com/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://censys.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://censys.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://censys.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Private
+    source: https://censys.com/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://censys.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited financials.
+    sources:
+    - https://censys.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Research community use
+    source: https://censys.com/
+    confidence: Medium
+  negative:
+  - text: None
+    source: https://censys.com/
+    confidence: Medium
+  social_themes: Security researchers
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://censys.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Queries may be logged; scanning is vendor-side
+    source: https://censys.com/
+    confidence: Low
+  attribution:
+    text: Confirm in DPA
+    source: https://censys.com/
+    confidence: Low
+  jurisdiction:
+    text: USA
+    source: https://censys.com/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contractual OPSEC
+  jurisdiction_sanctions_exposure:
+    note: See extras
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Validate contractually.
+    sources:
+    - https://censys.com/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Internet scanning legality/ToS generally accepted for defenders—confirm AUP
+    source: https://censys.com/
+    confidence: Medium
+  gdpr_residency:
+    text: IP/host data; residency unknown
+    source: https://censys.com/
+    confidence: Low
+  ownership_state_ties:
+    text: US private; no sanctioned-state owner
+    source: https://censys.com/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://censys.com/
+    confidence: Low
+  api_integrations:
+    text: 'Yes'
+    source: https://censys.com/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 5
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: USA. No RU/BY/CN/IR/DPRK/SY/CU offices identified.
+      source: https://censys.com/
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Private US. No sanctioned owners identified.
+      source: https://censys.com/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: unknown
+      source: https://censys.com/
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - Censys
+      - Censys Inc
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags: []
+gaps:
+- DPA
+- Certs
+- References
+meta:
+  schema_version: '1.2'
+  slug: censys
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Citizen Lab research use of Censys data reported in secondary sources but not confirmed as paying
+    customer relationship this pass—excluded. No vendor case studies captured.
+  last_checked: '2026-10-06'

@@ -1,0 +1,304 @@
+identity:
+  name: Intelligence X
+  legal_name: Intelligence X (Czech company)
+  trade_names:
+  - Intelligence X
+  official_website: https://intelx.io/
+  hq_country: Czech Republic
+  category: Dark web / search archive
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2018
+    source: https://intelx.io/about
+    confidence: Medium
+  hq_country:
+    value: Czech Republic
+    source: https://intelx.io/
+    confidence: Medium
+  ownership_type:
+    value: Private independent European
+    source: https://intelx.io/
+    confidence: Medium
+  parent:
+    value: none
+    source: https://intelx.io/
+    confidence: Medium
+  headcount_band:
+    value: small/unknown
+    source: https://intelx.io/
+    confidence: Low
+  customer_segments:
+  - companies
+  - governments
+  primary_products:
+  - Intelligence X search & archive
+  deployment_model:
+    value: SaaS search
+    source: https://intelx.io/
+    confidence: Medium
+  notable_status: Prague; selector search + historical archive; EU servers/privacy positioning; founder Peter Kleissner
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources.
+    sources:
+    - https://intelx.io/
+    - https://intelx.io/about
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: Czech OSINT search/archive company (founder Peter Kleissner).
+    source: https://intelx.io/about
+    confidence: Medium
+  what:
+    text: Selector search across darknet, leaks, whois, docs + historical archive.
+    source: https://intelx.io/
+    confidence: Medium
+  where:
+    text: Prague CZ; servers in EU claimed.
+    source: https://intelx.io/
+    confidence: Medium
+  when:
+    text: Founded 2018.
+    source: https://intelx.io/about
+    confidence: Medium
+  why:
+    text: Make deep internet searchable with history.
+    source: https://intelx.io/
+    confidence: Medium
+  how:
+    text: Selector engine + archive similar to Wayback concept.
+    source: https://intelx.io/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public pages.
+    sources:
+    - https://intelx.io/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: EU hosting claim
+    source: https://intelx.io/
+    confidence: Medium
+  - text: Archive depth
+    source: https://intelx.io/
+    confidence: Medium
+  - text: Selector UX
+    source: https://intelx.io/
+    confidence: Medium
+  weaknesses:
+  - text: Small vendor scale
+    source: https://intelx.io/
+    confidence: Medium
+  - text: Leak data sensitivity
+    source: https://intelx.io/
+    confidence: Medium
+  best_fit:
+  - Leak/darknet selector search
+  poor_fit:
+  - Full SOCMINT suite
+  alternatives:
+  - Flare
+  - Recorded Future
+  - OSINT Industries
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed.
+    sources:
+    - https://intelx.io/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Plans + enterprise
+    source: https://intelx.io/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://intelx.io/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://intelx.io/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://intelx.io/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Independent; details unknown
+    source: https://intelx.io/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://intelx.io/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited financials.
+    sources:
+    - https://intelx.io/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Practitioner popularity
+    source: https://intelx.io/
+    confidence: Medium
+  negative:
+  - text: None material identified
+    source: https://intelx.io/
+    confidence: Medium
+  social_themes: OSINT community tool
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://intelx.io/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Strong privacy marketing; still verify account OPSEC
+    source: https://intelx.io/
+    confidence: Low
+  attribution:
+    text: Confirm in DPA
+    source: https://intelx.io/
+    confidence: Low
+  jurisdiction:
+    text: Czech Republic
+    source: https://intelx.io/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contractual OPSEC
+  jurisdiction_sanctions_exposure:
+    note: See extras
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Validate contractually.
+    sources:
+    - https://intelx.io/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Indexes leak data—legal basis critical under GDPR
+    source: https://intelx.io/
+    confidence: Medium
+  gdpr_residency:
+    text: EU-based advantageous; confirm controller docs
+    source: https://intelx.io/
+    confidence: Low
+  ownership_state_ties:
+    text: No state ownership identified
+    source: https://intelx.io/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://intelx.io/
+    confidence: Low
+  api_integrations:
+    text: 'Yes'
+    source: https://intelx.io/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: Prague, Czech Republic. No RU/BY/CN/IR/DPRK/SY/CU offices identified.
+      source: https://intelx.io/about
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Independent European private. No sanctioned owners identified.
+      source: https://intelx.io/about
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: Small EU team signals; aggregate beyond CZ unknown.
+      source: https://intelx.io/about
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - Intelligence X
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags: []
+gaps:
+- DPA
+- Certs
+- References
+meta:
+  schema_version: '1.2'
+  slug: intelligence-x
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Checked intelx.io/about and web search for named case studies/procurement; none found.
+  last_checked: '2026-10-06'

@@ -1,0 +1,359 @@
+identity:
+  name: Brandwatch
+  legal_name: Brandwatch (Cision group)
+  trade_names:
+  - Brandwatch
+  official_website: https://www.brandwatch.com/
+  hq_country: United Kingdom
+  category: Brand / digital risk / social listening
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2006
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  hq_country:
+    value: United Kingdom
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  ownership_type:
+    value: Subsidiary of Cision
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  parent:
+    value: Cision
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  headcount_band:
+    value: unknown
+    source: https://www.brandwatch.com/
+    confidence: Low
+  customer_segments:
+  - marketing
+  - PR
+  - insights
+  primary_products:
+  - Brandwatch social listening
+  deployment_model:
+    value: SaaS
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  notable_status: Volume-led social listening; more marketing than investigative OSINT
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources compiled.
+    sources:
+    - https://www.brandwatch.com/
+    - https://www.brandwatch.com/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: UK-origin social listening under Cision.
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  what:
+    text: Social listening, consumer intelligence, large data volume.
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  where:
+    text: UK/global Cision footprint.
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  when:
+    text: Brandwatch brand long-standing; Cision ownership era current.
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  why:
+    text: Understand brand conversations at scale.
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  how:
+    text: Social data firehose + analytics UI.
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public pages.
+    sources:
+    - https://www.brandwatch.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Data volume
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  - text: Marketing integrations
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  weaknesses:
+  - text: Not LE investigation UX
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  - text: Enterprise cost
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  best_fit:
+  - Brand/PR listening
+  poor_fit:
+  - Covert LE OSINT
+  alternatives:
+  - Meltwater
+  - Pulsar
+  - Sprinklr
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed evidence.
+    sources:
+    - https://www.brandwatch.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Enterprise quote
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://www.brandwatch.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://www.brandwatch.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://www.brandwatch.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Cision-owned
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://www.brandwatch.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited financials.
+    sources:
+    - https://www.brandwatch.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Category leader claims
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  negative:
+  - text: None material identified
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  social_themes: Martech audience
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://www.brandwatch.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Poor fit for covert OPSEC investigations
+    source: https://www.brandwatch.com/
+    confidence: Low
+  attribution:
+    text: Confirm in DPA
+    source: https://www.brandwatch.com/
+    confidence: Low
+  jurisdiction:
+    text: United Kingdom
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contractual OPSEC clauses
+  jurisdiction_sanctions_exposure:
+    note: See extras.jurisdiction_sanctions_exposure
+    result_summary: clear — prior 'REVIEW REQUIRED' was a false positive (unrelated list entries)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Needs contractual validation.
+    sources:
+    - https://www.brandwatch.com/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Marketing listening—platform ToS
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  gdpr_residency:
+    text: EU/UK processing options—verify
+    source: https://www.brandwatch.com/
+    confidence: Low
+  ownership_state_ties:
+    text: Brandwatch was acquired by Cision (closed June 2021 per Cision/PR Newswire). Cision was taken private
+      by an affiliate of Platinum Equity (completed 31 Jan 2020). No state ownership identified.
+    source: https://www.prnewswire.co.uk/news-releases/cision-closes-brandwatch-acquisition-883471423.html
+    confidence: High
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://www.brandwatch.com/
+    confidence: Low
+  api_integrations:
+    text: 'Yes'
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 5
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: UK heritage; Cision global offices. No RU/BY/CN/IR/DPRK/SY/CU offices identified this pass.
+      source: https://www.brandwatch.com/
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Cision group. No sanctioned-jurisdiction state owners identified.
+      source: https://www.brandwatch.com/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: 'Global martech workforce; aggregate sanctioned-country: unknown.'
+      source: https://www.brandwatch.com/
+      confidence: Medium
+    sanctions_screening:
+      eu: no whole-word match for screened vendor/parent legal names in EU FSF XML (2026-10-06 dump)
+      un: no whole-word match in UN consolidated XML (downloaded 2026-10-06)
+      ofac_sdn: no whole-word match for screened vendor/parent legal names on OFAC SDN / consolidated non-SDN (2026-10-06
+        dump)
+      uk: no whole-word match for screened vendor/parent legal names on UK OFSI list (2026-10-06 dump)
+      screened_entities:
+      - Brandwatch
+      - Brandwatch GmbH
+      - Brandwatch LLC
+      - Cision
+      - Cision Ltd
+      - Cision US Inc
+      - Platinum Equity
+      screening_date: '2026-10-06'
+      method: 'Re-screen after false-positive review: whole-word / token boundary matching against local OFAC SDN
+        + cons, UK OFSI ConList, EU FSF XML, and UN consolidated XML. Not legal advice.'
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      - https://scsanctions.un.org/resources/xml/en/consolidated.xml
+      confidence: High
+      result: clear — prior 'REVIEW REQUIRED' was a false positive (unrelated list entries)
+      false_positive_analysis:
+        prior_flag_reason: Naive substring match on parent name 'Cision' matched inside unrelated tokens such as
+          English/French 'PRECISION' / 'PRÉCISION' on OFAC/EU lists (e.g. China National PreCISION Machinery; A.E.
+          Nudelman precision bureau FR alias).
+        actual_list_entries_examined:
+        - list: OFAC SDN
+          entry: CHINA NATIONAL PRECISION MACHINERY IMPORT/EXPORT CORPORATION (and similar 'PRECISION' entities)
+          related_to_vendor: false
+        - list: EU FSF
+          entry: French aliases containing 'précision' (machinery institutes)
+          related_to_vendor: false
+        verdict: false_positive
+        reasoning: Brandwatch and Cision (PR/media software group owned by Platinum Equity affiliate since Jan 2020;
+          Brandwatch acquired by Cision Jun 2021) do not appear as designated parties. Substring 'Cision' inside
+          'Precision' is not a designation of Cision Ltd/Brandwatch.
+      owners_parents_screened:
+      - name: Cision / Cision Ltd
+        result: clear (false positive on PRECISION)
+        source: https://www.prnewswire.co.uk/news-releases/cision-closes-brandwatch-acquisition-883471423.html
+      - name: Platinum Equity (Cision owner)
+        result: clear — no whole-word hit
+        source: https://www.platinumequity.com/news/platinum-equity-completes-2-7-billion-acquisition-of-cision/
+      raw_hits: {}
+      recheck_date: '2026-10-06'
+red_flags: []
+gaps:
+- DPA
+- Cert PDFs
+- References
+meta:
+  schema_version: '1.2'
+  slug: brandwatch
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+  recheck_note: Sanctions false-positive cleared 2026-10-06
+known_customers:
+  status: documented
+  customers:
+  - customer_name: Samsung
+    sector: corporate
+    country: South Korea
+    evidence_type: case_study
+    date: unknown
+    source_url: https://www.brandwatch.com/case-studies/samsung/
+    notes: Social intelligence across 43 European markets.
+  - customer_name: Fetch Rewards
+    sector: corporate
+    country: USA
+    evidence_type: case_study
+    date: unknown
+    source_url: https://www.brandwatch.com/case-studies/fetch-rewards/
+  - customer_name: Co-op
+    sector: corporate
+    country: United Kingdom
+    evidence_type: case_study
+    date: unknown
+    source_url: https://www.brandwatch.com/case-studies/co-op/
+  - customer_name: Nestlé
+    sector: corporate
+    country: Switzerland
+    evidence_type: case_study
+    date: unknown
+    source_url: https://www.casestudies.com/company/brandwatch/case-study/how-nestle-discovers-digital-consumer-insights-with-brandwatch
+    notes: Secondary case-study aggregator; prefer Brandwatch primary if available.
+  research_notes: Public case studies/procurement.
+  last_checked: '2026-10-06'

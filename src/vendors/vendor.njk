@@ -1,0 +1,477 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: vendors
+  size: 1
+  alias: vendor
+permalink: "/vendors/{{ vendor.slug }}/"
+eleventyComputed:
+  pageTitle: "{{ vendor.name }}"
+  description: "{{ vendor.identity.name }}, {{ vendor.identity.category }}. Last reviewed {{ vendor.meta.last_reviewed }}."
+---
+{% import "macros.njk" as ui %}
+{% set idn = vendor.identity %}
+{% set overview = vendor.overview_360 %}
+{% set screening = vendor.extras.jurisdiction_sanctions_exposure.sanctions_screening %}
+{% set sanctions = vendor.extras.jurisdiction_sanctions_exposure %}
+<article class="wrap page profile">
+  <header class="profile-head">
+    <p class="kicker">
+      <span class="pill">{{ vendor.meta.signoff_status }}</span>
+      <span>{{ idn.category }}</span>
+    </p>
+    <h1>{{ idn.name }}</h1>
+    {% if idn.legal_name %}<p class="lede">{{ idn.legal_name }}</p>{% endif %}
+    {% if overview.notable_status %}<p>{{ overview.notable_status }}</p>{% endif %}
+    <dl class="meta">
+      <div><dt>Headquarters</dt><dd>{{ idn.hq_country }}</dd></div>
+      <div><dt>Founded</dt><dd>{{ ui.fact(overview.founded_year) }}</dd></div>
+      <div><dt>Last reviewed</dt><dd><time datetime="{{ vendor.meta.last_reviewed }}">{{ vendor.meta.last_reviewed | longDate }}</time></dd></div>
+      {% if vendor.meta.recheck_note %}
+        <div><dt>Recheck</dt><dd>{{ vendor.meta.recheck_note }}</dd></div>
+      {% endif %}
+      <div><dt>Sign-off</dt><dd>{{ idn.signoff }}</dd></div>
+      <div>
+        <dt>Website</dt>
+        <dd>{{ ui.sourceLink(idn.official_website) }}</dd>
+      </div>
+    </dl>
+    {% if idn.trade_names %}
+      <p class="note">Trade names: {{ idn.trade_names | join(", ") }}</p>
+    {% endif %}
+  </header>
+
+  <div class="score-row score-row-profile">
+    {{ ui.scoreMeter(vendor.transparency.score.value, "Transparency", vendor.transparency.score.confidence) }}
+    {{ ui.scoreMeter(vendor.financial_health.score.value, "Financial health", vendor.financial_health.score.confidence) }}
+    {{ ui.scoreMeter(vendor.opsec_risks.score.value, "OPSEC", vendor.opsec_risks.score.confidence) }}
+  </div>
+
+  <aside class="sanctions-indicator sanctions-{{ vendor._sanctionsBucket }}" aria-label="Jurisdiction and sanctions exposure">
+    <p class="flag-label">Jurisdiction and sanctions exposure</p>
+    {{ ui.sanctionsPill(screening.result) }}
+    <p>{{ screening.result }}</p>
+    <p class="claim-meta">
+      <span>Screened {{ screening.screening_date | longDate }}</span>
+      <a href="#sanctions">View the screening record</a>
+    </p>
+  </aside>
+
+  <aside class="red-flag-box {% if vendor.red_flags | length %}has-flags{% endif %}" id="red-flags">
+    <p class="flag-label">Red flags recorded in this profile</p>
+    {% if vendor.red_flags | length %}
+      <ul>
+        {% for flag in vendor.red_flags %}
+          <li>{{ flag }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="empty">No red flags recorded in this profile.</p>
+    {% endif %}
+  </aside>
+
+  <div class="buyer-summary">
+    <p class="flag-label">Known customers</p>
+    <p>{{ vendor.known_customers.status | replace("_", " ") }}</p>
+    {% if vendor.known_customers.customers | length %}
+      <ul class="pill-row">
+        {% for sector in vendor._sectorsAttr.split(" ") %}
+          {% if sector %}<li><span class="pill pill-sector">{{ sector | sectorLabel }}</span></li>{% endif %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+    <p class="claim-meta"><a href="#customers">Customer records</a></p>
+  </div>
+
+  <nav class="toc" aria-label="On this page">
+    <a href="#overview">Overview</a>
+    <a href="#five-w">5W1H</a>
+    <a href="#strengths">Strengths and weaknesses</a>
+    <a href="#transparency">Transparency</a>
+    <a href="#financial">Financial health</a>
+    <a href="#press">Press and sentiment</a>
+    <a href="#opsec">OPSEC risks</a>
+    <a href="#sanctions">Sanctions exposure</a>
+    <a href="#customers">Known customers</a>
+    <a href="#red-flags">Red flags</a>
+    <a href="#ethics">Ethics and GDPR</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#legal">Legal and regulatory</a>
+    <a href="#integrations">API and integrations</a>
+    <a href="#fit">Use-case fit</a>
+    <a href="#gaps">Gaps</a>
+    <a href="#verification">Claim verification</a>
+    <a href="#sources">Sources</a>
+  </nav>
+
+  <section id="overview" class="block">
+    <div class="section-head">
+      <h2>360 company overview</h2>
+      {{ ui.scoreDetail(overview.score) }}
+    </div>
+    <dl class="facts">
+      {{ ui.labeled("Founded", overview.founded_year) }}
+      {{ ui.labeled("HQ country", overview.hq_country) }}
+      {{ ui.labeled("Offices", overview.offices) }}
+      {{ ui.labeled("Ownership type", overview.ownership_type) }}
+      {{ ui.labeled("Parent", overview.parent) }}
+      {{ ui.labeled("Headcount", overview.headcount_band) }}
+      {{ ui.labeled("Deployment", overview.deployment_model) }}
+    </dl>
+    <h3>Customer segments recorded</h3>
+    {{ ui.fact(overview.customer_segments) }}
+    <h3>Primary products</h3>
+    {{ ui.fact(overview.primary_products) }}
+  </section>
+
+  <section id="five-w" class="block">
+    <div class="section-head">
+      <h2>5W1H</h2>
+      {{ ui.scoreDetail(vendor.five_w1h.score) }}
+    </div>
+    <div class="w-grid">
+      <section><h3>Who</h3>{{ ui.fact(vendor.five_w1h.who) }}</section>
+      <section><h3>What</h3>{{ ui.fact(vendor.five_w1h.what) }}</section>
+      <section><h3>Where</h3>{{ ui.fact(vendor.five_w1h.where) }}</section>
+      <section><h3>When</h3>{{ ui.fact(vendor.five_w1h.when) }}</section>
+      <section><h3>Why</h3>{{ ui.fact(vendor.five_w1h.why) }}</section>
+      <section><h3>How</h3>{{ ui.fact(vendor.five_w1h.how) }}</section>
+    </div>
+  </section>
+
+  <section id="strengths" class="block">
+    <div class="section-head">
+      <h2>Strengths and weaknesses</h2>
+      {{ ui.scoreDetail(vendor.strengths_weaknesses.score) }}
+    </div>
+    <div class="split">
+      <div>
+        <h3>Strengths</h3>
+        {{ ui.fact(vendor.strengths_weaknesses.strengths) }}
+      </div>
+      <div>
+        <h3>Weaknesses</h3>
+        {{ ui.fact(vendor.strengths_weaknesses.weaknesses) }}
+      </div>
+    </div>
+    <div class="split">
+      <div>
+        <h3>Best fit recorded</h3>
+        {{ ui.fact(vendor.strengths_weaknesses.best_fit) }}
+      </div>
+      <div>
+        <h3>Poor fit recorded</h3>
+        {{ ui.fact(vendor.strengths_weaknesses.poor_fit) }}
+      </div>
+    </div>
+    <h3>Alternatives named in this profile</h3>
+    {{ ui.fact(vendor.strengths_weaknesses.alternatives) }}
+  </section>
+
+  <section id="transparency" class="block">
+    <div class="section-head">
+      <h2>Business transparency</h2>
+      {{ ui.scoreDetail(vendor.transparency.score) }}
+    </div>
+    <dl class="facts">
+      {{ ui.labeled("Public pricing", vendor.transparency.public_pricing) }}
+      {{ ui.labeled("Contract norms", vendor.transparency.contract_norms) }}
+      {{ ui.labeled("Privacy and DPA", vendor.transparency.privacy_dpa) }}
+      {{ ui.labeled("Audits", vendor.transparency.audits) }}
+    </dl>
+  </section>
+
+  <section id="financial" class="block">
+    <div class="section-head">
+      <h2>Financial health</h2>
+      {{ ui.scoreDetail(vendor.financial_health.score) }}
+    </div>
+    <dl class="facts">
+      {{ ui.labeled("Funding and ownership", vendor.financial_health.funding_ownership) }}
+      {{ ui.labeled("Public financials", vendor.financial_health.public_financials) }}
+      {{ ui.labeled("Revenue band", vendor.financial_health.revenue_band) }}
+      {{ ui.labeled("Risk notes", vendor.financial_health.risk_notes) }}
+    </dl>
+  </section>
+
+  <section id="press" class="block">
+    <div class="section-head">
+      <h2>Press and social sentiment</h2>
+      {{ ui.scoreDetail(vendor.press_sentiment.score) }}
+    </div>
+    <div class="split">
+      <div>
+        <h3>Positive</h3>
+        {{ ui.fact(vendor.press_sentiment.positive) }}
+      </div>
+      <div>
+        <h3>Negative</h3>
+        {{ ui.fact(vendor.press_sentiment.negative) }}
+      </div>
+    </div>
+    <h3>Social themes</h3>
+    {{ ui.fact(vendor.press_sentiment.social_themes) }}
+    {% if vendor.press_sentiment.vendor_response %}
+      <h3>Vendor response recorded in this profile</h3>
+      {{ ui.fact(vendor.press_sentiment.vendor_response) }}
+    {% endif %}
+  </section>
+
+  <section id="opsec" class="block">
+    <div class="section-head">
+      <h2>OPSEC risks for customers</h2>
+      {{ ui.scoreDetail(vendor.opsec_risks.score) }}
+    </div>
+    <dl class="facts">
+      {{ ui.labeled("Query logging", vendor.opsec_risks.query_logging) }}
+      {{ ui.labeled("Attribution", vendor.opsec_risks.attribution) }}
+      {{ ui.labeled("Retention of search subjects", vendor.opsec_risks.retention_of_subjects) }}
+      {{ ui.labeled("Jurisdiction", vendor.opsec_risks.jurisdiction) }}
+      {{ ui.labeled("Incident history", vendor.opsec_risks.incident_history) }}
+    </dl>
+    <h3>Controls named in this profile</h3>
+    {{ ui.fact(vendor.opsec_risks.recommended_controls) }}
+    {% if vendor.opsec_risks.jurisdiction_sanctions_exposure %}
+      <h3>Sanctions pointer recorded with OPSEC</h3>
+      {{ ui.fact(vendor.opsec_risks.jurisdiction_sanctions_exposure.note) }}
+      {{ ui.fact(vendor.opsec_risks.jurisdiction_sanctions_exposure.result_summary) }}
+      {% if vendor.opsec_risks.jurisdiction_sanctions_exposure.screening_date %}
+        <p class="note">Screening date on this pointer: {{ vendor.opsec_risks.jurisdiction_sanctions_exposure.screening_date | longDate }}</p>
+      {% endif %}
+    {% endif %}
+  </section>
+
+  <section id="sanctions" class="block">
+    <h2>Jurisdiction and sanctions exposure</h2>
+    <p class="note">Company-level record from the approved profile. This is not a legal determination. Re-screen before procurement.</p>
+    <div class="sanctions-indicator sanctions-{{ vendor._sanctionsBucket }}">
+      {{ ui.sanctionsPill(screening.result) }}
+      <p>{{ screening.result }}</p>
+      {% if screening.notes %}<p>{{ screening.notes }}</p>{% endif %}
+    </div>
+    <dl class="facts">
+      {{ ui.labeled("Offices, R&D, and subsidiaries", sanctions.offices_rd_subsidiaries_in_sanctioned_countries) }}
+      {{ ui.labeled("Ownership, investor, and leadership ties", sanctions.ownership_investor_leadership_ties) }}
+      {{ ui.labeled("Workforce location signals", sanctions.workforce_location_signals_aggregate) }}
+    </dl>
+    <h3>Sanctions screening</h3>
+    <dl class="facts">
+      {{ ui.labeled("EU", screening.eu) }}
+      {{ ui.labeled("UN", screening.un) }}
+      {{ ui.labeled("OFAC SDN", screening.ofac_sdn) }}
+      {{ ui.labeled("UK", screening.uk) }}
+    </dl>
+    <p class="claim-meta">
+      <span>Screening date {{ screening.screening_date | longDate }}</span>
+      {% if screening.recheck_date %}<span>Recheck date {{ screening.recheck_date | longDate }}</span>{% endif %}
+      {% if screening.confidence %}<span class="pill">{{ screening.confidence }} confidence</span>{% endif %}
+    </p>
+    {% if screening.method %}<p>{{ screening.method }}</p>{% endif %}
+    {% if screening.owners_parents_screened %}
+      <h3>Owners and parents screened</h3>
+      <ul class="stack">
+        {% for owner in screening.owners_parents_screened %}
+          <li>
+            <p class="claim-text">{{ owner.name }}</p>
+            {% if owner.result %}<p>{{ owner.result }}</p>{% endif %}
+            <p class="claim-meta">{{ ui.sourceLink(owner.source) }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if screening.false_positive_analysis %}
+      {% set fp = screening.false_positive_analysis %}
+      <h3>False-positive analysis</h3>
+      {% if fp.verdict %}<p class="claim-text">Verdict recorded: {{ fp.verdict }}</p>{% endif %}
+      {% if fp.prior_flag_reason %}<p>{{ fp.prior_flag_reason }}</p>{% endif %}
+      {% if fp.reasoning %}<p>{{ fp.reasoning }}</p>{% endif %}
+      {% if fp.actual_list_entries_examined %}
+        <div class="table-scroll">
+          <table>
+            <caption>List entries examined</caption>
+            <thead>
+              <tr>
+                <th scope="col">List</th>
+                <th scope="col">Entry</th>
+                <th scope="col">Related to vendor</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for entry in fp.actual_list_entries_examined %}
+                <tr>
+                  <th scope="row">{{ entry.list }}</th>
+                  <td>{{ entry.entry }}</td>
+                  <td>{% if entry.related_to_vendor == true %}true{% elif entry.related_to_vendor == false %}false{% else %}{{ entry.related_to_vendor }}{% endif %}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      {% endif %}
+    {% endif %}
+    {% if screening.screened_entities %}
+      <h3>Names screened</h3>
+      <ul class="plain-list">
+        {% for entity in screening.screened_entities %}
+          <li>{{ entity }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if screening.sources %}
+      <h3>Screening sources</h3>
+      <ul class="stack">
+        {% for item in screening.sources %}
+          <li>{{ ui.sourceLink(item) }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if screening.raw_hits and screening.raw_hits | length %}
+      <h3>Strings recorded against lists</h3>
+      {% for listName, hits in screening.raw_hits %}
+        <h4>{{ listName }}</h4>
+        {% if hits and hits | length %}
+          <ul class="stack">
+            {% for hit in hits %}
+              <li>
+                {% if hit is string %}
+                  {{ hit }}
+                {% else %}
+                  <p class="claim-text">{{ hit.entity }}</p>
+                  {% if hit.snippet %}<p class="src-note">{{ hit.snippet }}</p>{% endif %}
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="empty">No strings recorded for this list in the profile.</p>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    <h3>Ownership and state ties noted separately</h3>
+    {{ ui.fact(vendor.extras.ownership_state_ties) }}
+  </section>
+
+  <section id="customers" class="block">
+    <h2>Known customers and buyers</h2>
+    <p>Status: {{ vendor.known_customers.status | replace("_", " ") }}.</p>
+    {% if vendor.known_customers.research_notes %}<p>{{ vendor.known_customers.research_notes }}</p>{% endif %}
+    {% if vendor.known_customers.last_checked %}
+      <p class="note">Last checked {{ vendor.known_customers.last_checked | longDate }}</p>
+    {% endif %}
+    {% if vendor.known_customers.customers | length %}
+      <div class="table-scroll">
+        <table>
+          <caption>Public customer records for {{ idn.name }}</caption>
+          <thead>
+            <tr>
+              <th scope="col">Customer</th>
+              <th scope="col">Sector</th>
+              <th scope="col">Country</th>
+              <th scope="col">Evidence</th>
+              <th scope="col">Date</th>
+              <th scope="col">Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for customer in vendor.known_customers.customers %}
+              <tr>
+                <th scope="row">
+                  {{ customer.customer_name }}
+                  {% if customer.notes %}<span class="cell-sub">{{ customer.notes }}</span>{% endif %}
+                </th>
+                <td>{{ customer.sector | sectorLabel }}</td>
+                <td>{{ customer.country }}</td>
+                <td>{{ customer.evidence_type | evidenceLabel }}</td>
+                <td>{{ customer.date }}</td>
+                <td>{{ ui.sourceLink(customer.source_url) }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% else %}
+      <p class="empty">None publicly documented.</p>
+    {% endif %}
+  </section>
+
+  <section id="ethics" class="block">
+    <h2>Data ethics, legality, and residency</h2>
+    <dl class="facts">
+      {{ ui.labeled("Data sourcing ethics and legality", vendor.extras.data_ethics_legality) }}
+      {{ ui.labeled("GDPR and data residency", vendor.extras.gdpr_residency) }}
+    </dl>
+  </section>
+
+  <section id="certifications" class="block">
+    <h2>Security certifications</h2>
+    {{ ui.fact(vendor.extras.certifications) }}
+  </section>
+
+  <section id="legal" class="block">
+    <h2>Legal and regulatory actions</h2>
+    {{ ui.fact(vendor.extras.legal_regulatory_actions) }}
+  </section>
+
+  <section id="integrations" class="block">
+    <h2>API and integrations</h2>
+    {{ ui.fact(vendor.extras.api_integrations) }}
+  </section>
+
+  <section id="fit" class="block">
+    <h2>Use-case fit</h2>
+    <p class="note">Scores below are the values recorded in this profile. They are not a site-wide ranking.</p>
+    <ul class="stack">
+      {% for persona, fit in vendor.extras.use_case_fit %}
+        <li>
+          <h3>{{ persona | personaLabel }} <span class="pill">{{ fit.value }}/5</span> {% if fit.confidence %}<span class="pill">{{ fit.confidence }} confidence</span>{% endif %}</h3>
+          {{ ui.fact(fit) }}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  {% if vendor.claim_verification %}
+    <section id="verification" class="block">
+      <h2>Claim verification</h2>
+      <div class="table-scroll">
+        <table>
+          <caption>Claim checks recorded on this profile</caption>
+          <thead>
+            <tr>
+              <th scope="col">Claim</th>
+              <th scope="col">Verdict</th>
+              <th scope="col">Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in vendor.claim_verification %}
+              <tr>
+                <th scope="row">{{ item.claim }}</th>
+                <td>{{ item.verdict }}</td>
+                <td>{{ ui.sourceLink(item.source) }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  {% endif %}
+
+  <section id="gaps" class="block">
+    <h2>Gaps recorded in this profile</h2>
+    {{ ui.fact(vendor.gaps) }}
+  </section>
+
+  <section id="sources" class="block">
+    <h2>Sources</h2>
+    <p class="note">Every http(s) source, source URL, and official website stored on this profile.</p>
+    <ol class="source-list">
+      {% for source in vendor | collectSources %}
+        <li><a class="src-url" href="{{ source.url }}">{{ source.url }}</a></li>
+      {% else %}
+        <li><p class="empty">No source URLs recorded.</p></li>
+      {% endfor %}
+    </ol>
+    <p class="note">Schema {{ vendor.meta.schema_version }}. Last reviewed {{ vendor.meta.last_reviewed | longDate }}.</p>
+  </section>
+</article>

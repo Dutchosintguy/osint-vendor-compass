@@ -1,0 +1,399 @@
+identity:
+  name: Group-IB
+  legal_name: GROUP-IB GLOBAL PRIVATE LIMITED (Singapore) — per company schema.org / press
+  trade_names:
+  - Group-IB
+  official_website: https://www.group-ib.com/
+  hq_country: Singapore
+  category: Threat intel / digital risk
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2003
+    detail: Company states founded 2003 by Ilya Sachkov and Dmitry Volkov in Russia; global HQ opened Singapore
+      2019.
+    source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+    confidence: High
+  hq_country:
+    value: Singapore
+    detail: Company describes itself as headquartered in Singapore (Group-IB Global Private Ltd).
+    source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+    confidence: High
+  ownership_type:
+    value: Private (Singapore entity)
+    source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+    confidence: High
+  parent:
+    value: none identified (Singapore holding entity)
+    source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+    confidence: Medium
+  headcount_band:
+    value: 501-1000
+    detail: Company schema.org on exit PR page lists numberOfEmployees min 501 max 1000.
+    source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+    confidence: Medium
+  customer_segments:
+  - enterprise
+  - gov
+  primary_products:
+  - Threat Intelligence
+  - Digital Risk Protection
+  - Fraud Protection
+  - Attack surface
+  deployment_model:
+    value: Products/services SaaS + services
+    source: https://www.group-ib.com/
+    confidence: Medium
+  notable_status: 'Founded in Russia (2003); moved global HQ to Singapore (2019 per company). On 20 Apr 2023 company
+    announced exit from Russian market: Russian business sold to local management as F.A.C.C.T.; stated no Group-IB
+    employees in Russia as of that date; Volkov sold 10% RU stake; Sachkov sold 37.5% of Singapore entity to management.
+    Reuters (26 Jul 2023): Moscow court convicted co-founder Ilya Sachkov of treason and sentenced him to 14 years;
+    he denied guilt. Group-IB statement same day: full confidence in Sachkov''s innocence; called trial rushed/closed-door.'
+  score:
+    value: 4
+    confidence: High
+    rationale: Core corporate timeline supported by company PR and Reuters.
+    sources:
+    - https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+    - https://www.reuters.com/world/europe/russian-court-jails-top-cyber-security-executive-14-years-treason-case-2023-07-26/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: Cybersecurity vendor Group-IB Global Private Ltd (Singapore), CEO Dmitry Volkov per company PR. Co-founded
+      with Ilya Sachkov (no longer associated with Singapore company per Reuters; sold SG stake per company PR).
+    source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+    confidence: High
+  what:
+    text: Threat intelligence, digital risk protection, fraud protection, attack-surface and related cybersecurity
+      products/services (company site).
+    source: https://www.group-ib.com/
+    confidence: High
+  where:
+    text: Singapore HQ; company cites Digital Crime Resistance Centers including Singapore, Dubai, Amsterdam; states
+      customer data processed at globally distributed data centers. Company said Apr 2023 it exited Russia and withdrew
+      R&D from Russia.
+    source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+    confidence: High
+  when:
+    text: Founded 2003; Singapore HQ 2019; Russia exit announced 20 Apr 2023; Sachkov conviction 26 Jul 2023.
+    source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+    confidence: High
+  why:
+    text: 'Company mission: fight digital crime / predictive cybersecurity (company materials).'
+    source: https://www.group-ib.com/
+    confidence: High
+  how:
+    text: Commercial cybersecurity platform and services; collaborates with law-enforcement partners per company
+      (e.g. INTERPOL partnership claimed since 2017 in exit PR).
+    source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public pages.
+    sources:
+    - https://www.group-ib.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Long-running cybercrime investigation/TI product heritage (company history).
+    source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+    confidence: Medium
+  - text: Documented corporate exit from Russia market with Singapore holding company (company PR 20 Apr 2023).
+    source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+    confidence: High
+  weaknesses:
+  - text: Russian founding and historic Russian operations create elevated KYC scrutiny for some buyers (factual
+      history).
+    source: https://www.reuters.com/technology/cyber-firm-group-ib-finalises-russia-split-spur-global-ambitions-2023-04-20/
+    confidence: High
+  - text: Co-founder Sachkov's Russian criminal conviction is a reputational/diligence issue even though company
+      says he sold Singapore stake and is separate from SG ops.
+    source: https://www.reuters.com/world/europe/russian-court-jails-top-cyber-security-executive-14-years-treason-case-2023-07-26/
+    confidence: High
+  - text: Ultimate beneficial ownership after stake transfers not fully public; procurement UBO diligence still
+      required.
+    source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+    confidence: Medium
+  best_fit:
+  - Enterprise CTI buyers that complete enhanced ownership/geopolitical KYC
+  poor_fit:
+  - Organizations with policies barring vendors with historic Russia operations regardless of current structure
+  alternatives:
+  - Recorded Future
+  - Flashpoint
+  - Cybersixgill
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed.
+    sources:
+    - https://www.group-ib.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Quote
+    source: https://www.group-ib.com/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://www.group-ib.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://www.group-ib.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://www.group-ib.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Private; funding rounds reported post-exit
+    source: https://www.group-ib.com/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://www.group-ib.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited financials.
+    sources:
+    - https://www.group-ib.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Company and Reuters covered the completed Russia market exit / Singapore focus (Apr 2023).
+    source: https://www.reuters.com/technology/cyber-firm-group-ib-finalises-russia-split-spur-global-ambitions-2023-04-20/
+    confidence: High
+  negative:
+  - text: 'Reuters: Sachkov convicted of treason and jailed 14 years (26 Jul 2023); he denied wrongdoing.'
+    source: https://www.reuters.com/world/europe/russian-court-jails-top-cyber-security-executive-14-years-treason-case-2023-07-26/
+    confidence: High
+  social_themes: 'Split views: some buyers focus on SG entity post-exit; others treat Russian origin and Sachkov
+    case as ongoing diligence factors.'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://www.group-ib.com/
+    last_verified: '2026-10-06'
+  vendor_response:
+    text: 'Group-IB statement 26 Jul 2023: learned of conviction after ''unreasonably rushed'' closed-door Moscow
+      trial; Sachkov pleaded not guilty; company has ''full confidence in Ilya’s innocence'' and called him ''wrongfully
+      imprisoned''; stated materials classified and public scrutiny denied. Separately, Apr 2023 exit PR: Volkov/Sachkov
+      stake sales and F.A.C.C.T. brand for former Russian business.'
+    sources:
+    - https://www.group-ib.com/media-center/press-releases/statement-on-the-conviction-of-ilya-sachkov/
+    - https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+opsec_risks:
+  query_logging:
+    text: Enhanced supply-chain diligence recommended
+    source: https://www.group-ib.com/
+    confidence: Low
+  attribution:
+    text: Confirm in DPA
+    source: https://www.group-ib.com/
+    confidence: Low
+  jurisdiction:
+    text: Singapore
+    source: https://www.group-ib.com/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contractual OPSEC
+  jurisdiction_sanctions_exposure:
+    note: See extras
+    result_summary: clear (no designation identified on OFAC SDN, EU FSF, UK OFSI, or UN consolidated lists for
+      screened strings; 2026-10-06). Geopolitical/KYC risk remains separate from list designation.
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Validate contractually.
+    sources:
+    - https://www.group-ib.com/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Standard CTI ethics + geopolitical diligence
+    source: https://www.group-ib.com/
+    confidence: Medium
+  gdpr_residency:
+    text: Company cites Amsterdam among DCRC locations and claims compliance with international law at distributed
+      data centers; specific EU GDPR DPA/residency options not verified from a public DPA document this pass.
+    source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+    confidence: Medium
+  ownership_state_ties:
+    text: Historically a Russian private company; now presents as Singapore private company. No evidence in reviewed
+      sources that the Singapore entity is state-owned. Company is not identified as OFAC/EU/UK/UN designated in
+      2026-10-06 list dumps.
+    source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+    confidence: High
+  certifications: unknown
+  legal_regulatory_actions:
+    text: 'Ilya Sachkov: Moscow City Court conviction for high treason, 14-year sentence (26 Jul 2023) per Reuters;
+      appeal upheld Oct 2023 per Interfax reporting. This is a personal criminal case in Russia; Group-IB states
+      confidence in his innocence. No OFAC designation of Group-IB Global Private Ltd identified in this recheck.'
+    source: https://www.reuters.com/world/europe/russian-court-jails-top-cyber-security-executive-14-years-treason-case-2023-07-26/
+    confidence: High
+  api_integrations:
+    text: Product integrations
+    source: https://www.group-ib.com/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: 'Singapore global HQ; Dubai regional HQ; historically Europe (Amsterdam). Company states Apr 2023: no
+        Group-IB employees in Russia; RU business sold and rebranded F.A.C.C.T.; R&D withdrawn from Russia. No CN/IR/DPRK/SY/CU
+        offices identified. China presence: unknown.'
+      source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: 'Group-IB Global Private Ltd (Singapore). Per company PR (20 Apr 2023): Volkov sold his stake in the
+        Russian company; Sachkov sold his 37.5% stake in the Singapore company to top management. Residual current
+        UBOs are not fully published—buyers should obtain an ownership chart. Not designated on OFAC/EU/UK/UN lists
+        in the 2026-10-06 dumps for screened names.'
+      source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: 'Company claimed post-exit staffing in Asia/Europe/MEA; zero RU employees as of 2023-04-20 statement.
+        Current 2026 footprint: partially unknown—re-verify.'
+      source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: no whole-word match in UN consolidated XML (downloaded 2026-10-06) for Group-IB / Group-IB Global Private
+        Ltd / F.A.C.C.T
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - Group-IB
+      - Group-IB Global Private Ltd
+      - Group IB
+      - F.A.C.C.T
+      screening_date: '2026-10-06'
+      method: Whole-word search of local OFAC SDN/cons, UK OFSI, EU FSF, UN consolidated XML.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no designation identified on OFAC SDN, EU FSF, UK OFSI, or UN consolidated lists for screened
+        strings; 2026-10-06). Geopolitical/KYC risk remains separate from list designation.
+      notes: Not listed on OFAC SDN in local dump; geopolitical risk remains. Screen F.A.C.C.T separately if any
+        residual commercial link.
+      raw_hits: {}
+      recheck_date: '2026-10-06'
+red_flags:
+- Founded in Russia; operated there until announced Apr 2023 exit
+- Co-founder Ilya Sachkov convicted of treason in Russia (2023); company disputes fairness/asserts innocence
+- Post-split UBO details not fully public — enhanced KYC recommended
+gaps:
+- Current UBO chart
+- 2026 office list
+- Sanctions counsel memo
+meta:
+  schema_version: '1.2'
+  slug: group-ib
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+  recheck_note: Claim-by-claim verification 2026-10-06; neutral wording + vendor responses added
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Checked group-ib.com; INTERPOL MoU-style collaborations historically reported but named paying-customer
+    case studies not verified this pass—avoid conflating partnerships with customers.
+  last_checked: '2026-10-06'
+claim_verification:
+- claim: Founded 2003 by Sachkov & Volkov
+  verdict: verified
+  source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+- claim: Singapore global HQ / Group-IB Global Private Ltd
+  verdict: verified
+  source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+- claim: Russia exit Apr 2023; F.A.C.C.T. brand for RU business; no GIB employees in Russia as of 20 Apr 2023
+  verdict: verified
+  source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+  note: Company statement; Reuters corroborates exit.
+- claim: Volkov sold 10% RU stake; Sachkov sold 37.5% of SG entity to management
+  verdict: verified
+  source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+- claim: Sachkov convicted treason, 14 years (Jul 2023)
+  verdict: verified
+  source: https://www.reuters.com/world/europe/russian-court-jails-top-cyber-security-executive-14-years-treason-case-2023-07-26/
+- claim: Group-IB asserts Sachkov innocence / unfair trial
+  verdict: verified
+  source: https://www.group-ib.com/media-center/press-releases/statement-on-the-conviction-of-ilya-sachkov/
+- claim: DCRCs in Singapore, Dubai, Amsterdam
+  verdict: verified
+  source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+- claim: INTERPOL official private-sector partner since 2017
+  verdict: verified
+  source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+  note: Company claim in PR; partnership ≠ paying-customer list.
+- claim: Headcount 501-1000
+  verdict: verified
+  source: https://www.group-ib.com/media-center/press-releases/group-ib-exits-russia/
+  note: From page schema.org quantitative value; treat as company-stated.
+- claim: Wikipedia conflicting shareholder narratives (Sachkov primary of both)
+  verdict: needs rewording
+  source: https://en.wikipedia.org/wiki/Group-IB
+  note: Removed assertive conflict language; replaced with company-stated stake sales + note that residual UBO still
+    needs buyer diligence. Secondary 'reports have said Sachkov is part owner' of RU business (The Record) kept
+    out of assertions.
+- claim: Group-IB on OFAC/EU/UK/UN sanctions lists
+  verdict: unsupported (remove as designation)
+  source: list dumps 2026-10-06
+  note: No designation found.
+- claim: '''Polarizing'' editorial tone'
+  verdict: needs rewording
+  source: n/a
+  note: Softened to factual diligence framing.

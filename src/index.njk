@@ -1,0 +1,72 @@
+---
+layout: layouts/base.njk
+description: Approved OSINT SaaS vendor profiles with sources, scores, sanctions screening, red flags, and publicly documented customers.
+---
+{% import "macros.njk" as ui %}
+<div class="wrap page">
+  <header class="hero">
+    <p class="kicker">Independent comparison</p>
+    <h1>OSINT Vendor Compass</h1>
+    <p class="lede">Approved profiles of OSINT SaaS vendors for analysts and buyers. Each page repeats the research record: scores, sources, red flags, jurisdiction and sanctions screening, and publicly documented customers. Unknown stays unknown.</p>
+    <div class="actions">
+      <a class="button" href="{{ '/compare/' | url }}">Compare vendors</a>
+      <a class="button button-quiet" href="{{ '/use-cases/' | url }}">Browse by use case</a>
+      <a class="button button-quiet" href="{{ '/methodology/' | url }}">How to read a profile</a>
+    </div>
+  </header>
+
+  <dl class="stat-row">
+    <div>
+      <dt>Profiles</dt>
+      <dd>{{ site.vendorCount }}</dd>
+    </div>
+    <div>
+      <dt>Sign-off approved</dt>
+      <dd>{{ site.approvedCount }}</dd>
+    </div>
+    <div>
+      <dt>Last reviewed</dt>
+      <dd>{% if site.reviewedDates | length == 1 %}{{ site.reviewedDates[0] | longDate }}{% else %}{{ site.reviewedDates | length }} dates{% endif %}</dd>
+    </div>
+  </dl>
+
+  <section class="block" aria-labelledby="vendors-heading">
+    <div class="section-head">
+      <h2 id="vendors-heading">Vendor overview</h2>
+      <a href="{{ '/compare/' | url }}">Open the comparison table</a>
+    </div>
+    <div class="card-grid">
+      {% for vendor in vendors %}
+        <article class="vendor-card">
+          <p class="card-kicker">
+            <span class="pill">{{ vendor.meta.signoff_status }}</span>
+            <span>{{ vendor.identity.category }}</span>
+          </p>
+          <h3><a href="{{ ('/vendors/' + vendor.slug + '/') | url }}">{{ vendor.name }}</a></h3>
+          <p>{{ vendor.identity.hq_country }}{% if vendor._founded %} · Founded {{ vendor._founded }}{% endif %}</p>
+          <div class="score-row">
+            {{ ui.scoreMeter(vendor.transparency.score.value, "Transparency", vendor.transparency.score.confidence) }}
+            {{ ui.scoreMeter(vendor.financial_health.score.value, "Financial", vendor.financial_health.score.confidence) }}
+            {{ ui.scoreMeter(vendor.opsec_risks.score.value, "OPSEC", vendor.opsec_risks.score.confidence) }}
+          </div>
+          <div class="card-flags">
+            <div>
+              <p class="flag-label">Sanctions screening</p>
+              {{ ui.sanctionsPill(vendor._sanctionsResult) }}
+              <span class="cell-sub">{{ vendor._sanctionsResult }}</span>
+            </div>
+            <div>
+              <p class="flag-label">Red flags</p>
+              <p class="claim-text">{{ vendor._redFlagCount }} recorded</p>
+            </div>
+            <div>
+              <p class="flag-label">Known customers</p>
+              <p class="claim-text">{{ vendor.known_customers.status | replace("_", " ") }}</p>
+            </div>
+          </div>
+          <p class="card-link"><a href="{{ ('/vendors/' + vendor.slug + '/') | url }}">View profile</a> · Reviewed {{ vendor.meta.last_reviewed | longDate }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+</div>

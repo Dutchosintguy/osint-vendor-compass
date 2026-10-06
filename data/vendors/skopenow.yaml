@@ -1,0 +1,305 @@
+identity:
+  name: Skopenow
+  legal_name: Skopenow Inc. (verify)
+  trade_names:
+  - Skopenow
+  official_website: https://www.skopenow.com/
+  hq_country: USA
+  category: Investigation / link analysis
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2015
+    source: https://www.skopenow.com/about
+    confidence: Medium
+  hq_country:
+    value: USA
+    source: https://www.skopenow.com/
+    confidence: Medium
+  ownership_type:
+    value: Private
+    source: https://www.skopenow.com/about
+    confidence: Medium
+  parent:
+    value: none identified
+    source: https://www.skopenow.com/about
+    confidence: Low
+  headcount_band:
+    value: unknown
+    source: https://www.skopenow.com/about
+    confidence: Low
+  customer_segments:
+  - LE
+  - insurance/fraud
+  - corporate investigations
+  primary_products:
+  - Skopenow platform
+  deployment_model:
+    value: SaaS investigations suite
+    source: https://www.skopenow.com/
+    confidence: High
+  notable_status: NYC-based OSINT investigations platform
+  score:
+    value: 4
+    confidence: High
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.skopenow.com/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: US company; investigators in LE/fraud/insurance.
+    source: https://www.skopenow.com/about
+    confidence: Medium
+  what:
+    text: AI-assisted OSINT across people, crime, news, media with link analysis.
+    source: https://www.skopenow.com/
+    confidence: High
+  where:
+    text: US HQ; data residency unknown.
+    source: https://www.skopenow.com/about
+    confidence: Medium
+  when:
+    text: Founded ~2015-2016 per company listings.
+    source: https://www.skopenow.com/about
+    confidence: Medium
+  why:
+    text: Speed investigations with automated OSINT research.
+    source: https://www.skopenow.com/
+    confidence: High
+  how:
+    text: Web platform combining search, AI detection, link analysis.
+    source: https://www.skopenow.com/
+    confidence: High
+  score:
+    value: 4
+    confidence: Medium
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.skopenow.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Investigation workflow packaging
+    source: https://www.skopenow.com/
+    confidence: Medium
+  weaknesses:
+  - text: Pricing opacity
+    source: https://www.skopenow.com/
+    confidence: Medium
+  best_fit:
+  - LE casework
+  - Insurance SIU
+  poor_fit:
+  - GEOINT-only buyers
+  alternatives:
+  - Maltego
+  - ShadowDragon
+  - Social Links
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.skopenow.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Quote-only
+    source: https://www.skopenow.com/
+    confidence: High
+  contract_norms: unknown
+  privacy_dpa:
+    text: unknown
+    source: https://www.skopenow.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://www.skopenow.com/
+    confidence: Low
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.skopenow.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Private
+    source: https://www.skopenow.com/about
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://www.skopenow.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.skopenow.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Product marketing presence
+    source: https://www.skopenow.com/
+    confidence: Low
+  negative:
+  - text: None material identified
+    source: https://www.skopenow.com/
+    confidence: Low
+  social_themes: LE-oriented
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.skopenow.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: unknown
+    source: https://www.skopenow.com/
+    confidence: Low
+  attribution:
+    text: unknown
+    source: https://www.skopenow.com/
+    confidence: Low
+  jurisdiction:
+    text: USA
+    source: https://www.skopenow.com/about
+    confidence: High
+  incident_history: unknown
+  recommended_controls:
+  - Request DPA
+  - Dedicated accounts
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.skopenow.com/
+    last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    note: Full section at extras.jurisdiction_sanctions_exposure (company-level only).
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: OSINT investigation tool—buyer validates lawful use
+    source: https://www.skopenow.com/
+    confidence: Medium
+  gdpr_residency:
+    text: unknown
+    source: https://www.skopenow.com/
+    confidence: Low
+  ownership_state_ties:
+    text: No state ties identified
+    source: https://www.skopenow.com/about
+    confidence: Low
+  certifications: unknown
+  legal_regulatory_actions: unknown
+  api_integrations: unknown
+  use_case_fit:
+    le_investigator:
+      value: 4
+      confidence: Medium
+      rationale: From product positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 3
+      confidence: Medium
+      rationale: From product positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: From product positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 3
+      confidence: Medium
+      rationale: From product positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: From product positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: NYC USA HQ signals. No RU/BY/CN/IR/DPRK/SY/CU offices identified.
+      source: https://www.skopenow.com/about
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Private US; no sanctioned-jurisdiction ownership identified.
+      source: https://www.skopenow.com/about
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: 'Workforce locations beyond US HQ: unknown.'
+      source: https://www.skopenow.com/about
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - Skopenow
+      - Skopenow Inc
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags: []
+gaps:
+- Legal name confirmation
+- Certifications
+- EU residency
+meta:
+  schema_version: '1.2'
+  slug: skopenow
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: documented
+  customers:
+  - customer_name: US Department of Homeland Security / US Secret Service (award context)
+    sector: government
+    country: USA
+    evidence_type: procurement_record
+    date: unknown
+    source_url: https://besagov.com/contracts/70US0921C70090065
+    notes: Federal award 70US0921C70090065 to Skopenow Inc. cited via BesaGov/USAspending-derived record—confirm
+      on USAspending.
+  - customer_name: US Department of Defense (award context)
+    sector: defense
+    country: USA
+    evidence_type: procurement_record
+    date: unknown
+    source_url: https://besagov.com/contracts/HS002124FE013
+    notes: Award HS002124FE013—confirm on USAspending.
+  research_notes: Compiled from vendor case studies, press, and/or procurement notices.
+  last_checked: '2026-10-06'
