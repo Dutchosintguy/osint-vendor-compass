@@ -1,0 +1,55 @@
+---
+layout: layouts/base.njk
+pageTitle: Use-case fit
+pageScript: use-cases
+description: See which example OSINT vendors record a fit for each job, from due diligence to journalism.
+---
+{% import "macros.njk" as ui %}
+<div class="wrap page">
+  <header class="page-head">
+    <h1>Use-case fit</h1>
+    <p class="lede">Fit is a judgment about the recorded product, not a ranking. A vendor can be a strong fit for one job and a poor fit for another. Read the note and its source before you treat the label as a decision.</p>
+  </header>
+
+  <label class="use-filter">Show a use case
+    <select data-use-filter>
+      <option value="">All use cases</option>
+      {% for item in taxonomy.use_cases %}
+        <option value="{{ item.id }}">{{ item.name }}</option>
+      {% endfor %}
+    </select>
+  </label>
+
+  {% for useCase in taxonomy.use_cases %}
+    {% set matches = vendors | vendorsForUse(useCase.id) %}
+    <section id="use-{{ useCase.id }}" class="block" data-use-section="{{ useCase.id }}">
+      <h2>{{ useCase.name }}</h2>
+      <p>{{ useCase.summary }}</p>
+      {% if matches.length %}
+        <div class="card-grid">
+          {% for vendor in matches %}
+            {% set fit = vendor | findFit(useCase.id) %}
+            <article class="vendor-card">
+              <p class="card-kicker">
+                {% if vendor.example %}<span class="pill pill-example">Example</span>{% endif %}
+                {% if fit %}
+                  <span class="pill pill-fit pill-fit-{{ fit.fit }}">{{ fit.fit | fitName }}</span>
+                {% else %}
+                  <span class="pill">Not assessed</span>
+                {% endif %}
+              </p>
+              <h3><a href="{{ ('/vendors/' + vendor.slug + '/') | url }}">{{ vendor.name }}</a></h3>
+              {% if fit %}{{ ui.claim(fit.note) }}{% else %}<p class="empty">No fit note recorded.</p>{% endif %}
+              <div class="card-flags">
+                {{ ui.riskPill(vendor.jurisdiction_sanctions.risk, "sanctions") }}
+                {{ ui.sectorPills(vendor.known_customers) }}
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      {% else %}
+        <p class="empty">No vendor in this set records this use case.</p>
+      {% endif %}
+    </section>
+  {% endfor %}
+</div>

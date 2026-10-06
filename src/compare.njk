@@ -1,0 +1,196 @@
+---
+layout: layouts/base.njk
+pageTitle: Compare vendors
+pageScript: compare
+description: Filter and sort OSINT vendor profiles by category, country, scores, use case, sanctions exposure, and customer sector.
+---
+{% import "macros.njk" as ui %}
+{% set stats = vendors | sectorStats %}
+<div class="wrap page">
+  <header class="page-head">
+    <h1>Compare vendors</h1>
+    <p class="lede">Transparency, financial health, and OPSEC posture run from 0 to 5. Higher is stronger. Sanctions exposure is a risk label: Low is a smaller recorded exposure. Buyer counts are publicly documented organizations, not a full client list.</p>
+  </header>
+
+  <form class="filters" data-filters aria-label="Filter vendors">
+    <div class="filter-grid">
+      <label>Search
+        <input type="search" name="q" placeholder="Name, product, or buyer">
+      </label>
+      <label>Category
+        <select name="category">
+          <option value="">Any</option>
+          {% for item in taxonomy.categories %}
+            <option value="{{ item.id }}">{{ item.name }}</option>
+          {% endfor %}
+        </select>
+      </label>
+      <label>HQ country
+        <select name="country">
+          <option value="">Any</option>
+          {% for country in vendors | uniqueCountries %}
+            <option value="{{ country }}">{{ country }}</option>
+          {% endfor %}
+        </select>
+      </label>
+      <label>Use case
+        <select name="use">
+          <option value="">Any</option>
+          {% for item in taxonomy.use_cases %}
+            <option value="{{ item.id }}">{{ item.name }}</option>
+          {% endfor %}
+        </select>
+      </label>
+      <label>Customer sector
+        <select name="sector">
+          <option value="">Any</option>
+          {% for item in taxonomy.customer_sectors %}
+            <option value="{{ item.id }}">{{ item.name }}</option>
+          {% endfor %}
+        </select>
+      </label>
+      <label>Sanctions exposure
+        <select name="sanctions">
+          <option value="">Any</option>
+          {% for item in taxonomy.sanctions_risks %}
+            <option value="{{ item.id }}">{{ item.name }}</option>
+          {% endfor %}
+        </select>
+      </label>
+      <label>Minimum transparency
+        <select name="minTransparency">
+          <option value="0">Any</option>
+          {% for n in [1, 2, 3, 4, 5] %}
+            <option value="{{ n }}">At least {{ n }}</option>
+          {% endfor %}
+        </select>
+      </label>
+      <label>Minimum financial health
+        <select name="minFinancial">
+          <option value="0">Any</option>
+          {% for n in [1, 2, 3, 4, 5] %}
+            <option value="{{ n }}">At least {{ n }}</option>
+          {% endfor %}
+        </select>
+      </label>
+      <label>Minimum OPSEC posture
+        <select name="minOpsec">
+          <option value="0">Any</option>
+          {% for n in [1, 2, 3, 4, 5] %}
+            <option value="{{ n }}">At least {{ n }}</option>
+          {% endfor %}
+        </select>
+      </label>
+    </div>
+    <div class="filter-actions">
+      <button class="button button-quiet" type="reset">Reset filters</button>
+      <p class="result-count" role="status">Showing <span data-count>{{ vendors | length }} vendors</span></p>
+    </div>
+  </form>
+
+  <section class="block" aria-labelledby="sector-heading">
+    <div class="section-head">
+      <h2 id="sector-heading">Known customers by sector</h2>
+    </div>
+    <p class="note">Counts are public customer records in the current result. One vendor can appear in more than one sector. A zero means nothing public was recorded, not that the vendor has no buyers in that sector.</p>
+    <div class="table-scroll">
+      <table class="agg">
+        <caption class="visually-hidden">Publicly documented customers by sector. Activate a sector to filter the comparison.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Sector</th>
+            <th scope="col">Customers</th>
+            <th scope="col">Vendors</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for stat in stats %}
+            <tr>
+              <td>
+                <button type="button" data-sector="{{ stat.id }}" aria-pressed="false">{{ stat.name }}</button>
+              </td>
+              <td data-agg-customers>{{ stat.customers }}</td>
+              <td data-agg-vendors>{{ stat.vendors }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <noscript><p class="note">Filters need JavaScript. The table below lists every vendor.</p></noscript>
+  </section>
+
+  <p class="empty-filter" data-empty hidden>No vendors match these filters.</p>
+
+  <div class="compare-table-wrap table-scroll">
+    <table class="compare" data-compare>
+      <caption class="visually-hidden">Comparison of vendor profiles. Scores run from 0 to 5. Sanctions exposure is a risk label.</caption>
+      <thead>
+        <tr>
+          <th scope="col" aria-sort="ascending"><button type="button" data-sort="name">Vendor</button></th>
+          <th scope="col"><button type="button" data-sort="country">HQ</button></th>
+          <th scope="col"><button type="button" data-sort="sanctions">Sanctions exposure</button></th>
+          <th scope="col">Known buyers</th>
+          <th scope="col"><button type="button" data-sort="transparency">Transparency</button></th>
+          <th scope="col"><button type="button" data-sort="financial">Financial</button></th>
+          <th scope="col"><button type="button" data-sort="opsec">OPSEC posture</button></th>
+          <th scope="col">Use cases</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for vendor in vendors %}
+          <tr {% include "partials/compare-attrs.njk" %}>
+            <th scope="row" data-label="Vendor">
+              <a href="{{ ('/vendors/' + vendor.slug + '/') | url }}">{{ vendor.name }}</a>
+              {% if vendor.example %}<span class="pill pill-example">Example</span>{% endif %}
+              <span class="cell-sub">{{ vendor.primary_category | categoryName }} · {{ vendor.founded_year }}</span>
+            </th>
+            <td data-label="HQ">{{ vendor.headquarters.country }}</td>
+            <td data-label="Sanctions exposure">
+              {{ ui.riskPill(vendor.jurisdiction_sanctions.risk, "sanctions") }}
+              <span class="cell-sub">
+                {% if vendor.jurisdiction_sanctions.offices_and_entities.countries.length %}
+                  {{ vendor.jurisdiction_sanctions.offices_and_entities.countries | join(", ") }}
+                {% else %}
+                  No review-list presence
+                {% endif %}
+              </span>
+              <span class="cell-sub">{{ vendor.jurisdiction_sanctions.screening | screeningSummary }}</span>
+            </td>
+            <td data-label="Known buyers">
+              {{ ui.sectorPills(vendor.known_customers) }}
+              <span class="cell-sub">{{ vendor.known_customers | length }} public</span>
+            </td>
+            <td data-label="Transparency">{{ vendor.scores.business_transparency.score }}/5 <span class="cell-sub">{{ vendor.scores.business_transparency.score | scoreLabel }}</span></td>
+            <td data-label="Financial">{{ vendor.scores.financial_health.score }}/5 <span class="cell-sub">{{ vendor.scores.financial_health.score | scoreLabel }}</span></td>
+            <td data-label="OPSEC posture">{{ vendor.scores.customer_opsec.score }}/5 <span class="cell-sub">{{ vendor.scores.customer_opsec.score | scoreLabel }}</span></td>
+            <td data-label="Use cases">
+              <ul class="plain-list">
+                {% for id in vendor.use_cases %}
+                  <li>{{ id | useCaseName }}</li>
+                {% endfor %}
+              </ul>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="compare-cards" data-cards>
+    {% for vendor in vendors %}
+      <article {% include "partials/compare-attrs.njk" %}>
+        <h2><a href="{{ ('/vendors/' + vendor.slug + '/') | url }}">{{ vendor.name }}</a></h2>
+        {% if vendor.example %}<span class="pill pill-example">Example</span>{% endif %}
+        <p class="cell-sub">{{ vendor.primary_category | categoryName }} · {{ vendor.headquarters.city }}, {{ vendor.headquarters.country }} · {{ vendor.founded_year }}</p>
+        <dl class="card-scores">
+          <div><dt>Sanctions</dt><dd>{{ ui.riskPill(vendor.jurisdiction_sanctions.risk, "sanctions") }}</dd></div>
+          <div><dt>Transparency</dt><dd>{{ vendor.scores.business_transparency.score }}/5 {{ vendor.scores.business_transparency.score | scoreLabel }}</dd></div>
+          <div><dt>Financial</dt><dd>{{ vendor.scores.financial_health.score }}/5 {{ vendor.scores.financial_health.score | scoreLabel }}</dd></div>
+          <div><dt>OPSEC posture</dt><dd>{{ vendor.scores.customer_opsec.score }}/5 {{ vendor.scores.customer_opsec.score | scoreLabel }}</dd></div>
+        </dl>
+        <p class="flag-label">Known buyers</p>
+        {{ ui.sectorPills(vendor.known_customers) }}
+      </article>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dutchosintguy.github.io/osint-vendor-compass/schema/vendor.schema.json",
+  "title": "OSINT Vendor Compass vendor profile",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "slug",
+    "name",
+    "example",
+    "owner_approved",
+    "status",
+    "last_reviewed",
+    "categories",
+    "use_cases",
+    "company",
+    "scores",
+    "jurisdiction_sanctions",
+    "known_customers"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "example": { "type": "boolean" },
+    "owner_approved": { "type": "boolean" },
+    "status": { "enum": ["example", "draft", "published", "vendor-signed-off"] },
+    "last_reviewed": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "founded_year": { "type": "integer" },
+    "known_customers": {
+      "type": "array",
+      "description": "Publicly documented organizations. Do not add private individuals.",
+      "items": { "$ref": "#/$defs/customer" }
+    },
+    "jurisdiction_sanctions": { "$ref": "#/$defs/sanctions" }
+  },
+  "$defs": {
+    "claim": {
+      "type": "object",
+      "required": ["text", "source"],
+      "properties": {
+        "text": { "type": "string" },
+        "source": { "type": "string", "format": "uri" },
+        "source_label": { "type": "string" },
+        "accessed": { "type": "string" },
+        "confidence": { "enum": ["high", "medium", "low", "unverified"] },
+        "risk": { "enum": ["low", "medium", "high", "unknown"] }
+      }
+    },
+    "customer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "sector", "country", "evidence_type", "date", "source"],
+      "properties": {
+        "name": { "type": "string" },
+        "sector": {
+          "enum": ["law-enforcement", "government", "corporate", "financial-services", "journalism", "other"]
+        },
+        "country": { "type": "string" },
+        "country_code": { "type": "string", "pattern": "^[A-Z]{2}$" },
+        "evidence_type": {
+          "enum": ["case-study", "government-contract", "press-release", "press-report"]
+        },
+        "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "note": { "type": "string" },
+        "source": { "type": "string", "format": "uri" },
+        "source_label": { "type": "string" },
+        "accessed": { "type": "string" },
+        "confidence": { "enum": ["high", "medium", "low", "unverified"] }
+      }
+    },
+    "screening": {
+      "type": "object",
+      "required": ["regime", "result", "screened_on", "text", "source"],
+      "properties": {
+        "regime": { "enum": ["EU", "UN", "OFAC", "UK"] },
+        "result": { "enum": ["clear", "potential-match", "listed", "not-screened", "unknown"] },
+        "screened_on": { "type": "string" },
+        "text": { "type": "string" },
+        "source": { "type": "string" },
+        "source_label": { "type": "string" },
+        "accessed": { "type": "string" },
+        "confidence": { "enum": ["high", "medium", "low", "unverified"] }
+      }
+    },
+    "sanctions": {
+      "type": "object",
+      "description": "Company-level jurisdiction and sanctions exposure. No individual employee data.",
+      "required": ["risk", "summary", "offices_and_entities", "ownership_ties", "workforce_signals", "screening"],
+      "properties": {
+        "risk": { "enum": ["low", "medium", "high", "unknown"] },
+        "summary": { "$ref": "#/$defs/claim" },
+        "offices_and_entities": {
+          "allOf": [
+            { "$ref": "#/$defs/claim" },
+            {
+              "type": "object",
+              "properties": {
+                "countries": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          ]
+        },
+        "ownership_ties": { "$ref": "#/$defs/claim" },
+        "workforce_signals": { "$ref": "#/$defs/claim" },
+        "screening": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": { "$ref": "#/$defs/screening" }
+        }
+      }
+    }
+  }
+}

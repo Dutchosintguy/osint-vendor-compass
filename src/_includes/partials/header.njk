@@ -1,0 +1,32 @@
+{% set homeUrl = "/" | url %}
+{% set compareUrl = "/compare/" | url %}
+{% set useUrl = "/use-cases/" | url %}
+{% set methodUrl = "/methodology/" | url %}
+{% set aboutUrl = "/about/" | url %}
+<a class="skip-link" href="#content">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ homeUrl }}">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="11" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+        <path d="M16 5.2 L18.3 16 L16 14.1 L13.7 16 Z" fill="currentColor"></path>
+        <path class="mark-south" d="M16 26.8 L13.7 16 L16 17.9 L18.3 16 Z"></path>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-kicker">OSINT</span>
+        <span class="brand-name">Vendor Compass</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="nav" aria-label="Primary">
+      <a href="{{ homeUrl }}" {% if page.url == homeUrl %}aria-current="page"{% endif %}>Overview</a>
+      <a href="{{ compareUrl }}" {% if page.url == compareUrl %}aria-current="page"{% endif %}>Compare</a>
+      <a href="{{ useUrl }}" {% if page.url == useUrl %}aria-current="page"{% endif %}>Use cases</a>
+      <a href="{{ methodUrl }}" {% if page.url == methodUrl %}aria-current="page"{% endif %}>Methodology</a>
+      <a href="{{ aboutUrl }}" {% if page.url == aboutUrl %}aria-current="page"{% endif %}>About</a>
+    </nav>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode">
+      <span data-theme-label>Dark mode</span>
+    </button>
+  </div>
+</header>

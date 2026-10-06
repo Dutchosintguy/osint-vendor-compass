@@ -1,0 +1,68 @@
+{% macro sourceLine(item) %}
+  {% if item %}
+    <p class="claim-meta">
+      {% set href = item.source | httpUrl %}
+      {% if href %}
+        <a href="{{ href }}">{{ item.source_label or "Source" }}</a>
+      {% else %}
+        <span class="unsourced">No source</span>
+      {% endif %}
+      {% if item.accessed %}<span>Accessed {{ item.accessed | longDate }}</span>{% endif %}
+      {% if item.confidence %}<span>{{ item.confidence | confidenceName }}</span>{% endif %}
+    </p>
+  {% endif %}
+{% endmacro %}
+
+{% macro claim(item) %}
+  {% if item and item.text %}
+    <div class="claim">
+      <p class="claim-text">{{ item.text }}</p>
+      {{ sourceLine(item) }}
+    </div>
+  {% else %}
+    <p class="empty">Not recorded.</p>
+  {% endif %}
+{% endmacro %}
+
+{% macro segments(score) %}
+  <span class="segments" aria-hidden="true">
+    {% for i in range(1, 6) %}
+      <span class="{% if score >= i %}is-on{% endif %}"></span>
+    {% endfor %}
+  </span>
+{% endmacro %}
+
+{% macro scoreMeter(score, label) %}
+  <div class="score">
+    <div class="score-top">
+      <span class="score-name">{{ label }}</span>
+      <span class="score-value">{{ score }}<span class="score-max">/5</span></span>
+    </div>
+    <span class="score-word">{{ score | scoreLabel }}</span>
+    {{ segments(score) }}
+  </div>
+{% endmacro %}
+
+{% macro riskPill(level, kind) %}
+  {% set tone = level or "unknown" %}
+  {% if kind == "sanctions" %}
+    <span class="pill pill-risk pill-risk-{{ tone }}">{{ tone | sanctionsName }}</span>
+  {% else %}
+    <span class="pill pill-risk pill-risk-{{ tone }}">{{ tone | riskName }}</span>
+  {% endif %}
+{% endmacro %}
+
+{% macro sectorPills(customers) %}
+  {% set ids = (customers | joinSectors).split(" ") %}
+  {% if customers and customers.length %}
+    <ul class="pill-row">
+      {% for id in ids %}
+        {% if id %}
+          <li><span class="pill pill-sector">{{ id | sectorName }}</span></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="empty">None recorded.</p>
+  {% endif %}
+{% endmacro %}

@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+pageTitle: About
+description: Who maintains OSINT Vendor Compass, and the independence and conflict-of-interest rules.
+---
+<div class="wrap page prose">
+  <header class="page-head">
+    <h1>About</h1>
+    <p class="lede">OSINT Vendor Compass is an independent comparison for people who have to choose an OSINT SaaS vendor and want the evidence in one place.</p>
+  </header>
+
+  <h2>Owner</h2>
+  <p>The project is owned by Nico Dekens, an OSINT practitioner who publishes as Dutchosintguy. He approves every real vendor before it is added. This page does not list clients, employers, or a biography beyond that role.</p>
+
+  <h2>Who it is for</h2>
+  <p>OSINT analysts, decision makers, and companies comparing providers for a real use case: investigations, threat intelligence, fraud and brand work, journalism, and the other jobs listed on the use-case page.</p>
+
+  <h2>Independence</h2>
+  <p>There is no paid placement, no affiliate link, and no sponsorship that buys a score or a position in the table. Vendors do not pay to be included. A vendor who reviews a draft for factual errors does not control the score, the sanctions label, or the wording.</p>
+  <p>The default sort is by name. The site does not crown a winner.</p>
+
+  <h2>Conflicts of interest</h2>
+  <p>If the owner has a commercial relationship with a vendor, that relationship will be written on this page before the related profile is published. It will name the vendor and the nature of the relationship. A relationship does not by itself block a profile, and it does not improve a score.</p>
+  <p>As of this first version, the site contains only fictional example profiles. No real vendor relationship is represented here.</p>
+
+  <h2>What gets published</h2>
+  <p>A real vendor is added only after Nico Dekens sets <code>owner_approved: true</code> in that vendor’s file. The validator rejects unapproved real vendors, and it rejects example files that cite anything other than example.com. The review steps are on the methodology page.</p>
+
+  <h2>Privacy</h2>
+  <p>The site is static. It loads no analytics, no advertising, and no third-party scripts or fonts. It sets no cookies. If you use the theme button, the choice is stored in local storage on this device so the next visit can match it. That value stays in your browser.</p>
+  <p>The audience includes people who are careful about what their browser talks to. The build follows that constraint on purpose.</p>
+
+  <h2>Contact</h2>
+  <p>Corrections and vendor proposals go through the <a href="{{ site.repository }}">source repository</a>. Please do not send confidential client lists or personal data about employees.</p>
+</div>

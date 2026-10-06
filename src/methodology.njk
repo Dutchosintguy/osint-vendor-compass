@@ -1,0 +1,120 @@
+---
+layout: layouts/base.njk
+pageTitle: Methodology
+description: How OSINT Vendor Compass scores transparency, financial health, customer OPSEC, sanctions exposure, and known buyers, and how a vendor is approved.
+---
+<div class="wrap page prose">
+  <header class="page-head">
+    <h1>Methodology</h1>
+    <p class="lede">Scores are structured judgments about public evidence. They are not a credit rating, a legal opinion, an endorsement, or a ranking of which product is best at an investigation.</p>
+  </header>
+
+  <h2>Evidence</h2>
+  <p>Every material claim has a source URL, an access date, and a confidence label. A claim about an absence still cites the page that was checked. Confidence is high, medium, low, or unverified. Example profiles are unverified by definition: their sources are placeholders on example.com.</p>
+  <p>The reviewer uses public material: the vendor’s own pages, registries, funding notes, certifications, contracts, and press. Confidential customer lists, leaked data, and personal information about employees are out of scope.</p>
+
+  <h2>The three scores</h2>
+  <p>Each score is an integer from 0 to 5. Higher means a stronger public record on that question. The words under the number are part of the score, so color is never the only signal.</p>
+
+  <h3>Business transparency</h3>
+  <table>
+    <caption>Business transparency rubric</caption>
+    <thead><tr><th scope="col">Score</th><th scope="col">Meaning</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">0 Unknown</th><td>Not enough public material to judge.</td></tr>
+      <tr><th scope="row">1 Poor</th><td>The legal entity, ownership, or product boundary cannot be established.</td></tr>
+      <tr><th scope="row">2 Limited</th><td>Basic corporate facts exist, with a material gap in pricing, subprocessors, or ownership.</td></tr>
+      <tr><th scope="row">3 Adequate</th><td>Legal entity, location, product, and pricing model are public. Some gaps remain.</td></tr>
+      <tr><th scope="row">4 Strong</th><td>Ownership, pricing approach, subprocessors, and policies are public and consistent.</td></tr>
+      <tr><th scope="row">5 Excellent</th><td>The above, plus disclosures a buyer can re-check without asking sales.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Financial health</h3>
+  <p>This is a stability signal, not a credit score and not investment advice.</p>
+  <table>
+    <caption>Financial health rubric</caption>
+    <thead><tr><th scope="col">Score</th><th scope="col">Meaning</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">0 Unknown</th><td>No usable public signal.</td></tr>
+      <tr><th scope="row">1 Poor</th><td>Distress signals, or no evidence the company is operating.</td></tr>
+      <tr><th scope="row">2 Limited</th><td>Early, or dependent on a single undisclosed event.</td></tr>
+      <tr><th scope="row">3 Adequate</th><td>Funding or a revenue comment exists. Runway is not evidenced.</td></tr>
+      <tr><th scope="row">4 Strong</th><td>Credible funding or revenue signals, and no public distress.</td></tr>
+      <tr><th scope="row">5 Excellent</th><td>Funding, revenue, and longevity agree with each other. Still not audited here.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Customer OPSEC posture</h3>
+  <p>Higher means lower residual risk for the customer who types a query into the tool. It does not mean the product is more capable.</p>
+  <table>
+    <caption>Customer OPSEC posture rubric</caption>
+    <thead><tr><th scope="col">Score</th><th scope="col">Meaning</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">0 Unknown</th><td>Treat the tool as unverified risk.</td></tr>
+      <tr><th scope="row">1 Poor</th><td>Long or undefined retention, broad logging, or sharing the customer cannot limit.</td></tr>
+      <tr><th scope="row">2 Limited</th><td>Material risks and few customer controls.</td></tr>
+      <tr><th scope="row">3 Adequate</th><td>Some controls, and some unresolved risks.</td></tr>
+      <tr><th scope="row">4 Strong</th><td>Bounded retention, a clear logging policy, and limited sharing.</td></tr>
+      <tr><th scope="row">5 Excellent</th><td>Strong controls, plus a certification or contract option the reviewer could check.</td></tr>
+    </tbody>
+  </table>
+  <p>The profile also records separate risk labels for retention, query logging, jurisdiction, state or owner links, and third-party sharing. Those labels can be stricter than the rollup. Read them.</p>
+
+  <h2>Jurisdiction and sanctions exposure</h2>
+  <p>This is a risk label: low, medium, high, or not assessed. It is not a 0–5 score. Low means a smaller recorded exposure.</p>
+  <p>Reviewers check four company-level questions:</p>
+  <ul>
+    <li>Offices, R&amp;D sites, or legal entities in Russia, Belarus, China, or any other country relevant under EU, UN, OFAC, or UK sanctions at the time of review.</li>
+    <li>Owner, investor, or leadership-entity ties to those countries.</li>
+    <li>Aggregate workforce location signals, such as a share of headcount by employing entity.</li>
+    <li>Screening of the legal names that were actually checked against the EU, UN, OFAC, and UK lists, with the date of the check.</li>
+  </ul>
+  <p>China is on the review list because buyers asked for it. A commercial presence there is recorded. It is not, by itself, a sanctions listing. A clear screening result is also not the same thing as the absence of a review-list entity. Example Vendor B is constructed to show that difference, and it is fictional.</p>
+  <table>
+    <caption>Sanctions exposure labels</caption>
+    <thead><tr><th scope="col">Label</th><th scope="col">When it is used</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Low exposure</th><td>No review-list entity, no owner or investor tie, no workforce signal in those countries, and EU, UN, OFAC, and UK screening of the checked legal names are clear.</td></tr>
+      <tr><th scope="row">Medium exposure</th><td>A review-list presence, ownership tie, or workforce signal that is not a list match; a potential match; or incomplete screening.</td></tr>
+      <tr><th scope="row">High exposure</th><td>A checked legal name, owner, or investor is listed, or screening records a confirmed match.</td></tr>
+      <tr><th scope="row">Not assessed</th><td>The checks were not done, or the sources are missing.</td></tr>
+    </tbody>
+  </table>
+  <p>The rollup cannot be “low” when a factor is medium or high, and it must be “high” when a screening result is “listed”. Official consolidated lists are the authority, not this site. A clear result covers only the names the profile says were checked. This is not a screening service and not legal advice.</p>
+  <p>Do not add named employees, personal emails, phone numbers, home addresses, or individual locations. If a public sanctions list itself names a controlling person, cite the designation and the role. Do not expand it into a personal file.</p>
+
+  <h2>Known customers and buyers</h2>
+  <p>A known customer is an organization named in a public source. The evidence type is one of: case study, government contract, press release, or press report. Each record has a sector, a country, a date, and a source URL.</p>
+  <p>Sectors are a controlled list: law enforcement, government, corporate, financial services, journalism, and other. The comparison page counts customer records and vendors per sector, and those counts follow the active filters. One vendor can sit in several sectors. A zero means no public record was filed here. It does not mean the vendor has no buyers in that sector.</p>
+  <p>Customer records are organizations. Do not add a named buyer who is a private individual, and do not paste a confidential client list.</p>
+
+  <h2>Use-case fit</h2>
+  <p>Fit is strong, moderate, limited, poor, or not assessed. It answers whether the recorded product matches a job. It is independent of the three scores. A transparent vendor can still be a poor fit for a job it does not do.</p>
+
+  <h2>Review and vendor sign-off</h2>
+  <ol>
+    <li><strong>Propose.</strong> Open an issue naming the vendor and why it belongs. The owner decides whether it is in scope.</li>
+    <li><strong>Research.</strong> Add one YAML file. Every material claim has a source, an access date, and a confidence label.</li>
+    <li><strong>Validate.</strong> <code>npm run validate</code> must pass. A real vendor fails until <code>owner_approved</code> is true.</li>
+    <li><strong>Owner review.</strong> Nico Dekens reviews the profile. Approval sets <code>owner_approved: true</code>, status <code>published</code>, <code>reviewed_by</code>, and <code>last_reviewed</code>.</li>
+    <li><strong>Vendor sign-off, optional.</strong> The vendor may correct facts. Sign-off is recorded as <code>vendor-signed-off</code>. It does not grant editorial control. A disagreement stays in the profile with both the public source and the vendor’s statement.</li>
+    <li><strong>Publish.</strong> Merge to <code>main</code>. GitHub Actions deploys the site.</li>
+    <li><strong>Re-review.</strong> <code>last_reviewed</code> is the date of the last human pass. Example profiles are not reviews.</li>
+  </ol>
+  <p>Real vendors are not added until the owner approves them. The validator enforces that gate. Approval is a human decision recorded in the file.</p>
+
+  <h2>Example data</h2>
+  <p>The shipped profiles are Example Vendor A and Example Vendor B. They are fictional, marked on every page, and rejected by the validator if a source leaves example.com. They exist so the format can be reviewed before any real company is named.</p>
+
+  <h2>Corrections</h2>
+  <p>Open an issue or a pull request in the source repository. Say which claim is wrong and link the better source. A correction updates the claim, the source, and <code>last_reviewed</code> when a person has checked it.</p>
+
+  <h2>Limits</h2>
+  <ul>
+    <li>Not legal advice, not a sanctions determination, and not a credit rating.</li>
+    <li>Not an endorsement, and not a statement that a vendor is safe to use.</li>
+    <li>Public sources only. A polished trust page can still hide a material fact.</li>
+    <li>Scores can move when the evidence moves. Read the date.</li>
+  </ul>
+</div>
