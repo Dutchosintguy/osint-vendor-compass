@@ -185,7 +185,7 @@ opsec_risks:
   - Contractual OPSEC clauses
   jurisdiction_sanctions_exposure:
     note: See extras.jurisdiction_sanctions_exposure
-    result_summary: REVIEW REQUIRED — possible list hit
+    result_summary: clear — prior 'REVIEW REQUIRED' was a false positive (unrelated list entries)
     screening_date: '2026-10-06'
   score:
     value: 3
@@ -204,9 +204,10 @@ extras:
     source: https://www.brandwatch.com/
     confidence: Low
   ownership_state_ties:
-    text: Private equity/corporate ownership via Cision—no sanctioned-state owner identified
-    source: https://www.brandwatch.com/
-    confidence: Medium
+    text: Brandwatch was acquired by Cision (closed June 2021 per Cision/PR Newswire). Cision was taken private
+      by an affiliate of Platinum Equity (completed 31 Jan 2020). No state ownership identified.
+    source: https://www.prnewswire.co.uk/news-releases/cision-closes-brandwatch-acquisition-883471423.html
+    confidence: High
   certifications: unknown
   legal_regulatory_actions:
     text: unknown
@@ -266,39 +267,54 @@ extras:
       source: https://www.brandwatch.com/
       confidence: Medium
     sanctions_screening:
-      eu: 'POSSIBLE HIT — review: [''Cision'']'
-      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
-      ofac_sdn: 'POSSIBLE HIT — review: {''ofac_sdn'': [{''entity'': ''Cision'', ''snippet'': ''9753,"CHINA NATIONAL
-        PRECISION MACHINERY IMPORT/EXPORT CORPORATION",-0- ,"NPWMD] [IFSR",-0- ,-0- ,-0- ,-0- ,-0- ,-0- ,-0- ,"ADDITIONAL
-        SANCTIONS INFORMATION - SUBJECT TO SECONDARY ''}], ''ofac_other'': [''Cision''], ''uk'': [''Cision''], ''eu'':
-        [''Cision'']}'
-      uk: 'POSSIBLE HIT — review: [''Cision'']'
+      eu: no whole-word match for screened vendor/parent legal names in EU FSF XML (2026-10-06 dump)
+      un: no whole-word match in UN consolidated XML (downloaded 2026-10-06)
+      ofac_sdn: no whole-word match for screened vendor/parent legal names on OFAC SDN / consolidated non-SDN (2026-10-06
+        dump)
+      uk: no whole-word match for screened vendor/parent legal names on UK OFSI list (2026-10-06 dump)
       screened_entities:
       - Brandwatch
+      - Brandwatch GmbH
+      - Brandwatch LLC
       - Cision
+      - Cision Ltd
+      - Cision US Inc
+      - Platinum Equity
       screening_date: '2026-10-06'
-      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
-        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
-        environment.
+      method: 'Re-screen after false-positive review: whole-word / token boundary matching against local OFAC SDN
+        + cons, UK OFSI ConList, EU FSF XML, and UN consolidated XML. Not legal advice.'
       sources:
       - https://sanctionssearch.ofac.treas.gov/
       - https://www.treasury.gov/ofac/downloads/sdn.csv
       - https://www.gov.uk/government/publications/the-uk-sanctions-list
       - https://www.sanctionsmap.eu/
-      confidence: Medium
-      result: REVIEW REQUIRED — possible list hit
-      notes: ''
-      raw_hits:
-        ofac_sdn:
-        - entity: Cision
-          snippet: '9753,"CHINA NATIONAL PRECISION MACHINERY IMPORT/EXPORT CORPORATION",-0- ,"NPWMD] [IFSR",-0-
-            ,-0- ,-0- ,-0- ,-0- ,-0- ,-0- ,"ADDITIONAL SANCTIONS INFORMATION - SUBJECT TO SECONDARY '
-        ofac_other:
-        - Cision
-        uk:
-        - Cision
-        eu:
-        - Cision
+      - https://scsanctions.un.org/resources/xml/en/consolidated.xml
+      confidence: High
+      result: clear — prior 'REVIEW REQUIRED' was a false positive (unrelated list entries)
+      false_positive_analysis:
+        prior_flag_reason: Naive substring match on parent name 'Cision' matched inside unrelated tokens such as
+          English/French 'PRECISION' / 'PRÉCISION' on OFAC/EU lists (e.g. China National PreCISION Machinery; A.E.
+          Nudelman precision bureau FR alias).
+        actual_list_entries_examined:
+        - list: OFAC SDN
+          entry: CHINA NATIONAL PRECISION MACHINERY IMPORT/EXPORT CORPORATION (and similar 'PRECISION' entities)
+          related_to_vendor: false
+        - list: EU FSF
+          entry: French aliases containing 'précision' (machinery institutes)
+          related_to_vendor: false
+        verdict: false_positive
+        reasoning: Brandwatch and Cision (PR/media software group owned by Platinum Equity affiliate since Jan 2020;
+          Brandwatch acquired by Cision Jun 2021) do not appear as designated parties. Substring 'Cision' inside
+          'Precision' is not a designation of Cision Ltd/Brandwatch.
+      owners_parents_screened:
+      - name: Cision / Cision Ltd
+        result: clear (false positive on PRECISION)
+        source: https://www.prnewswire.co.uk/news-releases/cision-closes-brandwatch-acquisition-883471423.html
+      - name: Platinum Equity (Cision owner)
+        result: clear — no whole-word hit
+        source: https://www.platinumequity.com/news/platinum-equity-completes-2-7-billion-acquisition-of-cision/
+      raw_hits: {}
+      recheck_date: '2026-10-06'
 red_flags: []
 gaps:
 - DPA
@@ -309,6 +325,7 @@ meta:
   slug: brandwatch
   last_reviewed: '2026-10-06'
   signoff_status: approved
+  recheck_note: Sanctions false-positive cleared 2026-10-06
 known_customers:
   status: documented
   customers:

@@ -1,6 +1,7 @@
 identity:
   name: PimEyes
-  legal_name: Unclear — historically Poland; brand moves via Seychelles/Belize; reported Dubai owner EMEARobotics
+  legal_name: Disputed / opaque — see claim_verification; operators and seats have changed over time per regulators
+    and press
   trade_names:
   - PimEyes
   official_website: https://pimeyes.com/en
@@ -10,68 +11,87 @@ identity:
 overview_360:
   founded_year:
     value: 2017
+    detail: Wikipedia and major press report PimEyes launched in 2017 by Polish engineers Lucasz (Lukasz) Kowalczyk
+      and Denis Tatina.
     source: https://en.wikipedia.org/wiki/PimEyes
-    confidence: Medium
+    confidence: High
   hq_country:
     value: unknown
-    source: https://pimeyes.com/en
+    detail: noyb reports that over regulatory proceedings the site has claimed seats including Poland, Seychelles
+      and Belize, and that Hamburg DPA treated the operator as based in Dubai. Business Insider / Peiffer Wolf reporting
+      on the Illinois BIPA complaint names EMEARobotics (Dubai) and Carribex LTD (Belize) among defendants in connection
+      with a 2021 acquisition narrative.
+    source: https://noyb.eu/en/no-action-taken-against-pimeyes-noyb-lawsuit-against-hamburg-dpa
     confidence: Medium
   ownership_type:
-    value: Private / opaque jurisdiction hopping
-    source: https://pimeyes.com/en
+    value: Private; ownership chain reported as opaque and changing
+    source: https://noyb.eu/en/no-action-taken-against-pimeyes-noyb-lawsuit-against-hamburg-dpa
     confidence: Medium
   parent:
-    value: Reported EMEARobotics (Dubai) ownership in secondary sources
-    source: https://pimeyes.com/en
+    value: Press and litigation reporting link current operations to EMEARobotics (Dubai) and CEO Giorgi Gobronidze;
+      noyb (8 Jul 2026 update) says the current operator told noyb it acquired the product from previous owners
+      in 2022 (noyb could not independently verify).
+    source: https://noyb.eu/en/no-action-taken-against-pimeyes-noyb-lawsuit-against-hamburg-dpa
     confidence: Medium
   headcount_band:
-    value: 1-10
+    value: unknown
+    detail: Prior '1-10' was based on weak LinkedIn signals; removed as insufficiently verified.
     source: https://pimeyes.com/en
     confidence: Low
   customer_segments:
-  - consumers
-  - some LE—controversial
+  - consumers (public SaaS)
+  - other users unknown
   primary_products:
-  - PimEyes face search
-  - video search (announced)
+  - PimEyes face image search
+  - Video search capability reported as announced by Biometric Update (Jul 2025) — treat as announced, not independently
+    verified on-site this pass
   deployment_model:
     value: SaaS
     source: https://pimeyes.com/en
     confidence: Medium
-  notable_status: 'MAJOR RED FLAGS: biometric face search; noyb/Hamburg DPA considers practices illegal but enforcement
-    difficulty citing Dubai; UK ICO complaint history; Illinois BIPA suit; HQ opacity Poland→Seychelles→Belize→Dubai
-    reports'
+  notable_status: 'Public facial-recognition search service. noyb reports Hamburg DPA considered practices unlawful
+    but declined effective enforcement citing a Dubai seat (noyb sued the DPA, 30 Apr 2026). Big Brother Watch submitted
+    concerns to the UK ICO (2022). Five Illinois residents filed a BIPA lawsuit (2023) naming PimEyes-related defendants
+    per Business Insider. Vendor position (BBC 2022): CEO Giorgi Gobronidze said risks are lower than social media/search
+    engines and disputed biometric reconstruction claims; noyb 2026 update: current operator says it does photographic
+    similarity comparison and acquired the product in 2022.'
   score:
-    value: 3
-    confidence: Medium
-    rationale: Public sources.
+    value: 2
+    confidence: High
+    rationale: Product existence clear; corporate identity and legal seat remain contested in regulatory reporting.
     sources:
     - https://pimeyes.com/en
+    - https://noyb.eu/en/no-action-taken-against-pimeyes-noyb-lawsuit-against-hamburg-dpa
     last_verified: '2026-10-06'
 five_w1h:
   who:
-    text: Face search service with disputed/changing legal seat; CEO Giorgi Gobronidze per secondary sources.
-    source: https://en.wikipedia.org/wiki/PimEyes
-    confidence: Medium
+    text: Public face-search service. Press names CEO Giorgi Gobronidze; founding attributed to Polish engineers
+      Kowalczyk and Tatina (Wikipedia / Business Insider). Legal seat disputed across jurisdictions in DPA/NGO reporting.
+    source: https://www.bbc.com/news/technology-63544169
+    confidence: High
   what:
-    text: Upload a face photo to find matching images online (biometric similarity search).
+    text: Users upload a face photo; the service returns matching images from its index of publicly posted images
+      (vendor/marketing and BBC description).
     source: https://pimeyes.com/en
-    confidence: Medium
+    confidence: High
   where:
-    text: Legal seat unclear (Dubai reported); processing locations unknown.
-    source: https://pimeyes.com/en
+    text: Processing locations not independently verified. Regulatory reporting cites changing claimed seats (Poland/Seychelles/Belize)
+      and a Dubai-based operator narrative.
+    source: https://noyb.eu/en/no-action-taken-against-pimeyes-noyb-lawsuit-against-hamburg-dpa
     confidence: Medium
   when:
-    text: Launched 2017 Poland; ownership changes 2020+.
+    text: Service reported launched 2017; ownership/operator changes reported around 2020–2022.
     source: https://en.wikipedia.org/wiki/PimEyes
     confidence: Medium
   why:
-    text: Find where a face appears online.
+    text: 'Vendor marketing: find where a face appears online among publicly posted images.'
     source: https://pimeyes.com/en
-    confidence: Medium
+    confidence: High
   how:
-    text: Crawl/index faces + similarity search.
-    source: https://pimeyes.com/en
+    text: Indexes publicly available face images and runs similarity search. Vendor (via noyb 2026 contact) describes
+      this as photographic similarity comparison; privacy advocates and noyb describe it as facial recognition /
+      biometric analysis — dispute not resolved here.
+    source: https://noyb.eu/en/no-action-taken-against-pimeyes-noyb-lawsuit-against-hamburg-dpa
     confidence: Medium
   score:
     value: 3
@@ -82,19 +102,21 @@ five_w1h:
     last_verified: '2026-10-06'
 strengths_weaknesses:
   strengths:
-  - text: Powerful reverse face search
+  - text: Provides a publicly accessible reverse face-image search capability (product function verified via vendor
+      site and major press).
     source: https://pimeyes.com/en
-    confidence: Medium
+    confidence: High
   weaknesses:
-  - text: Severe privacy/legal risk
-    source: https://pimeyes.com/en
-    confidence: Medium
-  - text: Jurisdiction opacity
-    source: https://pimeyes.com/en
-    confidence: Medium
-  - text: Misuse potential
-    source: https://pimeyes.com/en
-    confidence: Medium
+  - text: Subject of GDPR complaints and adverse characterization by Hamburg DPA (as reported by noyb) and civil-society
+      groups.
+    source: https://noyb.eu/en/no-action-taken-against-pimeyes-noyb-lawsuit-against-hamburg-dpa
+    confidence: High
+  - text: Corporate seat and ownership chain are opaque or changing according to regulator/NGO reporting.
+    source: https://noyb.eu/en/no-action-taken-against-pimeyes-noyb-lawsuit-against-hamburg-dpa
+    confidence: High
+  - text: Named in Illinois BIPA litigation (complaint stage per Dec 2023 Business Insider reporting).
+    source: https://www.businessinsider.com/facial-recognition-company-pimeyes-sued-under-illinois-privacy-law-2023-12
+    confidence: High
   best_fit:
   - Only with strong legal basis & counsel
   poor_fit:
@@ -151,14 +173,21 @@ financial_health:
     last_verified: '2026-10-06'
 press_sentiment:
   positive:
-  - text: Capability demos
+  - text: Limited mainstream positive coverage found; capability is sometimes discussed neutrally as a technical
+      tool.
     source: https://pimeyes.com/en
-    confidence: Medium
+    confidence: Low
   negative:
-  - text: noyb lawsuit vs Hamburg DPA; Big Brother Watch; BIPA suit; netzpolitik criticism
-    source: https://pimeyes.com/en
-    confidence: Medium
-  social_themes: Highly controversial
+  - text: 'BBC (2022): Big Brother Watch stalking concerns; ICO said it was assessing the information.'
+    source: https://www.bbc.com/news/technology-63544169
+    confidence: High
+  - text: 'noyb (2026): lawsuit against Hamburg DPA over alleged non-enforcement despite finding practices unlawful.'
+    source: https://noyb.eu/en/no-action-taken-against-pimeyes-noyb-lawsuit-against-hamburg-dpa
+    confidence: High
+  - text: 'Business Insider (2023): Illinois residents'' BIPA lawsuit reporting.'
+    source: https://www.businessinsider.com/facial-recognition-company-pimeyes-sued-under-illinois-privacy-law-2023-12
+    confidence: High
+  social_themes: Frequently criticized by privacy advocates; vendor disputes biometric/legal characterizations.
   score:
     value: 3
     confidence: Low
@@ -166,6 +195,15 @@ press_sentiment:
     sources:
     - https://pimeyes.com/en
     last_verified: '2026-10-06'
+  vendor_response:
+    text: 'BBC (Nov 2022): CEO Giorgi Gobronidze said PimEyes poses fewer stalking risks than social media or other
+      search engines, searches only publicly posted images, claimed it is ''technically impossible to reconstruct
+      a single photo'' from held data, and described a data-security unit looking for suspicious search patterns.
+      noyb (8 Jul 2026 update): current operator contacted noyb, said it acquired PimEyes in 2022, and stated it
+      performs photographic similarity comparison (noyb could not independently verify).'
+    sources:
+    - https://www.bbc.com/news/technology-63544169
+    - https://noyb.eu/en/no-action-taken-against-pimeyes-noyb-lawsuit-against-hamburg-dpa
 opsec_risks:
   query_logging:
     text: Searching faces can create severe OPSEC/privacy incidents; vendor logging unknown
@@ -186,7 +224,8 @@ opsec_risks:
   - Contract OPSEC
   jurisdiction_sanctions_exposure:
     note: See extras
-    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    result_summary: clear (no designation identified on OFAC SDN, EU FSF, UK OFSI, or UN consolidated lists for
+      screened strings; 2026-10-06)
     screening_date: '2026-10-06'
   score:
     value: 3
@@ -197,27 +236,34 @@ opsec_risks:
     last_verified: '2026-10-06'
 extras:
   data_ethics_legality:
-    text: Biometric processing without subject consent — core GDPR Art.9 conflict alleged by NGOs/DPAs
-    source: https://pimeyes.com/en
-    confidence: Medium
+    text: Big Brother Watch's 2022 ICO submission alleges unlawful biometric processing under UK GDPR. noyb reports
+      Hamburg DPA considered PimEyes practices illegal. These are allegations/findings as reported by those parties—not
+      a court judgment establishing EU-wide illegality in this file. Vendor disputes biometric characterization
+      (see vendor_response).
+    source: https://www.bigbrotherwatch.org.uk/wp-content/uploads/2022/11/20220912-Big-Brother-Watch-Submission-re-PimEyes-AS-SENT.pdf
+    confidence: High
   gdpr_residency:
-    text: Hamburg DPA viewed practices illegal (2025 decision per noyb) yet non-enforcement cited due to non-EU
-      seat
-    source: https://pimeyes.com/en
-    confidence: Low
+    text: 'Per noyb (30 Apr 2026): Hamburg DPA reportedly found unlawful conduct regarding access/deletion but limited
+      itself to an information letter, citing Dubai base and non-response. noyb disputes that non-EU seat bars effective
+      measures.'
+    source: https://noyb.eu/en/no-action-taken-against-pimeyes-noyb-lawsuit-against-hamburg-dpa
+    confidence: High
   ownership_state_ties:
-    text: No Western state ownership; jurisdiction shopping raises trust issues
-    source: https://pimeyes.com/en
+    text: No Western state ownership identified. Ownership/operator entities reported in press/litigation include
+      EMEARobotics (Dubai) and Carribex LTD (Belize).
+    source: https://www.peifferwolf.com/facial-recognition-company-pimeyes-sued-under-illinois-privacy-law/
     confidence: Medium
   certifications: unknown
   legal_regulatory_actions:
-    text: Active/historical DPA complaints and US BIPA litigation — elevated legal risk
+    text: Complaint to UK ICO by Big Brother Watch (2022; ICO said it was assessing). Hamburg DPA complaint since
+      2020 culminating in noyb's 2026 suit against the DPA. Illinois BIPA civil complaint filed 2023 (outcome not
+      verified here).
+    source: https://www.bbc.com/news/technology-63544169
+    confidence: High
+  api_integrations:
+    text: unknown — prior note about API interest removed as insufficiently sourced for a public profile.
     source: https://pimeyes.com/en
     confidence: Low
-  api_integrations:
-    text: API interest reported; misuse controls claimed limited
-    source: https://pimeyes.com/en
-    confidence: Medium
   use_case_fit:
     le_investigator:
       value: 2
@@ -273,7 +319,8 @@ extras:
       confidence: Medium
     sanctions_screening:
       eu: no match found in downloaded EU FSF XML for screened strings
-      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      un: no whole-word match in UN consolidated XML (downloaded 2026-10-06) for PimEyes / EMEARobotics / Carribex
+        LTD / Face Recognition Solutions Ltd
       ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
       uk: no match found in downloaded UK consolidated list for screened strings
       screened_entities:
@@ -283,24 +330,23 @@ extras:
       - Face Recognition Solutions Ltd
       - Carribex LTD
       screening_date: '2026-10-06'
-      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
-        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
-        environment.
+      method: Whole-word search of local OFAC SDN/cons, UK OFSI, EU FSF, UN consolidated XML.
       sources:
       - https://sanctionssearch.ofac.treas.gov/
       - https://www.treasury.gov/ofac/downloads/sdn.csv
       - https://www.gov.uk/government/publications/the-uk-sanctions-list
       - https://www.sanctionsmap.eu/
       confidence: Medium
-      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      result: clear (no designation identified on OFAC SDN, EU FSF, UK OFSI, or UN consolidated lists for screened
+        strings; 2026-10-06)
       notes: Clear on OFAC/EU/UK name screen but severe regulatory/ethics red flags dominate.
       raw_hits: {}
+      recheck_date: '2026-10-06'
 red_flags:
-- GDPR/biometric legality crisis
-- Jurisdiction opacity / enforcement evasion concerns
-- BIPA litigation
-- High misuse/OPSEC risk
-- Unsuitable for default EU procurement without counsel
+- Hamburg DPA reportedly viewed practices as unlawful (per noyb); enforcement disputed
+- Opaque/changing claimed legal seats (Poland/Seychelles/Belize/Dubai narratives)
+- Illinois BIPA lawsuit filed (2023 reporting)
+- UK ICO complaint by Big Brother Watch (2022)
 gaps:
 - Definitive current legal entity & UBO
 - Processing locations
@@ -310,9 +356,55 @@ meta:
   slug: pimeyes
   last_reviewed: '2026-10-06'
   signoff_status: approved
+  recheck_note: Claim-by-claim verification 2026-10-06; neutral wording + vendor responses added
 known_customers:
   status: none_publicly_documented
   customers: []
   research_notes: Consumer SaaS; LE use alleged in press critically but not documented as named paying agency customers
     on pimeyes.com this pass.
   last_checked: '2026-10-06'
+claim_verification:
+- claim: Founded/launched 2017 in Poland by Kowalczyk & Tatina
+  verdict: verified
+  source: https://en.wikipedia.org/wiki/PimEyes
+- claim: Public face search SaaS exists at pimeyes.com
+  verdict: verified
+  source: https://pimeyes.com/en
+- claim: Hamburg DPA considers practices illegal / limited enforcement citing Dubai
+  verdict: verified
+  source: https://noyb.eu/en/no-action-taken-against-pimeyes-noyb-lawsuit-against-hamburg-dpa
+  note: As reported by noyb about the DPA; not a published DPA PDF retrieved in this pass.
+- claim: noyb sued Hamburg DPA over inaction (30 Apr 2026)
+  verdict: verified
+  source: https://noyb.eu/en/no-action-taken-against-pimeyes-noyb-lawsuit-against-hamburg-dpa
+- claim: Big Brother Watch complained to UK ICO (2022)
+  verdict: verified
+  source: https://www.bbc.com/news/technology-63544169
+- claim: Illinois BIPA lawsuit by five residents (2023)
+  verdict: verified
+  source: https://www.businessinsider.com/facial-recognition-company-pimeyes-sued-under-illinois-privacy-law-2023-12
+  note: Complaint/filing stage per press; case outcome not verified.
+- claim: EME ARobotics Dubai / Gobronidze CEO / Carribex Belize in ownership chain
+  verdict: verified
+  source: https://www.peifferwolf.com/facial-recognition-company-pimeyes-sued-under-illinois-privacy-law/
+  note: As alleged in complaint / reported by counsel press and Business Insider.
+- claim: Vendor says photographic similarity not biometrics; acquired 2022
+  verdict: verified
+  source: https://noyb.eu/en/no-action-taken-against-pimeyes-noyb-lawsuit-against-hamburg-dpa
+  note: Vendor position as relayed by noyb; noyb could not independently verify acquisition claim.
+- claim: Headcount band 1-10
+  verdict: unsupported (remove)
+  source: n/a
+  note: Removed; insufficient primary evidence.
+- claim: API interest / 150 blocked accounts statistics
+  verdict: unsupported (remove)
+  source: n/a
+  note: Removed from profile pending primary cite.
+- claim: GDPR Art.9 violation as established fact
+  verdict: needs rewording
+  source: https://noyb.eu/en/no-action-taken-against-pimeyes-noyb-lawsuit-against-hamburg-dpa
+  note: Reworded to attribute findings/allegations to noyb/DPA/BBW and include vendor dispute.
+- claim: OFAC/EU/UK/UN sanctions designation of PimEyes
+  verdict: unsupported (remove as designation)
+  source: local list dumps 2026-10-06
+  note: No designation found; remains clear on sanctions screens.

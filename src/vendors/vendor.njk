@@ -27,6 +27,9 @@ eleventyComputed:
       <div><dt>Headquarters</dt><dd>{{ idn.hq_country }}</dd></div>
       <div><dt>Founded</dt><dd>{{ ui.fact(overview.founded_year) }}</dd></div>
       <div><dt>Last reviewed</dt><dd><time datetime="{{ vendor.meta.last_reviewed }}">{{ vendor.meta.last_reviewed | longDate }}</time></dd></div>
+      {% if vendor.meta.recheck_note %}
+        <div><dt>Recheck</dt><dd>{{ vendor.meta.recheck_note }}</dd></div>
+      {% endif %}
       <div><dt>Sign-off</dt><dd>{{ idn.signoff }}</dd></div>
       <div>
         <dt>Website</dt>
@@ -97,6 +100,7 @@ eleventyComputed:
     <a href="#integrations">API and integrations</a>
     <a href="#fit">Use-case fit</a>
     <a href="#gaps">Gaps</a>
+    <a href="#verification">Claim verification</a>
     <a href="#sources">Sources</a>
   </nav>
 
@@ -207,6 +211,10 @@ eleventyComputed:
     </div>
     <h3>Social themes</h3>
     {{ ui.fact(vendor.press_sentiment.social_themes) }}
+    {% if vendor.press_sentiment.vendor_response %}
+      <h3>Vendor response recorded in this profile</h3>
+      {{ ui.fact(vendor.press_sentiment.vendor_response) }}
+    {% endif %}
   </section>
 
   <section id="opsec" class="block">
@@ -255,9 +263,52 @@ eleventyComputed:
     </dl>
     <p class="claim-meta">
       <span>Screening date {{ screening.screening_date | longDate }}</span>
+      {% if screening.recheck_date %}<span>Recheck date {{ screening.recheck_date | longDate }}</span>{% endif %}
       {% if screening.confidence %}<span class="pill">{{ screening.confidence }} confidence</span>{% endif %}
     </p>
     {% if screening.method %}<p>{{ screening.method }}</p>{% endif %}
+    {% if screening.owners_parents_screened %}
+      <h3>Owners and parents screened</h3>
+      <ul class="stack">
+        {% for owner in screening.owners_parents_screened %}
+          <li>
+            <p class="claim-text">{{ owner.name }}</p>
+            {% if owner.result %}<p>{{ owner.result }}</p>{% endif %}
+            <p class="claim-meta">{{ ui.sourceLink(owner.source) }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if screening.false_positive_analysis %}
+      {% set fp = screening.false_positive_analysis %}
+      <h3>False-positive analysis</h3>
+      {% if fp.verdict %}<p class="claim-text">Verdict recorded: {{ fp.verdict }}</p>{% endif %}
+      {% if fp.prior_flag_reason %}<p>{{ fp.prior_flag_reason }}</p>{% endif %}
+      {% if fp.reasoning %}<p>{{ fp.reasoning }}</p>{% endif %}
+      {% if fp.actual_list_entries_examined %}
+        <div class="table-scroll">
+          <table>
+            <caption>List entries examined</caption>
+            <thead>
+              <tr>
+                <th scope="col">List</th>
+                <th scope="col">Entry</th>
+                <th scope="col">Related to vendor</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for entry in fp.actual_list_entries_examined %}
+                <tr>
+                  <th scope="row">{{ entry.list }}</th>
+                  <td>{{ entry.entry }}</td>
+                  <td>{% if entry.related_to_vendor == true %}true{% elif entry.related_to_vendor == false %}false{% else %}{{ entry.related_to_vendor }}{% endif %}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      {% endif %}
+    {% endif %}
     {% if screening.screened_entities %}
       <h3>Names screened</h3>
       <ul class="plain-list">
@@ -378,6 +429,33 @@ eleventyComputed:
       {% endfor %}
     </ul>
   </section>
+
+  {% if vendor.claim_verification %}
+    <section id="verification" class="block">
+      <h2>Claim verification</h2>
+      <div class="table-scroll">
+        <table>
+          <caption>Claim checks recorded on this profile</caption>
+          <thead>
+            <tr>
+              <th scope="col">Claim</th>
+              <th scope="col">Verdict</th>
+              <th scope="col">Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in vendor.claim_verification %}
+              <tr>
+                <th scope="row">{{ item.claim }}</th>
+                <td>{{ item.verdict }}</td>
+                <td>{{ ui.sourceLink(item.source) }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  {% endif %}
 
   <section id="gaps" class="block">
     <h2>Gaps recorded in this profile</h2>

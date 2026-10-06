@@ -186,7 +186,7 @@ opsec_risks:
   - Contract OPSEC
   jurisdiction_sanctions_exposure:
     note: See extras
-    result_summary: REVIEW REQUIRED — possible list hit
+    result_summary: clear — prior 'REVIEW REQUIRED' was a false positive (unrelated list entries)
     screening_date: '2026-10-06'
   score:
     value: 3
@@ -268,39 +268,54 @@ extras:
       source: https://en.wikipedia.org/wiki/Planet_Labs
       confidence: Medium
     sanctions_screening:
-      eu: 'POSSIBLE HIT — review: [''Planet'']'
-      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
-      ofac_sdn: 'POSSIBLE HIT — review: {''ofac_sdn'': [{''entity'': ''Planet'', ''snippet'': ''12474,"COMERCIAL
-        PLANETA",-0- ,"SDNTK",-0- ,-0- ,-0- ,-0- ,-0- ,-0- ,-0- ,"MATRICULA MERCANTIL NO 00072179 (COLOMBIA)."''}],
-        ''ofac_other'': [''Planet''], ''uk'': [''Planet''], ''eu'': [''Planet'']}'
-      uk: 'POSSIBLE HIT — review: [''Planet'']'
+      eu: no whole-word match for screened vendor/parent legal names in EU FSF XML (2026-10-06 dump)
+      un: no whole-word match in UN consolidated XML (downloaded 2026-10-06)
+      ofac_sdn: no whole-word match for screened vendor/parent legal names on OFAC SDN / consolidated non-SDN (2026-10-06
+        dump)
+      uk: no whole-word match for screened vendor/parent legal names on UK OFSI list (2026-10-06 dump)
       screened_entities:
       - Planet Labs
       - Planet Labs PBC
-      - Planet
+      - Planet Labs Inc
       screening_date: '2026-10-06'
-      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
-        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
-        environment.
+      method: 'Re-screen after false-positive review: whole-word / token boundary matching against local OFAC SDN
+        + cons, UK OFSI ConList, EU FSF XML, and UN consolidated XML. Not legal advice.'
       sources:
       - https://sanctionssearch.ofac.treas.gov/
       - https://www.treasury.gov/ofac/downloads/sdn.csv
       - https://www.gov.uk/government/publications/the-uk-sanctions-list
       - https://www.sanctionsmap.eu/
-      confidence: Medium
-      result: REVIEW REQUIRED — possible list hit
-      notes: ''
-      raw_hits:
-        ofac_sdn:
-        - entity: Planet
-          snippet: 12474,"COMERCIAL PLANETA",-0- ,"SDNTK",-0- ,-0- ,-0- ,-0- ,-0- ,-0- ,-0- ,"MATRICULA MERCANTIL
-            NO 00072179 (COLOMBIA)."
-        ofac_other:
-        - Planet
-        uk:
-        - Planet
-        eu:
-        - Planet
+      - https://scsanctions.un.org/resources/xml/en/consolidated.xml
+      confidence: High
+      result: clear — prior 'REVIEW REQUIRED' was a false positive (unrelated list entries)
+      false_positive_analysis:
+        prior_flag_reason: 'Bare token ''Planet'' matched unrelated entries: OFAC ''PLANET 2 REACHING, INC.'' (Venezuela-related);
+          OFAC ''COMERCIAL PLANETA'' (Colombia SDNTK, substring Planeta); EU ''HOTEL PLANETA''; UK OFSI contact
+          email niocr@planet.nl for National Iranian Oil Company Nederland (Dutch ISP/domain, not Planet Labs).'
+        actual_list_entries_examined:
+        - list: OFAC SDN
+          entry: PLANET 2 REACHING, INC. (VENEZUELA-EO13850), linked to Raul Gorrin Belisario
+          related_to_vendor: false
+        - list: OFAC SDN
+          entry: COMERCIAL PLANETA (Colombia SDNTK)
+          related_to_vendor: false
+        - list: EU FSF
+          entry: Open Joint Stock Company HOTEL PLANETA
+          related_to_vendor: false
+        - list: UK OFSI
+          entry: NIOC Nederland contact email niocr@planet.nl
+          related_to_vendor: false
+        verdict: false_positive
+        reasoning: 'Planet Labs PBC (NYSE: PL), the San Francisco Earth-imaging company, has zero whole-word hits
+          for ''Planet Labs'' / ''Planet Labs PBC'' on OFAC/EU/UK/UN dumps. Matches were only for bare ''Planet''
+          against unrelated companies or an email domain.'
+      owners_parents_screened:
+      - name: Planet Labs PBC public shareholders
+        result: Public company; no controlling sanctioned-state owner identified. Bare 'Planet' false positives
+          do not apply to Planet Labs PBC.
+        source: https://en.wikipedia.org/wiki/Planet_Labs
+      raw_hits: {}
+      recheck_date: '2026-10-06'
 red_flags: []
 gaps:
 - DPA
@@ -311,6 +326,7 @@ meta:
   slug: planet
   last_reviewed: '2026-10-06'
   signoff_status: approved
+  recheck_note: Sanctions false-positive cleared 2026-10-06
 known_customers:
   status: documented
   customers:

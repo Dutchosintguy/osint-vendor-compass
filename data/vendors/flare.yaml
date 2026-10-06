@@ -180,7 +180,7 @@ opsec_risks:
   - Contractual OPSEC clauses
   jurisdiction_sanctions_exposure:
     note: See extras.jurisdiction_sanctions_exposure
-    result_summary: REVIEW REQUIRED — possible list hit
+    result_summary: clear — prior 'REVIEW REQUIRED' was a false positive (unrelated list entries)
     screening_date: '2026-10-06'
   score:
     value: 3
@@ -261,31 +261,44 @@ extras:
       source: https://flare.io/company
       confidence: Medium
     sanctions_screening:
-      eu: no match found in downloaded EU FSF XML for screened strings
-      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
-      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
-      uk: 'POSSIBLE HIT — review: [''Flare'']'
+      eu: no whole-word match for screened vendor/parent legal names in EU FSF XML (2026-10-06 dump)
+      un: no whole-word match in UN consolidated XML (downloaded 2026-10-06)
+      ofac_sdn: no whole-word match for screened vendor/parent legal names on OFAC SDN / consolidated non-SDN (2026-10-06
+        dump)
+      uk: no whole-word match for screened vendor/parent legal names on UK OFSI list (2026-10-06 dump)
       screened_entities:
       - Flare
       - Flare Security
+      - Flare.io
       screening_date: '2026-10-06'
-      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
-        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
-        environment.
+      method: 'Re-screen after false-positive review: whole-word / token boundary matching against local OFAC SDN
+        + cons, UK OFSI ConList, EU FSF XML, and UN consolidated XML. Not legal advice.'
       sources:
       - https://sanctionssearch.ofac.treas.gov/
       - https://www.treasury.gov/ofac/downloads/sdn.csv
       - https://www.gov.uk/government/publications/the-uk-sanctions-list
       - https://www.sanctionsmap.eu/
-      confidence: Medium
-      result: REVIEW REQUIRED — possible list hit
-      notes: ''
-      raw_hits:
-        ofac_sdn: []
-        ofac_other: []
-        uk:
-        - Flare
-        eu: []
+      - https://scsanctions.un.org/resources/xml/en/consolidated.xml
+      confidence: High
+      result: clear — prior 'REVIEW REQUIRED' was a false positive (unrelated list entries)
+      false_positive_analysis:
+        prior_flag_reason: Substring match on UK OFSI list against token 'Flare' inside 'METAFLARE PTE LTD' (entity
+          associated with sanctioned individual Narmina Dadashova, UK list RUS3068).
+        actual_list_entries_examined:
+        - list: UK OFSI
+          entry: Narmina DADASHOVA — owner of METAFLARE PTE LTD (among other companies); not Flare Security / flare.io
+          related_to_vendor: false
+        verdict: false_positive
+        reasoning: Montreal-based Flare (flare.io) is a distinct Canadian cybersecurity company. Whole-word search
+          for 'Flare' and 'Flare Security' returns zero hits on OFAC/EU/UK/UN dumps. METAFLARE is an unrelated Singapore
+          company on the UK Russia-related list.
+      owners_parents_screened:
+      - name: Flare co-founders / private shareholders (Montreal)
+        result: No PE parent screened as none publicly named as controlling owner in sources used; company remains
+          private Canadian.
+        source: https://flare.io/company
+      raw_hits: {}
+      recheck_date: '2026-10-06'
 red_flags: []
 gaps:
 - DPA
@@ -296,6 +309,7 @@ meta:
   slug: flare
   last_reviewed: '2026-10-06'
   signoff_status: approved
+  recheck_note: Sanctions false-positive cleared 2026-10-06
 known_customers:
   status: none_publicly_documented
   customers: []
