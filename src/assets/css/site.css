@@ -272,7 +272,7 @@ a:hover { text-decoration-thickness: 2px; }
   align-items: center;
 }
 
-.section-head, .factor-head { justify-content: space-between; align-items: flex-end; margin-bottom: 0.75rem; }
+.section-head, .factor-head { justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem; }
 .section-head h2, .factor-head h3 { margin: 0; }
 
 .button {
@@ -519,10 +519,25 @@ th[aria-sort="descending"] button::after { content: " \2193"; }
   background: var(--surface);
 }
 
-.sanctions-low { border-left-color: var(--low-ink); }
+.sanctions-low, .sanctions-clear { border-left-color: var(--low-ink); }
 .sanctions-medium { border-left-color: var(--mid-ink); }
-.sanctions-high { border-left-color: var(--high-ink); }
-.sanctions-unknown { border-left-color: var(--muted); }
+.sanctions-high, .sanctions-review { border-left-color: var(--high-ink); }
+.sanctions-unknown, .sanctions-other { border-left-color: var(--muted); }
+
+.red-flag-box {
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  background: var(--surface);
+}
+.red-flag-box.has-flags {
+  border-left: 6px solid var(--high-ink);
+  background: var(--high-bg);
+  color: var(--high-ink);
+}
+.red-flag-box ul { margin: 0.4rem 0 0; padding-left: 1.1rem; }
+.src-url, .src-note { overflow-wrap: anywhere; }
 
 .toc {
   display: flex;

@@ -1,0 +1,308 @@
+identity:
+  name: Vantor (formerly Maxar Intelligence)
+  legal_name: Vantor Inc. (formerly Maxar Intelligence Inc.)
+  trade_names:
+  - Vantor (formerly Maxar Intelligence)
+  official_website: https://www.vantor.com/
+  hq_country: USA
+  category: Geospatial / imagery
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2017
+    source: https://spacenews.com/maxar-retires-its-name-rebrands-as-vantor-and-lanteris/
+    confidence: Medium
+  hq_country:
+    value: USA
+    source: https://www.vantor.com/
+    confidence: Medium
+  ownership_type:
+    value: PE-backed (Advent International; Maxar taken private 2023 $6.4B)
+    source: https://www.vantor.com/
+    confidence: Medium
+  parent:
+    value: Advent International portfolio (Vantor)
+    source: https://www.vantor.com/
+    confidence: Medium
+  headcount_band:
+    value: unknown
+    source: https://www.vantor.com/
+    confidence: Low
+  customer_segments:
+  - defense
+  - intelligence
+  - commercial
+  primary_products:
+  - Tensorglobe
+  - satellite imagery/analytics
+  deployment_model:
+    value: Imagery/platform contracts
+    source: https://www.vantor.com/
+    confidence: Medium
+  notable_status: Rebranded from Maxar Intelligence to Vantor on 2025-10-01; Space Systems sibling Lanteris; Westminster
+    CO
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources.
+    sources:
+    - https://www.vantor.com/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: US spatial intelligence company (CEO Dan Smoot messaging).
+    source: https://vantor.com/blog/welcome-to-the-new-frontier-of-spatial-intelligence/
+    confidence: Medium
+  what:
+    text: VHR satellite imagery + AI spatial intelligence platform Tensorglobe.
+    source: https://www.vantor.com/
+    confidence: Medium
+  where:
+    text: Westminster, Colorado USA.
+    source: https://www.vantor.com/
+    confidence: Medium
+  when:
+    text: Maxar Technologies 2017 lineage; Advent 2023; Vantor rebrand 2025-10-01.
+    source: https://spacenews.com/maxar-retires-its-name-rebrands-as-vantor-and-lanteris/
+    confidence: Medium
+  why:
+    text: End-to-end spatial intelligence beyond pure imagery.
+    source: https://www.vantor.com/
+    confidence: Medium
+  how:
+    text: Satellite constellation fusion + AI platform.
+    source: https://www.vantor.com/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public.
+    sources:
+    - https://www.vantor.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: VHR imagery heritage
+    source: https://www.vantor.com/
+    confidence: Medium
+  - text: Defense pedigree
+    source: https://www.vantor.com/
+    confidence: Medium
+  weaknesses:
+  - text: PE opacity
+    source: https://www.vantor.com/
+    confidence: Medium
+  - text: Rebrand transition confusion
+    source: https://www.vantor.com/
+    confidence: Medium
+  best_fit:
+  - GEOINT confirmation imagery
+  poor_fit:
+  - SOCMINT
+  alternatives:
+  - Planet
+  - Airbus
+  - BlackSky
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed.
+    sources:
+    - https://www.vantor.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Contract/quote
+    source: https://www.vantor.com/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://www.vantor.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://www.vantor.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://www.vantor.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Advent International ownership
+    source: https://www.vantor.com/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://www.vantor.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited.
+    sources:
+    - https://www.vantor.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Rebrand/Tensorglobe launch press
+    source: https://www.vantor.com/
+    confidence: Medium
+  negative:
+  - text: None material identified
+    source: https://www.vantor.com/
+    confidence: Medium
+  social_themes: Defense GEOINT
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://www.vantor.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Tasking OPSEC for sensitive targets
+    source: https://www.vantor.com/
+    confidence: Low
+  attribution:
+    text: Confirm DPA
+    source: https://www.vantor.com/
+    confidence: Low
+  jurisdiction:
+    text: USA
+    source: https://www.vantor.com/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contract OPSEC
+  jurisdiction_sanctions_exposure:
+    note: See extras
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Validate.
+    sources:
+    - https://www.vantor.com/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Defense imagery export controls (ITAR/EAR) likely apply
+    source: https://www.vantor.com/
+    confidence: Medium
+  gdpr_residency:
+    text: Less central than export control
+    source: https://www.vantor.com/
+    confidence: Low
+  ownership_state_ties:
+    text: US PE-owned; major US gov customer base historically; no RU/CN ownership
+    source: https://www.vantor.com/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: Export control regime critical
+    source: https://www.vantor.com/
+    confidence: Low
+  api_integrations:
+    text: Platform APIs evolving
+    source: https://www.vantor.com/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 5
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: Westminster CO USA; foreign subsidiaries renamed to Vantor* (Canada/Australia/Asia Pac/UK per DDTC notice).
+        No RU/BY/CN/IR/DPRK/SY/CU offices identified in rebrand materials.
+      source: https://www.businesswire.com/news/home/20251001760322/en/Vantor-Rebrands-from-Maxar-Intelligence-Unveils-AI-Powered-Platform
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: 'Advent International PE. No sanctioned-jurisdiction owners identified. OFAC/EU/UK dumps: no hit for
+        Vantor/Maxar Intelligence.'
+      source: https://www.businesswire.com/news/home/20251001760322/en/Vantor-Rebrands-from-Maxar-Intelligence-Unveils-AI-Powered-Platform
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: 'Global subsidiary footprint in allied countries; China employment: unknown.'
+      source: https://www.businesswire.com/news/home/20251001760322/en/Vantor-Rebrands-from-Maxar-Intelligence-Unveils-AI-Powered-Platform
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - Vantor
+      - Vantor Inc
+      - Maxar Intelligence
+      - Maxar Technologies
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags: []
+gaps:
+- Full subsidiary country list
+- Certifications
+meta:
+  schema_version: '1.2'
+  slug: vantor-formerly-maxar-intelligence
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Maxar/Vantor defense customers widely assumed; named post-rebrand public case studies not captured
+    this pass—recommend USAspending search for Maxar/Vantor awards in diligence.
+  last_checked: '2026-10-06'

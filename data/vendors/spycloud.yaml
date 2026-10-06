@@ -1,0 +1,304 @@
+identity:
+  name: SpyCloud
+  legal_name: SpyCloud, Inc.
+  trade_names:
+  - SpyCloud
+  official_website: https://spycloud.com/
+  hq_country: USA
+  category: Dark web / identity exposure
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2016
+    source: https://spycloud.com/
+    confidence: Medium
+  hq_country:
+    value: USA
+    source: https://spycloud.com/
+    confidence: Medium
+  ownership_type:
+    value: Private
+    source: https://spycloud.com/
+    confidence: Medium
+  parent:
+    value: none identified
+    source: https://spycloud.com/
+    confidence: Medium
+  headcount_band:
+    value: unknown
+    source: https://spycloud.com/
+    confidence: Low
+  customer_segments:
+  - enterprise IAM/security
+  primary_products:
+  - SpyCloud identity threat protection
+  deployment_model:
+    value: SaaS
+    source: https://spycloud.com/
+    confidence: Medium
+  notable_status: Austin; stealer-log/recaptured credential focus + automated remediation
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources.
+    sources:
+    - https://spycloud.com/
+    - https://spycloud.com/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: Austin identity exposure vendor.
+    source: https://spycloud.com/
+    confidence: Medium
+  what:
+    text: Detect compromised credentials from dark-web/malware data; remediate.
+    source: https://spycloud.com/
+    confidence: Medium
+  where:
+    text: Austin TX USA.
+    source: https://spycloud.com/
+    confidence: Medium
+  when:
+    text: Founded ~2016.
+    source: https://spycloud.com/
+    confidence: Medium
+  why:
+    text: Stop account takeover from exposed identities.
+    source: https://spycloud.com/
+    confidence: Medium
+  how:
+    text: Recaptured dark-web data + IdP integrations.
+    source: https://spycloud.com/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public pages.
+    sources:
+    - https://spycloud.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Remediation workflows
+    source: https://spycloud.com/
+    confidence: Medium
+  - text: Identity focus
+    source: https://spycloud.com/
+    confidence: Medium
+  weaknesses:
+  - text: Not full OSINT investigation UI
+    source: https://spycloud.com/
+    confidence: Medium
+  best_fit:
+  - IAM/ATO prevention
+  poor_fit:
+  - SOCMINT investigations
+  alternatives:
+  - Flare
+  - Have I Been Pwned
+  - Recorded Future
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed.
+    sources:
+    - https://spycloud.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Quote
+    source: https://spycloud.com/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://spycloud.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://spycloud.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://spycloud.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Private (rounds not detailed this pass)
+    source: https://spycloud.com/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://spycloud.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited financials.
+    sources:
+    - https://spycloud.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Category presence
+    source: https://spycloud.com/
+    confidence: Medium
+  negative:
+  - text: None
+    source: https://spycloud.com/
+    confidence: Medium
+  social_themes: IAM/security
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://spycloud.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Tenant data highly sensitive
+    source: https://spycloud.com/
+    confidence: Low
+  attribution:
+    text: Confirm in DPA
+    source: https://spycloud.com/
+    confidence: Low
+  jurisdiction:
+    text: USA
+    source: https://spycloud.com/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contractual OPSEC
+  jurisdiction_sanctions_exposure:
+    note: See extras
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Validate contractually.
+    sources:
+    - https://spycloud.com/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Uses recaptured breach/malware data—legal basis review
+    source: https://spycloud.com/
+    confidence: Medium
+  gdpr_residency:
+    text: Critical for EU employee monitoring use
+    source: https://spycloud.com/
+    confidence: Low
+  ownership_state_ties:
+    text: US private; no sanctioned-state owner
+    source: https://spycloud.com/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://spycloud.com/
+    confidence: Low
+  api_integrations:
+    text: Yes + IdP integrations
+    source: https://spycloud.com/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 5
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: Austin USA. No RU/BY/CN/IR/DPRK/SY/CU offices identified.
+      source: https://spycloud.com/
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Private US. No sanctioned owners identified.
+      source: https://spycloud.com/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: unknown
+      source: https://spycloud.com/
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - SpyCloud
+      - SpyCloud Inc
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags: []
+gaps:
+- DPA
+- Certs
+- References
+meta:
+  schema_version: '1.2'
+  slug: spycloud
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: documented
+  customers:
+  - customer_name: Atlassian
+    sector: corporate
+    country: Australia
+    evidence_type: case_study
+    date: unknown
+    source_url: https://spycloud.com/resource/case-study/atlassian-protects-its-enterprise-and-its-customers/
+  research_notes: Other SpyCloud case studies use anonymous Fortune labels—excluded.
+  last_checked: '2026-10-06'

@@ -1,27 +1,59 @@
-{% macro sourceLine(item) %}
-  {% if item %}
-    <p class="claim-meta">
-      {% set href = item.source | httpUrl %}
-      {% if href %}
-        <a href="{{ href }}">{{ item.source_label or "Source" }}</a>
-      {% else %}
-        <span class="unsourced">No source</span>
-      {% endif %}
-      {% if item.accessed %}<span>Accessed {{ item.accessed | longDate }}</span>{% endif %}
-      {% if item.confidence %}<span>{{ item.confidence | confidenceName }}</span>{% endif %}
-    </p>
+{% macro sourceLink(url) %}
+  {% set href = url | httpUrl %}
+  {% if href %}
+    <a class="src-url" href="{{ href }}">{{ href }}</a>
+  {% elif url %}
+    <span class="src-note">{{ url }}</span>
   {% endif %}
 {% endmacro %}
 
-{% macro claim(item) %}
-  {% if item and item.text %}
-    <div class="claim">
-      <p class="claim-text">{{ item.text }}</p>
-      {{ sourceLine(item) }}
-    </div>
+{% macro fact(node) %}
+  {% if node is undefined or node is none %}
+    <p class="empty">Not recorded in this profile.</p>
+  {% elif node is string or node is number %}
+    <p class="claim-text">{{ node }}</p>
+  {% elif node is iterable %}
+    {% if node | length %}
+      <ul class="stack">
+        {% for item in node %}
+          <li>{{ fact(item) }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="empty">None recorded in this profile.</p>
+    {% endif %}
   {% else %}
-    <p class="empty">Not recorded.</p>
+    <div class="claim">
+      {% if node.text is defined %}
+        <p class="claim-text">{{ node.text }}</p>
+      {% elif node.value is defined %}
+        <p class="claim-text">{{ node.value }}</p>
+      {% endif %}
+      {% if node.detail %}<p>{{ node.detail }}</p>{% endif %}
+      {% if node.rationale %}<p>{{ node.rationale }}</p>{% endif %}
+      {% if node.notes %}<p class="note">{{ node.notes }}</p>{% endif %}
+      <p class="claim-meta">
+        {% if node.confidence %}<span class="pill">{{ node.confidence }} confidence</span>{% endif %}
+        {% if node.date %}<span>{{ node.date }}</span>{% endif %}
+        {% if node.last_verified %}<span>Last verified {{ node.last_verified | longDate }}</span>{% endif %}
+        {% if node.accessed %}<span>Accessed {{ node.accessed | longDate }}</span>{% endif %}
+        {{ sourceLink(node.source) }}
+        {{ sourceLink(node.source_url) }}
+        {% if node.sources %}
+          {% for item in node.sources %}
+            {{ sourceLink(item) }}
+          {% endfor %}
+        {% endif %}
+      </p>
+    </div>
   {% endif %}
+{% endmacro %}
+
+{% macro labeled(label, node) %}
+  <div>
+    <dt>{{ label }}</dt>
+    <dd>{{ fact(node) }}</dd>
+  </div>
 {% endmacro %}
 
 {% macro segments(score) %}
@@ -32,37 +64,40 @@
   </span>
 {% endmacro %}
 
-{% macro scoreMeter(score, label) %}
+{% macro scoreMeter(value, label, confidence) %}
   <div class="score">
     <div class="score-top">
       <span class="score-name">{{ label }}</span>
-      <span class="score-value">{{ score }}<span class="score-max">/5</span></span>
+      <span class="score-value">{% if value is number %}{{ value }}{% else %}–{% endif %}<span class="score-max">/5</span></span>
     </div>
-    <span class="score-word">{{ score | scoreLabel }}</span>
-    {{ segments(score) }}
+    {% if confidence %}<span class="score-word">{{ confidence }} confidence</span>{% endif %}
+    {% if value is number %}{{ segments(value) }}{% endif %}
   </div>
 {% endmacro %}
 
-{% macro riskPill(level, kind) %}
-  {% set tone = level or "unknown" %}
-  {% if kind == "sanctions" %}
-    <span class="pill pill-risk pill-risk-{{ tone }}">{{ tone | sanctionsName }}</span>
+{% macro scoreDetail(score) %}
+  {% if score %}
+    <div class="score-detail">
+      {{ scoreMeter(score.value, "Score", score.confidence) }}
+      {% if score.rationale %}<p>{{ score.rationale }}</p>{% endif %}
+      <p class="claim-meta">
+        {% if score.last_verified %}<span>Last verified {{ score.last_verified | longDate }}</span>{% endif %}
+        {% if score.sources %}
+          {% for item in score.sources %}{{ sourceLink(item) }}{% endfor %}
+        {% endif %}
+      </p>
+    </div>
   {% else %}
-    <span class="pill pill-risk pill-risk-{{ tone }}">{{ tone | riskName }}</span>
+    <p class="empty">No score recorded in this profile.</p>
   {% endif %}
 {% endmacro %}
 
-{% macro sectorPills(customers) %}
-  {% set ids = (customers | joinSectors).split(" ") %}
-  {% if customers and customers.length %}
-    <ul class="pill-row">
-      {% for id in ids %}
-        {% if id %}
-          <li><span class="pill pill-sector">{{ id | sectorName }}</span></li>
-        {% endif %}
-      {% endfor %}
-    </ul>
+{% macro sanctionsPill(result) %}
+  {% if result | startsWith("REVIEW REQUIRED") %}
+    <span class="pill pill-risk pill-risk-high">Review required</span>
+  {% elif result | startsWith("clear") %}
+    <span class="pill pill-risk pill-risk-low">No public hit identified</span>
   {% else %}
-    <p class="empty">None recorded.</p>
+    <span class="pill pill-risk pill-risk-unknown">See screening result</span>
   {% endif %}
 {% endmacro %}

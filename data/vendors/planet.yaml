@@ -1,0 +1,337 @@
+identity:
+  name: Planet
+  legal_name: Planet Labs PBC
+  trade_names:
+  - Planet
+  official_website: https://www.planet.com/
+  hq_country: USA
+  category: Geospatial / imagery
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2010
+    source: https://en.wikipedia.org/wiki/Planet_Labs
+    confidence: Medium
+  hq_country:
+    value: USA
+    source: https://www.planet.com/
+    confidence: Medium
+  ownership_type:
+    value: 'Public (NYSE: PL)'
+    source: https://www.planet.com/
+    confidence: Medium
+  parent:
+    value: none
+    source: https://www.planet.com/
+    confidence: Medium
+  headcount_band:
+    value: 1000+
+    source: https://www.planet.com/
+    confidence: Low
+  customer_segments:
+  - gov
+  - commercial
+  - NGO
+  primary_products:
+  - PlanetScope
+  - SkySat
+  - platform tasking
+  deployment_model:
+    value: SaaS imagery platform
+    source: https://www.planet.com/
+    confidence: Medium
+  notable_status: Daily Earth observation constellation; San Francisco
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources.
+    sources:
+    - https://www.planet.com/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: Public US Earth imaging company.
+    source: https://www.planet.com/
+    confidence: Medium
+  what:
+    text: Near-daily satellite imagery monitoring.
+    source: https://www.planet.com/
+    confidence: Medium
+  where:
+    text: San Francisco USA; global ground stations.
+    source: https://www.planet.com/
+    confidence: Medium
+  when:
+    text: Founded 2010.
+    source: https://en.wikipedia.org/wiki/Planet_Labs
+    confidence: Medium
+  why:
+    text: See change on Earth daily.
+    source: https://www.planet.com/
+    confidence: Medium
+  how:
+    text: Dove constellation + analytics platform.
+    source: https://www.planet.com/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public.
+    sources:
+    - https://www.planet.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Revisit rate
+    source: https://www.planet.com/
+    confidence: Medium
+  - text: Public company transparency
+    source: https://www.planet.com/
+    confidence: Medium
+  weaknesses:
+  - text: Not people OSINT
+    source: https://www.planet.com/
+    confidence: Medium
+  - text: Imagery cost
+    source: https://www.planet.com/
+    confidence: Medium
+  best_fit:
+  - GEOINT monitoring
+  poor_fit:
+  - SOCMINT
+  alternatives:
+  - Vantor
+  - Airbus
+  - Maxar legacy
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed.
+    sources:
+    - https://www.planet.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Commercial contracts
+    source: https://www.planet.com/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://www.planet.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://www.planet.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://www.planet.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Public NYSE:PL
+    source: https://www.planet.com/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://www.planet.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited.
+    sources:
+    - https://www.planet.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Climate/defense coverage
+    source: https://www.planet.com/
+    confidence: Medium
+  negative:
+  - text: None material identified
+    source: https://www.planet.com/
+    confidence: Medium
+  social_themes: GEOINT community
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://www.planet.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Tasking may reveal interest areas—OPSEC for sensitive AOIs
+    source: https://www.planet.com/
+    confidence: Low
+  attribution:
+    text: Confirm DPA
+    source: https://www.planet.com/
+    confidence: Low
+  jurisdiction:
+    text: USA
+    source: https://www.planet.com/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contract OPSEC
+  jurisdiction_sanctions_exposure:
+    note: See extras
+    result_summary: REVIEW REQUIRED — possible list hit
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Validate.
+    sources:
+    - https://www.planet.com/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Commercial imagery licensing
+    source: https://www.planet.com/
+    confidence: Medium
+  gdpr_residency:
+    text: Imagery of people/places—use policies apply
+    source: https://www.planet.com/
+    confidence: Low
+  ownership_state_ties:
+    text: US public; no sanctioned-state control
+    source: https://www.planet.com/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://www.planet.com/
+    confidence: Low
+  api_integrations:
+    text: 'Yes'
+    source: https://www.planet.com/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 5
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: San Francisco USA; global. No RU/BY/CN/IR/DPRK/SY/CU corporate offices identified this pass (imaging
+        coverage is global).
+      source: https://en.wikipedia.org/wiki/Planet_Labs
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Public shareholders. No sanctioned-state controlling owner identified.
+      source: https://en.wikipedia.org/wiki/Planet_Labs
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: Global; sanctioned-country employment aggregate unknown.
+      source: https://en.wikipedia.org/wiki/Planet_Labs
+      confidence: Medium
+    sanctions_screening:
+      eu: 'POSSIBLE HIT — review: [''Planet'']'
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: 'POSSIBLE HIT — review: {''ofac_sdn'': [{''entity'': ''Planet'', ''snippet'': ''12474,"COMERCIAL
+        PLANETA",-0- ,"SDNTK",-0- ,-0- ,-0- ,-0- ,-0- ,-0- ,-0- ,"MATRICULA MERCANTIL NO 00072179 (COLOMBIA)."''}],
+        ''ofac_other'': [''Planet''], ''uk'': [''Planet''], ''eu'': [''Planet'']}'
+      uk: 'POSSIBLE HIT — review: [''Planet'']'
+      screened_entities:
+      - Planet Labs
+      - Planet Labs PBC
+      - Planet
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: REVIEW REQUIRED — possible list hit
+      notes: ''
+      raw_hits:
+        ofac_sdn:
+        - entity: Planet
+          snippet: 12474,"COMERCIAL PLANETA",-0- ,"SDNTK",-0- ,-0- ,-0- ,-0- ,-0- ,-0- ,-0- ,"MATRICULA MERCANTIL
+            NO 00072179 (COLOMBIA)."
+        ofac_other:
+        - Planet
+        uk:
+        - Planet
+        eu:
+        - Planet
+red_flags: []
+gaps:
+- DPA
+- Certs
+- References
+meta:
+  schema_version: '1.2'
+  slug: planet
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: documented
+  customers:
+  - customer_name: NASA Harvest
+    sector: government
+    country: USA
+    evidence_type: case_study
+    date: unknown
+    source_url: https://www.planet.com/company/customer-stories/
+  - customer_name: US Marine Corps / 5th Marine Regiment
+    sector: defense
+    country: USA
+    evidence_type: case_study
+    date: unknown
+    source_url: https://www.planet.com/company/customer-stories/
+    notes: Customer testimonial video/story on Planet site.
+  - customer_name: New Mexico State Land Office
+    sector: government
+    country: USA
+    evidence_type: press_release
+    date: '2020-06-25'
+    source_url: https://www.nmstatelands.org/2020/06/25/state-land-office-partners-with-planet-utilizing-high-resolution-satellite-imagery-to-identify-trespass-and-protect-public-lands/
+  research_notes: Compiled from vendor case studies, press, and/or procurement notices.
+  last_checked: '2026-10-06'

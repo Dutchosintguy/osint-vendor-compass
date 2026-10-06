@@ -1,0 +1,317 @@
+identity:
+  name: Babel Street
+  legal_name: Babel Street, Inc.
+  trade_names:
+  - Babel Street
+  official_website: https://www.babelstreet.com/
+  hq_country: USA
+  category: Social media / web intelligence
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2009
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  hq_country:
+    value: USA
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  ownership_type:
+    value: Private
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  parent:
+    value: none identified
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  headcount_band:
+    value: unknown
+    source: https://www.babelstreet.com/
+    confidence: Low
+  customer_segments:
+  - gov
+  - enterprise
+  - LE
+  primary_products:
+  - Babel Street Analytics / agentic risk intelligence platform
+  deployment_model:
+    value: Enterprise SaaS
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  notable_status: Multilingual risk/identity intel; Reston VA area HQ listings
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources compiled.
+    sources:
+    - https://www.babelstreet.com/
+    - https://www.babelstreet.com/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: US enterprise/gov OSINT-risk vendor.
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  what:
+    text: Multilingual identity, threat, vendor risk intelligence.
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  where:
+    text: USA HQ; global language coverage.
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  when:
+    text: Founded ~2009.
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  why:
+    text: Agentic risk intelligence for complex investigations.
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  how:
+    text: Platform analytics over multilingual OSINT.
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public pages.
+    sources:
+    - https://www.babelstreet.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Multilingual strength
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  - text: Gov footprint
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  weaknesses:
+  - text: Quote-only
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  - text: Complex enterprise sales
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  best_fit:
+  - Gov multilingual OSINT
+  poor_fit:
+  - Solo cheap lookups
+  alternatives:
+  - Social Links
+  - Dataminr
+  - Recorded Future
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed evidence.
+    sources:
+    - https://www.babelstreet.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Quote-only
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://www.babelstreet.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://www.babelstreet.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://www.babelstreet.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Private (detailed rounds unknown this pass)
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://www.babelstreet.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited financials.
+    sources:
+    - https://www.babelstreet.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Gov marketing
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  negative:
+  - text: None material identified
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  social_themes: Gov-oriented
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://www.babelstreet.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Enterprise SaaS—assume query logging unless contracted otherwise
+    source: https://www.babelstreet.com/
+    confidence: Low
+  attribution:
+    text: Confirm in DPA
+    source: https://www.babelstreet.com/
+    confidence: Low
+  jurisdiction:
+    text: USA
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contractual OPSEC clauses
+  jurisdiction_sanctions_exposure:
+    note: See extras.jurisdiction_sanctions_exposure
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Needs contractual validation.
+    sources:
+    - https://www.babelstreet.com/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: OSINT for gov/enterprise—policy compliance buyer-side
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  gdpr_residency:
+    text: Request residency
+    source: https://www.babelstreet.com/
+    confidence: Low
+  ownership_state_ties:
+    text: No state ownership identified
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://www.babelstreet.com/
+    confidence: Low
+  api_integrations:
+    text: Enterprise integrations
+    source: https://www.babelstreet.com/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: Reston/Washington DC area USA. No RU/BY/CN/IR/DPRK/SY/CU offices identified.
+      source: https://www.babelstreet.com/
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Private US. No sanctioned-jurisdiction owners identified.
+      source: https://www.babelstreet.com/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: 'Workforce aggregate: unknown.'
+      source: https://www.babelstreet.com/
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - Babel Street
+      - Babel Street Inc
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags: []
+gaps:
+- DPA
+- Cert PDFs
+- References
+meta:
+  schema_version: '1.2'
+  slug: babel-street
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: documented
+  customers:
+  - customer_name: US Customs and Border Protection (USCBP)
+    sector: government
+    country: USA
+    evidence_type: case_study
+    date: '2023-07-03'
+    source_url: https://www.babelstreet.com/resources/case-studies
+    notes: USCBP name-matching case study listed on Babel Street resources.
+  - customer_name: Institute for the Study of War (ISW)
+    sector: ngo
+    country: USA
+    evidence_type: case_study
+    date: '2024-05-02'
+    source_url: https://www.babelstreet.com/resources/case-studies
+    notes: Hamas ORBAT analysis case study; further ISW Syria piece Dec 2025 listed.
+  research_notes: Compiled from vendor case studies, press, and/or procurement notices.
+  last_checked: '2026-10-06'

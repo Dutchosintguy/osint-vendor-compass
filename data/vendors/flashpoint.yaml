@@ -1,0 +1,308 @@
+identity:
+  name: Flashpoint
+  legal_name: Flashpoint (Audax portfolio)
+  trade_names:
+  - Flashpoint
+  official_website: https://www.flashpoint.io/
+  hq_country: USA
+  category: Threat intel / dark web
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2010
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  hq_country:
+    value: USA
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  ownership_type:
+    value: PE-backed (Audax majority 2021)
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  parent:
+    value: Audax Private Equity
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  headcount_band:
+    value: unknown
+    source: https://www.flashpoint.io/
+    confidence: Low
+  customer_segments:
+  - enterprise security
+  - gov
+  primary_products:
+  - Flashpoint Ignite
+  deployment_model:
+    value: SaaS Ignite
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  notable_status: NYC CTI/dark-web; acquired Echosec, Risk Based Security historically
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources compiled.
+    sources:
+    - https://www.flashpoint.io/
+    - https://www.flashpoint.io/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: NYC threat intelligence company (CEO Josh Lefkowitz).
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  what:
+    text: Cyber/physical risk intel from underground and open sources.
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  where:
+    text: USA.
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  when:
+    text: Founded 2010; Audax 2021.
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  why:
+    text: Actionable adversary intelligence.
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  how:
+    text: Collections + analyst + platform Ignite.
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public pages.
+    sources:
+    - https://www.flashpoint.io/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Underground access reputation
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  - text: Ignite platform
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  weaknesses:
+  - text: Enterprise pricing
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  - text: PE ownership opacity
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  best_fit:
+  - CTI underground intel
+  poor_fit:
+  - Consumer search
+  alternatives:
+  - Recorded Future
+  - Cybersixgill
+  - Flare
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed evidence.
+    sources:
+    - https://www.flashpoint.io/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Quote
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://www.flashpoint.io/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://www.flashpoint.io/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://www.flashpoint.io/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Audax PE; prior ~$49M venture reported
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://www.flashpoint.io/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited financials.
+    sources:
+    - https://www.flashpoint.io/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Acquisition of complementary firms
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  negative:
+  - text: None material identified
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  social_themes: CTI practitioners
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://www.flashpoint.io/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Dark-web analyst access models vary—confirm customer attribution controls
+    source: https://www.flashpoint.io/
+    confidence: Low
+  attribution:
+    text: Confirm in DPA
+    source: https://www.flashpoint.io/
+    confidence: Low
+  jurisdiction:
+    text: USA
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contractual OPSEC clauses
+  jurisdiction_sanctions_exposure:
+    note: See extras.jurisdiction_sanctions_exposure
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Needs contractual validation.
+    sources:
+    - https://www.flashpoint.io/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Underground collection methods require legal review
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  gdpr_residency:
+    text: Request residency
+    source: https://www.flashpoint.io/
+    confidence: Low
+  ownership_state_ties:
+    text: US PE-owned; no sanctioned-state owner identified
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://www.flashpoint.io/
+    confidence: Low
+  api_integrations:
+    text: SIEM/SOAR integrations
+    source: https://www.flashpoint.io/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 5
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: New York USA. No RU/BY/CN/IR/DPRK/SY/CU offices identified.
+      source: https://www.flashpoint.io/
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Audax Private Equity majority. No sanctioned-jurisdiction owners identified.
+      source: https://www.flashpoint.io/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: unknown
+      source: https://www.flashpoint.io/
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - Flashpoint
+      - Flashpoint Intelligence
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags: []
+gaps:
+- DPA
+- Cert PDFs
+- References
+meta:
+  schema_version: '1.2'
+  slug: flashpoint
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: documented
+  customers:
+  - customer_name: Community Security Initiative (NY)
+    sector: ngo
+    country: USA
+    evidence_type: case_study
+    date: unknown
+    source_url: https://flashpoint.io/resources/case-study/how-flashpoint-helped-csi-stop-potential-synagogue-shooting/
+  research_notes: Global airline case study is anonymized—excluded.
+  last_checked: '2026-10-06'

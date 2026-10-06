@@ -1,4 +1,4 @@
-const { loadTaxonomy } = require("./lib/vendor-files");
+const { loadTaxonomy, sectorLabel, evidenceLabel, personaLabel, SECTOR_ORDER } = require("./lib/vendor-files");
 
 const taxonomy = loadTaxonomy();
 
@@ -20,18 +20,22 @@ function isHttpUrl(value) {
   }
 }
 
+function addSource(found, seen, value) {
+  const href = isHttpUrl(value);
+  if (!href || seen.has(href)) return;
+  seen.add(href);
+  found.push({ url: href, label: href, accessed: null });
+}
+
 function collectSources(node, found = [], seen = new Set()) {
   if (!node || typeof node !== "object") return found;
-  if (typeof node.source === "string") {
-    const href = isHttpUrl(node.source);
-    if (href && !seen.has(href)) {
-      seen.add(href);
-      found.push({
-        url: href,
-        label: node.source_label || node.title || href,
-        accessed: node.accessed || node.screened_on || null,
-      });
-    }
+  if (typeof node.source === "string") addSource(found, seen, node.source);
+  if (typeof node.source_url === "string") addSource(found, seen, node.source_url);
+  if (typeof node.official_website === "string") addSource(found, seen, node.official_website);
+  if (Array.isArray(node.sources)) {
+    node.sources.forEach((item) => {
+      if (typeof item === "string") addSource(found, seen, item);
+    });
   }
   const values = Array.isArray(node) ? node : Object.values(node);
   values.forEach((value) => collectSources(value, found, seen));
@@ -86,17 +90,41 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("toneName", (id) => lookup(taxonomy.sentiment_tones, id));
   eleventyConfig.addFilter("sectorName", (id) => lookup(taxonomy.customer_sectors, id));
   eleventyConfig.addFilter("evidenceName", (id) => lookup(taxonomy.customer_evidence_types, id));
-  eleventyConfig.addFilter("sectorStats", (vendors) =>
-    taxonomy.customer_sectors.map((sector) => {
+  eleventyConfig.addFilter("sectorLabel", (id) => sectorLabel(id));
+  eleventyConfig.addFilter("evidenceLabel", (id) => evidenceLabel(id));
+  eleventyConfig.addFilter("personaLabel", (id) => personaLabel(id));
+  eleventyConfig.addFilter("uniqueField", (vendors, field) =>
+    [...new Set(vendors.map((vendor) => vendor[field]).filter(Boolean))].sort((a, b) =>
+      String(a).localeCompare(String(b), "en")
+    )
+  );
+  eleventyConfig.addFilter("sectorStats", (vendors) => {
+    const ids = new Set(SECTOR_ORDER);
+    vendors.forEach((vendor) => {
+      const customers = (vendor.known_customers && vendor.known_customers.customers) || [];
+      customers.forEach((customer) => {
+        if (customer.sector) ids.add(customer.sector);
+      });
+    });
+    const ordered = [
+      ...SECTOR_ORDER.filter((id) => ids.has(id)),
+      ...[...ids].filter((id) => !SECTOR_ORDER.includes(id)),
+    ];
+    return ordered.map((id) => {
       let customers = 0;
       let vendorCount = 0;
       vendors.forEach((vendor) => {
-        const matches = (vendor.known_customers || []).filter((item) => item.sector === sector.id);
+        const matches = ((vendor.known_customers && vendor.known_customers.customers) || []).filter(
+          (item) => item.sector === id
+        );
         customers += matches.length;
         if (matches.length > 0) vendorCount += 1;
       });
-      return { id: sector.id, name: sector.name, customers, vendors: vendorCount };
-    })
+      return { id, name: sectorLabel(id), customers, vendors: vendorCount };
+    });
+  });
+  eleventyConfig.addFilter("undocumentedCount", (vendors) =>
+    vendors.filter((vendor) => vendor._customerStatus === "none_publicly_documented").length
   );
   eleventyConfig.addFilter("uniqueCountries", (vendors) => {
     const countries = new Set();
@@ -118,6 +146,7 @@ module.exports = function (eleventyConfig) {
     (products || []).map((item) => item.name).join(" ")
   );
   eleventyConfig.addFilter("httpUrl", isHttpUrl);
+  eleventyConfig.addFilter("startsWith", (value, prefix) => String(value || "").startsWith(prefix));
   eleventyConfig.addFilter("collectSources", (vendor) => collectSources(vendor));
   eleventyConfig.addFilter("screeningSummary", screeningSummary);
   eleventyConfig.addFilter("riskSort", (id) => RISK_ORDER[id] ?? 0);

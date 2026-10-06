@@ -5,7 +5,7 @@
   "description": "Independent, evidence-led comparison of OSINT SaaS vendors.",
   "scripts": {
     "validate": "node scripts/validate-vendors.js",
-    "build": "eleventy",
+    "build": "rm -rf _site && eleventy",
     "dev": "eleventy --serve",
     "check": "npm run validate && npm run build"
   },

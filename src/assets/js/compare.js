@@ -10,7 +10,7 @@
   const cardList = document.querySelector("[data-cards]");
   const aggButtons = Array.from(document.querySelectorAll("[data-sector]"));
   const state = { key: "name", dir: "asc" };
-  const sanctionsOrder = { unknown: 0, low: 1, medium: 2, high: 3 };
+  const sanctionsOrder = { clear: 0, other: 1, review: 2 };
 
   function asNumber(value) {
     const number = Number(value);
@@ -30,20 +30,28 @@
 
   function matches(item) {
     const query = form.q.value.trim().toLowerCase();
-    const haystack = [item.dataset.name, item.dataset.buyers, item.dataset.products]
+    const haystack = [item.dataset.name, item.dataset.buyers, item.dataset.products, item.dataset.category]
       .join(" ")
       .toLowerCase();
-    const categories = (item.dataset.categories || "").split(" ").filter(Boolean);
-    const uses = (item.dataset.uses || "").split(" ").filter(Boolean);
     const sectors = (item.dataset.sectors || "").split(" ").filter(Boolean);
+    const sector = form.sector.value;
+    const sectorOk =
+      !sector ||
+      (sector === "__none__" && item.dataset.customerStatus === "none_publicly_documented") ||
+      (sector !== "__none__" && sectors.includes(sector));
+    const flags = form.redflags.value;
+    const flagsOk =
+      !flags ||
+      (flags === "some" && asNumber(item.dataset.redflags) > 0) ||
+      (flags === "none" && asNumber(item.dataset.redflags) === 0);
 
     return (
       (!query || haystack.includes(query)) &&
-      (!form.category.value || categories.includes(form.category.value)) &&
+      (!form.category.value || item.dataset.category === form.category.value) &&
       (!form.country.value || item.dataset.country === form.country.value) &&
-      (!form.use.value || uses.includes(form.use.value)) &&
-      (!form.sector.value || sectors.includes(form.sector.value)) &&
+      sectorOk &&
       (!form.sanctions.value || item.dataset.sanctions === form.sanctions.value) &&
+      flagsOk &&
       asNumber(item.dataset.transparency) >= asNumber(form.minTransparency.value) &&
       asNumber(item.dataset.financial) >= asNumber(form.minFinancial.value) &&
       asNumber(item.dataset.opsec) >= asNumber(form.minOpsec.value)
@@ -53,7 +61,7 @@
   function compareItems(a, b) {
     const key = state.key;
     let result = 0;
-    if (key === "name" || key === "country") {
+    if (key === "name" || key === "country" || key === "category" || key === "reviewed") {
       result = (a.dataset[key] || "").localeCompare(b.dataset[key] || "", "en");
     } else if (key === "sanctions") {
       result = (sanctionsOrder[a.dataset.sanctions] ?? 0) - (sanctionsOrder[b.dataset.sanctions] ?? 0);
@@ -142,7 +150,7 @@
         state.dir = state.dir === "asc" ? "desc" : "asc";
       } else {
         state.key = key;
-        state.dir = key === "name" || key === "country" ? "asc" : "desc";
+        state.dir = key === "name" || key === "country" || key === "category" ? "asc" : "desc";
       }
       table.querySelectorAll("th").forEach(function (header) {
         header.removeAttribute("aria-sort");

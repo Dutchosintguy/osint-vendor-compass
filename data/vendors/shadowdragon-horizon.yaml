@@ -1,0 +1,309 @@
+identity:
+  name: ShadowDragon Horizon
+  legal_name: ShadowDragon, LLC / ShadowDragon Holdings LLC
+  trade_names:
+  - ShadowDragon
+  - Horizon
+  - SocialNet
+  official_website: https://shadowdragon.io/
+  hq_country: USA
+  category: Investigation / link analysis
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2016
+    detail: Formed from Packet Ninjas tools; LinkedIn also lists 2013
+    source: https://www.prnewswire.com/news-releases/packet-ninjas-announces-the-formation-of-shadowdragon-to-license-cyber-intelligence-investigative-tools-300221551.html
+    confidence: High
+  hq_country:
+    value: USA
+    detail: Wilmington DE listings; Hoover AL ops address; Cheyenne roots
+    source: https://www.linkedin.com/company/shadowdragon
+    confidence: Medium
+  ownership_type:
+    value: Private; Sverica Capital strategic investment (2021) reported in secondary sources
+    source: https://shadowdragon.io/about/
+    confidence: Medium
+  parent:
+    value: unknown / PE-influenced private
+    source: https://shadowdragon.io/about/
+    confidence: Low
+  headcount_band:
+    value: 51-200
+    detail: LinkedIn ~88
+    source: https://www.linkedin.com/company/shadowdragon
+    confidence: Medium
+  customer_segments:
+  - LE
+  - financial crimes
+  - corporate security
+  primary_products:
+  - Horizon
+  - SocialNet
+  deployment_model:
+    value: Enterprise OSINT SaaS/platform
+    source: https://shadowdragon.io/platform/
+    confidence: High
+  notable_status: SOC 2 Type II certified per vendor; founder Daniel Clemens
+  score:
+    value: 4
+    confidence: High
+    rationale: Solid product identity; HQ address history is multi-state—tracked carefully.
+    sources:
+    - https://shadowdragon.io/
+    - https://shadowdragon.io/about/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: Founder Daniel Clemens; investigators in LE/corp security; advisory mentions include community OSINT practitioners.
+    source: https://shadowdragon.io/about/
+    confidence: High
+  what:
+    text: OSINT collection, identity enrichment, monitoring, link analysis via Horizon powered by SocialNet.
+    source: https://shadowdragon.io/platform/
+    confidence: High
+  where:
+    text: Public sources; processing jurisdiction primarily US—exact residency options unknown.
+    source: https://shadowdragon.io/
+    confidence: Medium
+  when:
+    text: ShadowDragon announced 2016; Horizon marketed as current enterprise platform.
+    source: https://www.prnewswire.com/news-releases/packet-ninjas-announces-the-formation-of-shadowdragon-to-license-cyber-intelligence-investigative-tools-300221551.html
+    confidence: High
+  why:
+    text: Unify ethical OSINT investigations without mass scraping/hacking per vendor positioning.
+    source: https://shadowdragon.io/
+    confidence: High
+  how:
+    text: API engine SocialNet + Horizon modules; unattributed search claims; continuous monitoring.
+    source: https://shadowdragon.io/platform/
+    confidence: High
+  score:
+    value: 4
+    confidence: High
+    rationale: Clear methodology messaging.
+    sources:
+    - https://shadowdragon.io/platform/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Investigator-built workflow platform
+    source: https://shadowdragon.io/platform/
+    confidence: High
+  - text: SOC 2 Type II claim
+    source: https://shadowdragon.io/about/
+    confidence: High
+  - text: Unattributed/ethical collection positioning
+    source: https://shadowdragon.io/
+    confidence: High
+  weaknesses:
+  - text: Enterprise quote-only pricing (not public)
+    source: https://shadowdragon.io/
+    confidence: Medium
+  - text: Multi-location HQ history can confuse procurement KYC
+    source: https://www.linkedin.com/company/shadowdragon
+    confidence: Medium
+  best_fit:
+  - LE digital investigations
+  - Corporate investigations needing SocialNet pivots
+  poor_fit:
+  - Cheap one-off lookups
+  - Pure GEOINT
+  alternatives:
+  - Maltego
+  - Social Links
+  - Blackdot Videris
+  - Skopenow
+  score:
+    value: 4
+    confidence: Medium
+    rationale: Strong vendor claims; limited independent financial transparency.
+    sources:
+    - https://shadowdragon.io/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Quote-only
+    source: https://shadowdragon.io/
+    confidence: High
+  contract_norms: unknown
+  privacy_dpa:
+    text: Trust center referenced on site
+    source: https://shadowdragon.io/
+    confidence: Medium
+  audits:
+    text: SOC 2 Type II
+    source: https://shadowdragon.io/about/
+    confidence: High
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Cert clear; pricing opaque.
+    sources:
+    - https://shadowdragon.io/about/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Private; Sverica investment reported (verify in diligence)
+    source: https://shadowdragon.io/about/
+    confidence: Low
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes: unknown
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited public financials.
+    sources:
+    - https://shadowdragon.io/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Inc. 5000 honoree coverage historically
+    source: https://www.inc.com/profile/shadowdragon
+    confidence: Medium
+  negative:
+  - text: None material identified in this pass
+    source: https://shadowdragon.io/
+    confidence: Low
+  social_themes: Respected in LE OSINT circles
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Limited systematic sampling.
+    sources:
+    - https://shadowdragon.io/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Vendor emphasizes OPSEC/unattributed searches; exact retention unknown—request DPA
+    source: https://shadowdragon.io/
+    confidence: Medium
+  attribution:
+    text: Claims unattributed searches
+    source: https://shadowdragon.io/
+    confidence: High
+  jurisdiction:
+    text: USA
+    source: https://www.linkedin.com/company/shadowdragon
+    confidence: High
+  incident_history: unknown
+  recommended_controls:
+  - Request SOC2 report
+  - Confirm query non-attribution contractually
+  score:
+    value: 4
+    confidence: Medium
+    rationale: Strong OPSEC marketing; validate in contract.
+    sources:
+    - https://shadowdragon.io/
+    last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    note: Full structured section at extras.jurisdiction_sanctions_exposure (company-level only; no employee nationalities).
+    result_summary: clear (no public hit identified; re-screen before procurement)
+    screening_date: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Public-information ethical OSINT stance; no mass scraping/hacking claim
+    source: https://shadowdragon.io/
+    confidence: High
+  gdpr_residency: unknown (US vendor—ask EU residency)
+  ownership_state_ties:
+    text: No state ownership identified
+    source: https://shadowdragon.io/about/
+    confidence: Medium
+  certifications:
+    text: SOC 2 Type II
+    source: https://shadowdragon.io/about/
+    confidence: High
+  legal_regulatory_actions: unknown
+  api_integrations:
+    text: SocialNet API engine
+    source: https://shadowdragon.io/platform/
+    confidence: High
+  use_case_fit:
+    le_investigator:
+      value: 5
+      confidence: High
+      rationale: Core LE OSINT platform.
+      sources:
+      - https://shadowdragon.io/
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 4
+      confidence: High
+      rationale: Investigations/threat use.
+      sources:
+      - https://shadowdragon.io/
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: Derived from product positioning in cited sources.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 3
+      confidence: Medium
+      rationale: Derived from product positioning in cited sources.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Derived from product positioning in cited sources.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: US private company with public office signals in USA (Wilmington DE, Hoover AL, Cheyenne WY historically)
+        and Copenhagen, Denmark. LinkedIn lists workforce across US, UK, Spain, Denmark, Germany. No offices/subsidiaries
+        in Russia, Belarus, China, Iran, DPRK, Syria, or Cuba identified in sources reviewed.
+      source: https://www.linkedin.com/company/shadowdragon
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: US-founded; Sverica Capital (US PE) investment reported in secondary sources. No ownership ties to sanctioned
+        jurisdictions identified in this review.
+      source: https://shadowdragon.io/about/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: Aggregate LinkedIn distribution cited across US, UK, Spain, Denmark, Germany—not in listed sanctioned
+        countries. Exact R&D site map unknown.
+      source: https://www.linkedin.com/company/shadowdragon
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in this review (ShadowDragon / ShadowDragon LLC)
+      un: no match found in this review
+      ofac_sdn: no match found in this review
+      uk: no match found in this review
+      screened_entities:
+      - ShadowDragon
+      - ShadowDragon LLC
+      - ShadowDragon Holdings LLC
+      screening_date: '2026-10-06'
+      method: Public OFAC SDN search interface + web checks for EU/UN/UK list hits on company legal names; not counsel
+        opinion.
+      sources:
+      - https://shadowdragon.io/
+      - https://sanctionssearch.ofac.treas.gov/
+      confidence: Medium
+      result: clear (no public hit identified; re-screen before procurement)
+red_flags: []
+gaps:
+- Exact current legal HQ for contracts
+- Published pricing
+- EU data residency
+meta:
+  slug: shadowdragon-horizon
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+  schema_version: '1.2'
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Checked shadowdragon.io about/platform; marketing claims LE use; no named customer case studies
+    or procurement records located in this pass.
+  last_checked: '2026-10-06'

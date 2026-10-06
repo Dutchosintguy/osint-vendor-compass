@@ -1,0 +1,335 @@
+identity:
+  name: Recorded Future
+  legal_name: Recorded Future, Inc. (Mastercard subsidiary)
+  trade_names:
+  - Recorded Future
+  official_website: https://www.recordedfuture.com/
+  hq_country: USA
+  category: Threat intel / attack surface
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2009
+    source: https://www.recordedfuture.com/our-story
+    confidence: High
+  hq_country:
+    value: USA
+    source: https://www.recordedfuture.com/
+    confidence: Medium
+  ownership_type:
+    value: Subsidiary of Mastercard (acquisition closed Dec 2024, $2.65B)
+    source: https://newsroom.mastercard.com/news/press/2024/december/mastercard-finalizes-acquisition-of-recorded-future/
+    confidence: High
+  parent:
+    value: Mastercard Incorporated
+    source: https://newsroom.mastercard.com/news/press/2024/december/mastercard-finalizes-acquisition-of-recorded-future/
+    confidence: High
+  headcount_band:
+    value: 1000+ (exact band unknown)
+    source: https://www.recordedfuture.com/
+    confidence: Low
+  customer_segments:
+  - enterprise SOC
+  - gov
+  - financial services
+  primary_products:
+  - Intelligence Cloud
+  - Cyber Operations
+  - Digital Risk Protection
+  - Third-Party Risk
+  - Payment Fraud
+  deployment_model:
+    value: SaaS Intelligence Cloud
+    source: https://www.recordedfuture.com/
+    confidence: High
+  notable_status: Largest commercial TIP narrative; China UEL counter-sanction listing reported via OpenSanctions
+    (2025-10-09 start) — not OFAC
+  score:
+    value: 4
+    confidence: High
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.recordedfuture.com/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: Co-founded Christopher Ahlberg & Staffan Truvé; Boston/Somerville HQ; Mastercard parent.
+    source: https://www.recordedfuture.com/our-story
+    confidence: High
+  what:
+    text: CTI across open/dark/technical sources; DRP; third-party risk; Insikt Group analysis.
+    source: https://www.recordedfuture.com/
+    confidence: High
+  where:
+    text: 'US HQ; global offices; residency options: unknown in this pass.'
+    source: https://www.recordedfuture.com/
+    confidence: Medium
+  when:
+    text: 2009 founding; Insight Partners era; Mastercard close Dec 2024.
+    source: https://www.recordedfuture.com/our-story
+    confidence: High
+  why:
+    text: Preemptive threat intelligence at machine speed.
+    source: https://www.recordedfuture.com/
+    confidence: High
+  how:
+    text: Intelligence Graph + human Insikt + integrations/autonomous ops.
+    source: https://www.recordedfuture.com/
+    confidence: High
+  score:
+    value: 4
+    confidence: Medium
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.recordedfuture.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Breadth of intel + analyst layer
+    source: https://www.recordedfuture.com/
+    confidence: High
+  - text: Mastercard balance-sheet backing
+    source: https://newsroom.mastercard.com/news/press/2024/december/mastercard-finalizes-acquisition-of-recorded-future/
+    confidence: High
+  weaknesses:
+  - text: Premium pricing
+    source: https://osintbench.com/comparisons/best-threat-intelligence-platforms
+    confidence: Medium
+  - text: China Unreliable Entities List counter-sanction (affects China ops)
+    source: https://www.opensanctions.org/entities/cn-sanc-67c0cd6952199824b60ed159291158323f02aac2/
+    confidence: High
+  best_fit:
+  - Enterprise CTI
+  - Financial sector DRP
+  poor_fit:
+  - Budget mid-market only
+  alternatives:
+  - Flashpoint
+  - Mandiant
+  - Flare
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.recordedfuture.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Enterprise quote-only
+    source: https://www.recordedfuture.com/
+    confidence: High
+  contract_norms: unknown
+  privacy_dpa:
+    text: Trust/privacy docs exist—full DPA not reviewed here
+    source: https://www.recordedfuture.com/
+    confidence: Low
+  audits:
+    text: Enterprise certifications likely—specific ISO/SOC not verified this pass
+    source: https://www.recordedfuture.com/
+    confidence: Low
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.recordedfuture.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Acquired for $2.65B by Mastercard from Insight Partners
+    source: https://investor.mastercard.com/investor-news/investor-news-details/2024/Mastercard-Invests-in-Continued-Defense-of-Global-Digital-Economy-With-Acquisition-of-Recorded-Future/default.aspx
+    confidence: High
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: Strong financial parent
+    source: https://newsroom.mastercard.com/news/press/2024/december/mastercard-finalizes-acquisition-of-recorded-future/
+    confidence: High
+  score:
+    value: 2
+    confidence: Low
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.recordedfuture.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Mastercard acquisition coverage
+    source: https://newsroom.mastercard.com/news/press/2024/december/mastercard-finalizes-acquisition-of-recorded-future/
+    confidence: High
+  negative:
+  - text: China counter-sanctions/UEL listing
+    source: https://www.opensanctions.org/entities/cn-sanc-67c0cd6952199824b60ed159291158323f02aac2/
+    confidence: High
+  social_themes: Market leader reputation among SOC teams
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.recordedfuture.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Enterprise SaaS—confirm query telemetry in DPA
+    source: https://www.recordedfuture.com/
+    confidence: Medium
+  attribution:
+    text: unknown
+    source: https://www.recordedfuture.com/
+    confidence: Low
+  jurisdiction:
+    text: USA (Mastercard)
+    source: https://www.recordedfuture.com/our-story
+    confidence: High
+  incident_history: unknown
+  recommended_controls:
+  - SSO/MFA
+  - Need-to-know watchlists
+  - Review China UEL impact if operating in PRC
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.recordedfuture.com/
+    last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    note: Full section at extras.jurisdiction_sanctions_exposure (company-level only).
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Commercial CTI from open/dark sources—validate collection ToS
+    source: https://www.recordedfuture.com/
+    confidence: Medium
+  gdpr_residency:
+    text: unknown — request residency options
+    source: https://www.recordedfuture.com/
+    confidence: Low
+  ownership_state_ties:
+    text: US public-company parent Mastercard; no RU/IR state ownership
+    source: https://newsroom.mastercard.com/news/press/2024/december/mastercard-finalizes-acquisition-of-recorded-future/
+    confidence: High
+  certifications: unknown (verify SOC2/ISO in RFP)
+  legal_regulatory_actions: unknown
+  api_integrations:
+    text: 100+ native integrations claimed
+    source: https://www.recordedfuture.com/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 3
+      confidence: Medium
+      rationale: From product positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 5
+      confidence: High
+      rationale: Core CTI.
+      sources:
+      - https://www.recordedfuture.com/
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 3
+      confidence: Medium
+      rationale: From product positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 4
+      confidence: Medium
+      rationale: From product positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: From product positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: 'HQ Boston/Somerville USA; global offices. No RU/BY/IR/DPRK/SY/CU offices identified. China: subject
+        to PRC Unreliable Entities List (counter-sanction)—treat as China operating constraint, not Western SDN
+        listing.'
+      source: https://www.recordedfuture.com/our-story
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Owned by Mastercard (NYSE:MA). Prior Insight Partners. No Western-sanctions ownership ties identified.
+      source: https://newsroom.mastercard.com/news/press/2024/december/mastercard-finalizes-acquisition-of-recorded-future/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: 'Global workforce; aggregate sanctioned-country employment: unknown from public pages.'
+      source: https://www.recordedfuture.com/
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - Recorded Future
+      - Recorded Future Inc
+      - Mastercard
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: 'OpenSanctions: China UEL counter-sanction start 2025-10-09. OFAC/EU/UK local dumps: no hit for Recorded
+        Future Inc.'
+      raw_hits: {}
+red_flags:
+- PRC Unreliable Entities List (counter-sanction) — impacts China business
+gaps:
+- Cert list primary docs
+- EU residency options
+meta:
+  schema_version: '1.2'
+  slug: recorded-future
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: documented
+  customers:
+  - customer_name: Siemens Energy
+    sector: corporate
+    country: Germany
+    evidence_type: case_study
+    date: unknown
+    source_url: https://www.recordedfuture.com/case-study/siemens
+  - customer_name: US Defense Health Agency (DHA)
+    sector: defense
+    country: USA
+    evidence_type: case_study
+    date: unknown
+    source_url: https://www.recordedfuture.com/case-study/defense-health-agency
+  - customer_name: Mastercard
+    sector: corporate
+    country: USA
+    evidence_type: press_release
+    date: 2024-12
+    source_url: https://newsroom.mastercard.com/news/press/2024/december/mastercard-finalizes-acquisition-of-recorded-future/
+    notes: Acquirer/parent; also product integration press 2025.
+  - customer_name: Student Loans Company Limited
+    sector: government
+    country: United Kingdom
+    evidence_type: procurement_record
+    date: '2024'
+    source_url: https://www.contractsfinder.service.gov.uk/notice/217caf04-0a20-4c80-8e3a-8d7f9b052080
+    notes: UK Contracts Finder renewal via Softcat PLC (~£313k).
+  research_notes: Compiled from vendor case studies, press, and/or procurement notices.
+  last_checked: '2026-10-06'

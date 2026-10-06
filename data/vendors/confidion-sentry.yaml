@@ -1,0 +1,303 @@
+identity:
+  name: Confidion Sentry
+  legal_name: Confidion Consulting & Technologies Inc.
+  trade_names:
+  - Confidion Sentry
+  official_website: https://sentry.confidion.com/
+  hq_country: Canada
+  category: Investigation / protective intelligence
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2015
+    source: https://linkedin.com/company/confidion-consulting
+    confidence: Medium
+  hq_country:
+    value: Canada
+    source: https://sentry.confidion.com/
+    confidence: Medium
+  ownership_type:
+    value: Private Canadian
+    source: https://sentry.confidion.com/
+    confidence: Medium
+  parent:
+    value: none
+    source: https://sentry.confidion.com/
+    confidence: Medium
+  headcount_band:
+    value: 1-10
+    source: https://sentry.confidion.com/
+    confidence: Low
+  customer_segments:
+  - protective intelligence
+  - security teams
+  primary_products:
+  - Sentry
+  - Indicia
+  deployment_model:
+    value: Canadian-hosted SaaS
+    source: https://sentry.confidion.com/
+    confidence: Medium
+  notable_status: Halifax NS; Canadian-hosted OSINT monitoring; also Indicia screening
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources.
+    sources:
+    - https://sentry.confidion.com/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: Canadian public-safety/OSINT software company.
+    source: https://www.confidion.com/contact/
+    confidence: Medium
+  what:
+    text: OSINT search, watchlists, entity profiles, real-time monitoring.
+    source: https://sentry.confidion.com/
+    confidence: Medium
+  where:
+    text: Nova Scotia Canada; Canadian-hosted infra claimed.
+    source: https://sentry.confidion.com/
+    confidence: Medium
+  when:
+    text: Founded 2015.
+    source: https://linkedin.com/company/confidion-consulting
+    confidence: Medium
+  why:
+    text: Find risk signals before incidents.
+    source: https://sentry.confidion.com/
+    confidence: Medium
+  how:
+    text: Aggregate public web/social/dark sources into Sentry UI.
+    source: https://sentry.confidion.com/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public.
+    sources:
+    - https://sentry.confidion.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Canadian hosting claim
+    source: https://sentry.confidion.com/
+    confidence: Medium
+  - text: Transparent pricing tiers on site
+    source: https://sentry.confidion.com/
+    confidence: Medium
+  weaknesses:
+  - text: Very small company
+    source: https://sentry.confidion.com/
+    confidence: Medium
+  - text: Limited independent reviews
+    source: https://sentry.confidion.com/
+    confidence: Medium
+  best_fit:
+  - Small team protective intel
+  poor_fit:
+  - Global enterprise CTI breadth
+  alternatives:
+  - ShadowDragon
+  - Blackdot
+  - Dataminr
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed.
+    sources:
+    - https://sentry.confidion.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Published tiers + enterprise
+    source: https://sentry.confidion.com/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://sentry.confidion.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://sentry.confidion.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://sentry.confidion.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Private small
+    source: https://sentry.confidion.com/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://sentry.confidion.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited.
+    sources:
+    - https://sentry.confidion.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Product clarity
+    source: https://sentry.confidion.com/
+    confidence: Medium
+  negative:
+  - text: None
+    source: https://sentry.confidion.com/
+    confidence: Medium
+  social_themes: Niche
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://sentry.confidion.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Canadian host; still confirm query retention (privacy policy notes Canada processing)
+    source: https://sentry.confidion.com/
+    confidence: Low
+  attribution:
+    text: Confirm DPA
+    source: https://sentry.confidion.com/
+    confidence: Low
+  jurisdiction:
+    text: Canada
+    source: https://sentry.confidion.com/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contract OPSEC
+  jurisdiction_sanctions_exposure:
+    note: See extras
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Validate.
+    sources:
+    - https://sentry.confidion.com/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Public-source OSINT
+    source: https://sentry.confidion.com/
+    confidence: Medium
+  gdpr_residency:
+    text: Canada adequacy historically helpful but verify transfers
+    source: https://sentry.confidion.com/
+    confidence: Low
+  ownership_state_ties:
+    text: Canadian private; no sanctioned-state owner
+    source: https://sentry.confidion.com/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://sentry.confidion.com/
+    confidence: Low
+  api_integrations:
+    text: unknown
+    source: https://sentry.confidion.com/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: Halifax, Nova Scotia, Canada; LinkedIn also lists UK/Nigeria/US presence signals. No RU/BY/CN/IR/DPRK/SY/CU
+        offices identified.
+      source: https://www.confidion.com/contact/
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Confidion Consulting & Technologies Inc. (Canada). No sanctioned owners identified.
+      source: https://www.confidion.com/contact/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: ~5 employees LinkedIn; countries cited include Canada/UK/Nigeria/US—not core sanctioned set.
+      source: https://www.confidion.com/contact/
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - Confidion
+      - Confidion Consulting & Technologies Inc
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags: []
+gaps:
+- DPA
+- Certs
+- References
+meta:
+  schema_version: '1.2'
+  slug: confidion-sentry
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Checked sentry.confidion.com; pricing public but no named customers.
+  last_checked: '2026-10-06'

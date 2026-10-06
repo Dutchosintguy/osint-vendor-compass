@@ -2,14 +2,14 @@
 
 Independent, evidence-led comparison of OSINT SaaS vendors. Built for analysts, decision makers, and teams choosing a provider. Maintained by Nico Dekens (Dutchosintguy).
 
-**The vendor profiles in this repository are fictional examples.** They show the format. Real vendors are added only after Nico Dekens approves them. Do not use the example profiles for a buying decision.
+The listed profiles are the approved schema 1.2 research set in `data/vendors/`. Fictional examples remain in `data/examples/` and are not published. Do not treat a screening line as a legal clearance.
 
 The site is static. It loads no analytics, no advertising, and no third-party scripts or fonts.
 
 ## Pages
 
 - [Overview](src/index.njk) lists every vendor, with scores, sanctions exposure, and known-buyer sectors.
-- [Compare](src/compare.njk) filters and sorts by category, HQ country, scores, use case, sanctions exposure, and customer sector. Sector totals update with the filters.
+- [Compare](src/compare.njk) filters and sorts by category, HQ country, scores, sanctions screening, red flags, and customer sector. Sector totals update with the filters.
 - [Use cases](src/use-cases.njk) shows fit by job.
 - Vendor profiles are generated from one data file each.
 - [Methodology](src/methodology.njk) explains the scores, the sanctions label, known customers, and the sign-off process.
@@ -18,11 +18,11 @@ The site is static. It loads no analytics, no advertising, and no third-party sc
 ## Repository layout
 
 ```
-data/vendors/          one YAML file per vendor
-data/taxonomy.yaml     categories, use cases, sectors, and other allowed values
-data/schema/           JSON Schema for editor support
+data/vendors/          approved schema 1.2 profiles, one file each
+data/examples/         fictional samples, not listed on the site
+data/research/         schema 1.2 guide, index, and longlist from the import
 src/                   Eleventy templates, CSS, and first-party JavaScript
-docs/vendor-schema.md  field reference
+docs/vendor-schema.md  how the site maps the research schema
 scripts/               validator
 .github/workflows/     GitHub Pages deploy
 ```
@@ -31,13 +31,13 @@ Adding a vendor means adding one file under `data/vendors/`. The site renders a 
 
 ## Add a vendor
 
-1. Read [CONTRIBUTING.md](CONTRIBUTING.md) and [docs/vendor-schema.md](docs/vendor-schema.md).
-2. Copy `data/vendors/_template.yaml` to `data/vendors/<slug>.yaml`. The filename must match `slug`.
-3. Fill every claim with a source URL and an access date. Use public sources only.
-4. Run `npm run validate`. A real vendor fails until `owner_approved: true`.
-5. Open a pull request. Nico Dekens sets `owner_approved: true` when the profile is approved.
+1. Read [CONTRIBUTING.md](CONTRIBUTING.md), [docs/vendor-schema.md](docs/vendor-schema.md), and [data/research/schema.md](data/research/schema.md).
+2. Add `data/vendors/<slug>.yaml` using schema 1.2. The filename must match `meta.slug`.
+3. Keep every source URL on its claim. Leave unknown fields as unknown.
+4. Run `npm run validate`. Publication requires `identity.signoff: APPROVED` and `meta.signoff_status: approved`.
+5. Open a pull request. Do not mark a file approved unless Nico Dekens has approved that vendor.
 
-Do not add a real vendor on your own. Example files must stay obviously fictional and may cite only `example.com`.
+The import index, longlist, and schema notes are in `data/research/`.
 
 ## Develop locally
 

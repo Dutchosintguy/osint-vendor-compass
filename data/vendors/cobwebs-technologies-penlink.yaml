@@ -1,0 +1,313 @@
+identity:
+  name: Cobwebs Technologies (PenLink)
+  legal_name: Cobwebs Technologies (acquired); parent PenLink, Ltd.
+  trade_names:
+  - Cobwebs Technologies (PenLink)
+  official_website: https://www.cobwebs.com/
+  hq_country: USA
+  category: Investigation / web intelligence
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2015
+    source: https://en.globes.co.il/en/article-spire-capital-buys-israeli-web-intelligence-co-cobwebs-1001452029
+    confidence: Medium
+    detail: Israeli founding; PenLink deal 2023
+  hq_country:
+    value: USA
+    source: https://www.cobwebs.com/
+    confidence: Medium
+  ownership_type:
+    value: Subsidiary/acquired — PenLink via Spire Capital (Jul 2023)
+    source: https://www.penlink.com/press-release/cobwebs-technologies-joins-penlink-to-expand-its-digital-investigative-platform/
+    confidence: High
+  parent:
+    value: PenLink, Ltd. (Lincoln, Nebraska, USA); Spire Capital investment partner
+    source: https://www.penlink.com/press-release/cobwebs-technologies-joins-penlink-to-expand-its-digital-investigative-platform/
+    confidence: High
+  headcount_band:
+    value: 101-200 historically (~170 at sale per Globes)
+    source: https://en.globes.co.il/en/article-spire-capital-buys-israeli-web-intelligence-co-cobwebs-1001452029
+    confidence: Medium
+  customer_segments:
+  - LE
+  - national security
+  - public safety
+  primary_products:
+  - Cobwebs WEBINT
+  - PenLink digital investigation platform
+  deployment_model:
+    value: Integrated into PenLink platform; US HQ retained per press
+    source: https://www.penlink.com/press-release/cobwebs-technologies-joins-penlink-to-expand-its-digital-investigative-platform/
+    confidence: High
+  notable_status: Israeli WEBINT co acquired into US PenLink; Meta blocked related accounts alleging abusive customer
+    use (2022 reporting)
+  score:
+    value: 4
+    confidence: High
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.cobwebs.com/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: Built by Israeli intel veterans; now under US PenLink ownership.
+    source: https://en.globes.co.il/en/article-spire-capital-buys-israeli-web-intelligence-co-cobwebs-1001452029
+    confidence: High
+  what:
+    text: Web intelligence across open/deep/dark web for investigations.
+    source: https://www.penlink.com/press-release/cobwebs-technologies-joins-penlink-to-expand-its-digital-investigative-platform/
+    confidence: High
+  where:
+    text: 'Historically Herzliya Israel; PenLink HQ Lincoln NE USA. Post-deal Israel footprint: unknown.'
+    source: https://en.globes.co.il/en/article-spire-capital-buys-israeli-web-intelligence-co-cobwebs-1001452029
+    confidence: Medium
+  when:
+    text: Founded ~2015; Spire/PenLink acquisition announced 2023-07-11.
+    source: https://www.penlink.com/press-release/cobwebs-technologies-joins-penlink-to-expand-its-digital-investigative-platform/
+    confidence: High
+  why:
+    text: Mission-critical digital intel for modern investigations.
+    source: https://www.penlink.com/press-release/cobwebs-technologies-joins-penlink-to-expand-its-digital-investigative-platform/
+    confidence: High
+  how:
+    text: AI-powered OSINT/WEBINT integrated with PenLink evidence workflows.
+    source: https://www.penlink.com/press-release/cobwebs-technologies-joins-penlink-to-expand-its-digital-investigative-platform/
+    confidence: High
+  score:
+    value: 4
+    confidence: Medium
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.cobwebs.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Deep WEBINT heritage
+    source: https://www.cobwebs.com/
+    confidence: Medium
+  - text: US LE-focused parent PenLink
+    source: https://www.penlink.com/press-release/cobwebs-technologies-joins-penlink-to-expand-its-digital-investigative-platform/
+    confidence: High
+  weaknesses:
+  - text: Meta Dec 2022 report alleged Cobwebs customers used avatars/social engineering and targeted activists;
+      accounts blocked
+    source: https://en.globes.co.il/en/article-spire-capital-buys-israeli-web-intelligence-co-cobwebs-1001452029
+    confidence: High
+  - text: Pricing not public
+    source: https://www.cobwebs.com/
+    confidence: Medium
+  best_fit:
+  - LE needing WEBINT+comms intel
+  poor_fit:
+  - Buyers avoiding Meta-controversy vendors
+  alternatives:
+  - ShadowDragon
+  - Social Links
+  - Maltego
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.cobwebs.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Quote-only
+    source: https://www.cobwebs.com/
+    confidence: High
+  contract_norms: unknown
+  privacy_dpa:
+    text: unknown
+    source: https://www.cobwebs.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://www.cobwebs.com/
+    confidence: Low
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.cobwebs.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Acquired ~$200-250M reported (Globes); Spire PE
+    source: https://en.globes.co.il/en/article-spire-capital-buys-israeli-web-intelligence-co-cobwebs-1001452029
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: PE-backed rollup risk/opportunity
+    source: https://www.penlink.com/press-release/cobwebs-technologies-joins-penlink-to-expand-its-digital-investigative-platform/
+    confidence: Medium
+  score:
+    value: 2
+    confidence: Low
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.cobwebs.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Acquisition press
+    source: https://www.penlink.com/press-release/cobwebs-technologies-joins-penlink-to-expand-its-digital-investigative-platform/
+    confidence: High
+  negative:
+  - text: Meta enforcement / activist-targeting allegations against customers (2022)
+    source: https://en.globes.co.il/en/article-spire-capital-buys-israeli-web-intelligence-co-cobwebs-1001452029
+    confidence: High
+  social_themes: Controversial in civil-society coverage; strong LE brand via PenLink
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.cobwebs.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: unknown
+    source: https://www.cobwebs.com/
+    confidence: Low
+  attribution:
+    text: 'Sector risk: alleged sockpuppet collection by customers'
+    source: https://en.globes.co.il/en/article-spire-capital-buys-israeli-web-intelligence-co-cobwebs-1001452029
+    confidence: High
+  jurisdiction:
+    text: USA parent; historical Israel R&D
+    source: https://www.penlink.com/press-release/cobwebs-technologies-joins-penlink-to-expand-its-digital-investigative-platform/
+    confidence: High
+  incident_history: unknown
+  recommended_controls:
+  - AUP enforcing no-activist abuse
+  - Audit collection methods
+  - Request OPSEC whitepaper
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Based on evidence cited in profile.
+    sources:
+    - https://www.cobwebs.com/
+    last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    note: Full section at extras.jurisdiction_sanctions_exposure (company-level only).
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: High ethics diligence required given Meta allegations
+    source: https://en.globes.co.il/en/article-spire-capital-buys-israeli-web-intelligence-co-cobwebs-1001452029
+    confidence: High
+  gdpr_residency:
+    text: unknown
+    source: https://www.cobwebs.com/
+    confidence: Low
+  ownership_state_ties:
+    text: US-owned post-deal; Israeli founders historically; no RU/CN state ownership identified
+    source: https://www.penlink.com/press-release/cobwebs-technologies-joins-penlink-to-expand-its-digital-investigative-platform/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions: unknown
+  api_integrations: unknown
+  use_case_fit:
+    le_investigator:
+      value: 4
+      confidence: Medium
+      rationale: From product positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 3
+      confidence: Medium
+      rationale: From product positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: From product positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 2
+      confidence: Medium
+      rationale: From product positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: From product positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: 'PenLink HQ Lincoln NE, USA. Cobwebs historically Herzliya, Israel. No RU/BY/CN/IR/DPRK/SY/CU offices
+        identified in acquisition press. Current Israel subsidiary status: unknown.'
+      source: https://www.penlink.com/press-release/cobwebs-technologies-joins-penlink-to-expand-its-digital-investigative-platform/
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Owned via Spire Capital acquisition into PenLink (American-owned). No sanctioned-jurisdiction state
+        owners identified.
+      source: https://www.penlink.com/press-release/cobwebs-technologies-joins-penlink-to-expand-its-digital-investigative-platform/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: Historical ~170 employees in Israel at sale; post-merger workforce map unknown.
+      source: https://en.globes.co.il/en/article-spire-capital-buys-israeli-web-intelligence-co-cobwebs-1001452029
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - Cobwebs Technologies
+      - PenLink
+      - PenLink Ltd
+      - Spire Capital
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags:
+- Meta 2022 abuse allegations re customers/platform use
+- Israeli dual-use WEBINT scrutiny in some EU procurements
+gaps:
+- Current Israel legal entities
+- Certifications
+- AUP enforcement evidence
+meta:
+  schema_version: '1.2'
+  slug: cobwebs-technologies-penlink
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: documented
+  customers:
+  - customer_name: US ICE Homeland Security Investigations (HSI)
+    sector: law_enforcement
+    country: USA
+    evidence_type: procurement_record
+    date: unknown
+    source_url: https://www.federalcompass.com/fed-contract-award/70CMSD25P00000138
+    notes: Award 70CMSD25P00000138 for PenLink Cobwebs/Tangles licenses—confirm on USAspending.
+  research_notes: Compiled from vendor case studies, press, and/or procurement notices.
+  last_checked: '2026-10-06'

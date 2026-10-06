@@ -1,0 +1,300 @@
+identity:
+  name: SOCRadar
+  legal_name: SOCRadar Cyber Intelligence Inc. (US DE entity listings)
+  trade_names:
+  - SOCRadar
+  official_website: https://socradar.io/
+  hq_country: USA
+  category: Threat intel / brand protection
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2018
+    source: https://www.cbinsights.com/company/socradar
+    confidence: Medium
+  hq_country:
+    value: USA
+    source: https://socradar.io/
+    confidence: Medium
+  ownership_type:
+    value: Private Series B (~$30.3M; PeakSpan)
+    source: https://socradar.io/
+    confidence: Medium
+  parent:
+    value: none
+    source: https://socradar.io/
+    confidence: Medium
+  headcount_band:
+    value: unknown
+    source: https://socradar.io/
+    confidence: Low
+  customer_segments:
+  - SOC
+  - mid-market enterprise
+  primary_products:
+  - XTI platform
+  - Brand protection
+  - EASM
+  - CTI
+  deployment_model:
+    value: Cloud XTI
+    source: https://socradar.io/
+    confidence: Medium
+  notable_status: Founders Turkish; DE HQ listings; often mid-market TIP alternative; Turkey ops signals may exist—verify
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources.
+    sources:
+    - https://socradar.io/
+    - https://www.cbinsights.com/company/socradar
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: XTI vendor (CEO Huzeyfe Onal per Tracxn).
+    source: https://tracxn.com/d/companies/socradar/__rsAiyUc0grJsvpBD9zAVjgwG0rTEYfGkW0PmflIfmfw
+    confidence: Medium
+  what:
+    text: 'Extended threat intel: CTI, brand protection, dark web, EASM.'
+    source: https://socradar.io/
+    confidence: Medium
+  where:
+    text: Middletown DE listed; engineering geography may include Turkey—confirm.
+    source: https://socradar.io/
+    confidence: Medium
+  when:
+    text: Founded 2018; Series B 2024.
+    source: https://www.cbinsights.com/company/socradar
+    confidence: Medium
+  why:
+    text: Accessible extended threat intelligence.
+    source: https://socradar.io/
+    confidence: Medium
+  how:
+    text: Cloud platform aggregating external risk signals.
+    source: https://socradar.io/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public pages.
+    sources:
+    - https://socradar.io/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Breadth for mid-market price
+    source: https://socradar.io/
+    confidence: Medium
+  weaknesses:
+  - text: HQ vs ops geography needs KYC clarity
+    source: https://socradar.io/
+    confidence: Medium
+  best_fit:
+  - Mid-market XTI/brand
+  poor_fit:
+  - Pure people OSINT
+  alternatives:
+  - Flare
+  - Recorded Future
+  - ZeroFox
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed.
+    sources:
+    - https://socradar.io/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Sales-led
+    source: https://socradar.io/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://socradar.io/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://socradar.io/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://socradar.io/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: ~$30.3M total
+    source: https://socradar.io/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://socradar.io/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited financials.
+    sources:
+    - https://socradar.io/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Funding
+    source: https://socradar.io/
+    confidence: Medium
+  negative:
+  - text: None
+    source: https://socradar.io/
+    confidence: Medium
+  social_themes: Mid-market CTI
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://socradar.io/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Cloud SaaS logging—confirm
+    source: https://socradar.io/
+    confidence: Low
+  attribution:
+    text: Confirm in DPA
+    source: https://socradar.io/
+    confidence: Low
+  jurisdiction:
+    text: USA
+    source: https://socradar.io/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contractual OPSEC
+  jurisdiction_sanctions_exposure:
+    note: See extras
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Validate contractually.
+    sources:
+    - https://socradar.io/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: External intel collection
+    source: https://socradar.io/
+    confidence: Medium
+  gdpr_residency:
+    text: Verify processing regions carefully
+    source: https://socradar.io/
+    confidence: Low
+  ownership_state_ties:
+    text: Private; no sanctioned-state owner identified
+    source: https://socradar.io/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://socradar.io/
+    confidence: Low
+  api_integrations:
+    text: 'Yes'
+    source: https://socradar.io/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: US Delaware entity listings. Turkey association via founders/market—treat engineering/office presence
+        in Turkey as unknown pending confirmation. No RU/BY/CN/IR/DPRK/SY/CU offices identified.
+      source: https://www.cbinsights.com/company/socradar
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Private VC-backed. No sanctioned owners identified.
+      source: https://www.cbinsights.com/company/socradar
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: Workforce locations not fully mapped; Turkey possible—unknown.
+      source: https://www.cbinsights.com/company/socradar
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - SOCRadar
+      - SOCRadar Cyber Intelligence
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags:
+- Confirm whether any staffed ops in Turkey/other non-US regions for buyer policy
+gaps:
+- Exact office countries
+- Certifications
+meta:
+  schema_version: '1.2'
+  slug: socradar
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Checked socradar.io; no named public customer case studies located this pass.
+  last_checked: '2026-10-06'

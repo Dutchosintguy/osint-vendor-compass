@@ -1,0 +1,301 @@
+identity:
+  name: Pulsar Platform
+  legal_name: Pulsar (company legal name verify)
+  trade_names:
+  - Pulsar Platform
+  official_website: https://www.pulsarplatform.com/
+  hq_country: United Kingdom
+  category: Social media / web intelligence
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: unknown
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  hq_country:
+    value: United Kingdom
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  ownership_type:
+    value: Private
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  parent:
+    value: unknown
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  headcount_band:
+    value: unknown
+    source: https://www.pulsarplatform.com/
+    confidence: Low
+  customer_segments:
+  - insights
+  - comms
+  - risk
+  primary_products:
+  - Pulsar audience/narrative intelligence
+  deployment_model:
+    value: SaaS
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  notable_status: Audience/narrative-led vs volume/risk-led peers; OFAC SDN has unrelated Russian OJSC Pulsar—not
+    this vendor
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources compiled.
+    sources:
+    - https://www.pulsarplatform.com/
+    - https://www.pulsarplatform.com/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: UK social intelligence vendor.
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  what:
+    text: Audience community and narrative analysis.
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  where:
+    text: UK.
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  when:
+    text: unknown
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  why:
+    text: Narrative attribution and audience intelligence.
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  how:
+    text: Social analytics platform.
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public pages.
+    sources:
+    - https://www.pulsarplatform.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Narrative methodology
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  weaknesses:
+  - text: Not LE graph tool
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  - text: Pricing opaque
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  best_fit:
+  - Narrative/comms intelligence
+  poor_fit:
+  - Dark-web CTI
+  alternatives:
+  - Dataminr
+  - Brandwatch
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed evidence.
+    sources:
+    - https://www.pulsarplatform.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Quote
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://www.pulsarplatform.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://www.pulsarplatform.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://www.pulsarplatform.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Private unknown
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://www.pulsarplatform.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited financials.
+    sources:
+    - https://www.pulsarplatform.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Category comparison mentions
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  negative:
+  - text: None
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  social_themes: Insights buyers
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://www.pulsarplatform.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Marketing analytics OPSEC generally low sensitivity
+    source: https://www.pulsarplatform.com/
+    confidence: Low
+  attribution:
+    text: Confirm in DPA
+    source: https://www.pulsarplatform.com/
+    confidence: Low
+  jurisdiction:
+    text: United Kingdom
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contractual OPSEC clauses
+  jurisdiction_sanctions_exposure:
+    note: See extras.jurisdiction_sanctions_exposure
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Needs contractual validation.
+    sources:
+    - https://www.pulsarplatform.com/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Social listening ToS
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  gdpr_residency:
+    text: UK/EU—verify
+    source: https://www.pulsarplatform.com/
+    confidence: Low
+  ownership_state_ties:
+    text: No state ties identified
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://www.pulsarplatform.com/
+    confidence: Low
+  api_integrations:
+    text: unknown
+    source: https://www.pulsarplatform.com/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: 'UK. No RU/BY/CN/IR/DPRK/SY/CU offices identified. Note: OFAC SDN lists unrelated Russian ''Scientific
+        and Production Enterprise Pulsar''.'
+      source: https://www.pulsarplatform.com/
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Private. No sanctioned owners identified.
+      source: https://www.pulsarplatform.com/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: unknown
+      source: https://www.pulsarplatform.com/
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - Pulsar Platform
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: Do not confuse with OFAC-listed Russian OJSC Pulsar.
+      raw_hits: {}
+red_flags:
+- Name collision with OFAC-listed Russian Pulsar OJSC — clarify legal name in contracts
+gaps:
+- DPA
+- Cert PDFs
+- References
+meta:
+  schema_version: '1.2'
+  slug: pulsar-platform
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Checked pulsarplatform.com comparisons; no named customer case studies located this pass.
+  last_checked: '2026-10-06'

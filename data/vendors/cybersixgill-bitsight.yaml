@@ -1,0 +1,304 @@
+identity:
+  name: Cybersixgill (Bitsight)
+  legal_name: Cybersixgill (Bitsight subsidiary)
+  trade_names:
+  - Cybersixgill (Bitsight)
+  official_website: https://cybersixgill.com/
+  hq_country: Israel
+  category: Threat intel / dark web
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2014
+    source: https://www.bitsight.com/press-releases/bitsight-completes-acquisition-cyber-threat-intelligence-leader-cybersixgill
+    confidence: Medium
+  hq_country:
+    value: Israel
+    source: https://cybersixgill.com/
+    confidence: Medium
+  ownership_type:
+    value: Subsidiary of Bitsight (acquisition completed Dec 2024, ~$115M)
+    source: https://cybersixgill.com/
+    confidence: Medium
+  parent:
+    value: Bitsight
+    source: https://cybersixgill.com/
+    confidence: Medium
+  headcount_band:
+    value: 51-200 (~80 at deal)
+    source: https://cybersixgill.com/
+    confidence: Low
+  customer_segments:
+  - Fortune 500
+  - gov
+  - LE
+  primary_products:
+  - Cybersixgill CTI / Darkfeed
+  deployment_model:
+    value: SaaS/API
+    source: https://cybersixgill.com/
+    confidence: Medium
+  notable_status: Israel HQ retained post-Bitsight deal; Moody's is major Bitsight investor historically
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources compiled.
+    sources:
+    - https://cybersixgill.com/
+    - https://www.bitsight.com/press-releases/bitsight-completes-acquisition-cyber-threat-intelligence-leader-cybersixgill
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: Israeli CTI vendor now under Bitsight (Boston).
+    source: https://www.bitsight.com/press-releases/bitsight-acquire-cyber-threat-intelligence-leader-cybersixgill-help-enterprises
+    confidence: Medium
+  what:
+    text: Automated deep/dark web CTI collection and feeds.
+    source: https://cybersixgill.com/
+    confidence: Medium
+  where:
+    text: Israel HQ; Bitsight US parent.
+    source: https://cybersixgill.com/
+    confidence: Medium
+  when:
+    text: Founded as Sixgill; Bitsight deal 2024.
+    source: https://www.bitsight.com/press-releases/bitsight-completes-acquisition-cyber-threat-intelligence-leader-cybersixgill
+    confidence: Medium
+  why:
+    text: Preempt attacks with underground intel.
+    source: https://cybersixgill.com/
+    confidence: Medium
+  how:
+    text: Automated collection + ML + API/SaaS.
+    source: https://cybersixgill.com/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public pages.
+    sources:
+    - https://cybersixgill.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Dark-web automation
+    source: https://cybersixgill.com/
+    confidence: Medium
+  - text: Bitsight distribution
+    source: https://cybersixgill.com/
+    confidence: Medium
+  weaknesses:
+  - text: Integration transition risk post-acquisition
+    source: https://cybersixgill.com/
+    confidence: Medium
+  best_fit:
+  - SOC dark-web CTI
+  poor_fit:
+  - People search
+  alternatives:
+  - Flare
+  - Flashpoint
+  - Recorded Future
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed evidence.
+    sources:
+    - https://cybersixgill.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Quote / Bitsight packaging
+    source: https://cybersixgill.com/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://cybersixgill.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://cybersixgill.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://cybersixgill.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Acquired for ~$115M; prior ~$56M raised
+    source: https://cybersixgill.com/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://cybersixgill.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited financials.
+    sources:
+    - https://cybersixgill.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Bitsight acquisition press
+    source: https://cybersixgill.com/
+    confidence: Medium
+  negative:
+  - text: None material identified
+    source: https://cybersixgill.com/
+    confidence: Medium
+  social_themes: CTI market
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://cybersixgill.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Feed/API consumption; confirm logging
+    source: https://cybersixgill.com/
+    confidence: Low
+  attribution:
+    text: Confirm in DPA
+    source: https://cybersixgill.com/
+    confidence: Low
+  jurisdiction:
+    text: Israel
+    source: https://cybersixgill.com/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contractual OPSEC clauses
+  jurisdiction_sanctions_exposure:
+    note: See extras.jurisdiction_sanctions_exposure
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Needs contractual validation.
+    sources:
+    - https://cybersixgill.com/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Dark-web collection legal review
+    source: https://cybersixgill.com/
+    confidence: Medium
+  gdpr_residency:
+    text: Israel transfer mechanisms (adequacy/SCCs)—verify
+    source: https://cybersixgill.com/
+    confidence: Low
+  ownership_state_ties:
+    text: Israeli private historically; now US Bitsight-owned; no RU/CN state ownership
+    source: https://cybersixgill.com/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://cybersixgill.com/
+    confidence: Low
+  api_integrations:
+    text: Yes / Darkfeed
+    source: https://cybersixgill.com/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 5
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: Israel HQ retained per Bitsight. No RU/BY/CN/IR/DPRK/SY/CU offices identified. Israel is not on the
+        required sanctioned-country office list but is geopolitically sensitive for some buyers.
+      source: https://www.bitsight.com/press-releases/bitsight-acquire-cyber-threat-intelligence-leader-cybersixgill-help-enterprises
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Bitsight (US); Moody's historically largest Bitsight shareholder. No OFAC/EU/UK hit on Cybersixgill/Bitsight
+        in local dumps.
+      source: https://www.bitsight.com/press-releases/bitsight-acquire-cyber-threat-intelligence-leader-cybersixgill-help-enterprises
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: ~80 employees globally at acquisition; Israel presence retained.
+      source: https://www.bitsight.com/press-releases/bitsight-acquire-cyber-threat-intelligence-leader-cybersixgill-help-enterprises
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - Cybersixgill
+      - Sixgill
+      - Bitsight
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags: []
+gaps:
+- DPA
+- Cert PDFs
+- References
+meta:
+  schema_version: '1.2'
+  slug: cybersixgill-bitsight
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Checked Bitsight/Cybersixgill press; Fortune 500 claim without named customers in sources reviewed
+    this pass.
+  last_checked: '2026-10-06'

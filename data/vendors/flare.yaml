@@ -1,0 +1,304 @@
+identity:
+  name: Flare
+  legal_name: Flare Security Inc. (verify)
+  trade_names:
+  - Flare
+  official_website: https://flare.io/
+  hq_country: Canada
+  category: Dark web monitoring
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2017
+    source: https://flare.io/company
+    confidence: Medium
+  hq_country:
+    value: Canada
+    source: https://flare.io/
+    confidence: Medium
+  ownership_type:
+    value: Private (Series B $30M Fall 2024)
+    source: https://flare.io/
+    confidence: Medium
+  parent:
+    value: none
+    source: https://flare.io/
+    confidence: Medium
+  headcount_band:
+    value: 100-200
+    source: https://flare.io/
+    confidence: Low
+  customer_segments:
+  - mid-market to enterprise SOC
+  primary_products:
+  - Flare CTI / dark web & Telegram monitoring
+  deployment_model:
+    value: SaaS
+    source: https://flare.io/
+    confidence: Medium
+  notable_status: Montreal identity-first CTI; 280+ customers / 40 countries claimed in media kit
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources compiled.
+    sources:
+    - https://flare.io/
+    - https://flare.io/company
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: Montreal co-founders (ex red-team finance).
+    source: https://flare.io/company
+    confidence: Medium
+  what:
+    text: Dark web, Telegram, stealer logs, credential exposure intel.
+    source: https://flare.io/
+    confidence: Medium
+  where:
+    text: Montreal QC Canada.
+    source: https://flare.io/
+    confidence: Medium
+  when:
+    text: Founded 2017; Series B 2024.
+    source: https://flare.io/company
+    confidence: Medium
+  why:
+    text: Give defenders attacker-visible data.
+    source: https://flare.io/
+    confidence: Medium
+  how:
+    text: Automated collection + remediation workflows + API.
+    source: https://flare.io/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public pages.
+    sources:
+    - https://flare.io/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Actionable mid-market CTI
+    source: https://flare.io/
+    confidence: Medium
+  - text: Canadian HQ
+    source: https://flare.io/
+    confidence: Medium
+  weaknesses:
+  - text: Narrower than Recorded Future breadth
+    source: https://flare.io/
+    confidence: Medium
+  best_fit:
+  - Identity/dark-web exposure
+  poor_fit:
+  - GEOINT
+  alternatives:
+  - Cybersixgill
+  - SpyCloud
+  - SOCRadar
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed evidence.
+    sources:
+    - https://flare.io/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Sales-led
+    source: https://flare.io/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://flare.io/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://flare.io/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://flare.io/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: $30M Series B Fall 2024
+    source: https://flare.io/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://flare.io/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited financials.
+    sources:
+    - https://flare.io/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Funding press
+    source: https://flare.io/
+    confidence: Medium
+  negative:
+  - text: None
+    source: https://flare.io/
+    confidence: Medium
+  social_themes: Growing CTI brand
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://flare.io/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: SaaS alerts—protect tenant access
+    source: https://flare.io/
+    confidence: Low
+  attribution:
+    text: Confirm in DPA
+    source: https://flare.io/
+    confidence: Low
+  jurisdiction:
+    text: Canada
+    source: https://flare.io/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contractual OPSEC clauses
+  jurisdiction_sanctions_exposure:
+    note: See extras.jurisdiction_sanctions_exposure
+    result_summary: REVIEW REQUIRED — possible list hit
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Needs contractual validation.
+    sources:
+    - https://flare.io/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Dark-web monitoring
+    source: https://flare.io/
+    confidence: Medium
+  gdpr_residency:
+    text: Canadian PIPEDA/GDPR transfers—verify SCCs
+    source: https://flare.io/
+    confidence: Low
+  ownership_state_ties:
+    text: Canadian private; no sanctioned-state owners
+    source: https://flare.io/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://flare.io/
+    confidence: Low
+  api_integrations:
+    text: REST API
+    source: https://flare.io/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 5
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: 1751 Rue Richardson, Montreal, Canada. No RU/BY/CN/IR/DPRK/SY/CU offices identified.
+      source: https://flare.io/company
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Private Canadian. No sanctioned owners identified.
+      source: https://flare.io/company
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: Team size 100-200; locations beyond Montreal unknown.
+      source: https://flare.io/company
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: 'POSSIBLE HIT — review: [''Flare'']'
+      screened_entities:
+      - Flare
+      - Flare Security
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: REVIEW REQUIRED — possible list hit
+      notes: ''
+      raw_hits:
+        ofac_sdn: []
+        ofac_other: []
+        uk:
+        - Flare
+        eu: []
+red_flags: []
+gaps:
+- DPA
+- Cert PDFs
+- References
+meta:
+  schema_version: '1.2'
+  slug: flare
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Checked flare.io/company media kit (280+ customers claim); no named case studies located this
+    pass.
+  last_checked: '2026-10-06'

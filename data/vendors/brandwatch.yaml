@@ -1,0 +1,342 @@
+identity:
+  name: Brandwatch
+  legal_name: Brandwatch (Cision group)
+  trade_names:
+  - Brandwatch
+  official_website: https://www.brandwatch.com/
+  hq_country: United Kingdom
+  category: Brand / digital risk / social listening
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2006
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  hq_country:
+    value: United Kingdom
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  ownership_type:
+    value: Subsidiary of Cision
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  parent:
+    value: Cision
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  headcount_band:
+    value: unknown
+    source: https://www.brandwatch.com/
+    confidence: Low
+  customer_segments:
+  - marketing
+  - PR
+  - insights
+  primary_products:
+  - Brandwatch social listening
+  deployment_model:
+    value: SaaS
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  notable_status: Volume-led social listening; more marketing than investigative OSINT
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources compiled.
+    sources:
+    - https://www.brandwatch.com/
+    - https://www.brandwatch.com/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: UK-origin social listening under Cision.
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  what:
+    text: Social listening, consumer intelligence, large data volume.
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  where:
+    text: UK/global Cision footprint.
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  when:
+    text: Brandwatch brand long-standing; Cision ownership era current.
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  why:
+    text: Understand brand conversations at scale.
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  how:
+    text: Social data firehose + analytics UI.
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public pages.
+    sources:
+    - https://www.brandwatch.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Data volume
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  - text: Marketing integrations
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  weaknesses:
+  - text: Not LE investigation UX
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  - text: Enterprise cost
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  best_fit:
+  - Brand/PR listening
+  poor_fit:
+  - Covert LE OSINT
+  alternatives:
+  - Meltwater
+  - Pulsar
+  - Sprinklr
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed evidence.
+    sources:
+    - https://www.brandwatch.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Enterprise quote
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://www.brandwatch.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://www.brandwatch.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://www.brandwatch.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Cision-owned
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://www.brandwatch.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited financials.
+    sources:
+    - https://www.brandwatch.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Category leader claims
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  negative:
+  - text: None material identified
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  social_themes: Martech audience
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://www.brandwatch.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Poor fit for covert OPSEC investigations
+    source: https://www.brandwatch.com/
+    confidence: Low
+  attribution:
+    text: Confirm in DPA
+    source: https://www.brandwatch.com/
+    confidence: Low
+  jurisdiction:
+    text: United Kingdom
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contractual OPSEC clauses
+  jurisdiction_sanctions_exposure:
+    note: See extras.jurisdiction_sanctions_exposure
+    result_summary: REVIEW REQUIRED — possible list hit
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Needs contractual validation.
+    sources:
+    - https://www.brandwatch.com/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Marketing listening—platform ToS
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  gdpr_residency:
+    text: EU/UK processing options—verify
+    source: https://www.brandwatch.com/
+    confidence: Low
+  ownership_state_ties:
+    text: Private equity/corporate ownership via Cision—no sanctioned-state owner identified
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://www.brandwatch.com/
+    confidence: Low
+  api_integrations:
+    text: 'Yes'
+    source: https://www.brandwatch.com/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 5
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: UK heritage; Cision global offices. No RU/BY/CN/IR/DPRK/SY/CU offices identified this pass.
+      source: https://www.brandwatch.com/
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Cision group. No sanctioned-jurisdiction state owners identified.
+      source: https://www.brandwatch.com/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: 'Global martech workforce; aggregate sanctioned-country: unknown.'
+      source: https://www.brandwatch.com/
+      confidence: Medium
+    sanctions_screening:
+      eu: 'POSSIBLE HIT — review: [''Cision'']'
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: 'POSSIBLE HIT — review: {''ofac_sdn'': [{''entity'': ''Cision'', ''snippet'': ''9753,"CHINA NATIONAL
+        PRECISION MACHINERY IMPORT/EXPORT CORPORATION",-0- ,"NPWMD] [IFSR",-0- ,-0- ,-0- ,-0- ,-0- ,-0- ,-0- ,"ADDITIONAL
+        SANCTIONS INFORMATION - SUBJECT TO SECONDARY ''}], ''ofac_other'': [''Cision''], ''uk'': [''Cision''], ''eu'':
+        [''Cision'']}'
+      uk: 'POSSIBLE HIT — review: [''Cision'']'
+      screened_entities:
+      - Brandwatch
+      - Cision
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: REVIEW REQUIRED — possible list hit
+      notes: ''
+      raw_hits:
+        ofac_sdn:
+        - entity: Cision
+          snippet: '9753,"CHINA NATIONAL PRECISION MACHINERY IMPORT/EXPORT CORPORATION",-0- ,"NPWMD] [IFSR",-0-
+            ,-0- ,-0- ,-0- ,-0- ,-0- ,-0- ,"ADDITIONAL SANCTIONS INFORMATION - SUBJECT TO SECONDARY '
+        ofac_other:
+        - Cision
+        uk:
+        - Cision
+        eu:
+        - Cision
+red_flags: []
+gaps:
+- DPA
+- Cert PDFs
+- References
+meta:
+  schema_version: '1.2'
+  slug: brandwatch
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: documented
+  customers:
+  - customer_name: Samsung
+    sector: corporate
+    country: South Korea
+    evidence_type: case_study
+    date: unknown
+    source_url: https://www.brandwatch.com/case-studies/samsung/
+    notes: Social intelligence across 43 European markets.
+  - customer_name: Fetch Rewards
+    sector: corporate
+    country: USA
+    evidence_type: case_study
+    date: unknown
+    source_url: https://www.brandwatch.com/case-studies/fetch-rewards/
+  - customer_name: Co-op
+    sector: corporate
+    country: United Kingdom
+    evidence_type: case_study
+    date: unknown
+    source_url: https://www.brandwatch.com/case-studies/co-op/
+  - customer_name: Nestlé
+    sector: corporate
+    country: Switzerland
+    evidence_type: case_study
+    date: unknown
+    source_url: https://www.casestudies.com/company/brandwatch/case-study/how-nestle-discovers-digital-consumer-insights-with-brandwatch
+    notes: Secondary case-study aggregator; prefer Brandwatch primary if available.
+  research_notes: Public case studies/procurement.
+  last_checked: '2026-10-06'

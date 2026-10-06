@@ -1,0 +1,310 @@
+identity:
+  name: ZeroFox
+  legal_name: ZeroFox Holdings / ZeroFox (Haveli-owned)
+  trade_names:
+  - ZeroFox
+  official_website: https://www.zerofox.com/
+  hq_country: USA
+  category: Brand / digital risk
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2013
+    source: https://www.zerofox.com/
+    confidence: Medium
+  hq_country:
+    value: USA
+    source: https://www.zerofox.com/
+    confidence: Medium
+  ownership_type:
+    value: Private (Haveli Investments acquisition 2024; was public ZFOX)
+    source: https://www.zerofox.com/
+    confidence: Medium
+  parent:
+    value: Haveli Investments
+    source: https://www.zerofox.com/
+    confidence: Medium
+  headcount_band:
+    value: 501-1000
+    source: https://www.zerofox.com/
+    confidence: Low
+  customer_segments:
+  - enterprise brand/security
+  primary_products:
+  - ZeroFox HNTR platform
+  deployment_model:
+    value: SaaS DRP
+    source: https://www.zerofox.com/
+    confidence: Medium
+  notable_status: Taken private by Haveli May 2024; Baltimore HQ
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources.
+    sources:
+    - https://www.zerofox.com/
+    - https://www.zerofox.com/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: Baltimore external cybersecurity / DRP vendor.
+    source: https://www.zerofox.com/
+    confidence: Medium
+  what:
+    text: Dark-web intel, asset discovery, validation, disruption/takedown.
+    source: https://www.zerofox.com/
+    confidence: Medium
+  where:
+    text: USA; global ops.
+    source: https://www.zerofox.com/
+    confidence: Medium
+  when:
+    text: Founded 2013; Haveli 2024.
+    source: https://www.zerofox.com/
+    confidence: Medium
+  why:
+    text: Discover/validate/disrupt external threats.
+    source: https://www.zerofox.com/
+    confidence: Medium
+  how:
+    text: Intel + AI + analyst disruption network.
+    source: https://www.zerofox.com/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public pages.
+    sources:
+    - https://www.zerofox.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: End-to-end DRP + disruption
+    source: https://www.zerofox.com/
+    confidence: Medium
+  weaknesses:
+  - text: PE opacity post-take-private
+    source: https://www.zerofox.com/
+    confidence: Medium
+  best_fit:
+  - Enterprise digital risk
+  poor_fit:
+  - Budget OSINT search
+  alternatives:
+  - ReliaQuest
+  - Recorded Future DRP
+  - Flare
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed.
+    sources:
+    - https://www.zerofox.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Quote
+    source: https://www.zerofox.com/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://www.zerofox.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://www.zerofox.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://www.zerofox.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Haveli take-private ~$350M reported
+    source: https://www.zerofox.com/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://www.zerofox.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited financials.
+    sources:
+    - https://www.zerofox.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Platform consolidation
+    source: https://www.zerofox.com/
+    confidence: Medium
+  negative:
+  - text: None material identified
+    source: https://www.zerofox.com/
+    confidence: Medium
+  social_themes: DRP market
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://www.zerofox.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Enterprise tenant security critical
+    source: https://www.zerofox.com/
+    confidence: Low
+  attribution:
+    text: Confirm in DPA
+    source: https://www.zerofox.com/
+    confidence: Low
+  jurisdiction:
+    text: USA
+    source: https://www.zerofox.com/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contractual OPSEC
+  jurisdiction_sanctions_exposure:
+    note: See extras
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Validate contractually.
+    sources:
+    - https://www.zerofox.com/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: DRP/takedown legal process diligence
+    source: https://www.zerofox.com/
+    confidence: Medium
+  gdpr_residency:
+    text: Request residency
+    source: https://www.zerofox.com/
+    confidence: Low
+  ownership_state_ties:
+    text: US PE-owned; no sanctioned-state owner
+    source: https://www.zerofox.com/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://www.zerofox.com/
+    confidence: Low
+  api_integrations:
+    text: Integrations
+    source: https://www.zerofox.com/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 5
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: Baltimore MD USA; other offices (UK, Chile, India signals on LinkedIn). No RU/BY/CN/IR/DPRK/SY/CU offices
+        identified.
+      source: https://www.zerofox.com/
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: 'Haveli Investments. No sanctioned owners identified. OFAC/EU/UK local dumps: no hit.'
+      source: https://www.zerofox.com/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: Workforce across US/UK/Chile/India etc.; not core sanctioned set.
+      source: https://www.zerofox.com/
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - ZeroFox
+      - ZeroFox Holdings
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags: []
+gaps:
+- DPA
+- Certs
+- References
+meta:
+  schema_version: '1.2'
+  slug: zerofox
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: documented
+  customers:
+  - customer_name: loveholidays
+    sector: corporate
+    country: United Kingdom
+    evidence_type: case_study
+    date: unknown
+    source_url: https://www.zerofox.com/case-studies/zerofox-loveholidays-case-study/
+  - customer_name: Nokia
+    sector: corporate
+    country: Finland
+    evidence_type: case_study
+    date: '2016'
+    source_url: https://www.zerofox.com/case-studies/nokia-case-study/
+    notes: Partner since 2016 per case study.
+  research_notes: Additional ZeroFox case studies anonymize customers (luxury goods; European football club)—excluded
+    per name-required rule.
+  last_checked: '2026-10-06'

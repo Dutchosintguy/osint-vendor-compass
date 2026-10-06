@@ -1,17 +1,19 @@
-const { loadVendorFiles } = require("../../lib/vendor-files");
+const { loadPublishedVendors } = require("../../lib/vendor-files");
 
 module.exports = function () {
-  const vendors = loadVendorFiles().map(({ data }) => data);
+  const vendors = loadPublishedVendors();
+  const reviewed = [...new Set(vendors.map((vendor) => vendor._lastReviewed).filter(Boolean))];
   return {
     name: "OSINT Vendor Compass",
     description:
-      "An independent, evidence-led comparison of OSINT SaaS vendors for analysts, decision makers, and teams choosing a provider.",
+      "An independent comparison of OSINT SaaS vendors. Profiles are approved research records with sources, scores, sanctions screening, and publicly documented customers.",
     owner: "Nico Dekens",
     ownerHandle: "Dutchosintguy",
     repository: "https://github.com/Dutchosintguy/osint-vendor-compass",
-    exampleOnly: vendors.length > 0 && vendors.every((vendor) => vendor.example === true),
-    hasExample: vendors.some((vendor) => vendor.example === true),
+    exampleOnly: false,
+    hasExample: false,
     vendorCount: vendors.length,
-    approvedCount: vendors.filter((vendor) => vendor.owner_approved === true).length,
+    approvedCount: vendors.filter((vendor) => vendor.meta && vendor.meta.signoff_status === "approved").length,
+    reviewedDates: reviewed,
   };
 };

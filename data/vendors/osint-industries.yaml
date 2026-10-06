@@ -1,0 +1,307 @@
+identity:
+  name: OSINT Industries
+  legal_name: OSINT INDUSTRIES LTD
+  trade_names:
+  - OSINT Industries
+  official_website: https://www.osint.industries/
+  hq_country: United Kingdom
+  category: People / identity search
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2023
+    source: https://find-and-update.company-information.service.gov.uk/company/14974274
+    confidence: Medium
+  hq_country:
+    value: United Kingdom
+    source: https://www.osint.industries/
+    confidence: Medium
+  ownership_type:
+    value: Private UK Ltd (inc 2023-07-03)
+    source: https://www.osint.industries/
+    confidence: Medium
+  parent:
+    value: none identified
+    source: https://www.osint.industries/
+    confidence: Medium
+  headcount_band:
+    value: unknown
+    source: https://www.osint.industries/
+    confidence: Low
+  customer_segments:
+  - LE
+  - gov
+  - journalists
+  primary_products:
+  - OSINT Platform
+  - OSINT API
+  - Training
+  deployment_model:
+    value: SaaS web + API
+    source: https://www.osint.industries/
+    confidence: Medium
+  notable_status: Credit pricing; claims 5000+ LE departments; London Cornhill address
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Compiled from cited public sources; some fields low-confidence.
+    sources:
+    - https://www.osint.industries/
+    - https://find-and-update.company-information.service.gov.uk/company/14974274
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: UK Ltd serving LE/investigators.
+    source: https://www.osint.industries/
+    confidence: Medium
+  what:
+    text: Email/phone/username/name/crypto wallet pivots across many sources with timeline/map.
+    source: https://www.osint.industries/
+    confidence: Medium
+  where:
+    text: UK company; hosting residency unknown.
+    source: https://www.osint.industries/
+    confidence: Medium
+  when:
+    text: Company incorporated 2023; product earlier possibly.
+    source: https://find-and-update.company-information.service.gov.uk/company/14974274
+    confidence: Medium
+  why:
+    text: Fast accurate identity OSINT.
+    source: https://www.osint.industries/
+    confidence: Medium
+  how:
+    text: Aggregator search UI/API; claims no stored search results (compare to marketing).
+    source: https://www.osint.industries/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public marketing + cited pages.
+    sources:
+    - https://www.osint.industries/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Fast identity lookup UX
+    source: https://www.osint.industries/
+    confidence: Medium
+  - text: API option
+    source: https://www.osint.industries/
+    confidence: Medium
+  weaknesses:
+  - text: Credit costs
+    source: https://www.osint.industries/
+    confidence: Medium
+  - text: Young UK entity
+    source: https://www.osint.industries/
+    confidence: Medium
+  best_fit:
+  - Quick identity pivots
+  poor_fit:
+  - Full case graph platforms
+  alternatives:
+  - Epieos
+  - Maltego Search
+  - Pipl
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed vendor/secondary evidence.
+    sources:
+    - https://www.osint.industries/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Published plans historically from ~£19+/mo (verify live)
+    source: https://www.osint.industries/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Privacy policy likely exists; full DPA not deep-reviewed in this pass
+    source: https://www.osint.industries/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://www.osint.industries/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Many enterprise vendors are quote-only.
+    sources:
+    - https://www.osint.industries/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Private
+    source: https://www.osint.industries/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: See ownership/funding notes; private financials often opaque
+    source: https://www.osint.industries/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited public financials.
+    sources:
+    - https://www.osint.industries/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Practitioner comparison coverage
+    source: https://www.osint.industries/
+    confidence: Medium
+  negative:
+  - text: None material identified
+    source: https://www.osint.industries/
+    confidence: Medium
+  social_themes: Popular among investigators
+  score:
+    value: 3
+    confidence: Low
+    rationale: Not a systematic sentiment study.
+    sources:
+    - https://www.osint.industries/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Marketing emphasizes privacy; validate no-log claims in DPA
+    source: https://www.osint.industries/
+    confidence: Low
+  attribution:
+    text: Confirm in vendor DPA/OPSEC guide
+    source: https://www.osint.industries/
+    confidence: Low
+  jurisdiction:
+    text: United Kingdom
+    source: https://www.osint.industries/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated investigator accounts
+  - MFA/SSO
+  - Contractual non-logging where required
+  - Review subprocessors
+  jurisdiction_sanctions_exposure:
+    note: Full section at extras.jurisdiction_sanctions_exposure (company-level only).
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: OPSEC claims need contractual validation.
+    sources:
+    - https://www.osint.industries/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: OSINT aggregator—ToS compliance per source is buyer risk
+    source: https://www.osint.industries/
+    confidence: Medium
+  gdpr_residency:
+    text: UK GDPR; EU transfer posture unknown
+    source: https://www.osint.industries/
+    confidence: Low
+  ownership_state_ties:
+    text: No state ties identified
+    source: https://www.osint.industries/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://www.osint.industries/
+    confidence: Low
+  api_integrations:
+    text: Yes — OSINT API
+    source: https://www.osint.industries/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: International House, 36–38 Cornhill, London. No RU/BY/CN/IR/DPRK/SY/CU offices identified.
+      source: https://find-and-update.company-information.service.gov.uk/company/14974274
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Private UK Ltd. No sanctioned-jurisdiction owners identified.
+      source: https://find-and-update.company-information.service.gov.uk/company/14974274
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: 'Workforce locations: unknown beyond UK registration.'
+      source: https://find-and-update.company-information.service.gov.uk/company/14974274
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - OSINT Industries Ltd
+      - OSINT Industries
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags: []
+gaps:
+- DPA deep-read
+- Cert PDF verification
+- Customer references
+meta:
+  schema_version: '1.2'
+  slug: osint-industries
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Checked osint.industries; claims 5000+ LE departments without naming; no case studies/procurement
+    found this pass.
+  last_checked: '2026-10-06'

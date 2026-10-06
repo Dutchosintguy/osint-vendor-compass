@@ -1,0 +1,306 @@
+identity:
+  name: Spokeo
+  legal_name: Spokeo, Inc.
+  trade_names:
+  - Spokeo
+  official_website: https://www.spokeo.com/
+  hq_country: USA
+  category: People / identity search
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2006
+    source: https://www.spokeo.com/
+    confidence: Medium
+  hq_country:
+    value: USA
+    source: https://www.spokeo.com/
+    confidence: Medium
+  ownership_type:
+    value: Private
+    source: https://www.spokeo.com/
+    confidence: Medium
+  parent:
+    value: none identified
+    source: https://www.spokeo.com/
+    confidence: Medium
+  headcount_band:
+    value: unknown
+    source: https://www.spokeo.com/
+    confidence: Low
+  customer_segments:
+  - consumers
+  - some enterprise/gov use claimed
+  primary_products:
+  - Spokeo people search
+  deployment_model:
+    value: SaaS consumer/pro search
+    source: https://www.spokeo.com/
+    confidence: Medium
+  notable_status: US people-search; privacy/opt-out debates endemic to sector
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Compiled from cited public sources; some fields low-confidence.
+    sources:
+    - https://www.spokeo.com/
+    - https://www.spokeo.com/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: US people-search company founded as social aggregator.
+    source: https://www.spokeo.com/
+    confidence: Medium
+  what:
+    text: Name/phone/email/address/social public-records style reports.
+    source: https://www.spokeo.com/
+    confidence: Medium
+  where:
+    text: USA; US-centric data.
+    source: https://www.spokeo.com/
+    confidence: Medium
+  when:
+    text: Founded 2006.
+    source: https://www.spokeo.com/
+    confidence: Medium
+  why:
+    text: People finder / reverse lookup.
+    source: https://www.spokeo.com/
+    confidence: Medium
+  how:
+    text: Aggregated public records + social.
+    source: https://www.spokeo.com/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public marketing + cited pages.
+    sources:
+    - https://www.spokeo.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Easy UX
+    source: https://www.spokeo.com/
+    confidence: Medium
+  - text: Broad US records
+    source: https://www.spokeo.com/
+    confidence: Medium
+  weaknesses:
+  - text: Not LE-grade case tool
+    source: https://www.spokeo.com/
+    confidence: Medium
+  - text: Privacy controversy sector-wide
+    source: https://www.spokeo.com/
+    confidence: Medium
+  best_fit:
+  - US skip-tracing lite
+  poor_fit:
+  - EU GDPR-heavy investigations
+  alternatives:
+  - Pipl
+  - BeenVerified
+  - OSINT Industries
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed vendor/secondary evidence.
+    sources:
+    - https://www.spokeo.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Consumer subscription pricing published
+    source: https://www.spokeo.com/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Privacy policy likely exists; full DPA not deep-reviewed in this pass
+    source: https://www.spokeo.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://www.spokeo.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Many enterprise vendors are quote-only.
+    sources:
+    - https://www.spokeo.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Private
+    source: https://www.spokeo.com/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: See ownership/funding notes; private financials often opaque
+    source: https://www.spokeo.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited public financials.
+    sources:
+    - https://www.spokeo.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Consumer brand scale
+    source: https://www.spokeo.com/
+    confidence: Medium
+  negative:
+  - text: People-search industry privacy criticisms (general)
+    source: https://www.spokeo.com/
+    confidence: Medium
+  social_themes: Consumer-known
+  score:
+    value: 3
+    confidence: Low
+    rationale: Not a systematic sentiment study.
+    sources:
+    - https://www.spokeo.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Consumer SaaS typically logs searches—poor OPSEC for covert LE without controls
+    source: https://www.spokeo.com/
+    confidence: Low
+  attribution:
+    text: Confirm in vendor DPA/OPSEC guide
+    source: https://www.spokeo.com/
+    confidence: Low
+  jurisdiction:
+    text: USA
+    source: https://www.spokeo.com/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated investigator accounts
+  - MFA/SSO
+  - Contractual non-logging where required
+  - Review subprocessors
+  jurisdiction_sanctions_exposure:
+    note: Full section at extras.jurisdiction_sanctions_exposure (company-level only).
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: OPSEC claims need contractual validation.
+    sources:
+    - https://www.spokeo.com/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Public records aggregation; US legal regime differs from GDPR
+    source: https://www.spokeo.com/
+    confidence: Medium
+  gdpr_residency:
+    text: Poor fit for EU personal data use without counsel
+    source: https://www.spokeo.com/
+    confidence: Low
+  ownership_state_ties:
+    text: No state ties identified
+    source: https://www.spokeo.com/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: Sector litigation risk possible—monitor
+    source: https://www.spokeo.com/
+    confidence: Low
+  api_integrations:
+    text: Business API via sales
+    source: https://www.spokeo.com/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: USA. No RU/BY/CN/IR/DPRK/SY/CU offices identified.
+      source: https://www.spokeo.com/
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Private US. No sanctioned-jurisdiction owners identified.
+      source: https://www.spokeo.com/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: 'US workforce assumed; aggregate international: unknown.'
+      source: https://www.spokeo.com/
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - Spokeo
+      - Spokeo Inc
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags:
+- Weak OPSEC for sensitive investigations
+- EU GDPR mismatch
+gaps:
+- DPA deep-read
+- Cert PDF verification
+- Customer references
+meta:
+  schema_version: '1.2'
+  slug: spokeo
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Consumer product; no enterprise named case studies sought/found appropriate for B2B customer list
+    this pass.
+  last_checked: '2026-10-06'

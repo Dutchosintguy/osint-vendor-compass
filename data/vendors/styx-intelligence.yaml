@@ -1,0 +1,300 @@
+identity:
+  name: Styx Intelligence
+  legal_name: Styx Intelligence (verify Canadian legal name)
+  trade_names:
+  - Styx Intelligence
+  official_website: https://styxintel.com/
+  hq_country: Canada
+  category: Brand / digital risk
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2020
+    source: https://www.cbinsights.com/company/styx-intelligence
+    confidence: Medium
+  hq_country:
+    value: Canada
+    source: https://styxintel.com/
+    confidence: Medium
+  ownership_type:
+    value: Private
+    source: https://styxintel.com/
+    confidence: Medium
+  parent:
+    value: none identified
+    source: https://styxintel.com/
+    confidence: Medium
+  headcount_band:
+    value: 1-50
+    source: https://styxintel.com/
+    confidence: Low
+  customer_segments:
+  - lean security/brand teams
+  primary_products:
+  - Digital risk protection platform
+  deployment_model:
+    value: SaaS + analyst-backed
+    source: https://styxintel.com/
+    confidence: Medium
+  notable_status: Vancouver HQ; Austin office; Canadian DRP
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources.
+    sources:
+    - https://styxintel.com/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: Canadian DRP company (proudly Canadian positioning).
+    source: https://styxintel.com/about
+    confidence: Medium
+  what:
+    text: Brand/exec/dark-web monitoring with analyst validation and takedowns.
+    source: https://styxintel.com/
+    confidence: Medium
+  where:
+    text: Vancouver BC; Austin TX office.
+    source: https://styxintel.com/
+    confidence: Medium
+  when:
+    text: Founded ~2020.
+    source: https://www.cbinsights.com/company/styx-intelligence
+    confidence: Medium
+  why:
+    text: Protect brand identity from external attacks.
+    source: https://styxintel.com/
+    confidence: Medium
+  how:
+    text: AI monitoring + human analysts.
+    source: https://styxintel.com/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public.
+    sources:
+    - https://styxintel.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Analyst-backed DRP
+    source: https://styxintel.com/
+    confidence: Medium
+  - text: Canadian vendor
+    source: https://styxintel.com/
+    confidence: Medium
+  weaknesses:
+  - text: Small/newer
+    source: https://styxintel.com/
+    confidence: Medium
+  - text: Less brand recognition vs ZeroFox
+    source: https://styxintel.com/
+    confidence: Medium
+  best_fit:
+  - SMB/mid-market DRP
+  poor_fit:
+  - National-scale CTI
+  alternatives:
+  - ZeroFox
+  - Flare
+  - SOCRadar
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed.
+    sources:
+    - https://styxintel.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Quote
+    source: https://styxintel.com/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://styxintel.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://styxintel.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://styxintel.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Private unknown
+    source: https://styxintel.com/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://styxintel.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited.
+    sources:
+    - https://styxintel.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Canadian brand protection angle
+    source: https://styxintel.com/
+    confidence: Medium
+  negative:
+  - text: None
+    source: https://styxintel.com/
+    confidence: Medium
+  social_themes: Emerging DRP
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://styxintel.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: SaaS tenant controls
+    source: https://styxintel.com/
+    confidence: Low
+  attribution:
+    text: Confirm DPA
+    source: https://styxintel.com/
+    confidence: Low
+  jurisdiction:
+    text: Canada
+    source: https://styxintel.com/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contract OPSEC
+  jurisdiction_sanctions_exposure:
+    note: See extras
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Validate.
+    sources:
+    - https://styxintel.com/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: DRP/takedown process
+    source: https://styxintel.com/
+    confidence: Medium
+  gdpr_residency:
+    text: Canada host—verify EU customer transfers
+    source: https://styxintel.com/
+    confidence: Low
+  ownership_state_ties:
+    text: Canadian private; no sanctioned-state owner
+    source: https://styxintel.com/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://styxintel.com/
+    confidence: Low
+  api_integrations:
+    text: unknown
+    source: https://styxintel.com/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: 777 Dunsmuir St Suite 1700, Vancouver BC, Canada; Austin TX USA office. No RU/BY/CN/IR/DPRK/SY/CU offices
+        identified.
+      source: https://styxintel.com/contact
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Private Canadian. No sanctioned owners identified.
+      source: https://styxintel.com/contact
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: ~10 people HQ signals on TheOrg; Canada/US.
+      source: https://styxintel.com/contact
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - Styx Intelligence
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags: []
+gaps:
+- DPA
+- Certs
+- References
+meta:
+  schema_version: '1.2'
+  slug: styx-intelligence
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Checked styxintel.com; no named customers.
+  last_checked: '2026-10-06'

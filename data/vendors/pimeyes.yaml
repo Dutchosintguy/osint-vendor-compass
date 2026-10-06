@@ -1,0 +1,318 @@
+identity:
+  name: PimEyes
+  legal_name: Unclear — historically Poland; brand moves via Seychelles/Belize; reported Dubai owner EMEARobotics
+  trade_names:
+  - PimEyes
+  official_website: https://pimeyes.com/en
+  hq_country: unknown
+  category: People / biometric search
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2017
+    source: https://en.wikipedia.org/wiki/PimEyes
+    confidence: Medium
+  hq_country:
+    value: unknown
+    source: https://pimeyes.com/en
+    confidence: Medium
+  ownership_type:
+    value: Private / opaque jurisdiction hopping
+    source: https://pimeyes.com/en
+    confidence: Medium
+  parent:
+    value: Reported EMEARobotics (Dubai) ownership in secondary sources
+    source: https://pimeyes.com/en
+    confidence: Medium
+  headcount_band:
+    value: 1-10
+    source: https://pimeyes.com/en
+    confidence: Low
+  customer_segments:
+  - consumers
+  - some LE—controversial
+  primary_products:
+  - PimEyes face search
+  - video search (announced)
+  deployment_model:
+    value: SaaS
+    source: https://pimeyes.com/en
+    confidence: Medium
+  notable_status: 'MAJOR RED FLAGS: biometric face search; noyb/Hamburg DPA considers practices illegal but enforcement
+    difficulty citing Dubai; UK ICO complaint history; Illinois BIPA suit; HQ opacity Poland→Seychelles→Belize→Dubai
+    reports'
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources.
+    sources:
+    - https://pimeyes.com/en
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: Face search service with disputed/changing legal seat; CEO Giorgi Gobronidze per secondary sources.
+    source: https://en.wikipedia.org/wiki/PimEyes
+    confidence: Medium
+  what:
+    text: Upload a face photo to find matching images online (biometric similarity search).
+    source: https://pimeyes.com/en
+    confidence: Medium
+  where:
+    text: Legal seat unclear (Dubai reported); processing locations unknown.
+    source: https://pimeyes.com/en
+    confidence: Medium
+  when:
+    text: Launched 2017 Poland; ownership changes 2020+.
+    source: https://en.wikipedia.org/wiki/PimEyes
+    confidence: Medium
+  why:
+    text: Find where a face appears online.
+    source: https://pimeyes.com/en
+    confidence: Medium
+  how:
+    text: Crawl/index faces + similarity search.
+    source: https://pimeyes.com/en
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public.
+    sources:
+    - https://pimeyes.com/en
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Powerful reverse face search
+    source: https://pimeyes.com/en
+    confidence: Medium
+  weaknesses:
+  - text: Severe privacy/legal risk
+    source: https://pimeyes.com/en
+    confidence: Medium
+  - text: Jurisdiction opacity
+    source: https://pimeyes.com/en
+    confidence: Medium
+  - text: Misuse potential
+    source: https://pimeyes.com/en
+    confidence: Medium
+  best_fit:
+  - Only with strong legal basis & counsel
+  poor_fit:
+  - EU public-sector default procurement
+  alternatives:
+  - Manual reverse image search
+  - Berify
+  - LE-authorized biometric systems
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed.
+    sources:
+    - https://pimeyes.com/en
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Consumer subscriptions published
+    source: https://pimeyes.com/en
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://pimeyes.com/en
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://pimeyes.com/en
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://pimeyes.com/en
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Opaque
+    source: https://pimeyes.com/en
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://pimeyes.com/en
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited.
+    sources:
+    - https://pimeyes.com/en
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Capability demos
+    source: https://pimeyes.com/en
+    confidence: Medium
+  negative:
+  - text: noyb lawsuit vs Hamburg DPA; Big Brother Watch; BIPA suit; netzpolitik criticism
+    source: https://pimeyes.com/en
+    confidence: Medium
+  social_themes: Highly controversial
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://pimeyes.com/en
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Searching faces can create severe OPSEC/privacy incidents; vendor logging unknown
+    source: https://pimeyes.com/en
+    confidence: Low
+  attribution:
+    text: Confirm DPA
+    source: https://pimeyes.com/en
+    confidence: Low
+  jurisdiction:
+    text: unknown
+    source: https://pimeyes.com/en
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contract OPSEC
+  jurisdiction_sanctions_exposure:
+    note: See extras
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Validate.
+    sources:
+    - https://pimeyes.com/en
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Biometric processing without subject consent — core GDPR Art.9 conflict alleged by NGOs/DPAs
+    source: https://pimeyes.com/en
+    confidence: Medium
+  gdpr_residency:
+    text: Hamburg DPA viewed practices illegal (2025 decision per noyb) yet non-enforcement cited due to non-EU
+      seat
+    source: https://pimeyes.com/en
+    confidence: Low
+  ownership_state_ties:
+    text: No Western state ownership; jurisdiction shopping raises trust issues
+    source: https://pimeyes.com/en
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: Active/historical DPA complaints and US BIPA litigation — elevated legal risk
+    source: https://pimeyes.com/en
+    confidence: Low
+  api_integrations:
+    text: API interest reported; misuse controls claimed limited
+    source: https://pimeyes.com/en
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: 'Current corporate seat disputed: Poland origins; Seychelles/Belize shell reports; Dubai ownership reports
+        (EME ARobotics). No confirmed RU/BY/CN/IR/DPRK/SY/CU offices, but HQ opacity is itself a risk. China office:
+        unknown.'
+      source: https://noyb.eu/en/no-action-taken-against-pimeyes-noyb-lawsuit-against-hamburg-dpa
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: 'Reported Dubai-based EMEARobotics ownership (secondary). Beneficial ownership not transparently documented
+        in EU registries. Sanctions list dumps: no OFAC/EU/UK hit for ''PimEyes'' string 2026-10-06 — does NOT clear
+        legal/GDPR risk.'
+      source: https://noyb.eu/en/no-action-taken-against-pimeyes-noyb-lawsuit-against-hamburg-dpa
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: Very small headcount signals; locations unknown.
+      source: https://noyb.eu/en/no-action-taken-against-pimeyes-noyb-lawsuit-against-hamburg-dpa
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - PimEyes
+      - Pimeyes
+      - EME ARobotics
+      - Face Recognition Solutions Ltd
+      - Carribex LTD
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: Clear on OFAC/EU/UK name screen but severe regulatory/ethics red flags dominate.
+      raw_hits: {}
+red_flags:
+- GDPR/biometric legality crisis
+- Jurisdiction opacity / enforcement evasion concerns
+- BIPA litigation
+- High misuse/OPSEC risk
+- Unsuitable for default EU procurement without counsel
+gaps:
+- Definitive current legal entity & UBO
+- Processing locations
+- Sanctions counsel despite clear name screen
+meta:
+  schema_version: '1.2'
+  slug: pimeyes
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Consumer SaaS; LE use alleged in press critically but not documented as named paying agency customers
+    on pimeyes.com this pass.
+  last_checked: '2026-10-06'

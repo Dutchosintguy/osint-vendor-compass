@@ -1,0 +1,403 @@
+generated: '2026-10-06'
+vendors:
+- slug: babel-street
+  name: Babel Street
+  hq: USA
+  category: Social media / web intelligence
+  customers_status: documented
+  customers_count: 2
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/babel-street.yaml
+- slug: blackdot-videris
+  name: Blackdot Videris
+  hq: United Kingdom
+  category: Investigation / link analysis
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/blackdot-videris.yaml
+- slug: brandwatch
+  name: Brandwatch
+  hq: United Kingdom
+  category: Brand / digital risk / social listening
+  customers_status: documented
+  customers_count: 4
+  sanctions_summary: REVIEW REQUIRED — possible list hit
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/brandwatch.yaml
+- slug: censys
+  name: Censys
+  hq: USA
+  category: Threat intel / attack surface
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/censys.yaml
+- slug: cobwebs-technologies-penlink
+  name: Cobwebs Technologies (PenLink)
+  hq: USA
+  category: Investigation / web intelligence
+  customers_status: documented
+  customers_count: 1
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 2
+  schema_version: '1.2'
+  file: vendors/cobwebs-technologies-penlink.yaml
+- slug: confidion-sentry
+  name: Confidion Sentry
+  hq: Canada
+  category: Investigation / protective intelligence
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/confidion-sentry.yaml
+- slug: cybersixgill-bitsight
+  name: Cybersixgill (Bitsight)
+  hq: Israel
+  category: Threat intel / dark web
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/cybersixgill-bitsight.yaml
+- slug: dataminr
+  name: Dataminr
+  hq: USA
+  category: Social media / web intelligence
+  customers_status: documented
+  customers_count: 2
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/dataminr.yaml
+- slug: domaintools
+  name: DomainTools
+  hq: USA
+  category: Threat intel / DNS intelligence
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/domaintools.yaml
+- slug: epieos
+  name: Epieos
+  hq: France
+  category: People / identity search
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified; re-screen before procurement)
+  red_flags_count: 1
+  schema_version: '1.2'
+  file: vendors/epieos.yaml
+- slug: flare
+  name: Flare
+  hq: Canada
+  category: Dark web monitoring
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: REVIEW REQUIRED — possible list hit
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/flare.yaml
+- slug: flashpoint
+  name: Flashpoint
+  hq: USA
+  category: Threat intel / dark web
+  customers_status: documented
+  customers_count: 1
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/flashpoint.yaml
+- slug: group-ib
+  name: Group-IB
+  hq: Singapore
+  category: Threat intel / digital risk
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 4
+  schema_version: '1.2'
+  file: vendors/group-ib.yaml
+- slug: i2-analyst-s-notebook
+  name: i2 Analyst's Notebook
+  hq: United Kingdom
+  category: Investigation / link analysis
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/i2-analyst-s-notebook.yaml
+- slug: intelligence-x
+  name: Intelligence X
+  hq: Czech Republic
+  category: Dark web / search archive
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/intelligence-x.yaml
+- slug: maltego
+  name: Maltego
+  hq: Germany
+  category: Investigation / link analysis
+  customers_status: documented
+  customers_count: 7
+  sanctions_summary: clear (no public hit identified; re-screen before procurement)
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/maltego.yaml
+- slug: meltwater
+  name: Meltwater
+  hq: Norway
+  category: Brand / digital risk / social listening
+  customers_status: documented
+  customers_count: 1
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/meltwater.yaml
+- slug: netcraft
+  name: Netcraft
+  hq: United Kingdom
+  category: Brand / digital risk
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/netcraft.yaml
+- slug: osint-industries
+  name: OSINT Industries
+  hq: United Kingdom
+  category: People / identity search
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/osint-industries.yaml
+- slug: palantir-gotham-foundry
+  name: Palantir Gotham/Foundry
+  hq: USA
+  category: Investigation / analytics platform
+  customers_status: documented
+  customers_count: 2
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 1
+  schema_version: '1.2'
+  file: vendors/palantir-gotham-foundry.yaml
+- slug: pimeyes
+  name: PimEyes
+  hq: unknown
+  category: People / biometric search
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 5
+  schema_version: '1.2'
+  file: vendors/pimeyes.yaml
+- slug: pipl
+  name: Pipl
+  hq: USA
+  category: People / identity search
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 1
+  schema_version: '1.2'
+  file: vendors/pipl.yaml
+- slug: planet
+  name: Planet
+  hq: USA
+  category: Geospatial / imagery
+  customers_status: documented
+  customers_count: 3
+  sanctions_summary: REVIEW REQUIRED — possible list hit
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/planet.yaml
+- slug: pulsar-platform
+  name: Pulsar Platform
+  hq: United Kingdom
+  category: Social media / web intelligence
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 1
+  schema_version: '1.2'
+  file: vendors/pulsar-platform.yaml
+- slug: recorded-future
+  name: Recorded Future
+  hq: USA
+  category: Threat intel / attack surface
+  customers_status: documented
+  customers_count: 4
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 1
+  schema_version: '1.2'
+  file: vendors/recorded-future.yaml
+- slug: reliaquest-digital-shadows
+  name: ReliaQuest (Digital Shadows)
+  hq: USA
+  category: Brand / digital risk
+  customers_status: documented
+  customers_count: 1
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/reliaquest-digital-shadows.yaml
+- slug: sayari-graph
+  name: Sayari Graph
+  hq: USA
+  category: People / corporate intelligence
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/sayari-graph.yaml
+- slug: shadowdragon-horizon
+  name: ShadowDragon Horizon
+  hq: USA
+  category: Investigation / link analysis
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified; re-screen before procurement)
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/shadowdragon-horizon.yaml
+- slug: shodan
+  name: Shodan
+  hq: USA
+  category: Threat intel / attack surface
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/shodan.yaml
+- slug: skopenow
+  name: Skopenow
+  hq: USA
+  category: Investigation / link analysis
+  customers_status: documented
+  customers_count: 2
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/skopenow.yaml
+- slug: social-links
+  name: Social Links
+  hq: USA
+  category: Social media / web intelligence
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 1
+  schema_version: '1.2'
+  file: vendors/social-links.yaml
+- slug: socradar
+  name: SOCRadar
+  hq: USA
+  category: Threat intel / brand protection
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 1
+  schema_version: '1.2'
+  file: vendors/socradar.yaml
+- slug: spokeo
+  name: Spokeo
+  hq: USA
+  category: People / identity search
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 2
+  schema_version: '1.2'
+  file: vendors/spokeo.yaml
+- slug: spycloud
+  name: SpyCloud
+  hq: USA
+  category: Dark web / identity exposure
+  customers_status: documented
+  customers_count: 1
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/spycloud.yaml
+- slug: styx-intelligence
+  name: Styx Intelligence
+  hq: Canada
+  category: Brand / digital risk
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/styx-intelligence.yaml
+- slug: vantor-formerly-maxar-intelligence
+  name: Vantor (formerly Maxar Intelligence)
+  hq: USA
+  category: Geospatial / imagery
+  customers_status: none_publicly_documented
+  customers_count: 0
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/vantor-formerly-maxar-intelligence.yaml
+- slug: zerofox
+  name: ZeroFox
+  hq: USA
+  category: Brand / digital risk
+  customers_status: documented
+  customers_count: 2
+  sanctions_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK
+    dumps; re-screen be
+  red_flags_count: 0
+  schema_version: '1.2'
+  file: vendors/zerofox.yaml

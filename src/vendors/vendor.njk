@@ -7,129 +7,310 @@ pagination:
 permalink: "/vendors/{{ vendor.slug }}/"
 eleventyComputed:
   pageTitle: "{{ vendor.name }}"
-  description: "{{ vendor.tagline }}"
+  description: "{{ vendor.identity.name }}, {{ vendor.identity.category }}. Last reviewed {{ vendor.meta.last_reviewed }}."
 ---
 {% import "macros.njk" as ui %}
-{% set sanctions = vendor.jurisdiction_sanctions %}
+{% set idn = vendor.identity %}
+{% set overview = vendor.overview_360 %}
+{% set screening = vendor.extras.jurisdiction_sanctions_exposure.sanctions_screening %}
+{% set sanctions = vendor.extras.jurisdiction_sanctions_exposure %}
 <article class="wrap page profile">
   <header class="profile-head">
     <p class="kicker">
-      {% if vendor.example %}
-        <span class="pill pill-example">Example</span>
-      {% else %}
-        <span class="pill">{{ vendor.status | statusName }}</span>
-      {% endif %}
-      <span>{{ vendor.primary_category | categoryName }}</span>
+      <span class="pill">{{ vendor.meta.signoff_status }}</span>
+      <span>{{ idn.category }}</span>
     </p>
-    <h1>{{ vendor.name }}</h1>
-    <p class="lede">{{ vendor.tagline }}</p>
-    <p>{{ vendor.summary }}</p>
+    <h1>{{ idn.name }}</h1>
+    {% if idn.legal_name %}<p class="lede">{{ idn.legal_name }}</p>{% endif %}
+    {% if overview.notable_status %}<p>{{ overview.notable_status }}</p>{% endif %}
     <dl class="meta">
-      <div>
-        <dt>Headquarters</dt>
-        <dd>{{ vendor.headquarters.city }}, {{ vendor.headquarters.country }}</dd>
-      </div>
-      <div>
-        <dt>Founded</dt>
-        <dd>{{ vendor.founded_year }}</dd>
-      </div>
-      <div>
-        <dt>Last reviewed</dt>
-        <dd><time datetime="{{ vendor.last_reviewed }}">{{ vendor.last_reviewed | longDate }}</time></dd>
-      </div>
-      <div>
-        <dt>Reviewed by</dt>
-        <dd>{{ vendor.reviewed_by }}</dd>
-      </div>
+      <div><dt>Headquarters</dt><dd>{{ idn.hq_country }}</dd></div>
+      <div><dt>Founded</dt><dd>{{ ui.fact(overview.founded_year) }}</dd></div>
+      <div><dt>Last reviewed</dt><dd><time datetime="{{ vendor.meta.last_reviewed }}">{{ vendor.meta.last_reviewed | longDate }}</time></dd></div>
+      <div><dt>Sign-off</dt><dd>{{ idn.signoff }}</dd></div>
       <div>
         <dt>Website</dt>
-        <dd>
-          {% set siteHref = vendor.website.source | httpUrl %}
-          {% if siteHref %}<a href="{{ siteHref }}">{{ vendor.website.text }}</a>{% else %}Not recorded{% endif %}
-        </dd>
+        <dd>{{ ui.sourceLink(idn.official_website) }}</dd>
       </div>
     </dl>
+    {% if idn.trade_names %}
+      <p class="note">Trade names: {{ idn.trade_names | join(", ") }}</p>
+    {% endif %}
   </header>
 
   <div class="score-row score-row-profile">
-    {{ ui.scoreMeter(vendor.scores.business_transparency.score, "Transparency") }}
-    {{ ui.scoreMeter(vendor.scores.financial_health.score, "Financial health") }}
-    {{ ui.scoreMeter(vendor.scores.customer_opsec.score, "OPSEC posture") }}
+    {{ ui.scoreMeter(vendor.transparency.score.value, "Transparency", vendor.transparency.score.confidence) }}
+    {{ ui.scoreMeter(vendor.financial_health.score.value, "Financial health", vendor.financial_health.score.confidence) }}
+    {{ ui.scoreMeter(vendor.opsec_risks.score.value, "OPSEC", vendor.opsec_risks.score.confidence) }}
   </div>
 
-  <aside class="sanctions-indicator sanctions-{{ sanctions.risk }}" aria-label="Jurisdiction and sanctions exposure">
+  <aside class="sanctions-indicator sanctions-{{ vendor._sanctionsBucket }}" aria-label="Jurisdiction and sanctions exposure">
     <p class="flag-label">Jurisdiction and sanctions exposure</p>
-    {{ ui.riskPill(sanctions.risk, "sanctions") }}
-    <p>{{ sanctions.summary.text }}</p>
+    {{ ui.sanctionsPill(screening.result) }}
+    <p>{{ screening.result }}</p>
     <p class="claim-meta">
-      {% set sanctionsHref = sanctions.summary.source | httpUrl %}
-      {% if sanctionsHref %}<a href="{{ sanctionsHref }}">{{ sanctions.summary.source_label or "Source" }}</a>{% endif %}
-      <a href="#sanctions">View the evidence</a>
+      <span>Screened {{ screening.screening_date | longDate }}</span>
+      <a href="#sanctions">View the screening record</a>
     </p>
   </aside>
 
+  <aside class="red-flag-box {% if vendor.red_flags | length %}has-flags{% endif %}" id="red-flags">
+    <p class="flag-label">Red flags recorded in this profile</p>
+    {% if vendor.red_flags | length %}
+      <ul>
+        {% for flag in vendor.red_flags %}
+          <li>{{ flag }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="empty">No red flags recorded in this profile.</p>
+    {% endif %}
+  </aside>
+
   <div class="buyer-summary">
-    <p class="flag-label">Known buyers</p>
-    {{ ui.sectorPills(vendor.known_customers) }}
-    <p class="claim-meta"><a href="#customers">{{ vendor.known_customers | length }} public customer record{% if vendor.known_customers.length != 1 %}s{% endif %}</a></p>
+    <p class="flag-label">Known customers</p>
+    <p>{{ vendor.known_customers.status | replace("_", " ") }}</p>
+    {% if vendor.known_customers.customers | length %}
+      <ul class="pill-row">
+        {% for sector in vendor._sectorsAttr.split(" ") %}
+          {% if sector %}<li><span class="pill pill-sector">{{ sector | sectorLabel }}</span></li>{% endif %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+    <p class="claim-meta"><a href="#customers">Customer records</a></p>
   </div>
 
   <nav class="toc" aria-label="On this page">
     <a href="#overview">Overview</a>
-    <a href="#customers">Known customers</a>
     <a href="#five-w">5W1H</a>
     <a href="#strengths">Strengths and weaknesses</a>
     <a href="#transparency">Transparency</a>
     <a href="#financial">Financial health</a>
-    <a href="#press">Press</a>
-    <a href="#sentiment">Social sentiment</a>
+    <a href="#press">Press and sentiment</a>
     <a href="#opsec">OPSEC risks</a>
     <a href="#sanctions">Sanctions exposure</a>
-    <a href="#residency">Data residency</a>
+    <a href="#customers">Known customers</a>
+    <a href="#red-flags">Red flags</a>
+    <a href="#ethics">Ethics and GDPR</a>
     <a href="#certifications">Certifications</a>
-    <a href="#integrations">Integrations</a>
     <a href="#legal">Legal and regulatory</a>
+    <a href="#integrations">API and integrations</a>
     <a href="#fit">Use-case fit</a>
+    <a href="#gaps">Gaps</a>
     <a href="#sources">Sources</a>
   </nav>
 
   <section id="overview" class="block">
-    <h2>360 company overview</h2>
+    <div class="section-head">
+      <h2>360 company overview</h2>
+      {{ ui.scoreDetail(overview.score) }}
+    </div>
     <dl class="facts">
-      <div><dt>Legal name</dt><dd>{{ ui.claim(vendor.company.legal_name) }}</dd></div>
-      <div><dt>Ownership</dt><dd>{{ ui.claim(vendor.company.ownership) }}</dd></div>
-      <div><dt>Founded</dt><dd>{{ ui.claim(vendor.company.founded) }}</dd></div>
-      <div><dt>Size</dt><dd>{{ ui.claim(vendor.company.employees) }}</dd></div>
-      <div><dt>Customers</dt><dd>{{ ui.claim(vendor.company.customers) }}</dd></div>
-      <div><dt>Pricing model</dt><dd>{{ ui.claim(vendor.company.pricing_model) }}</dd></div>
-      <div>
-        <dt>Headquarters</dt>
-        <dd>
-          <p class="claim-text">{{ vendor.headquarters.city }}, {{ vendor.headquarters.country }} ({{ vendor.headquarters.country_code }})</p>
-          {{ ui.sourceLine(vendor.headquarters) }}
-        </dd>
-      </div>
+      {{ ui.labeled("Founded", overview.founded_year) }}
+      {{ ui.labeled("HQ country", overview.hq_country) }}
+      {{ ui.labeled("Offices", overview.offices) }}
+      {{ ui.labeled("Ownership type", overview.ownership_type) }}
+      {{ ui.labeled("Parent", overview.parent) }}
+      {{ ui.labeled("Headcount", overview.headcount_band) }}
+      {{ ui.labeled("Deployment", overview.deployment_model) }}
     </dl>
-    <h3>Products</h3>
-    <ul class="stack">
-      {% for product in vendor.company.products %}
-        <li>
-          <h4>{{ product.name }}</h4>
-          {{ ui.claim(product.summary) }}
-        </li>
-      {% else %}
-        <li><p class="empty">Not recorded.</p></li>
+    <h3>Customer segments recorded</h3>
+    {{ ui.fact(overview.customer_segments) }}
+    <h3>Primary products</h3>
+    {{ ui.fact(overview.primary_products) }}
+  </section>
+
+  <section id="five-w" class="block">
+    <div class="section-head">
+      <h2>5W1H</h2>
+      {{ ui.scoreDetail(vendor.five_w1h.score) }}
+    </div>
+    <div class="w-grid">
+      <section><h3>Who</h3>{{ ui.fact(vendor.five_w1h.who) }}</section>
+      <section><h3>What</h3>{{ ui.fact(vendor.five_w1h.what) }}</section>
+      <section><h3>Where</h3>{{ ui.fact(vendor.five_w1h.where) }}</section>
+      <section><h3>When</h3>{{ ui.fact(vendor.five_w1h.when) }}</section>
+      <section><h3>Why</h3>{{ ui.fact(vendor.five_w1h.why) }}</section>
+      <section><h3>How</h3>{{ ui.fact(vendor.five_w1h.how) }}</section>
+    </div>
+  </section>
+
+  <section id="strengths" class="block">
+    <div class="section-head">
+      <h2>Strengths and weaknesses</h2>
+      {{ ui.scoreDetail(vendor.strengths_weaknesses.score) }}
+    </div>
+    <div class="split">
+      <div>
+        <h3>Strengths</h3>
+        {{ ui.fact(vendor.strengths_weaknesses.strengths) }}
+      </div>
+      <div>
+        <h3>Weaknesses</h3>
+        {{ ui.fact(vendor.strengths_weaknesses.weaknesses) }}
+      </div>
+    </div>
+    <div class="split">
+      <div>
+        <h3>Best fit recorded</h3>
+        {{ ui.fact(vendor.strengths_weaknesses.best_fit) }}
+      </div>
+      <div>
+        <h3>Poor fit recorded</h3>
+        {{ ui.fact(vendor.strengths_weaknesses.poor_fit) }}
+      </div>
+    </div>
+    <h3>Alternatives named in this profile</h3>
+    {{ ui.fact(vendor.strengths_weaknesses.alternatives) }}
+  </section>
+
+  <section id="transparency" class="block">
+    <div class="section-head">
+      <h2>Business transparency</h2>
+      {{ ui.scoreDetail(vendor.transparency.score) }}
+    </div>
+    <dl class="facts">
+      {{ ui.labeled("Public pricing", vendor.transparency.public_pricing) }}
+      {{ ui.labeled("Contract norms", vendor.transparency.contract_norms) }}
+      {{ ui.labeled("Privacy and DPA", vendor.transparency.privacy_dpa) }}
+      {{ ui.labeled("Audits", vendor.transparency.audits) }}
+    </dl>
+  </section>
+
+  <section id="financial" class="block">
+    <div class="section-head">
+      <h2>Financial health</h2>
+      {{ ui.scoreDetail(vendor.financial_health.score) }}
+    </div>
+    <dl class="facts">
+      {{ ui.labeled("Funding and ownership", vendor.financial_health.funding_ownership) }}
+      {{ ui.labeled("Public financials", vendor.financial_health.public_financials) }}
+      {{ ui.labeled("Revenue band", vendor.financial_health.revenue_band) }}
+      {{ ui.labeled("Risk notes", vendor.financial_health.risk_notes) }}
+    </dl>
+  </section>
+
+  <section id="press" class="block">
+    <div class="section-head">
+      <h2>Press and social sentiment</h2>
+      {{ ui.scoreDetail(vendor.press_sentiment.score) }}
+    </div>
+    <div class="split">
+      <div>
+        <h3>Positive</h3>
+        {{ ui.fact(vendor.press_sentiment.positive) }}
+      </div>
+      <div>
+        <h3>Negative</h3>
+        {{ ui.fact(vendor.press_sentiment.negative) }}
+      </div>
+    </div>
+    <h3>Social themes</h3>
+    {{ ui.fact(vendor.press_sentiment.social_themes) }}
+  </section>
+
+  <section id="opsec" class="block">
+    <div class="section-head">
+      <h2>OPSEC risks for customers</h2>
+      {{ ui.scoreDetail(vendor.opsec_risks.score) }}
+    </div>
+    <dl class="facts">
+      {{ ui.labeled("Query logging", vendor.opsec_risks.query_logging) }}
+      {{ ui.labeled("Attribution", vendor.opsec_risks.attribution) }}
+      {{ ui.labeled("Retention of search subjects", vendor.opsec_risks.retention_of_subjects) }}
+      {{ ui.labeled("Jurisdiction", vendor.opsec_risks.jurisdiction) }}
+      {{ ui.labeled("Incident history", vendor.opsec_risks.incident_history) }}
+    </dl>
+    <h3>Controls named in this profile</h3>
+    {{ ui.fact(vendor.opsec_risks.recommended_controls) }}
+    {% if vendor.opsec_risks.jurisdiction_sanctions_exposure %}
+      <h3>Sanctions pointer recorded with OPSEC</h3>
+      {{ ui.fact(vendor.opsec_risks.jurisdiction_sanctions_exposure.note) }}
+      {{ ui.fact(vendor.opsec_risks.jurisdiction_sanctions_exposure.result_summary) }}
+      {% if vendor.opsec_risks.jurisdiction_sanctions_exposure.screening_date %}
+        <p class="note">Screening date on this pointer: {{ vendor.opsec_risks.jurisdiction_sanctions_exposure.screening_date | longDate }}</p>
+      {% endif %}
+    {% endif %}
+  </section>
+
+  <section id="sanctions" class="block">
+    <h2>Jurisdiction and sanctions exposure</h2>
+    <p class="note">Company-level record from the approved profile. This is not a legal determination. Re-screen before procurement.</p>
+    <div class="sanctions-indicator sanctions-{{ vendor._sanctionsBucket }}">
+      {{ ui.sanctionsPill(screening.result) }}
+      <p>{{ screening.result }}</p>
+      {% if screening.notes %}<p>{{ screening.notes }}</p>{% endif %}
+    </div>
+    <dl class="facts">
+      {{ ui.labeled("Offices, R&D, and subsidiaries", sanctions.offices_rd_subsidiaries_in_sanctioned_countries) }}
+      {{ ui.labeled("Ownership, investor, and leadership ties", sanctions.ownership_investor_leadership_ties) }}
+      {{ ui.labeled("Workforce location signals", sanctions.workforce_location_signals_aggregate) }}
+    </dl>
+    <h3>Sanctions screening</h3>
+    <dl class="facts">
+      {{ ui.labeled("EU", screening.eu) }}
+      {{ ui.labeled("UN", screening.un) }}
+      {{ ui.labeled("OFAC SDN", screening.ofac_sdn) }}
+      {{ ui.labeled("UK", screening.uk) }}
+    </dl>
+    <p class="claim-meta">
+      <span>Screening date {{ screening.screening_date | longDate }}</span>
+      {% if screening.confidence %}<span class="pill">{{ screening.confidence }} confidence</span>{% endif %}
+    </p>
+    {% if screening.method %}<p>{{ screening.method }}</p>{% endif %}
+    {% if screening.screened_entities %}
+      <h3>Names screened</h3>
+      <ul class="plain-list">
+        {% for entity in screening.screened_entities %}
+          <li>{{ entity }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if screening.sources %}
+      <h3>Screening sources</h3>
+      <ul class="stack">
+        {% for item in screening.sources %}
+          <li>{{ ui.sourceLink(item) }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if screening.raw_hits and screening.raw_hits | length %}
+      <h3>Strings recorded against lists</h3>
+      {% for listName, hits in screening.raw_hits %}
+        <h4>{{ listName }}</h4>
+        {% if hits and hits | length %}
+          <ul class="stack">
+            {% for hit in hits %}
+              <li>
+                {% if hit is string %}
+                  {{ hit }}
+                {% else %}
+                  <p class="claim-text">{{ hit.entity }}</p>
+                  {% if hit.snippet %}<p class="src-note">{{ hit.snippet }}</p>{% endif %}
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="empty">No strings recorded for this list in the profile.</p>
+        {% endif %}
       {% endfor %}
-    </ul>
+    {% endif %}
+    <h3>Ownership and state ties noted separately</h3>
+    {{ ui.fact(vendor.extras.ownership_state_ties) }}
   </section>
 
   <section id="customers" class="block">
     <h2>Known customers and buyers</h2>
-    <p class="note">Publicly documented organizations only. People are out of scope. This is not a complete client list, and it is not evidence about individuals who work at those organizations.</p>
-    {% if vendor.known_customers.length %}
+    <p>Status: {{ vendor.known_customers.status | replace("_", " ") }}.</p>
+    {% if vendor.known_customers.research_notes %}<p>{{ vendor.known_customers.research_notes }}</p>{% endif %}
+    {% if vendor.known_customers.last_checked %}
+      <p class="note">Last checked {{ vendor.known_customers.last_checked | longDate }}</p>
+    {% endif %}
+    {% if vendor.known_customers.customers | length %}
       <div class="table-scroll">
         <table>
-          <caption>Public customer records for {{ vendor.name }}</caption>
+          <caption>Public customer records for {{ idn.name }}</caption>
           <thead>
             <tr>
               <th scope="col">Customer</th>
@@ -141,359 +322,78 @@ eleventyComputed:
             </tr>
           </thead>
           <tbody>
-            {% for customer in vendor.known_customers %}
+            {% for customer in vendor.known_customers.customers %}
               <tr>
                 <th scope="row">
-                  {{ customer.name }}
-                  {% if customer.note %}<span class="cell-sub">{{ customer.note }}</span>{% endif %}
+                  {{ customer.customer_name }}
+                  {% if customer.notes %}<span class="cell-sub">{{ customer.notes }}</span>{% endif %}
                 </th>
-                <td>{{ customer.sector | sectorName }}</td>
+                <td>{{ customer.sector | sectorLabel }}</td>
                 <td>{{ customer.country }}</td>
-                <td>{{ customer.evidence_type | evidenceName }}</td>
-                <td><time datetime="{{ customer.date }}">{{ customer.date | longDate }}</time></td>
-                <td>
-                  {% set href = customer.source | httpUrl %}
-                  {% if href %}<a href="{{ href }}">{{ customer.source_label or "Source" }}</a>{% else %}<span class="unsourced">No source</span>{% endif %}
-                  {% if customer.confidence %}<span class="cell-sub">{{ customer.confidence | confidenceName }}</span>{% endif %}
-                </td>
+                <td>{{ customer.evidence_type | evidenceLabel }}</td>
+                <td>{{ customer.date }}</td>
+                <td>{{ ui.sourceLink(customer.source_url) }}</td>
               </tr>
             {% endfor %}
           </tbody>
         </table>
       </div>
     {% else %}
-      <p class="empty">No publicly documented customers are recorded.</p>
+      <p class="empty">None publicly documented.</p>
     {% endif %}
   </section>
 
-  <section id="five-w" class="block">
-    <h2>5W1H</h2>
-    <div class="w-grid">
-      <section><h3>Who</h3><p class="hint">Who operates it, and who it is sold to.</p>{{ ui.claim(vendor.five_w.who) }}</section>
-      <section><h3>What</h3><p class="hint">What the product claims to do.</p>{{ ui.claim(vendor.five_w.what) }}</section>
-      <section><h3>Where</h3><p class="hint">Headquarters, hosting, and markets.</p>{{ ui.claim(vendor.five_w.where) }}</section>
-      <section><h3>When</h3><p class="hint">Founding, funding, and the review date.</p>{{ ui.claim(vendor.five_w.when) }}</section>
-      <section><h3>Why</h3><p class="hint">The stated reason a buyer would use it.</p>{{ ui.claim(vendor.five_w.why) }}</section>
-      <section><h3>How</h3><p class="hint">How the product is delivered. Not a collection guide.</p>{{ ui.claim(vendor.five_w.how) }}</section>
-    </div>
-  </section>
-
-  <section id="strengths" class="block">
-    <h2>Strengths and weaknesses</h2>
-    <div class="split">
-      <div>
-        <h3>Strengths</h3>
-        <ul class="stack">
-          {% for item in vendor.strengths %}
-            <li>{{ ui.claim(item) }}</li>
-          {% else %}
-            <li><p class="empty">Not recorded.</p></li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div>
-        <h3>Weaknesses</h3>
-        <ul class="stack">
-          {% for item in vendor.weaknesses %}
-            <li>{{ ui.claim(item) }}</li>
-          {% else %}
-            <li><p class="empty">Not recorded.</p></li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="transparency" class="block">
-    <div class="section-head">
-      <h2>Business transparency</h2>
-      {{ ui.scoreMeter(vendor.scores.business_transparency.score, "Score") }}
-    </div>
-    {{ ui.claim(vendor.scores.business_transparency.summary) }}
-    <h3>Evidence</h3>
-    <ul class="stack">
-      {% for item in vendor.scores.business_transparency.evidence %}
-        <li>{{ ui.claim(item) }}</li>
-      {% endfor %}
-    </ul>
-  </section>
-
-  <section id="financial" class="block">
-    <div class="section-head">
-      <h2>Financial health</h2>
-      {{ ui.scoreMeter(vendor.scores.financial_health.score, "Score") }}
-    </div>
-    {{ ui.claim(vendor.scores.financial_health.summary) }}
+  <section id="ethics" class="block">
+    <h2>Data ethics, legality, and residency</h2>
     <dl class="facts">
-      <div><dt>Funding</dt><dd>{{ ui.claim(vendor.financial.funding) }}</dd></div>
-      <div><dt>Revenue signals</dt><dd>{{ ui.claim(vendor.financial.revenue_signals) }}</dd></div>
-      <div><dt>Stability</dt><dd>{{ ui.claim(vendor.financial.stability) }}</dd></div>
-    </dl>
-    <h3>Investors</h3>
-    <ul class="stack">
-      {% for investor in vendor.financial.investors %}
-        <li>
-          <h4>{{ investor.name }}</h4>
-          {{ ui.claim(investor.detail) }}
-        </li>
-      {% else %}
-        <li><p class="empty">No investors recorded.</p></li>
-      {% endfor %}
-    </ul>
-    <h3>Evidence</h3>
-    <ul class="stack">
-      {% for item in vendor.scores.financial_health.evidence %}
-        <li>{{ ui.claim(item) }}</li>
-      {% endfor %}
-    </ul>
-  </section>
-
-  <section id="press" class="block">
-    <h2>Press</h2>
-    <div class="split">
-      <div>
-        <h3>Positive</h3>
-        {% for item in vendor.press.positive %}
-          <article class="press-item">
-            <p class="kicker">{{ item.outlet }} · <time datetime="{{ item.date }}">{{ item.date | longDate }}</time></p>
-            <h4>{{ item.title }}</h4>
-            <p>{{ item.summary }}</p>
-            {{ ui.sourceLine(item) }}
-          </article>
-        {% else %}
-          <p class="empty">None recorded.</p>
-        {% endfor %}
-      </div>
-      <div>
-        <h3>Negative</h3>
-        {% for item in vendor.press.negative %}
-          <article class="press-item">
-            <p class="kicker">{{ item.outlet }} · <time datetime="{{ item.date }}">{{ item.date | longDate }}</time></p>
-            <h4>{{ item.title }}</h4>
-            <p>{{ item.summary }}</p>
-            {{ ui.sourceLine(item) }}
-          </article>
-        {% else %}
-          <p class="empty">None recorded.</p>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-
-  <section id="sentiment" class="block">
-    <h2>Social media sentiment</h2>
-    <p class="kicker">Tone: {{ vendor.social_sentiment.tone | toneName }}</p>
-    {{ ui.claim(vendor.social_sentiment.summary) }}
-    <ul class="stack">
-      {% for signal in vendor.social_sentiment.signals %}
-        <li>
-          <h3>{{ signal.platform }}</h3>
-          {{ ui.claim(signal.observation) }}
-        </li>
-      {% else %}
-        <li><p class="empty">Not recorded.</p></li>
-      {% endfor %}
-    </ul>
-  </section>
-
-  <section id="opsec" class="block">
-    <div class="section-head">
-      <h2>OPSEC risks for customers</h2>
-      {{ ui.scoreMeter(vendor.scores.customer_opsec.score, "OPSEC posture") }}
-    </div>
-    <p class="note">The score rates the customer's residual risk. A higher posture score means lower residual risk. It is not a measure of product power.</p>
-    {{ ui.claim(vendor.opsec.summary) }}
-    <div class="factor-list">
-      {% set factors = [
-        ["Data retention", vendor.opsec.data_retention],
-        ["Query logging", vendor.opsec.query_logging],
-        ["Jurisdiction", vendor.opsec.jurisdiction],
-        ["Ownership and state links", vendor.opsec.ownership_state_links],
-        ["Third-party sharing", vendor.opsec.third_party_sharing]
-      ] %}
-      {% for factor in factors %}
-        <article class="factor">
-          <div class="factor-head">
-            <h3>{{ factor[0] }}</h3>
-            {{ ui.riskPill(factor[1].risk) }}
-          </div>
-          {{ ui.claim(factor[1]) }}
-        </article>
-      {% endfor %}
-    </div>
-    <h3>Evidence</h3>
-    <ul class="stack">
-      {% for item in vendor.scores.customer_opsec.evidence %}
-        <li>{{ ui.claim(item) }}</li>
-      {% endfor %}
-    </ul>
-  </section>
-
-  <section id="sanctions" class="block">
-    <h2>Jurisdiction and sanctions exposure</h2>
-    <p class="note">Company level only. Do not add named employees, personal contact details, or individual locations. Owner, investor, and leadership ties are legal entities and roles.</p>
-    <div class="sanctions-indicator sanctions-{{ sanctions.risk }}">
-      {{ ui.riskPill(sanctions.risk, "sanctions") }}
-      {{ ui.claim(sanctions.summary) }}
-    </div>
-    <p class="note">{{ taxonomy.sanctions_review.note }} Named review countries: {{ taxonomy.sanctions_review.named_countries | join(", ") }}.</p>
-
-    <article class="factor">
-      <div class="factor-head">
-        <h3>Offices, R&amp;D, and legal entities</h3>
-        {{ ui.riskPill(sanctions.offices_and_entities.risk) }}
-      </div>
-      {{ ui.claim(sanctions.offices_and_entities) }}
-      <p class="claim-meta">
-        {% if sanctions.offices_and_entities.countries.length %}
-          Review-list presence: {{ sanctions.offices_and_entities.countries | join(", ") }}
-        {% else %}
-          No review-list country recorded.
-        {% endif %}
-      </p>
-    </article>
-
-    <article class="factor">
-      <div class="factor-head">
-        <h3>Owner, investor, and leadership ties</h3>
-        {{ ui.riskPill(sanctions.ownership_ties.risk) }}
-      </div>
-      <p class="hint">Entity level. Named private individuals are out of scope.</p>
-      {{ ui.claim(sanctions.ownership_ties) }}
-    </article>
-
-    <article class="factor">
-      <div class="factor-head">
-        <h3>Workforce location signals</h3>
-        {{ ui.riskPill(sanctions.workforce_signals.risk) }}
-      </div>
-      <p class="hint">Aggregate headcount or region only.</p>
-      {{ ui.claim(sanctions.workforce_signals) }}
-    </article>
-
-    <h3>Sanctions screening</h3>
-    <div class="table-scroll">
-      <table>
-        <caption>Legal-entity screening recorded for this profile</caption>
-        <thead>
-          <tr>
-            <th scope="col">Regime</th>
-            <th scope="col">Result</th>
-            <th scope="col">Screened</th>
-            <th scope="col">What was checked</th>
-            <th scope="col">Source</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for regime in taxonomy.screening_regimes %}
-            {% for item in sanctions.screening %}
-              {% if item.regime == regime.id %}
-                <tr>
-                  <th scope="row">{{ regime.name }}</th>
-                  <td>{{ item.result | screeningResultName }}</td>
-                  <td><time datetime="{{ item.screened_on }}">{{ item.screened_on | longDate }}</time></td>
-                  <td>{{ item.text }}</td>
-                  <td>
-                    {% set href = item.source | httpUrl %}
-                    {% if href %}<a href="{{ href }}">{{ item.source_label or "Source" }}</a>{% endif %}
-                  </td>
-                </tr>
-              {% endif %}
-            {% endfor %}
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <section id="residency" class="block">
-    <h2>Data residency and GDPR</h2>
-    {{ ui.claim(vendor.data_residency.summary) }}
-    <p class="claim-meta">Regions: {% if vendor.data_residency.regions.length %}{{ vendor.data_residency.regions | join(", ") }}{% else %}Not recorded{% endif %}</p>
-    <dl class="facts">
-      <div><dt>GDPR roles</dt><dd>{{ ui.claim(vendor.data_residency.gdpr) }}</dd></div>
-      <div><dt>Data processing agreement</dt><dd>{{ ui.claim(vendor.data_residency.dpa) }}</dd></div>
+      {{ ui.labeled("Data sourcing ethics and legality", vendor.extras.data_ethics_legality) }}
+      {{ ui.labeled("GDPR and data residency", vendor.extras.gdpr_residency) }}
     </dl>
   </section>
 
   <section id="certifications" class="block">
     <h2>Security certifications</h2>
-    <ul class="stack">
-      {% for item in vendor.certifications %}
-        <li>
-          <h3>{{ item.name }} <span class="pill">{{ item.status | certStatusName }}</span></h3>
-          {{ ui.claim(item.detail) }}
-        </li>
-      {% else %}
-        <li><p class="empty">Not recorded.</p></li>
-      {% endfor %}
-    </ul>
-  </section>
-
-  <section id="integrations" class="block">
-    <h2>Integrations and API</h2>
-    {{ ui.claim(vendor.integrations.summary) }}
-    <h3>API</h3>
-    {{ ui.claim(vendor.integrations.api) }}
-    <ul class="stack">
-      {% for item in vendor.integrations.items %}
-        <li>
-          <h3>{{ item.name }}</h3>
-          {{ ui.claim(item.detail) }}
-        </li>
-      {% else %}
-        <li><p class="empty">Not recorded.</p></li>
-      {% endfor %}
-    </ul>
+    {{ ui.fact(vendor.extras.certifications) }}
   </section>
 
   <section id="legal" class="block">
     <h2>Legal and regulatory actions</h2>
-    {% for item in vendor.legal %}
-      <article class="press-item">
-        <p class="kicker">{{ item.status | legalStatusName }} · <time datetime="{{ item.date }}">{{ item.date | longDate }}</time></p>
-        <h3>{{ item.title }}</h3>
-        <p>{{ item.summary }}</p>
-        {{ ui.sourceLine(item) }}
-      </article>
-    {% else %}
-      <p class="empty">Not recorded.</p>
-    {% endfor %}
+    {{ ui.fact(vendor.extras.legal_regulatory_actions) }}
+  </section>
+
+  <section id="integrations" class="block">
+    <h2>API and integrations</h2>
+    {{ ui.fact(vendor.extras.api_integrations) }}
   </section>
 
   <section id="fit" class="block">
     <h2>Use-case fit</h2>
+    <p class="note">Scores below are the values recorded in this profile. They are not a site-wide ranking.</p>
     <ul class="stack">
-      {% for item in vendor.use_case_fit %}
+      {% for persona, fit in vendor.extras.use_case_fit %}
         <li>
-          <h3>{{ item.id | useCaseName }} <span class="pill pill-fit pill-fit-{{ item.fit }}">{{ item.fit | fitName }}</span></h3>
-          {{ ui.claim(item.note) }}
+          <h3>{{ persona | personaLabel }} <span class="pill">{{ fit.value }}/5</span> {% if fit.confidence %}<span class="pill">{{ fit.confidence }} confidence</span>{% endif %}</h3>
+          {{ ui.fact(fit) }}
         </li>
-      {% else %}
-        <li><p class="empty">Not assessed.</p></li>
       {% endfor %}
     </ul>
   </section>
 
-  {% if vendor.reviewer_notes %}
-    <section class="block" id="notes">
-      <h2>Reviewer notes</h2>
-      {{ ui.claim(vendor.reviewer_notes) }}
-    </section>
-  {% endif %}
+  <section id="gaps" class="block">
+    <h2>Gaps recorded in this profile</h2>
+    {{ ui.fact(vendor.gaps) }}
+  </section>
 
   <section id="sources" class="block">
     <h2>Sources</h2>
-    <p class="note">Collected from the source URL on each claim. Example profiles point at example.com because the underlying pages are fictional.</p>
+    <p class="note">Every http(s) source, source URL, and official website stored on this profile.</p>
     <ol class="source-list">
       {% for source in vendor | collectSources %}
-        <li>
-          <a href="{{ source.url }}">{{ source.label }}</a>
-          {% if source.accessed %}<span class="cell-sub">Accessed {{ source.accessed | longDate }}</span>{% endif %}
-        </li>
+        <li><a class="src-url" href="{{ source.url }}">{{ source.url }}</a></li>
       {% else %}
-        <li><p class="empty">No sources recorded.</p></li>
+        <li><p class="empty">No source URLs recorded.</p></li>
       {% endfor %}
     </ol>
+    <p class="note">Schema {{ vendor.meta.schema_version }}. Last reviewed {{ vendor.meta.last_reviewed | longDate }}.</p>
   </section>
 </article>

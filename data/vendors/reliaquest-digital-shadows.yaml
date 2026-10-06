@@ -1,0 +1,303 @@
+identity:
+  name: ReliaQuest (Digital Shadows)
+  legal_name: ReliaQuest, LLC
+  trade_names:
+  - ReliaQuest (Digital Shadows)
+  official_website: https://www.reliaquest.com/
+  hq_country: USA
+  category: Brand / digital risk
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2007
+    source: https://www.reliaquest.com/
+    confidence: Medium
+  hq_country:
+    value: USA
+    source: https://www.reliaquest.com/
+    confidence: Medium
+  ownership_type:
+    value: Private
+    source: https://www.reliaquest.com/
+    confidence: Medium
+  parent:
+    value: none (acquired Digital Shadows 2022)
+    source: https://www.reliaquest.com/
+    confidence: Medium
+  headcount_band:
+    value: 1000+
+    source: https://www.reliaquest.com/
+    confidence: Low
+  customer_segments:
+  - enterprise SOC
+  primary_products:
+  - GreyMatter
+  - Digital Shadows DRP capabilities
+  deployment_model:
+    value: GreyMatter SOC platform
+    source: https://www.reliaquest.com/
+    confidence: Medium
+  notable_status: Acquired Digital Shadows 2022 (~$160M reported) for DRP
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources.
+    sources:
+    - https://www.reliaquest.com/
+    - https://www.reliaquest.com/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: US SOC platform company incorporating Digital Shadows DRP.
+    source: https://reliaquest.com/blog/reliaquest-digital-shadows-next-stage/
+    confidence: Medium
+  what:
+    text: SOC operations + digital risk protection across open/deep/dark web.
+    source: https://www.reliaquest.com/
+    confidence: Medium
+  where:
+    text: USA; Digital Shadows had UK roots historically.
+    source: https://www.reliaquest.com/
+    confidence: Medium
+  when:
+    text: ReliaQuest 2007; DS acquisition 2022.
+    source: https://www.reliaquest.com/
+    confidence: Medium
+  why:
+    text: Unify SOC + external digital risk.
+    source: https://www.reliaquest.com/
+    confidence: Medium
+  how:
+    text: GreyMatter platform + DRP module.
+    source: https://www.reliaquest.com/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public pages.
+    sources:
+    - https://www.reliaquest.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: SOC+DRP combo
+    source: https://www.reliaquest.com/
+    confidence: Medium
+  weaknesses:
+  - text: Platform breadth may exceed pure OSINT needs
+    source: https://www.reliaquest.com/
+    confidence: Medium
+  best_fit:
+  - Enterprise SOC with DRP
+  poor_fit:
+  - Solo OSINT analysts
+  alternatives:
+  - ZeroFox
+  - Recorded Future
+  - Flare
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed.
+    sources:
+    - https://www.reliaquest.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Enterprise quote
+    source: https://www.reliaquest.com/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://www.reliaquest.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://www.reliaquest.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://www.reliaquest.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Private; acquisition capital for DS
+    source: https://www.reliaquest.com/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://www.reliaquest.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited financials.
+    sources:
+    - https://www.reliaquest.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: DS acquisition coverage
+    source: https://www.reliaquest.com/
+    confidence: Medium
+  negative:
+  - text: None
+    source: https://www.reliaquest.com/
+    confidence: Medium
+  social_themes: SOC market
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://www.reliaquest.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Enterprise SOC platform controls
+    source: https://www.reliaquest.com/
+    confidence: Low
+  attribution:
+    text: Confirm in DPA
+    source: https://www.reliaquest.com/
+    confidence: Low
+  jurisdiction:
+    text: USA
+    source: https://www.reliaquest.com/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contractual OPSEC
+  jurisdiction_sanctions_exposure:
+    note: See extras
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Validate contractually.
+    sources:
+    - https://www.reliaquest.com/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: DRP monitoring
+    source: https://www.reliaquest.com/
+    confidence: Medium
+  gdpr_residency:
+    text: Request EU options (DS UK heritage may help)
+    source: https://www.reliaquest.com/
+    confidence: Low
+  ownership_state_ties:
+    text: US private; no sanctioned-state owner
+    source: https://www.reliaquest.com/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://www.reliaquest.com/
+    confidence: Low
+  api_integrations:
+    text: SOC integrations
+    source: https://www.reliaquest.com/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 5
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: US HQ; Digital Shadows historically London. No RU/BY/CN/IR/DPRK/SY/CU offices identified.
+      source: https://reliaquest.com/blog/reliaquest-digital-shadows-next-stage/
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Private US. No sanctioned owners identified.
+      source: https://reliaquest.com/blog/reliaquest-digital-shadows-next-stage/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: Global SOC workforce; sanctioned-country aggregate unknown.
+      source: https://reliaquest.com/blog/reliaquest-digital-shadows-next-stage/
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - ReliaQuest
+      - Digital Shadows
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags: []
+gaps:
+- DPA
+- Certs
+- References
+meta:
+  schema_version: '1.2'
+  slug: reliaquest-digital-shadows
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: documented
+  customers:
+  - customer_name: Recognise Bank
+    sector: corporate
+    country: United Kingdom
+    evidence_type: case_study
+    date: unknown
+    source_url: https://reliaquest.com/resources/customer-stories/recognise-bank-achieves-74-increase-in-detection-coverage-overnight-with-reliaquest-greymatter/
+  research_notes: Digital Shadows historical bank case studies on third-party aggregators are anonymized ('Leading
+    Retail Bank')—excluded.
+  last_checked: '2026-10-06'

@@ -1,0 +1,296 @@
+identity:
+  name: DomainTools
+  legal_name: DomainTools, LLC
+  trade_names:
+  - DomainTools
+  official_website: https://www.domaintools.com/
+  hq_country: USA
+  category: Threat intel / DNS intelligence
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2004
+    source: https://www.domaintools.com/
+    confidence: Medium
+  hq_country:
+    value: USA
+    source: https://www.domaintools.com/
+    confidence: Medium
+  ownership_type:
+    value: Private
+    source: https://www.domaintools.com/
+    confidence: Medium
+  parent:
+    value: none identified
+    source: https://www.domaintools.com/
+    confidence: Medium
+  headcount_band:
+    value: unknown
+    source: https://www.domaintools.com/
+    confidence: Low
+  customer_segments:
+  - CTI
+  - investigators
+  primary_products:
+  - Iris
+  - DNS/WHOIS/pDNS intel
+  deployment_model:
+    value: SaaS
+    source: https://www.domaintools.com/
+    confidence: Medium
+  notable_status: Seattle DNS/WHOIS intel staple
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources.
+    sources:
+    - https://www.domaintools.com/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: US DNS threat intelligence vendor.
+    source: https://www.domaintools.com/
+    confidence: Medium
+  what:
+    text: DNS, WHOIS, passive DNS, certificates for infra investigations.
+    source: https://www.domaintools.com/
+    confidence: Medium
+  where:
+    text: USA.
+    source: https://www.domaintools.com/
+    confidence: Medium
+  when:
+    text: Founded 2004 era.
+    source: https://www.domaintools.com/
+    confidence: Medium
+  why:
+    text: Pivot domain infrastructure for investigations.
+    source: https://www.domaintools.com/
+    confidence: Medium
+  how:
+    text: Historical DNS graphs + Iris UI/API.
+    source: https://www.domaintools.com/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public.
+    sources:
+    - https://www.domaintools.com/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Historical DNS depth
+    source: https://www.domaintools.com/
+    confidence: Medium
+  weaknesses:
+  - text: Not SOCMINT
+    source: https://www.domaintools.com/
+    confidence: Medium
+  best_fit:
+  - Infra pivoting
+  poor_fit:
+  - People search
+  alternatives:
+  - Censys
+  - Recorded Future
+  - WhoisXML
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed.
+    sources:
+    - https://www.domaintools.com/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Quote + research accounts
+    source: https://www.domaintools.com/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://www.domaintools.com/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://www.domaintools.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://www.domaintools.com/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Private
+    source: https://www.domaintools.com/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://www.domaintools.com/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited.
+    sources:
+    - https://www.domaintools.com/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Industry staple
+    source: https://www.domaintools.com/
+    confidence: Medium
+  negative:
+  - text: None
+    source: https://www.domaintools.com/
+    confidence: Medium
+  social_themes: CTI practitioners
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://www.domaintools.com/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: Query logging typical of intel SaaS
+    source: https://www.domaintools.com/
+    confidence: Low
+  attribution:
+    text: Confirm DPA
+    source: https://www.domaintools.com/
+    confidence: Low
+  jurisdiction:
+    text: USA
+    source: https://www.domaintools.com/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contract OPSEC
+  jurisdiction_sanctions_exposure:
+    note: See extras
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Validate.
+    sources:
+    - https://www.domaintools.com/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: WHOIS/DNS public/commercial data
+    source: https://www.domaintools.com/
+    confidence: Medium
+  gdpr_residency:
+    text: WHOIS privacy regimes vary
+    source: https://www.domaintools.com/
+    confidence: Low
+  ownership_state_ties:
+    text: US private; no sanctioned-state owner
+    source: https://www.domaintools.com/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://www.domaintools.com/
+    confidence: Low
+  api_integrations:
+    text: 'Yes'
+    source: https://www.domaintools.com/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 5
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: USA (Seattle historically). No RU/BY/CN/IR/DPRK/SY/CU offices identified.
+      source: https://www.domaintools.com/
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Private US. No sanctioned owners identified.
+      source: https://www.domaintools.com/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: unknown
+      source: https://www.domaintools.com/
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - DomainTools
+      - DomainTools LLC
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags: []
+gaps:
+- DPA
+- Certs
+- References
+meta:
+  schema_version: '1.2'
+  slug: domaintools
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Checked domaintools.com; no named customer case studies captured this pass.
+  last_checked: '2026-10-06'

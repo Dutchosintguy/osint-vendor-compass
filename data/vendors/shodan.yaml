@@ -1,0 +1,302 @@
+identity:
+  name: Shodan
+  legal_name: Shodan (verify legal entity)
+  trade_names:
+  - Shodan
+  official_website: https://www.shodan.io/
+  hq_country: USA
+  category: Threat intel / attack surface
+  signoff: APPROVED
+overview_360:
+  founded_year:
+    value: 2009
+    source: https://www.shodan.io/
+    confidence: Medium
+  hq_country:
+    value: USA
+    source: https://www.shodan.io/
+    confidence: Medium
+  ownership_type:
+    value: Private
+    source: https://www.shodan.io/
+    confidence: Medium
+  parent:
+    value: none
+    source: https://www.shodan.io/
+    confidence: Medium
+  headcount_band:
+    value: 11-50
+    source: https://www.shodan.io/
+    confidence: Low
+  customer_segments:
+  - researchers
+  - security teams
+  primary_products:
+  - Shodan search
+  - Monitor
+  - API
+  deployment_model:
+    value: SaaS search
+    source: https://www.shodan.io/
+    confidence: Medium
+  notable_status: Created by John Matherly; Seattle-area listings; iconic IoT/device search
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public sources.
+    sources:
+    - https://www.shodan.io/
+    - https://www.shodan.io/
+    last_verified: '2026-10-06'
+five_w1h:
+  who:
+    text: US device search engine company.
+    source: https://www.shodan.io/
+    confidence: Medium
+  what:
+    text: Search internet-connected devices/services/banners.
+    source: https://www.shodan.io/
+    confidence: Medium
+  where:
+    text: USA (Seattle/Renton signals).
+    source: https://www.shodan.io/
+    confidence: Medium
+  when:
+    text: Launched 2009.
+    source: https://www.shodan.io/
+    confidence: Medium
+  why:
+    text: Make internet devices searchable for defense/research.
+    source: https://www.shodan.io/
+    confidence: Medium
+  how:
+    text: Internet crawling/scanning + search UI/API.
+    source: https://www.shodan.io/
+    confidence: Medium
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Public pages.
+    sources:
+    - https://www.shodan.io/
+    last_verified: '2026-10-06'
+strengths_weaknesses:
+  strengths:
+  - text: Iconic dataset
+    source: https://www.shodan.io/
+    confidence: Medium
+  - text: Simple API
+    source: https://www.shodan.io/
+    confidence: Medium
+  weaknesses:
+  - text: Can be abused if queries not OPSEC-aware
+    source: https://www.shodan.io/
+    confidence: Medium
+  - text: Small company
+    source: https://www.shodan.io/
+    confidence: Medium
+  best_fit:
+  - Device/recon OSINT
+  poor_fit:
+  - SOCMINT
+  alternatives:
+  - Censys
+  - BinaryEdge
+  score:
+    value: 3
+    confidence: Medium
+    rationale: Mixed.
+    sources:
+    - https://www.shodan.io/
+    last_verified: '2026-10-06'
+transparency:
+  public_pricing:
+    text: Published membership tiers
+    source: https://www.shodan.io/
+    confidence: Medium
+  contract_norms: unknown
+  privacy_dpa:
+    text: Not deep-reviewed
+    source: https://www.shodan.io/
+    confidence: Low
+  audits:
+    text: unknown
+    source: https://www.shodan.io/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Often opaque.
+    sources:
+    - https://www.shodan.io/
+    last_verified: '2026-10-06'
+financial_health:
+  funding_ownership:
+    text: Bootstrapped/private
+    source: https://www.shodan.io/
+    confidence: Medium
+  public_financials: unknown
+  revenue_band: unknown
+  risk_notes:
+    text: unknown
+    source: https://www.shodan.io/
+    confidence: Low
+  score:
+    value: 2
+    confidence: Low
+    rationale: Limited financials.
+    sources:
+    - https://www.shodan.io/
+    last_verified: '2026-10-06'
+press_sentiment:
+  positive:
+  - text: Ubiquitous in training
+    source: https://www.shodan.io/
+    confidence: Medium
+  negative:
+  - text: Occasional misuse stories (tool abuse, not vendor scandal)
+    source: https://www.shodan.io/
+    confidence: Medium
+  social_themes: Hacker/security culture
+  score:
+    value: 3
+    confidence: Low
+    rationale: Anecdotal.
+    sources:
+    - https://www.shodan.io/
+    last_verified: '2026-10-06'
+opsec_risks:
+  query_logging:
+    text: 'Search OPSEC: use accounts carefully; vendor sees queries'
+    source: https://www.shodan.io/
+    confidence: Low
+  attribution:
+    text: Confirm in DPA
+    source: https://www.shodan.io/
+    confidence: Low
+  jurisdiction:
+    text: USA
+    source: https://www.shodan.io/
+    confidence: Medium
+  incident_history: unknown
+  recommended_controls:
+  - Dedicated accounts
+  - MFA
+  - Contractual OPSEC
+  jurisdiction_sanctions_exposure:
+    note: See extras
+    result_summary: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+    screening_date: '2026-10-06'
+  score:
+    value: 3
+    confidence: Low
+    rationale: Validate contractually.
+    sources:
+    - https://www.shodan.io/
+    last_verified: '2026-10-06'
+extras:
+  data_ethics_legality:
+    text: Scanning/search of exposed services
+    source: https://www.shodan.io/
+    confidence: Medium
+  gdpr_residency:
+    text: Limited personal data typically; still review
+    source: https://www.shodan.io/
+    confidence: Low
+  ownership_state_ties:
+    text: No state ownership identified
+    source: https://www.shodan.io/
+    confidence: Medium
+  certifications: unknown
+  legal_regulatory_actions:
+    text: unknown
+    source: https://www.shodan.io/
+    confidence: Low
+  api_integrations:
+    text: Core
+    source: https://www.shodan.io/
+    confidence: Medium
+  use_case_fit:
+    le_investigator:
+      value: 3
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    corporate_soc:
+      value: 4
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    brand_pr:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    due_diligence:
+      value: 2
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+    geoint_analyst:
+      value: 1
+      confidence: Medium
+      rationale: Positioning.
+      sources:
+      - see overview
+      last_verified: '2026-10-06'
+  jurisdiction_sanctions_exposure:
+    offices_rd_subsidiaries_in_sanctioned_countries:
+      text: USA office signals (Seattle/Renton/Austin). No RU/BY/CN/IR/DPRK/SY/CU offices identified.
+      source: https://www.shodan.io/
+      confidence: Medium
+    ownership_investor_leadership_ties:
+      text: Private. No sanctioned owners identified.
+      source: https://www.shodan.io/
+      confidence: Medium
+    workforce_location_signals_aggregate:
+      text: Small team; LinkedIn signals US/Vietnam/India historically—Vietnam/India not on core sanctioned list.
+      source: https://www.shodan.io/
+      confidence: Medium
+    sanctions_screening:
+      eu: no match found in downloaded EU FSF XML for screened strings
+      un: unknown — dedicated UN consolidated list not loaded in this pass; no UN hit asserted
+      ofac_sdn: no match found in downloaded OFAC SDN/cons lists for screened strings
+      uk: no match found in downloaded UK consolidated list for screened strings
+      screened_entities:
+      - Shodan
+      screening_date: '2026-10-06'
+      method: Local grep of US Treasury SDN + consolidated non-SDN (downloaded 2026-10-06), UK OFSI ConList.csv,
+        and EU FSF XML. Not a substitute for counsel/compliance tooling. OpenSanctions API unauthorized in this
+        environment.
+      sources:
+      - https://sanctionssearch.ofac.treas.gov/
+      - https://www.treasury.gov/ofac/downloads/sdn.csv
+      - https://www.gov.uk/government/publications/the-uk-sanctions-list
+      - https://www.sanctionsmap.eu/
+      confidence: Medium
+      result: clear (no public hit identified in local EU/UN-proxy/OFAC/UK dumps; re-screen before procurement)
+      notes: ''
+      raw_hits: {}
+red_flags: []
+gaps:
+- DPA
+- Certs
+- References
+meta:
+  schema_version: '1.2'
+  slug: shodan
+  last_reviewed: '2026-10-06'
+  signoff_status: approved
+known_customers:
+  status: none_publicly_documented
+  customers: []
+  research_notes: Widely used tool; no named paying enterprise case studies located on shodan.io this pass.
+  last_checked: '2026-10-06'

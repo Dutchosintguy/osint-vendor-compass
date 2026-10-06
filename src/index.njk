@@ -1,17 +1,17 @@
 ---
 layout: layouts/base.njk
-description: Independent, evidence-led comparison of OSINT SaaS vendors. The first profiles are fictional examples.
+description: Approved OSINT SaaS vendor profiles with sources, scores, sanctions screening, red flags, and publicly documented customers.
 ---
 {% import "macros.njk" as ui %}
 <div class="wrap page">
   <header class="hero">
     <p class="kicker">Independent comparison</p>
     <h1>OSINT Vendor Compass</h1>
-    <p class="lede">A research notebook for analysts, decision makers, and teams choosing an open-source intelligence SaaS vendor. Each profile records ownership, evidence, financial signals, customer OPSEC, sanctions exposure, and publicly named buyers.</p>
+    <p class="lede">Approved profiles of OSINT SaaS vendors for analysts and buyers. Each page repeats the research record: scores, sources, red flags, jurisdiction and sanctions screening, and publicly documented customers. Unknown stays unknown.</p>
     <div class="actions">
       <a class="button" href="{{ '/compare/' | url }}">Compare vendors</a>
       <a class="button button-quiet" href="{{ '/use-cases/' | url }}">Browse by use case</a>
-      <a class="button button-quiet" href="{{ '/methodology/' | url }}">How scoring works</a>
+      <a class="button button-quiet" href="{{ '/methodology/' | url }}">How to read a profile</a>
     </div>
   </header>
 
@@ -21,32 +21,14 @@ description: Independent, evidence-led comparison of OSINT SaaS vendors. The fir
       <dd>{{ site.vendorCount }}</dd>
     </div>
     <div>
-      <dt>Owner-approved</dt>
+      <dt>Sign-off approved</dt>
       <dd>{{ site.approvedCount }}</dd>
     </div>
     <div>
-      <dt>Status</dt>
-      <dd>{% if site.exampleOnly %}Example data{% else %}Mixed{% endif %}</dd>
+      <dt>Last reviewed</dt>
+      <dd>{% if site.reviewedDates | length == 1 %}{{ site.reviewedDates[0] | longDate }}{% else %}{{ site.reviewedDates | length }} dates{% endif %}</dd>
     </div>
   </dl>
-
-  <section class="block" aria-labelledby="read-heading">
-    <h2 id="read-heading">How to read a profile</h2>
-    <div class="read-grid">
-      <article>
-        <h3>Scores, 0 to 5</h3>
-        <p>Business transparency, financial health, and customer OPSEC posture. Higher means a stronger public record. OPSEC posture is about risk to the customer, not how powerful the product is.</p>
-      </article>
-      <article>
-        <h3>Sanctions exposure</h3>
-        <p>A risk label, not a score. Low means less recorded exposure. It covers review-list entities, ownership ties, aggregate workforce signals, and EU, UN, OFAC, and UK screening.</p>
-      </article>
-      <article>
-        <h3>Known buyers</h3>
-        <p>Organizations named in a public case study, contract, press release, or press report. A missing name is not proof that someone is not a customer.</p>
-      </article>
-    </div>
-  </section>
 
   <section class="block" aria-labelledby="vendors-heading">
     <div class="section-head">
@@ -57,32 +39,32 @@ description: Independent, evidence-led comparison of OSINT SaaS vendors. The fir
       {% for vendor in vendors %}
         <article class="vendor-card">
           <p class="card-kicker">
-            {% if vendor.example %}<span class="pill pill-example">Example</span>{% endif %}
-            <span>{{ vendor.primary_category | categoryName }}</span>
+            <span class="pill">{{ vendor.meta.signoff_status }}</span>
+            <span>{{ vendor.identity.category }}</span>
           </p>
           <h3><a href="{{ ('/vendors/' + vendor.slug + '/') | url }}">{{ vendor.name }}</a></h3>
-          <p>{{ vendor.tagline }}</p>
-          <dl class="card-meta">
-            <div><dt>HQ</dt><dd>{{ vendor.headquarters.city }}, {{ vendor.headquarters.country }}</dd></div>
-            <div><dt>Founded</dt><dd>{{ vendor.founded_year }}</dd></div>
-            <div><dt>Pricing</dt><dd>{{ vendor.company.pricing_model.text }}</dd></div>
-          </dl>
+          <p>{{ vendor.identity.hq_country }}{% if vendor._founded %} · Founded {{ vendor._founded }}{% endif %}</p>
           <div class="score-row">
-            {{ ui.scoreMeter(vendor.scores.business_transparency.score, "Transparency") }}
-            {{ ui.scoreMeter(vendor.scores.financial_health.score, "Financial") }}
-            {{ ui.scoreMeter(vendor.scores.customer_opsec.score, "OPSEC posture") }}
+            {{ ui.scoreMeter(vendor.transparency.score.value, "Transparency", vendor.transparency.score.confidence) }}
+            {{ ui.scoreMeter(vendor.financial_health.score.value, "Financial", vendor.financial_health.score.confidence) }}
+            {{ ui.scoreMeter(vendor.opsec_risks.score.value, "OPSEC", vendor.opsec_risks.score.confidence) }}
           </div>
           <div class="card-flags">
             <div>
-              <p class="flag-label">Sanctions exposure</p>
-              {{ ui.riskPill(vendor.jurisdiction_sanctions.risk, "sanctions") }}
+              <p class="flag-label">Sanctions screening</p>
+              {{ ui.sanctionsPill(vendor._sanctionsResult) }}
+              <span class="cell-sub">{{ vendor._sanctionsResult }}</span>
             </div>
             <div>
-              <p class="flag-label">Known buyers</p>
-              {{ ui.sectorPills(vendor.known_customers) }}
+              <p class="flag-label">Red flags</p>
+              <p class="claim-text">{{ vendor._redFlagCount }} recorded</p>
+            </div>
+            <div>
+              <p class="flag-label">Known customers</p>
+              <p class="claim-text">{{ vendor.known_customers.status | replace("_", " ") }}</p>
             </div>
           </div>
-          <p class="card-link"><a href="{{ ('/vendors/' + vendor.slug + '/') | url }}">View profile</a></p>
+          <p class="card-link"><a href="{{ ('/vendors/' + vendor.slug + '/') | url }}">View profile</a> · Reviewed {{ vendor.meta.last_reviewed | longDate }}</p>
         </article>
       {% endfor %}
     </div>
